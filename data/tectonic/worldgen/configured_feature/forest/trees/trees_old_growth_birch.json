@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.3,
+          "feature": "tectonic:forest/trees/old_growth_birch/variant_1_checked"
+        }
+      ],
+      "default": "tectonic:forest/trees/standard_birch/variant_1_checked"
+    }
+  }
+  

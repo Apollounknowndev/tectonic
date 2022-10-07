@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        "tectonic:forest/trees/standard_birch/variant_1_checked"
+      ]
+    }
+  }
+  

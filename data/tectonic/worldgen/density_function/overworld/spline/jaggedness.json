@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "tectonic:overworld/noise/continents",
+    "points": [
+      {
+        "location": -1,
+        "derivative": 0,
+        "value": 0
+      },
+      {
+        "location": 0.525,
+        "derivative": 0,
+        "value": 0
+      },
+      {
+        "location": 0.575,
+        "derivative": 0,
+        "value": {
+          "coordinate": "tectonic:overworld/noise/erosion_folded",
+          "points": [
+            {
+              "location": 0.025,
+              "derivative": 0,
+              "value": 0.35
+            },
+            {
+              "location": 0.07,
+              "derivative": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      {
+        "location": 1,
+        "derivative": 0,
+        "value": {
+          "coordinate": "tectonic:overworld/noise/erosion_folded",
+          "points": [
+            {
+              "location": 0.025,
+              "derivative": 0,
+              "value": 0.55
+            },
+            {
+              "location": 0.07,
+              "derivative": 0,
+              "value": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

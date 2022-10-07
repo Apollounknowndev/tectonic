@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:clamp",
+    "input": {
+        "type": "minecraft:add",
+        "argument1": 0.25,
+        "argument2": {
+            "type": "minecraft:noise",
+            "noise": "minecraft:cave_cheese",
+            "xz_scale": 1,
+            "y_scale": 0.6666666666666666
+        }
+    },
+    "min": -1,
+    "max": 1
+}

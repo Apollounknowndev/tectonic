@@ -1,0 +1,25 @@
+Last modified: October 6th, 2022
+
+This License covers the ways that datapacks or mods published by Apollo404 may (and may not) be used. This License is subject to change at any time by Apollo404 at their sole discretion. By downloading and using this datapack your compliance to this License is assumed. For any inquiries on this License, email apollo404mc@gmail.com. 
+
+0. Definitions
+
+  > "packs" may either refer to datapacks or modifications (mods) for Minecraft: Java Edition.
+
+1. Authorized Uses
+
+  > You are permitted to use any packs created by Apollo404 however you want and may modify them unconditionally for your own personal use. This includes on your own servers, public or private.
+  
+  > You may create content showcasing packs published by Apollo404, as long as credit is given in the form of linking to the relevent pack page.
+  
+  > You are permitted to create your own packs that specifically add compatibility between any of Apollo404's packs and other packs, provided all other terms of this License are followed. 
+
+  > You are permitted to include any of Apollo404's modifications into a "modpack", as long as credit is given.
+
+2. Prohibited Uses
+
+  > You are not permitted to distribute an unmodified or modified version of Apollo404's packs for any reason.
+
+  > You are not permitted to copy code from Apollo404's packs and insert them into your own packs unmodified, unless specifically specified on a pack-by-pack basis. Using code from Apollo404's packs as a reference for your own projects is permitted, though.
+  
+  > You are not permitted to put any of Apollo404's datapacks into a "datapack pack" without directly expressed permission from Apollo404. 

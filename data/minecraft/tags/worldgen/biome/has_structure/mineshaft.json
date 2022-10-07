@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tectonic:island",
+    "tectonic:cold_plains",
+    "tectonic:desert_dunes",
+    "tectonic:grasslands",
+    "tectonic:autumn_forest",
+    "tectonic:autumn_birch_forest"
+  ]
+}

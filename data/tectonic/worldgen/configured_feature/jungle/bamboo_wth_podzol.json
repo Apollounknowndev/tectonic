@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": "tectonic:jungle/podzol_disk",
+          "placement": []
+        }
+      }
+    ],
+    "default": "tectonic:jungle/bamboo_column"
+  }
+}

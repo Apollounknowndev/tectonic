@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "apollo",
+  "version": "1.0.0",
+  "name": "Tectonic",
+  "description": "20+ new biomes, new terrain features, and more!",
+  "authors": [
+    "Apollo404",
+    "Catalyst"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/tectonic"
+  },
+  "license": "All Rights Reserved",
+  "icon": "pack.png",
+  "environment": "*",
+  "entrypoints": {
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.7",
+    "fabric-api-base": "*",
+    "minecraft": ">=1.19"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.com/invite/vFz67Pvceu"
+      }
+    }
+  }
+}

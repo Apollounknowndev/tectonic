@@ -1,0 +1,109 @@
+{
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:mul",
+          "argument1": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": {
+                "type": "minecraft:interpolated",
+                "argument": "tectonic:overworld/noise/continents"
+              },
+              "points": [
+                {
+                  "location": -0.1,
+                  "derivative": 0,
+                  "value": 0
+                },
+                {
+                  "location": 0,
+                  "derivative": 0,
+                  "value": 1
+                }
+              ]
+            }
+          },
+          "argument2": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": {
+                "type": "minecraft:interpolated",
+                "argument": "tectonic:overworld/noise/erosion_folded"
+              },
+              "points": [
+                {
+                  "location": 0.2,
+                  "derivative": 0,
+                  "value": 1
+                },
+                {
+                  "location": 0.3,
+                  "derivative": 0,
+                  "value": 0
+                }
+              ]
+            }
+          }
+        },
+        "argument2": {
+          "type": "minecraft:mul",
+          "argument1": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": {
+                "type": "minecraft:interpolated",
+                "argument": "tectonic:overworld/noise/ridges"
+              },
+              "points": [
+                {
+                  "location": -0.04,
+                  "derivative": 0,
+                  "value": 0
+                },
+                {
+                  "location": 0.0,
+                  "derivative": 0,
+                  "value": 0.55
+                },
+                {
+                  "location": 0.04,
+                  "derivative": 0,
+                  "value": 0
+                }
+              ]
+            }
+          },
+          "argument2": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": "minecraft:y",
+              "points": [
+                {
+                  "location": 44,
+                  "derivative": 0,
+                  "value": 0
+                },
+                {
+                  "location": 64,
+                  "derivative": 0,
+                  "value": 0.45
+                },
+                {
+                  "location": 80,
+                  "derivative": 0,
+                  "value": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      "argument2": -2
+    },
+    "argument2": 0.2
+  }
+  

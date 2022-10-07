@@ -1,0 +1,56 @@
+{
+    "type": "minecraft:flower",
+    "config": {
+      "feature": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:noise_provider",
+              "seed": 3456,
+              "noise": {
+                "firstOctave": -6,
+                "amplitudes": [
+                  1
+                ]
+              },
+              "scale": 1,
+              "states": [
+                {
+                  "Name": "minecraft:lily_of_the_valley"
+                },
+                {
+                  "Name": "minecraft:cornflower"
+                },
+                {
+                  "Name": "minecraft:white_tulip"
+                },
+                {
+                  "Name": "minecraft:red_tulip"
+                },
+                {
+                  "Name": "minecraft:poppy"
+                },
+                {
+                  "Name": "minecraft:lilac",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      }
+    }
+  }
+  

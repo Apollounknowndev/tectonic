@@ -1,0 +1,401 @@
+{
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:noise",
+      "noise": "tectonic:offset_noise_1",
+      "xz_scale": 0.25,
+      "y_scale": 0
+    },
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:noise",
+        "noise": "tectonic:offset_noise_2",
+        "xz_scale": 0.25,
+        "y_scale": 0
+      },
+      "argument2": {
+        "type": "minecraft:noise",
+        "noise": "tectonic:offset_noise_3",
+        "xz_scale": 0.25,
+        "y_scale": 0
+      }
+    }
+  },
+  "argument2": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "tectonic:overworld/noise/continents",
+      "points": [
+        {
+          "location": -1,
+          "derivative": 0,
+          "value": 0.025
+        },
+        {
+          "location": -0.125,
+          "derivative": 0,
+          "value": 0.025
+        },
+        {
+          "location": 0,
+          "derivative": 0,
+          "value": 0.01
+        },
+        {
+          "location": 0.175,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:overworld/noise/ridges_folded",
+            "points": [
+              {
+                "location": 0,
+                "derivative": 0,
+                "value": 0
+              },
+              {
+                "location": 0.2,
+                "derivative": 0,
+                "value": 0.025
+              }
+            ]
+          }
+        },
+        {
+          "location": 0.225,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:overworld/noise/erosion_folded",
+            "points": [
+              {
+                "location": 0,
+                "derivative": 0,
+                "value": 0.025
+              },
+              {
+                "location": 0.2,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": 0.025
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.375,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.125,
+                      "derivative": 0,
+                      "value": 0.025
+                    },
+                    {
+                      "location": 0.175,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "tectonic:overworld/noise/temperature",
+                        "points": [
+                          {
+                            "location": 0.525,
+                            "derivative": 0,
+                            "value": 0.025
+                          },
+                          {
+                            "location": 0.575,
+                            "derivative": 0,
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.425,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.125,
+                      "derivative": 0,
+                      "value": 0.025
+                    },
+                    {
+                      "location": 0.175,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "tectonic:overworld/noise/temperature",
+                        "points": [
+                          {
+                            "location": 0.525,
+                            "derivative": 0,
+                            "value": 0.025
+                          },
+                          {
+                            "location": 0.575,
+                            "derivative": 0,
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.675,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.125,
+                      "derivative": 0,
+                      "value": 0.025
+                    },
+                    {
+                      "location": 0.175,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "tectonic:overworld/noise/temperature",
+                        "points": [
+                          {
+                            "location": 0.525,
+                            "derivative": 0,
+                            "value": 0.025
+                          },
+                          {
+                            "location": 0.575,
+                            "derivative": 0,
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.725,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": 0.025
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "location": 0.55,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:overworld/noise/erosion_folded",
+            "points": [
+              {
+                "location": 0,
+                "derivative": 0,
+                "value": 0.075
+              },
+              {
+                "location": 0.2,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": 0.025
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.375,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.125,
+                      "derivative": 0,
+                      "value": 0.025
+                    },
+                    {
+                      "location": 0.175,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "tectonic:overworld/noise/temperature",
+                        "points": [
+                          {
+                            "location": 0.525,
+                            "derivative": 0,
+                            "value": 0.025
+                          },
+                          {
+                            "location": 0.575,
+                            "derivative": 0,
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.425,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.125,
+                      "derivative": 0,
+                      "value": 0.025
+                    },
+                    {
+                      "location": 0.175,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "tectonic:overworld/noise/temperature",
+                        "points": [
+                          {
+                            "location": 0.525,
+                            "derivative": 0,
+                            "value": 0.025
+                          },
+                          {
+                            "location": 0.575,
+                            "derivative": 0,
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.675,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.125,
+                      "derivative": 0,
+                      "value": 0.025
+                    },
+                    {
+                      "location": 0.175,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "tectonic:overworld/noise/temperature",
+                        "points": [
+                          {
+                            "location": 0.525,
+                            "derivative": 0,
+                            "value": 0.025
+                          },
+                          {
+                            "location": 0.575,
+                            "derivative": 0,
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.725,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:overworld/noise/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": 0.025
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

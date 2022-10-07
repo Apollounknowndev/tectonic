@@ -1,0 +1,27 @@
+modLoader="lowcodefml"
+loaderVersion="[40,)"
+license="All Rights Reserved"
+
+[[mods]]
+  modId="tectonic"
+  version="1.0.0"
+  displayName="Tectonic"
+  logoFile="pack.png"
+  authors="Apollo404, Catalyst"
+  description='''
+  20+ new biomes, new terrain features, and more!
+  '''
+
+  [[dependencies.tectonic]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+
+  [[dependencies.tectonic]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,1.20)"
+    ordering="NONE"
+    side="BOTH"
