@@ -1,6 +1,6 @@
 Last modified: October 6th, 2022
 
-This License covers the ways that datapacks or mods published by Apollo404 may (and may not) be used. This License is subject to change at any time by Apollo404 at their sole discretion. By downloading and using this datapack your compliance to this License is assumed. For any inquiries on this License, email apollo404mc@gmail.com. 
+This License covers the ways that datapacks or mods published by Apollo404 may (and may not) be used. This License is subject to change at any time by Apollo404 at their sole discretion. By downloading and using this datapack/mod your compliance to this License is assumed. For any inquiries on this License, email apollo404mc@gmail.com. 
 
 0. Definitions
 
