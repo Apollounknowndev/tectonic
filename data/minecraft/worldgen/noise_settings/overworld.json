@@ -1126,7 +1126,9 @@
                                 "biome_is": [
                                   "minecraft:desert",
                                   "tectonic:desert_dunes",
-                                  "tectonic:sandstone_cliffs"
+                                  "tectonic:sandstone_cliffs",
+                                  "tectonic:warm_river",
+                                  "tectonic:coral_river"
                                 ]
                               },
                               "then_run": {
@@ -1155,32 +1157,6 @@
                                     }
                                   }
                                 ]
-                              }
-                            },
-                            {
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:biome",
-                                "biome_is": [
-                                  "tectonic:sandstone_cliffs"
-                                ]
-                              },
-                              "then_run": {
-                                "type": "minecraft:condition",
-                                "if_true": {
-                                  "type": "minecraft:y_above",
-                                  "anchor": {
-                                    "absolute": 62
-                                  },
-                                  "surface_depth_multiplier": 0,
-                                  "add_stone_depth": false
-                                },
-                                "then_run": {
-                                  "type": "minecraft:block",
-                                  "result_state": {
-                                    "Name": "minecraft:sandstone"
-                                  }
-                                }
                               }
                             },
                             {
@@ -1225,9 +1201,7 @@
                               "if_true": {
                                 "type": "minecraft:biome",
                                 "biome_is": [
-                                  "minecraft:dripstone_caves",
-                                  "tectonic:coral_river",
-                                  "tectonic:ancient_river"
+                                  "minecraft:dripstone_caves"
                                 ]
                               },
                               "then_run": {
@@ -2004,7 +1978,9 @@
                                 "biome_is": [
                                   "minecraft:desert",
                                   "tectonic:desert_dunes",
-                                  "tectonic:sandstone_cliffs"
+                                  "tectonic:sandstone_cliffs",
+                                  "tectonic:warm_river",
+                                  "tectonic:coral_river"
                                 ]
                               },
                               "then_run": {
@@ -2280,7 +2256,9 @@
                       "type": "minecraft:biome",
                       "biome_is": [
                         "minecraft:desert",
-                        "tectonic:desert_dunes"
+                        "tectonic:desert_dunes",
+                        "tectonic:warm_river",
+                        "tectonic:coral_river"
                       ]
                     },
                     "then_run": {
