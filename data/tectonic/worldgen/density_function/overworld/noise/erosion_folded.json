@@ -1,4 +1,4 @@
 {
   "type": "minecraft:abs",
-  "argument": "tectonic:overworld/noise/true_erosion"
+  "argument": "minecraft:overworld/erosion"
 }

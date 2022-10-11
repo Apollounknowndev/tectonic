@@ -2,17 +2,17 @@
     "type": "minecraft:cache_once",
     "argument": {
         "type": "minecraft:range_choice",
-        "input": "tectonic:overworld/noise/continents",
+        "input": "minecraft:overworld/continents",
         "min_inclusive": 0.025,
         "max_exclusive": 2,
         "when_in_range": {
             "type": "minecraft:range_choice",
-            "input": "tectonic:overworld/noise/true_erosion",
+            "input": "minecraft:overworld/erosion",
             "min_inclusive": -0.19,
             "max_exclusive": 0.19,
             "when_in_range": {
                 "type": "minecraft:range_choice",
-                "input": "tectonic:overworld/noise/ridges",
+                "input": "minecraft:overworld/ridges",
                 "min_inclusive": -0.035,
                 "max_exclusive": 0.035,
                 "when_in_range": {
