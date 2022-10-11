@@ -4,10 +4,10 @@
     "argument2": {
         "type": "minecraft:spline",
         "spline": {
-            "coordinate": "tectonic:overworld/noise/continents",
+            "coordinate": "minecraft:overworld/continents",
             "points": [
                 {
-                    "location": -0.905,
+                    "location": -1.005,
                     "derivative": 0,
                     "value": {
                         "coordinate": "tectonic:overworld/noise/erosion_folded",
@@ -16,7 +16,7 @@
                                 "location": 0.2125,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/temperature",
+                                    "coordinate": "minecraft:overworld/temperature",
                                     "points": [
                                         {
                                             "location": 0.0,
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "location": -0.895,
+                    "location": -0.995,
                     "derivative": 0,
                     "value": {
                         "coordinate": "tectonic:overworld/noise/erosion_folded",
@@ -64,7 +64,7 @@
                                 "location": 0.2125,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/temperature",
+                                    "coordinate": "minecraft:overworld/temperature",
                                     "points": [
                                         {
                                             "location": 0.0,
@@ -103,7 +103,7 @@
                     }
                 },
                 {
-                    "location": -0.86,
+                    "location": -0.96,
                     "derivative": 0,
                     "value": {
                         "coordinate": "tectonic:overworld/noise/erosion_folded",
@@ -112,7 +112,7 @@
                                 "location": 0.2125,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/temperature",
+                                    "coordinate": "minecraft:overworld/temperature",
                                     "points": [
                                         {
                                             "location": 0.0,
@@ -151,22 +151,22 @@
                     }
                 },
                 {
-                    "location": -0.775,
+                    "location": -0.91,
                     "derivative": 0,
                     "value": -0.3
                 },
                 {
-                    "location": -0.425,
+                    "location": -0.4375,
                     "derivative": 0,
                     "value": -0.3
                 },
                 {
-                    "location": -0.375,
+                    "location": -0.3625,
                     "derivative": 0,
                     "value": -0.15
                 },
                 {
-                    "location": -0.04,
+                    "location": -0.05,
                     "derivative": 0,
                     "value": -0.125
                 },
@@ -190,7 +190,7 @@
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -209,7 +209,7 @@
                                 "location": 0.825,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -228,7 +228,7 @@
                                 "location": 0.85,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -266,7 +266,7 @@
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -285,7 +285,7 @@
                                 "location": 0.825,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -304,7 +304,7 @@
                                 "location": 0.85,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -342,7 +342,7 @@
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -361,7 +361,7 @@
                                 "location": 0.825,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -380,7 +380,7 @@
                                 "location": 0.85,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -423,7 +423,7 @@
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -442,7 +442,7 @@
                                 "location": 0.25,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -471,7 +471,7 @@
                                 "location": 0.825,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -524,7 +524,7 @@
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -543,7 +543,7 @@
                                 "location": 0.25,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -572,7 +572,7 @@
                                 "location": 0.825,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -625,7 +625,7 @@
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -644,7 +644,7 @@
                                 "location": 0.25,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
@@ -673,7 +673,7 @@
                                 "location": 0.825,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
