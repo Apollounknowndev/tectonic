@@ -81,9 +81,9 @@
     ],
     [
       "minecraft:glow_lichen",
-      "tectonic:common/grass/patch_grass_sparse",
-      "minecraft:flower_swamp",
       "tectonic:swamp/trees/trees_swamp",
+      "minecraft:flower_swamp",
+      "tectonic:common/grass/patch_grass_sparse",
       "minecraft:patch_dead_bush",
       "minecraft:patch_waterlily",
       "minecraft:brown_mushroom_swamp",

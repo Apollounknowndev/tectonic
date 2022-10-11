@@ -40,8 +40,8 @@
     [
       "tectonic:common/stone_in_deepslate",
       "tectonic:common/deepslate_in_stone",
-        "tectonic:common/disk/magma",
-        "tectonic:common/disk/smooth_basalt",
+      "tectonic:common/disk/magma",
+      "tectonic:common/disk/smooth_basalt",
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
       "minecraft:ore_granite_upper",
@@ -76,8 +76,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "tectonic:common/grass/patch_grass_very_dense",
       "tectonic:common/flowers_warm",
+      "tectonic:common/grass/patch_grass_very_dense",
       "minecraft:bamboo_light",
       "minecraft:trees_jungle",
       "minecraft:brown_mushroom_normal",

@@ -77,10 +77,10 @@
     ],
     [
       "minecraft:glow_lichen",
-      "tectonic:common/grass/patch_grass_regular",
       "minecraft:patch_large_fern",
-      "tectonic:common/flowers_cold",
       "minecraft:trees_old_growth_spruce_taiga",
+      "tectonic:common/flowers_cold",
+      "tectonic:common/grass/patch_grass_regular",
       "minecraft:patch_dead_bush",
       "minecraft:brown_mushroom_old_growth",
       "minecraft:red_mushroom_old_growth",

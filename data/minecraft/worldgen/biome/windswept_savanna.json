@@ -6,83 +6,33 @@
       "minecraft:canyon"
     ]
   },
-  "downfall": 0.9,
+  "downfall": 0.0,
   "effects": {
-    "sky_color": 14081002,
-    "fog_color": 14410478,
-    "foliage_color": 14540253,
+    "fog_color": 12638463,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "music": {
-      "max_delay": 24000,
-      "min_delay": 12000,
-      "replace_current_music": false,
-      "sound": "minecraft:music.overworld.jagged_peaks"
-    },
+    "sky_color": 7254527,
     "water_color": 4159204,
     "water_fog_color": 329011
   },
   "features": [
     [],
     [],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
-    ],
     [],
     [],
-    [
-      "tectonic:common/stone_in_deepslate",
-      "tectonic:common/deepslate_in_stone",
-      "tectonic:common/disk/magma",
-      "tectonic:common/disk/smooth_basalt",
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_tuff",
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_buried",
-      "tectonic:mountain/ore_diamond_extra",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:ore_emerald"
-    ],
-    [
-      "minecraft:ore_infested"
-    ],
     [],
-    [
-      "minecraft:glow_lichen"
-    ],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
   ],
-  "precipitation": "snow",
+  "precipitation": "none",
   "spawn_costs": {},
   "spawners": {
     "ambient": [
@@ -96,10 +46,40 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "minecraft:goat",
-        "maxCount": 3,
+        "type": "minecraft:sheep",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 12
+      },
+      {
+        "type": "minecraft:pig",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:chicken",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:cow",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 8
+      },
+      {
+        "type": "minecraft:horse",
+        "maxCount": 6,
+        "minCount": 2,
+        "weight": 1
+      },
+      {
+        "type": "minecraft:donkey",
+        "maxCount": 1,
         "minCount": 1,
-        "weight": 5
+        "weight": 1
       }
     ],
     "misc": [],
@@ -164,5 +144,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": -0.7
+  "temperature": 2.0
 }

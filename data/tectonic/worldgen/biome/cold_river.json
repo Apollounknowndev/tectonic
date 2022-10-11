@@ -70,8 +70,9 @@
     ],
     [
       "minecraft:glow_lichen",
+      "tectonic:common/flowers_cold",      
       "tectonic:common/grass/patch_grass_very_sparse",
-      "tectonic:common/flowers_cold",
+
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",

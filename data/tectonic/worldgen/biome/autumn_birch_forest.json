@@ -75,9 +75,9 @@
     [
       "minecraft:glow_lichen",
       "tectonic:forest/fallen_logs/birch",
-      "tectonic:common/grass/patch_grass_dense",
-      "tectonic:common/flowers_regular",
       "tectonic:forest/trees/trees_autumn_birch",
+      "tectonic:common/flowers_regular",
+      "tectonic:common/grass/patch_grass_dense",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
