@@ -3,7 +3,7 @@
     "argument1": {
       "type": "minecraft:spline",
       "spline": {
-        "coordinate": "tectonic:overworld/noise/continents",
+        "coordinate": "minecraft:overworld/continents",
         "points": [
           {
             "location": -1,
@@ -30,7 +30,7 @@
                   "location": 0.475,
                   "derivative": 0,
                   "value": {
-                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                    "coordinate": "minecraft:overworld/ridges_folded",
                     "points": [
                       {
                         "location": 0.125,
@@ -41,7 +41,7 @@
                         "location": 0.275,
                         "derivative": 0,
                         "value": {
-                          "coordinate": "tectonic:overworld/noise/temperature",
+                          "coordinate": "minecraft:overworld/temperature",
                           "points": [
                             {
                               "location": 0.475,
@@ -63,7 +63,7 @@
                   "location": 0.625,
                   "derivative": 0,
                   "value": {
-                    "coordinate": "tectonic:overworld/noise/ridges_folded",
+                    "coordinate": "minecraft:overworld/ridges_folded",
                     "points": [
                       {
                         "location": 0.125,
@@ -74,7 +74,7 @@
                         "location": 0.275,
                         "derivative": 0,
                         "value": {
-                          "coordinate": "tectonic:overworld/noise/temperature",
+                          "coordinate": "minecraft:overworld/temperature",
                           "points": [
                             {
                               "location": 0.475,

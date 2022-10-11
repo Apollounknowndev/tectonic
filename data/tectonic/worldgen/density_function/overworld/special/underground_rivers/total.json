@@ -11,7 +11,7 @@
             "spline": {
               "coordinate": {
                 "type": "minecraft:interpolated",
-                "argument": "tectonic:overworld/noise/continents"
+                "argument": "minecraft:overworld/continents"
               },
               "points": [
                 {
@@ -56,7 +56,7 @@
             "spline": {
               "coordinate": {
                 "type": "minecraft:interpolated",
-                "argument": "tectonic:overworld/noise/ridges"
+                "argument": "minecraft:overworld/ridges"
               },
               "points": [
                 {
