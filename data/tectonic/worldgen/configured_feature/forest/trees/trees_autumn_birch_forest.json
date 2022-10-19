@@ -1,8 +1,6 @@
 {
-    "type": "minecraft:simple_random_selector",
-    "config": {
-        "features": [
-            "tectonic:forest/trees/standard_birch/variant_1_acacia_leaves_checked"
-        ]
-    }
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": "#tectonic:trees/special/birch_autumn"
+  }
 }

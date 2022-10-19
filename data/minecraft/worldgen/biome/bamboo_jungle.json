@@ -76,8 +76,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "tectonic:jungle/trees/trees_bamboo_jungle",
       "tectonic:jungle/bamboo",
-      "tectonic:jungle/bamboo_vegetation",
       "tectonic:common/flowers_warm",
       "tectonic:common/grass/patch_grass_very_dense",
       "minecraft:brown_mushroom_normal",

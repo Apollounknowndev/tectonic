@@ -76,10 +76,10 @@
     ],
     [
       "minecraft:glow_lichen",
+      "minecraft:bamboo_light",
+      "tectonic:jungle/trees/trees_jungle",
       "tectonic:common/flowers_warm",
       "tectonic:common/grass/patch_grass_very_dense",
-      "minecraft:bamboo_light",
-      "minecraft:trees_jungle",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",

@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+        "features": [
+            {
+                "chance": 0.05,
+                "feature": {
+                    "feature": {
+                        "type": "minecraft:simple_random_selector",
+                        "config": {
+                            "features": "#tectonic:trees/special/baobab"
+                        }
+                    },
+                    "placement": []
+                }
+            },
+            {
+                "chance": 0.1,
+                "feature": {
+                    "feature": {
+                        "type": "minecraft:simple_random_selector",
+                        "config": {
+                            "features": "#tectonic:trees/oak_bush"
+                        }
+                    },
+                    "placement": []
+                }
+            },
+            {
+                "chance": 0.15,
+                "feature": {
+                    "feature": {
+                        "type": "minecraft:simple_random_selector",
+                        "config": {
+                            "features": "#tectonic:trees/oak_shrub_tall"
+                        }
+                    },
+                    "placement": []
+                }
+            }
+        ],
+        "default": {
+            "feature": {
+                "type": "minecraft:simple_random_selector",
+                "config": {
+                    "features": "#tectonic:trees/acacia_standard"
+                }
+            },
+            "placement": []
+        }
+    }
+}

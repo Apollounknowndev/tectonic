@@ -70,7 +70,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_taiga",
+      "tectonic:taiga/trees/trees_taiga",
       "tectonic:common/flowers_cold",
       "tectonic:common/grass/patch_grass_dense",
       "minecraft:brown_mushroom_taiga",

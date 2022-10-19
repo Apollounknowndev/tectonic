@@ -1,0 +1,31 @@
+{
+    "__COMMENT": "tectonic:nothing is included here to prevent a crash.",
+    "replace": false,
+    "values": [
+        "tectonic:nothing",
+        {
+            "id": "arboria:_placer/oak_pine/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/4",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/5",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/6",
+            "required": false
+        }
+    ]
+}

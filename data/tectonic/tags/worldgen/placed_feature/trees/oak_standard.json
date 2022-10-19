@@ -1,0 +1,53 @@
+{
+    "replace": false,
+    "values": [
+        "tectonic:forest/trees/standard_oak/variant_1_checked",
+        "tectonic:forest/trees/standard_oak/variant_2_checked",
+        "tectonic:forest/trees/standard_oak/variant_3_checked",
+        "tectonic:forest/trees/standard_oak/variant_4_checked",
+        {
+            "id": "arboria:_placer/forest_oak/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/4",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/5",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/6",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/7",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/8",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/9",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/10",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/forest_oak/11",
+            "required": false
+        }
+    ]
+}

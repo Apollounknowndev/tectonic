@@ -1,0 +1,42 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:jungle_tree",
+        {
+            "id": "arboria:_placer/jungle_tree/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/4",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/5",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/6",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/7",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/8",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_tree/9",
+            "required": false
+        }
+    ]
+}

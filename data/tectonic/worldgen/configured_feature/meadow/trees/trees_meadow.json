@@ -1,25 +1,28 @@
 {
-    "type": "minecraft:random_selector",
-    "config": {
-      "features": [
-        {
-          "chance": 0.5,
-          "feature": "tectonic:forest/trees/standard_birch/variant_1_checked"
-        }
-      ],
-      "default": {
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.5,
         "feature": {
-          "type": "minecraft:simple_random_selector",
-          "config": {
-            "features": [
-              "tectonic:forest/trees/standard_oak/variant_1_checked",
-              "tectonic:forest/trees/standard_oak/variant_2_checked",
-              "tectonic:forest/trees/standard_oak/variant_3_checked",
-              "tectonic:forest/trees/standard_oak/variant_4_checked"
-            ]
-          }
-        },
-        "placement": []
+          "feature": {
+            "type": "minecraft:simple_random_selector",
+            "config": {
+              "features": "#tectonic:trees/birch_standard_more_bees"
+            }
+          },
+          "placement": []
+        }
       }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_random_selector",
+        "config": {
+          "features": "#tectonic:trees/oak_standard_more_bees"
+        }
+      },
+      "placement": []
     }
   }
+}

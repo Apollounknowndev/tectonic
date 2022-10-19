@@ -2,6 +2,16 @@
   "feature": "tectonic:swamp/trees/trees_swamp",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 2
+        }
+      }
+    },
+    {
       "type": "minecraft:in_square"
     },
     {

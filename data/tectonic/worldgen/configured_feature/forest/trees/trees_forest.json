@@ -4,23 +4,58 @@
     "features": [
       {
         "chance": 0.05,
-        "feature": "tectonic:forest/trees/fancy_oak/variant_1_checked"
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_random_selector",
+            "config": {
+              "features": "#tectonic:trees/oak_fancy"
+            }
+          },
+          "placement": []
+        }
       },
       {
-        "chance": 0.125,
-        "feature": "tectonic:forest/trees/standard_birch/variant_1_checked"
+        "chance": 0.05,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_random_selector",
+            "config": {
+              "features": "#tectonic:trees/oak_dead"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_random_selector",
+            "config": {
+              "features": "#tectonic:trees/oak_bush"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.15,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_random_selector",
+            "config": {
+              "features": "#tectonic:trees/birch_standard"
+            }
+          },
+          "placement": []
+        }
       }
     ],
     "default": {
       "feature": {
         "type": "minecraft:simple_random_selector",
         "config": {
-          "features": [
-            "tectonic:forest/trees/standard_oak/variant_1_checked",
-            "tectonic:forest/trees/standard_oak/variant_2_checked",
-            "tectonic:forest/trees/standard_oak/variant_3_checked",
-            "tectonic:forest/trees/standard_oak/variant_4_checked"
-          ]
+          "features": "#tectonic:trees/oak_standard"
         }
       },
       "placement": []

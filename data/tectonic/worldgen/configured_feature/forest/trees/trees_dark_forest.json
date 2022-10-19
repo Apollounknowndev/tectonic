@@ -1,0 +1,91 @@
+{
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.03,
+          "feature": {
+            "feature": {
+              "type": "minecraft:simple_random_selector",
+              "config": {
+                "features": "#tectonic:trees/oak_dead"
+              }
+            },
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.03,
+          "feature": {
+            "feature": {
+              "type": "minecraft:simple_random_selector",
+              "config": {
+                "features": "#tectonic:trees/dark_oak_dead"
+              }
+            },
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.025,
+          "feature": {
+            "feature": "minecraft:huge_brown_mushroom",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.05,
+          "feature": {
+            "feature": "minecraft:huge_red_mushroom",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.6666667,
+          "feature": {
+            "feature": {
+              "type": "minecraft:simple_random_selector",
+              "config": {
+                "features": "#tectonic:trees/dark_oak_standard"
+              }
+            },
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.2,
+          "feature": {
+            "feature": {
+              "type": "minecraft:simple_random_selector",
+              "config": {
+                "features": "#tectonic:trees/birch_standard"
+              }
+            },
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.1,
+          "feature": {
+            "feature": {
+              "type": "minecraft:simple_random_selector",
+              "config": {
+                "features": "#tectonic:trees/oak_fancy"
+              }
+            },
+            "placement": []
+          }
+        }
+      ],
+      "default": {
+        "feature": {
+          "type": "minecraft:simple_random_selector",
+          "config": {
+            "features": "#tectonic:trees/oak_standard"
+          }
+        },
+        "placement": []
+      }
+    }
+  }
+  
