@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
   modId="tectonic"
-  version="1.0.1a"
+  version="1.0.2"
   displayName="Tectonic"
   logoFile="pack.png"
   authors="Apollo404, Catalyst"
