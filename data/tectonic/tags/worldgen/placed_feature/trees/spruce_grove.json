@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "minecraft:spruce",
+        "minecraft:spruce_on_snow",
         {
             "id": "arboria:_placer/grove_spruce/1_snowy",
             "required": false
