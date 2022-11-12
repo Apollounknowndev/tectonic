@@ -1,35 +1,45 @@
 {
   "type": "minecraft:disk",
   "config": {
-    "state_provider": {
-      "fallback": {
-        "type": "minecraft:noise_provider",
-        "seed": 7890,
-        "noise": {
-          "firstOctave": -5,
-          "amplitudes": [
-            1,
-            1,
-            1
-          ]
-        },
-        "scale": 1,
-        "states": [
-          {
-            "Name": "minecraft:calcite"
-          },
-          {
-            "Name": "minecraft:diorite"
-          }
-        ]
-      },
-      "rules": []
-    },
-    "target": {
-      "type": "minecraft:matching_blocks",
-      "blocks": "minecraft:diorite"
+    "state": {
+      "Name": "minecraft:calcite"
     },
     "radius": 4,
-    "half_height": 3
+    "half_height": 3,
+    "targets": [
+      {
+        "Name": "minecraft:dirt"
+      },
+      {
+        "Name": "minecraft:grass_block",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:podzol",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:coarse_dirt"
+      },
+      {
+        "Name": "minecraft:mycelium",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:rooted_dirt"
+      },
+      {
+        "Name": "minecraft:moss_block"
+      },
+      {
+        "Name": "minecraft:gravel"
+      }
+    ]
   }
 }

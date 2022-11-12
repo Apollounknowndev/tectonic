@@ -17,7 +17,7 @@
                 "max_exclusive": 0.035,
                 "when_in_range": {
                     "type": "minecraft:range_choice",
-                    "input": "tectonic:overworld/noise/depth",
+                    "input": "tectonic:overworld/noise/raw/depth",
                     "min_inclusive": 0.05,
                     "max_exclusive": 64,
                     "when_in_range": {

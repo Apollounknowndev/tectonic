@@ -1,48 +1,27 @@
 {
-    "type": "minecraft:disk",
-    "config": {
-      "state_provider": {
-        "fallback": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:sand"
-          }
-        },
-        "rules": [
-          {
-            "if_true": {
-              "type": "minecraft:matching_blocks",
-              "offset": [
-                0,
-                -1,
-                0
-              ],
-              "blocks": "minecraft:air"
-            },
-            "then": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:sandstone"
-              }
-            }
-          }
-        ]
+  "type": "minecraft:disk",
+  "config": {
+    "state": {
+      "Name": "minecraft:sand"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 3,
+        "max_inclusive": 6
+      }
+    },
+    "half_height": 2,
+    "targets": [
+      {
+        "Name": "minecraft:dirt"
       },
-      "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:dirt",
-          "minecraft:grass_block"
-        ]
-      },
-      "radius": {
-        "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 3,
-          "max_inclusive": 6
+      {
+        "Name": "minecraft:grass_block",
+        "Properties": {
+          "snowy": "false"
         }
-      },
-      "half_height": 2
-    }
+      }
+    ]
   }
-  
+}

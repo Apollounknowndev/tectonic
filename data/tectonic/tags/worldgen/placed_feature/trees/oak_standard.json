@@ -1,8 +1,6 @@
 {
     "replace": false,
     "values": [
-        "tectonic:forest/trees/standard_oak/variant_1_checked",
-        "tectonic:forest/trees/standard_oak/variant_2_checked",
         "tectonic:forest/trees/standard_oak/variant_3_checked",
         "tectonic:forest/trees/standard_oak/variant_4_checked",
         {

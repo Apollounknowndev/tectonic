@@ -2,8 +2,6 @@
     "replace": false,
     "values": [
         "tectonic:forest/trees/fancy_oak/variant_2_checked",
-        "minecraft:tall_mangrove_checked",
-        "minecraft:mangrove_checked",
         {
             "id": "arboria:_placer/swamp_oak/1",
             "required": false

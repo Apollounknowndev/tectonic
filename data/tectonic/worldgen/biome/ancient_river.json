@@ -1,4 +1,5 @@
 {
+  "category": "underground",
   "carvers": {
     "air": [
       "minecraft:cave",
@@ -32,10 +33,6 @@
     [],
     [],
     [
-      "tectonic:common/stone_in_deepslate",
-      "tectonic:common/deepslate_in_stone",
-      "tectonic:common/disk/magma",
-      "tectonic:common/disk/smooth_basalt",
       "tectonic:river/ore_deepslate",
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
@@ -68,7 +65,6 @@
     ],
     [
       "tectonic:river/common/glow_lichen_extra",
-      "tectonic:river/sculk_patch_ancient_river",
       "tectonic:river/soul_lanterns"
     ],
     [

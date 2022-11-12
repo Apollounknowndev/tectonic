@@ -1,93 +1,75 @@
 {
-    "type": "minecraft:disk",
-    "config": {
-      "state_provider": {
-        "fallback": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:sand"
-          }
-        },
-        "rules": [
-          {
-            "if_true": {
-              "type": "minecraft:not",
-              "predicate": {
-                "type": "minecraft:any_of",
-                "predicates": [
-                  {
-                    "type": "minecraft:matching_blocks",
-                    "offset": [
-                      0,
-                      1,
-                      0
-                    ],
-                    "blocks": "minecraft:air"
-                  },
-                  {
-                    "type": "minecraft:matching_fluids",
-                    "offset": [
-                      0,
-                      1,
-                      0
-                    ],
-                    "fluids": "minecraft:water"
-                  }
-                ]
-              }
-            },
-            "then": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:stone"
-              }
-            }
-          },
-          {
-            "if_true": {
-              "type": "minecraft:any_of",
-              "predicates": [
-                {
-                  "type": "minecraft:matching_blocks",
-                  "offset": [
-                    0,
-                    -1,
-                    0
-                  ],
-                  "blocks": "minecraft:air"
-                },
-                {
-                  "type": "minecraft:matching_fluids",
-                  "offset": [
-                    0,
-                    -1,
-                    0
-                  ],
-                  "fluids": "minecraft:water"
-                }
-              ]
-            },
-            "then": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:sandstone"
-              }
-            }
-          }
-        ]
+  "type": "minecraft:disk",
+  "config": {
+    "state": {
+      "Name": "minecraft:sand"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 4,
+        "max_inclusive": 6
+      }
+    },
+    "half_height": 1,
+    "targets": [
+      {
+        "Name": "minecraft:stone"
       },
-      "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "#tectonic:disk_no_heightmap_replaceable"
+      {
+        "Name": "minecraft:granite"
       },
-      "radius": {
-        "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 4,
-          "max_inclusive": 6
+      {
+        "Name": "minecraft:diorite"
+      },
+      {
+        "Name": "minecraft:andesite"
+      },
+      {
+        "Name": "minecraft:dirt"
+      },
+      {
+        "Name": "minecraft:grass_block",
+        "Properties": {
+          "snowy": "false"
         }
       },
-      "half_height": 1
-    }
+      {
+        "Name": "minecraft:podzol",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:coarse_dirt"
+      },
+      {
+        "Name": "minecraft:mycelium",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:rooted_dirt"
+      },
+      {
+        "Name": "minecraft:moss_block"
+      },
+      {
+        "Name": "minecraft:gravel"
+      },
+      {
+        "Name": "minecraft:coal_ore"
+      },
+      {
+        "Name": "minecraft:copper_ore"
+      },
+      {
+        "Name": "minecraft:iron_ore"
+      },
+      {
+        "Name": "minecraft:lapis_ore"
+      }
+    ]
   }
-  
+}

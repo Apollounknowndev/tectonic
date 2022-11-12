@@ -1,5 +1,7 @@
 {
   "type": "minecraft:spline",
+  "min_value": -1.5,
+  "max_value": 1.5,
   "spline": {
     "coordinate": "minecraft:overworld/continents",
     "points": [

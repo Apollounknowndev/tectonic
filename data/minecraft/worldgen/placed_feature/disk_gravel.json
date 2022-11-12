@@ -1,4 +1,9 @@
 {
-  "feature": "tectonic:nothing",
-  "placement": []
+  "feature": "minecraft:disk_gravel",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
 }

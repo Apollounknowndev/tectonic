@@ -1,60 +1,45 @@
 {
-    "type": "minecraft:disk",
-    "config": {
-      "state_provider": {
-        "fallback": {
-          "type": "minecraft:noise_provider",
-          "seed": 6789,
-          "noise": {
-            "firstOctave": -9,
-            "amplitudes": [
-              1,
-              1,
-              2,
-              2,
-              1,
-              1,
-              0,
-              0,
-              0
-            ]
-          },
-          "scale": 1,
-          "states": [
-            {
-              "Name": "minecraft:gravel"
-            },
-            {
-              "Name": "minecraft:granite"
-            }
-          ]
-        },
-        "rules": [
-          {
-            "if_true": {
-              "type": "minecraft:matching_fluids",
-              "offset": [
-                0,
-                5,
-                0
-              ],
-              "fluids": "#minecraft:water"
-            },
-            "then": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:gravel"
-              }
-            }
-          }
-        ]
+  "type": "minecraft:disk",
+  "config": {
+    "state": {
+      "Name": "minecraft:granite"
+    },
+    "radius": 4,
+    "half_height": 3,
+    "targets": [
+      {
+        "Name": "minecraft:dirt"
       },
-      "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "#tectonic:disk_primary_replaceable"
+      {
+        "Name": "minecraft:grass_block",
+        "Properties": {
+          "snowy": "false"
+        }
       },
-      "radius": 4,
-      "half_height": 3
-    }
+      {
+        "Name": "minecraft:podzol",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:coarse_dirt"
+      },
+      {
+        "Name": "minecraft:mycelium",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:rooted_dirt"
+      },
+      {
+        "Name": "minecraft:moss_block"
+      },
+      {
+        "Name": "minecraft:gravel"
+      }
+    ]
   }
-  
+}

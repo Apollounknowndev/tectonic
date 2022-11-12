@@ -8,6 +8,8 @@
                 "type": "minecraft:mul",
                 "argument1": {
                     "type": "minecraft:spline",
+  "min_value": -1.5,
+   "max_value": 1.5,
                     "spline": {
                         "coordinate": {
                             "type": "minecraft:interpolated",
@@ -34,6 +36,8 @@
                 },
                 "argument2": {
                     "type": "minecraft:spline",
+  "min_value": -1.5,
+   "max_value": 1.5,
                     "spline": {
                         "coordinate": {
                             "type": "minecraft:interpolated",
@@ -56,6 +60,8 @@
             },
             "argument2": {
                 "type": "minecraft:spline",
+  "min_value": -1.5,
+   "max_value": 1.5,
                 "spline": {
                     "coordinate": "minecraft:y",
                     "points": [

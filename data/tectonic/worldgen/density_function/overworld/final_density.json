@@ -45,7 +45,7 @@
                           "argument1": 0.078125,
                           "argument2": {
                             "type": "minecraft:range_choice",
-                            "input": "tectonic:overworld/noise/depth",
+                            "input": "tectonic:overworld/noise/raw/depth",
                             "min_inclusive": -1000000,
                             "max_exclusive": 0.2,
                             "when_in_range": "tectonic:overworld/special/sloped_cheese",

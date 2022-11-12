@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
   modId="tectonic"
-  version="1.0.2"
+  version="1.0"
   displayName="Tectonic"
   logoFile="pack.png"
   authors="Apollo404, Catalyst"
@@ -22,6 +22,6 @@ license="All Rights Reserved"
   [[dependencies.tectonic]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.20)"
+    versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"

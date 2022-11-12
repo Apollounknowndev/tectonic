@@ -2,11 +2,23 @@
   "type": "minecraft:disk",
   "config": {
     "state": {
-      "Name": "minecraft:diorite"
+      "Name": "minecraft:gravel"
     },
     "radius": 4,
-    "half_height": 3,
+    "half_height": 1,
     "targets": [
+      {
+        "Name": "minecraft:stone"
+      },
+      {
+        "Name": "minecraft:granite"
+      },
+      {
+        "Name": "minecraft:diorite"
+      },
+      {
+        "Name": "minecraft:andesite"
+      },
       {
         "Name": "minecraft:dirt"
       },
@@ -39,6 +51,21 @@
       },
       {
         "Name": "minecraft:gravel"
+      },
+      {
+        "Name": "minecraft:gravel"
+      },
+      {
+        "Name": "minecraft:coal_ore"
+      },
+      {
+        "Name": "minecraft:copper_ore"
+      },
+      {
+        "Name": "minecraft:iron_ore"
+      },
+      {
+        "Name": "minecraft:lapis_ore"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-    "feature": "tectonic:common/disk/single/sand",
+    "feature": "tectonic:common/disk/sand",
     "placement": [
         {
             "type": "minecraft:count",

@@ -1,5 +1,5 @@
 {
-    "feature": "tectonic:common/disk/single/gravel",
+    "feature": "tectonic:common/disk/gravel",
     "placement": [
         {
             "type": "minecraft:count",

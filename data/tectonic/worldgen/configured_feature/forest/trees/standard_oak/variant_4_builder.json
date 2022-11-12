@@ -14,7 +14,7 @@
               "feature": {
                 "feature": "tectonic:forest/trees/standard_oak/treetop_variant_2",
                 "placement": [
-                                    {
+                  {
                     "type": "minecraft:environment_scan",
                     "direction_of_search": "up",
                     "max_steps": 8,

@@ -1,4 +1,5 @@
 {
+  "category": "swamp",
   "carvers": {
     "air": [
       "minecraft:cave",
@@ -42,10 +43,6 @@
     [],
     [],
     [
-      "tectonic:common/stone_in_deepslate",
-      "tectonic:common/deepslate_in_stone",
-      "tectonic:common/disk/magma",
-      "tectonic:common/disk/smooth_basalt",
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
       "minecraft:ore_granite_upper",
@@ -71,8 +68,7 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "tectonic:swamp/disk_clay",
-      "tectonic:swamp/disk_mud"
+      "tectonic:swamp/disk_clay"
     ],
     [],
     [
@@ -134,12 +130,6 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 8
-      },
-      {
-        "type": "minecraft:frog",
-        "maxCount": 5,
-        "minCount": 2,
-        "weight": 10
       }
     ],
     "misc": [],

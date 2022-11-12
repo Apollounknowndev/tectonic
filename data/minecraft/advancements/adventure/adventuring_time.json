@@ -113,22 +113,6 @@
       },
       "trigger": "minecraft:location"
     },
-    "minecraft:deep_dark": {
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "biome": "minecraft:deep_dark"
-              }
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:location"
-    },
     "minecraft:deep_frozen_ocean": {
       "conditions": {
         "player": [
@@ -394,22 +378,6 @@
             "predicate": {
               "location": {
                 "biome": "minecraft:lush_caves"
-              }
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:location"
-    },
-    "minecraft:mangrove_swamp": {
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "biome": "minecraft:mangrove_swamp"
               }
             }
           }
@@ -825,9 +793,6 @@
       "minecraft:swamp"
     ],
     [
-      "minecraft:mangrove_swamp"
-    ],
-    [
       "minecraft:snowy_slopes"
     ],
     [
@@ -928,9 +893,6 @@
     ],
     [
       "minecraft:lush_caves"
-    ],
-    [
-      "minecraft:deep_dark"
     ]
   ],
   "rewards": {
