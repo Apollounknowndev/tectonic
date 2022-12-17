@@ -26,7 +26,7 @@
     "lava": "tectonic:overworld/lava",
     "temperature": "minecraft:overworld/temperature",
     "vegetation": "minecraft:overworld/vegetation",
-    "continents": "minecraft:overworld/continents",
+    "continents": "tectonic:overworld/noise/continents",
     "erosion": "tectonic:overworld/noise/erosion",
     "depth": "tectonic:overworld/noise/depth_noise",
     "ridges": "minecraft:overworld/ridges",

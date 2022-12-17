@@ -2,7 +2,7 @@
     "type": "minecraft:cache_once",
     "argument": {
         "type": "minecraft:range_choice",
-        "input": "minecraft:overworld/continents",
+        "input": "tectonic:overworld/noise/continents",
         "min_inclusive": 0.025,
         "max_exclusive": 2,
         "when_in_range": {

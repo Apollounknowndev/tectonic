@@ -4,7 +4,7 @@
   "argument2": {
     "type": "minecraft:spline",
     "spline": {
-      "coordinate": "minecraft:overworld/continents",
+      "coordinate": "tectonic:overworld/noise/continents",
       "points": [
         {
           "location": -1,

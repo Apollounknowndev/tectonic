@@ -1,18 +1,7 @@
 {
     "type": "minecraft:spline",
     "spline": {
-      "coordinate": {
-        "type": "minecraft:flat_cache",
-        "argument": {
-          "type": "minecraft:shifted_noise",
-          "noise": "minecraft:continentalness",
-          "xz_scale": 0.25,
-          "y_scale": 0,
-          "shift_x": "minecraft:shift_x",
-          "shift_y": 0,
-          "shift_z": "minecraft:shift_z"
-        }
-      },
+      "coordinate": "tectonic:overworld/noise/continents",
       "points": [
         {
           "location": -1.05,

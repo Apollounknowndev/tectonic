@@ -2,7 +2,7 @@
     "type": "minecraft:range_choice",
     "input": {
         "type": "minecraft:interpolated",
-        "argument": "minecraft:overworld/continents"
+        "argument": "tectonic:overworld/noise/continents"
     },
     "min_inclusive": 0.05,
     "max_exclusive": 2,
