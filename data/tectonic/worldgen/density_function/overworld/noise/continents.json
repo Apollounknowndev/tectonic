@@ -1,7 +1,7 @@
 {
     "type": "minecraft:spline",
     "spline": {
-      "coordinate": "tectonic:overworld/noise/continents",
+      "coordinate": "minecraft:overworld/continents",
       "points": [
         {
           "location": -1.05,
