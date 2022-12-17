@@ -1,0 +1,194 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 0,
+    "y_spread": 0,
+    "feature": {
+      "feature": {
+        "type": "minecraft:random_selector",
+        "config": {
+          "features": [
+            {
+              "chance": 0.4,
+              "feature": {
+                "feature": "tectonic:forest/trees/standard_oak/piece/treetop",
+                "placement": [
+                  {
+                    "type": "minecraft:environment_scan",
+                    "direction_of_search": "up",
+                    "max_steps": 8,
+                    "target_condition": {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:air"
+                    },
+                    "allowed_search_condition": {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "#minecraft:oak_logs"
+                    }
+                  },
+                  {
+                    "type": "minecraft:random_offset",
+                    "xz_spread": {
+                      "type": "minecraft:weighted_list",
+                      "distribution": [
+                        {
+                          "weight": 1,
+                          "data": -1
+                        },
+                        {
+                          "weight": 1,
+                          "data": 1
+                        }
+                      ]
+                    },
+                    "y_spread": -1
+                  },
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates": [
+                        {
+                          "type": "minecraft:any_of",
+                          "predicates": [
+                            {
+                              "type": "minecraft:matching_blocks",
+                              "offset": [
+                                -1,
+                                -2,
+                                -1
+                              ],
+                              "blocks": "#minecraft:oak_logs"
+                            },
+                            {
+                              "type": "minecraft:matching_blocks",
+                              "offset": [
+                                1,
+                                -2,
+                                1
+                              ],
+                              "blocks": "#minecraft:oak_logs"
+                            },
+                            {
+                              "type": "minecraft:matching_blocks",
+                              "offset": [
+                                1,
+                                -2,
+                                -1
+                              ],
+                              "blocks": "#minecraft:oak_logs"
+                            },
+                            {
+                              "type": "minecraft:matching_blocks",
+                              "offset": [
+                                -1,
+                                -2,
+                                1
+                              ],
+                              "blocks": "#minecraft:oak_logs"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "minecraft:not",
+                          "predicate": {
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  0,
+                                  -2
+                                ],
+                                "blocks": "#minecraft:oak_logs"
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  0,
+                                  2
+                                ],
+                                "blocks": "#minecraft:oak_logs"
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  -2,
+                                  0,
+                                  0
+                                ],
+                                "blocks": "#minecraft:oak_logs"
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  2,
+                                  0,
+                                  0
+                                ],
+                                "blocks": "#minecraft:oak_logs"
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  0,
+                                  0
+                                ],
+                                "blocks": "#minecraft:oak_logs"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "minecraft:random_offset",
+                    "xz_spread": 0,
+                    "y_spread": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "default": {
+            "feature": {
+              "type": "minecraft:simple_random_selector",
+              "config": {
+                "features": [
+                  {
+                    "feature": "tectonic:forest/trees/standard_oak/piece/trunk_no_roots",
+                    "placement": []
+                  },
+                  {
+                    "feature": "tectonic:forest/trees/standard_oak/piece/trunk_with_roots",
+                    "placement": []
+                  }
+                ]
+              }
+            },
+            "placement": [
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": []
+    }
+  }
+}

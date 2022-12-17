@@ -7,105 +7,178 @@
             "coordinate": "minecraft:overworld/continents",
             "points": [
                 {
-                    "location": -1.005,
+                    "location": -1.14,
                     "derivative": 0,
                     "value": {
-                        "coordinate": "minecraft:overworld/erosion",
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
                         "points": [
                             {
-                                "location": -0.425,
+                                "location": 0.18,
                                 "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.05
-                                        }
-                                    ]
-                                }
+                                "value": -0.125
                             },
                             {
-                                "location": -0.375,
+                                "location": 0.20,
                                 "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
+                                "value": 0.004
                             },
                             {
-                                "location": -0.25,
+                                "location": 0.22,
                                 "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
+                                "value": 0.004
                             },
                             {
-                                "location": -0.2125,
+                                "location": 0.27,
                                 "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": {
-                                                "coordinate": "minecraft:overworld/temperature",
-                                                "points": [
-                                                    {
-                                                        "location": 0.0,
-                                                        "derivative": 0,
-                                                        "value": -0.3
-                                                    },
-                                                    {
-                                                        "location": 0.05,
-                                                        "derivative": 0,
-                                                        "value": -0.125
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                "value": -0.4
                             },
                             {
-                                "location": 0.2125,
+                                "location": 0.375,
+                                "derivative": 0,
+                                "value": -0.4
+                            },
+                            {
+                                "location": 0.425,
+                                "derivative": 0,
+                                "value": 0.05
+                            }
+                        ]
+                    }
+                },
+                {
+                    "location": -1.11,
+                    "derivative": 0,
+                    "value": {
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
+                        "points": [
+                            {
+                                "location": 0.22,
+                                "derivative": 0,
+                                "value": 0.004
+                            },
+                            {
+                                "location": 0.27,
+                                "derivative": 0,
+                                "value": -0.4
+                            },
+                            {
+                                "location": 0.375,
+                                "derivative": 0,
+                                "value": -0.4
+                            },
+                            {
+                                "location": 0.425,
+                                "derivative": 0,
+                                "value": 0.05
+                            }
+                        ]
+                    }
+                },
+                {
+                    "location": -1.075,
+                    "derivative": 0,
+                    "value": {
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
+                        "points": [
+                            {
+                                "location": 0.22,
+                                "derivative": 0,
+                                "value": 0.004
+                            },
+                            {
+                                "location": 0.27,
+                                "derivative": 0,
+                                "value": -0.4
+                            },
+                            {
+                                "location": 0.375,
+                                "derivative": 0,
+                                "value": -0.4
+                            },
+                            {
+                                "location": 0.425,
+                                "derivative": 0,
+                                "value": 0.05
+                            }
+                        ]
+                    }
+                },
+                {
+                    "location": -1,
+                    "derivative": 0,
+                    "value": -0.45
+                },
+                {
+                    "location": -0.45,
+                    "derivative": 0,
+                    "value": -0.45
+                },
+                {
+                    "location": -0.35,
+                    "derivative": 0,
+                    "value": -0.25
+                },
+                {
+                    "location": -0.22,
+                    "derivative": 0,
+                    "value": -0.125
+                },
+                {
+                    "location": -0.155,
+                    "derivative": 0,
+                    "value": {
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
+                        "points": [
+                            {
+                                "location": 0.12,
                                 "derivative": 0,
                                 "value": {
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
+                                            "location": -0.8,
+                                            "derivative": 0,
+                                            "value": 0.2
+                                        },
+                                        {
+                                            "location": -0.4,
+                                            "derivative": 0,
+                                            "value": 0.3
+                                        },
+                                        {
+                                            "location": -0.066,
+                                            "value": 0.2,
+                                            "derivative": 0
+                                        },
+                                        {
+                                            "location": -0.065,
+                                            "value": 0.2,
+                                            "derivative": -8
+                                        },
+                                        {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": {
-                                                "coordinate": "minecraft:overworld/temperature",
-                                                "points": [
-                                                    {
-                                                        "location": 0.0,
-                                                        "derivative": 0,
-                                                        "value": -0.3
-                                                    },
-                                                    {
-                                                        "location": 0.05,
-                                                        "derivative": 0,
-                                                        "value": -0.125
-                                                    }
-                                                ]
-                                            }
+                                            "value": -0.1
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "value": 0.006,
+                                            "derivative": 8
+                                        },
+                                        {
+                                            "location": 0.066,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
+                                            "location": 0.8,
+                                            "derivative": 0,
+                                            "value": 0.006
                                         }
                                     ]
                                 }
@@ -117,37 +190,62 @@
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
+                                            "location": -0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.3
+                                            "value": -0.1
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
                                         }
                                     ]
                                 }
                             },
                             {
-                                "location": 0.375,
+                                "location": 0.825,
                                 "derivative": 0,
                                 "value": {
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
+                                            "location": -0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.3
+                                            "value": -0.1
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
                                         }
                                     ]
                                 }
                             },
                             {
-                                "location": 0.425,
+                                "location": 0.85,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": 0.05
+                                            "value": -0.065
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": -0.015
                                         }
                                     ]
                                 }
@@ -156,87 +254,61 @@
                     }
                 },
                 {
-                    "location": -0.995,
+                    "location": -0.135,
                     "derivative": 0,
                     "value": {
-                        "coordinate": "minecraft:overworld/erosion",
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
                         "points": [
                             {
-                                "location": -0.425,
+                                "location": 0.12,
                                 "derivative": 0,
                                 "value": {
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
-                                            "location": 0,
+                                            "location": -0.8,
                                             "derivative": 0,
-                                            "value": 0.05
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.375,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.25,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.2125,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/temperature",
-                                    "points": [
-                                        {
-                                            "location": 0.0,
-                                            "derivative": 0,
-                                            "value": -0.3
+                                            "value": 0.2
                                         },
                                         {
-                                            "location": 0.05,
+                                            "location": -0.4,
                                             "derivative": 0,
-                                            "value": 0.0025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.2125,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/temperature",
-                                    "points": [
-                                        {
-                                            "location": 0.0,
-                                            "derivative": 0,
-                                            "value": -0.3
+                                            "value": 0.3
                                         },
                                         {
-                                            "location": 0.05,
+                                            "location": -0.066,
+                                            "value": 0.2,
+                                            "derivative": 0
+                                        },
+                                        {
+                                            "location": -0.065,
+                                            "value": 0.2,
+                                            "derivative": -8
+                                        },
+                                        {
+                                            "location": 0,
                                             "derivative": 0,
-                                            "value": 0.0025
+                                            "value": -0.08
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "value": 0.01,
+                                            "derivative": 8
+                                        },
+                                        {
+                                            "location": 0.066,
+                                            "derivative": 0,
+                                            "value": 0.01
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.01
+                                        },
+                                        {
+                                            "location": 0.8,
+                                            "derivative": 0,
+                                            "value": 0.01
                                         }
                                     ]
                                 }
@@ -248,37 +320,62 @@
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
+                                            "location": -0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.3
+                                            "value": -0.08
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
                                         }
                                     ]
                                 }
                             },
                             {
-                                "location": 0.375,
+                                "location": 0.825,
                                 "derivative": 0,
                                 "value": {
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
+                                            "location": -0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.3
+                                            "value": -0.08
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
                                         }
                                     ]
                                 }
                             },
                             {
-                                "location": 0.425,
+                                "location": 0.85,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": 0.05
+                                            "value": -0.08
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": -0.015
                                         }
                                     ]
                                 }
@@ -287,87 +384,61 @@
                     }
                 },
                 {
-                    "location": -0.96,
+                    "location": -0.12,
                     "derivative": 0,
                     "value": {
-                        "coordinate": "minecraft:overworld/erosion",
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
                         "points": [
                             {
-                                "location": -0.425,
+                                "location": 0.12,
                                 "derivative": 0,
                                 "value": {
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
-                                            "location": 0,
+                                            "location": -0.8,
                                             "derivative": 0,
-                                            "value": 0.05
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.375,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.25,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.2125,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/temperature",
-                                    "points": [
-                                        {
-                                            "location": 0.0,
-                                            "derivative": 0,
-                                            "value": -0.3
+                                            "value": 0.2
                                         },
                                         {
-                                            "location": 0.05,
+                                            "location": -0.4,
                                             "derivative": 0,
-                                            "value": 0.0025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.2125,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/temperature",
-                                    "points": [
-                                        {
-                                            "location": 0.0,
-                                            "derivative": 0,
-                                            "value": -0.3
+                                            "value": 0.3
                                         },
                                         {
-                                            "location": 0.05,
+                                            "location": -0.066,
+                                            "value": 0.2,
+                                            "derivative": 0
+                                        },
+                                        {
+                                            "location": -0.065,
+                                            "value": 0.2,
+                                            "derivative": -8
+                                        },
+                                        {
+                                            "location": 0,
                                             "derivative": 0,
-                                            "value": 0.0025
+                                            "value": -0.065
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "value": 0.2,
+                                            "derivative": 8
+                                        },
+                                        {
+                                            "location": 0.066,
+                                            "derivative": 0,
+                                            "value": 0.2
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.3
+                                        },
+                                        {
+                                            "location": 0.8,
+                                            "derivative": 0,
+                                            "value": 0.2
                                         }
                                     ]
                                 }
@@ -379,129 +450,62 @@
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
+                                            "location": -0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.3
+                                            "value": -0.065
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
                                         }
                                     ]
                                 }
                             },
                             {
-                                "location": 0.375,
+                                "location": 0.825,
                                 "derivative": 0,
                                 "value": {
                                     "coordinate": "minecraft:overworld/ridges",
                                     "points": [
                                         {
+                                            "location": -0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
+                                        },
+                                        {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.3
+                                            "value": -0.065
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.006
                                         }
                                     ]
                                 }
                             },
                             {
-                                "location": 0.425,
+                                "location": 0.85,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": 0.05
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "location": -0.91,
-                    "derivative": 0,
-                    "value": {
-                        "coordinate": "minecraft:overworld/erosion",
-                        "points": [
-                            {
-                                "location": 0,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
+                                            "value": -0.065
+                                        },
                                         {
-                                            "location": 0,
+                                            "location": 0.065,
                                             "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "location": -0.4375,
-                    "derivative": 0,
-                    "value": {
-                        "coordinate": "minecraft:overworld/erosion",
-                        "points": [
-                            {
-                                "location": 0,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.3
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "location": -0.3625,
-                    "derivative": 0,
-                    "value": {
-                        "coordinate": "minecraft:overworld/erosion",
-                        "points": [
-                            {
-                                "location": 0,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.15
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "location": -0.05,
-                    "derivative": 0,
-                    "value": {
-                        "coordinate": "minecraft:overworld/erosion",
-                        "points": [
-                            {
-                                "location": 0,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.125
+                                            "value": -0.015
                                         }
                                     ]
                                 }
@@ -513,324 +517,62 @@
                     "location": 0,
                     "derivative": 0,
                     "value": {
-                        "coordinate": "minecraft:overworld/erosion",
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
                         "points": [
                             {
-                                "location": -0.2,
+                                "location": 0.12,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.003
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.003
-                                        },
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.075
+                                            "value": -0.065
                                         },
                                         {
-                                            "location": 0.075,
+                                            "location": 0.065,
+                                            "value": 0.2,
+                                            "derivative": 8
+                                        },
+                                        {
+                                            "location": 0.066,
                                             "derivative": 0,
-                                            "value": 0.003
+                                            "value": 0.2
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.3
                                         },
                                         {
                                             "location": 0.8,
                                             "derivative": 0,
-                                            "value": 0.003
+                                            "value": 0.2
                                         }
                                     ]
                                 }
                             },
                             {
-                                "location": -0.15,
+                                "location": 0.25,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
+                                            "derivative": 0,
+                                            "value": -0.065
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.025
+                                        },
+                                        {
+                                            "location": 0.4,
                                             "derivative": 0,
                                             "value": 0.1
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.05,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.05,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.15,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.1
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.003
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.003
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.003
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.003
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "location": 0.04,
-                    "derivative": 0,
-                    "value": {
-                        "coordinate": "minecraft:overworld/erosion",
-                        "points": [
-                            {
-                                "location": -0.85,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.825,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.15,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.15
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.05,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.05,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.15,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.15
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
                                         },
                                         {
                                             "location": 0.8,
@@ -844,27 +586,22 @@
                                 "location": 0.825,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.075
+                                            "value": -0.065
                                         },
                                         {
-                                            "location": 0.075,
+                                            "location": 0.065,
                                             "derivative": 0,
                                             "value": 0.025
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.1
                                         },
                                         {
                                             "location": 0.8,
@@ -878,30 +615,15 @@
                                 "location": 0.85,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.075
+                                            "value": -0.065
                                         },
                                         {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": 0.8,
+                                            "location": 0.065,
                                             "derivative": 0,
                                             "value": -0.015
                                         }
@@ -912,339 +634,68 @@
                     }
                 },
                 {
-                    "location": 0.25,
+                    "location": 0.15,
                     "derivative": 0,
                     "value": {
-                        "coordinate": "minecraft:overworld/erosion",
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
                         "points": [
                             {
-                                "location": -0.85,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.825,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.15,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.175
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.05,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
+                                "__terrain_type": "mountain",
                                 "location": 0,
                                 "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.45
-                                        }
-                                    ]
-                                }
+                                "value": 0.75
                             },
                             {
-                                "location": 0.05,
+                                "__terrain_type": "highlands, no river",
+                                "location": 0.175,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
+                                            "value": 0.2,
+                                            "derivative": 0
+                                        },
+                                        {
+                                            "location": 0.4,
                                             "derivative": 0,
                                             "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.15,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
+                                        },
                                         {
-                                            "location": 0,
+                                            "location": 0.8,
                                             "derivative": 0,
-                                            "value": 0.175
+                                            "value": 0.2
                                         }
                                     ]
                                 }
                             },
                             {
+                                "__terrain_type": "highlands, no river valley",
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.075
+                                            "value": -0.125
                                         },
                                         {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
+                                            "location": 0.065,
+                                            "value": 0.2,
+                                            "derivative": 8
                                         },
                                         {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.825,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.85,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": -0.015
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "location": 0.45,
-                    "derivative": 0,
-                    "value": {
-                        "coordinate": "minecraft:overworld/erosion",
-                        "points": [
-                            {
-                                "location": -0.25,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
+                                            "location": 0.066,
                                             "derivative": 0,
                                             "value": 0.2
                                         },
                                         {
-                                            "location": -0.2,
+                                            "location": 0.4,
                                             "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.2,
-                                            "derivative": 0,
-                                            "value": 0.2
+                                            "value": 0.3
                                         },
                                         {
                                             "location": 0.8,
@@ -1255,120 +706,24 @@
                                 }
                             },
                             {
-                                "location": -0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.7
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        }
-                                    ]
-                                }
-                            },
-                            {
+                                "__terrain_type": "highlands",
                                 "location": 0.25,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.2,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
                                             "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
+                                            "value": -0.065,
+                                            "derivative": 0
                                         },
                                         {
-                                            "location": 0.075,
+                                            "location": 0.065,
+                                            "value": 0.025,
+                                            "derivative": 8
+                                        },
+                                        {
+                                            "location": 0.066,
                                             "derivative": 0,
                                             "value": 0.025
                                         },
@@ -1383,9 +738,89 @@
                                             "value": 0.2
                                         },
                                         {
+                                            "location": 0.5,
+                                            "value": 0.3,
+                                            "derivative": 0
+                                        },
+                                        {
                                             "location": 0.8,
                                             "derivative": 0,
                                             "value": 0.2
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "__terrain_type": "highlands",
+                                "location": 0.33,
+                                "derivative": 0,
+                                "value": {
+                                    "coordinate": "minecraft:overworld/ridges_folded",
+                                    "points": [
+                                        {
+                                            "location": 0,
+                                            "value": -0.065,
+                                            "derivative": 0
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "value": 0.025,
+                                            "derivative": 8
+                                        },
+                                        {
+                                            "location": 0.066,
+                                            "derivative": 0,
+                                            "value": 0.025
+                                        },
+                                        {
+                                            "location": 0.1,
+                                            "derivative": 0,
+                                            "value": 0.025
+                                        },
+                                        {
+                                            "location": 0.2,
+                                            "derivative": 0,
+                                            "value": 0.2
+                                        },
+                                        {
+                                            "location": 0.5,
+                                            "value": 0.3,
+                                            "derivative": 0
+                                        },
+                                        {
+                                            "location": 0.8,
+                                            "derivative": 0,
+                                            "value": 0.2
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "__terrain_type": "flat",
+                                "location": 0.39,
+                                "derivative": 0,
+                                "value": {
+                                    "coordinate": "minecraft:overworld/ridges_folded",
+                                    "points": [
+                                        {
+                                            "location": 0,
+                                            "derivative": 0,
+                                            "value": -0.065
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.025
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.1
+                                        },
+                                        {
+                                            "location": 0.8,
+                                            "derivative": 0,
+                                            "value": 0.025
                                         }
                                     ]
                                 }
@@ -1394,243 +829,96 @@
                     }
                 },
                 {
-                    "location": 0.7,
+                    "location": 0.8,
                     "derivative": 0,
                     "value": {
-                        "coordinate": "minecraft:overworld/erosion",
+                        "coordinate": "tectonic:overworld/noise/erosion_folded",
                         "points": [
                             {
-                                "location": -0.25,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.2,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.2,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        }
-                                    ]
-                                }
-                            },
-                            {
+                                "__terrain_type": "mountain",
                                 "location": 0,
                                 "derivative": 0,
+                                "value": 0.95
+                            },
+                            {
+                                "__terrain_type": "highlands, no river",
+                                "location": 0.175,
+                                "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
+                                            "value": 0.3,
+                                            "derivative": 0
+                                        },
+                                        {
+                                            "location": 0.4,
                                             "derivative": 0,
-                                            "value": 0.8
+                                            "value": 0.4
+                                        },
+                                        {
+                                            "location": 0.8,
+                                            "derivative": 0,
+                                            "value": 0.3
                                         }
                                     ]
                                 }
                             },
                             {
+                                "__terrain_type": "highlands, no river valley",
                                 "location": 0.2,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
                                         {
                                             "location": 0,
                                             "derivative": 0,
-                                            "value": -0.075
+                                            "value": -0.125
                                         },
                                         {
-                                            "location": 0.1,
+                                            "location": 0.065,
+                                            "value": 0.3,
+                                            "derivative": 8
+                                        },
+                                        {
+                                            "location": 0.066,
                                             "derivative": 0,
-                                            "value": 0.2
+                                            "value": 0.3
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.4
                                         },
                                         {
                                             "location": 0.8,
                                             "derivative": 0,
-                                            "value": 0.2
+                                            "value": 0.3
                                         }
                                     ]
                                 }
                             },
                             {
+                                "__terrain_type": "highlands",
                                 "location": 0.25,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.2,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
                                             "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
+                                            "value": -0.065,
+                                            "derivative": 0
                                         },
                                         {
-                                            "location": 0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
+                                            "location": 0.065,
+                                            "value": 0.025,
+                                            "derivative": 8
                                         },
                                         {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0.2,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.2
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "location": 0.9,
-                    "derivative": 0,
-                    "value": {
-                        "coordinate": "minecraft:overworld/erosion",
-                        "points": [
-                            {
-                                "location": -0.25,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        },
-                                        {
-                                            "location": -0.2,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
+                                            "location": 0.066,
                                             "derivative": 0,
                                             "value": 0.025
                                         },
@@ -1645,38 +933,9 @@
                                             "value": 0.3
                                         },
                                         {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": -0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.3
+                                            "location": 0.5,
+                                            "value": 0.4,
+                                            "derivative": 0
                                         },
                                         {
                                             "location": 0.8,
@@ -1687,86 +946,24 @@
                                 }
                             },
                             {
-                                "location": 0,
+                                "__terrain_type": "highlands",
+                                "location": 0.33,
                                 "derivative": 0,
                                 "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
+                                    "coordinate": "minecraft:overworld/ridges_folded",
                                     "points": [
                                         {
                                             "location": 0,
-                                            "derivative": 0,
-                                            "value": 0.95
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.2,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.3
+                                            "value": -0.065,
+                                            "derivative": 0
                                         },
                                         {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.3
+                                            "location": 0.065,
+                                            "value": 0.025,
+                                            "derivative": 8
                                         },
                                         {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.1,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        },
-                                        {
-                                            "location": 0.8,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "location": 0.25,
-                                "derivative": 0,
-                                "value": {
-                                    "coordinate": "minecraft:overworld/ridges",
-                                    "points": [
-                                        {
-                                            "location": -0.8,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        },
-                                        {
-                                            "location": -0.2,
-                                            "derivative": 0,
-                                            "value": 0.3
-                                        },
-                                        {
-                                            "location": -0.1,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": -0.075,
-                                            "derivative": 0,
-                                            "value": 0.025
-                                        },
-                                        {
-                                            "location": 0,
-                                            "derivative": 0,
-                                            "value": -0.075
-                                        },
-                                        {
-                                            "location": 0.075,
+                                            "location": 0.066,
                                             "derivative": 0,
                                             "value": 0.025
                                         },
@@ -1781,9 +978,44 @@
                                             "value": 0.3
                                         },
                                         {
+                                            "location": 0.5,
+                                            "value": 0.4,
+                                            "derivative": 0
+                                        },
+                                        {
                                             "location": 0.8,
                                             "derivative": 0,
                                             "value": 0.3
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "__terrain_type": "flat",
+                                "location": 0.39,
+                                "derivative": 0,
+                                "value": {
+                                    "coordinate": "minecraft:overworld/ridges_folded",
+                                    "points": [
+                                        {
+                                            "location": 0,
+                                            "derivative": 0,
+                                            "value": -0.065
+                                        },
+                                        {
+                                            "location": 0.065,
+                                            "derivative": 0,
+                                            "value": 0.025
+                                        },
+                                        {
+                                            "location": 0.4,
+                                            "derivative": 0,
+                                            "value": 0.1
+                                        },
+                                        {
+                                            "location": 0.8,
+                                            "derivative": 0,
+                                            "value": 0.025
                                         }
                                     ]
                                 }

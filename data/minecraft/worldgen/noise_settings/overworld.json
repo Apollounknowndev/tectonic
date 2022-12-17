@@ -47,16 +47,16 @@
         1
       ],
       "continentalness": [
-        0.05,
+        -0.11,
         1
       ],
       "erosion": [
-        -0.7,
-        0.7
+        -1,
+        1
       ],
       "weirdness": [
         -1,
-        -0.05
+        -0.16
       ],
       "depth": 0,
       "offset": 0
@@ -71,15 +71,15 @@
         1
       ],
       "continentalness": [
-        0.05,
+        -0.11,
         1
       ],
       "erosion": [
-        -0.7,
-        0.7
+        -1,
+        1
       ],
       "weirdness": [
-        0.05,
+        0.16,
         1
       ],
       "depth": 0,
@@ -337,11 +337,194 @@
             {
               "type": "minecraft:condition",
               "if_true": {
+                "type": "minecraft:y_above",
+                "anchor": {
+                  "absolute": 48
+                },
+                "surface_depth_multiplier": 1,
+                "add_stone_depth": false
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:biome",
+                  "biome_is": [
+                    "tectonic:sandstone_cliffs"
+                  ]
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:not",
+                    "invert": {
+                      "type": "minecraft:stone_depth",
+                      "offset": 0,
+                      "surface_type": "floor",
+                      "add_surface_depth": true,
+                      "secondary_depth_range": 0
+                    }
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:not",
+                "invert": {
+                  "type": "minecraft:y_above",
+                  "anchor": {
+                    "absolute": 68
+                  },
+                  "surface_depth_multiplier": 1,
+                  "add_stone_depth": false
+                }
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:biome",
+                  "biome_is": [
+                    "tectonic:white_cliffs",
+                    "minecraft:stony_shore",
+                    "tectonic:lukewarm_cliffs"
+                  ]
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:stone_depth",
+                    "offset": 0,
+                    "surface_type": "floor",
+                    "add_surface_depth": true,
+                    "secondary_depth_range": 0
+                  },
+                  "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                      {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                          "type": "minecraft:stone_depth",
+                          "offset": 0,
+                          "surface_type": "floor",
+                          "add_surface_depth": false,
+                          "secondary_depth_range": 0
+                        },
+                        "then_run": {
+                          "type": "minecraft:block",
+                          "result_state": {
+                            "Name": "minecraft:gravel"
+                          }
+                        }
+                      },
+                      {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "minecraft:stone"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:biome",
+                "biome_is": [
+                  "tectonic:white_cliffs"
+                ]
+              },
+              "then_run": {
+                "type": "minecraft:sequence",
+                "sequence": [
+                  {
+                    "type": "minecraft:condition",
+                    "if_true": {
+                      "type": "minecraft:y_above",
+                      "anchor": {
+                        "absolute": 65
+                      },
+                      "surface_depth_multiplier": 1,
+                      "add_stone_depth": false
+                    },
+                    "then_run": {
+                      "type": "minecraft:sequence",
+                      "sequence": [
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "minecraft:surface",
+                            "min_threshold": -0.9,
+                            "max_threshold": -0.55
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:calcite"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "minecraft:surface",
+                            "min_threshold": -0.2,
+                            "max_threshold": 0.2
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:calcite"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "minecraft:surface",
+                            "min_threshold": 0.55,
+                            "max_threshold": 0.9
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:calcite"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:block",
+                          "result_state": {
+                            "Name": "minecraft:diorite"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
                 "type": "minecraft:biome",
                 "biome_is": [
                   "minecraft:badlands",
                   "minecraft:eroded_badlands",
-                  "minecraft:wooded_badlands"
+                  "minecraft:wooded_badlands",
+                  "tectonic:badlands_spires"
                 ]
               },
               "then_run": {
@@ -381,7 +564,7 @@
                           "if_true": {
                             "type": "minecraft:y_above",
                             "anchor": {
-                              "absolute": 74
+                              "absolute": 88
                             },
                             "surface_depth_multiplier": 1,
                             "add_stone_depth": true
@@ -492,21 +675,6 @@
                           }
                         },
                         {
-                          "type": "minecraft:condition",
-                          "if_true": {
-                            "type": "minecraft:water",
-                            "offset": -6,
-                            "surface_depth_multiplier": -1,
-                            "add_stone_depth": true
-                          },
-                          "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                              "Name": "minecraft:white_terracotta"
-                            }
-                          }
-                        },
-                        {
                           "type": "minecraft:sequence",
                           "sequence": [
                             {
@@ -566,7 +734,7 @@
                               "invert": {
                                 "type": "minecraft:y_above",
                                 "anchor": {
-                                  "absolute": 74
+                                  "absolute": 88
                                 },
                                 "surface_depth_multiplier": 1,
                                 "add_stone_depth": true

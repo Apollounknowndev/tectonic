@@ -13,8 +13,8 @@
             "when_in_range": {
                 "type": "minecraft:range_choice",
                 "input": "minecraft:overworld/ridges",
-                "min_inclusive": -0.035,
-                "max_exclusive": 0.035,
+                "min_inclusive": -0.045,
+                "max_exclusive": 0.045,
                 "when_in_range": {
                     "type": "minecraft:range_choice",
                     "input": "tectonic:overworld/noise/depth",

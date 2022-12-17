@@ -1,10 +1,10 @@
 {
     "replace": false,
     "values": [
-        "tectonic:forest/trees/standard_oak/variant_1_checked",
-        "tectonic:forest/trees/standard_oak/variant_2_checked",
-        "tectonic:forest/trees/standard_oak/variant_3_checked",
-        "tectonic:forest/trees/standard_oak/variant_4_checked",
+        "tectonic:forest/trees/standard_oak/branching_adjacent",
+        "tectonic:forest/trees/standard_oak/branching_diagonal",
+        "tectonic:forest/trees/standard_oak/straight",
+        "tectonic:forest/trees/standard_oak/conifer",
         {
             "id": "arboria:_placer/oak_pine/1",
             "required": false

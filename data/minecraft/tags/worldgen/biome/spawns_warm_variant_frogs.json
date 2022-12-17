@@ -3,6 +3,9 @@
   "values": [
     "tectonic:warm_river",
     "tectonic:desert_dunes",
-    "tectonic:island"
+    "tectonic:island",
+    "tectonic:red_desert",
+    "tectonic:red_desert_dunes",
+    "tectonic:badlands_spires"
   ]
 }

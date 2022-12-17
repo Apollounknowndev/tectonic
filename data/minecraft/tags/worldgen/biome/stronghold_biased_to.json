@@ -11,6 +11,10 @@
     "tectonic:lukewarm_river",
     "tectonic:red_desert",
     "tectonic:red_desert_dunes",
-    "tectonic:warm_river"
+    "tectonic:warm_river",
+    "tectonic:badlands_spires",
+    "tectonic:evergreen_forest",
+    "tectonic:old_growth_evergreen_forest",
+    "tectonic:white_cliffs"
   ]
 }

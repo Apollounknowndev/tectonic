@@ -1,7 +1,6 @@
 {
     "replace": false,
     "values": [
-      "tectonic:ancient_river",
       "tectonic:coral_river",
       "tectonic:dripstone_river",
       "tectonic:icy_river",

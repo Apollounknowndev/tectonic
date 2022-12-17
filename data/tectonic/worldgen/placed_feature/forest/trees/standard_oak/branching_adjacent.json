@@ -1,5 +1,5 @@
 {
-    "feature": "tectonic:forest/trees/standard_oak/variant_3_builder",
+    "feature": "tectonic:forest/trees/standard_oak/branching_adjacent",
     "placement": [
         {
             "type": "minecraft:block_predicate_filter",

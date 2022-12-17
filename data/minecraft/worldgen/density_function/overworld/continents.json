@@ -1,12 +1,39 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:shifted_noise",
-    "noise": "minecraft:continentalness",
-    "xz_scale": 0.25,
-    "y_scale": 0,
-    "shift_x": "minecraft:shift_x",
-    "shift_y": 0,
-    "shift_z": "minecraft:shift_z"
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:flat_cache",
+        "argument": {
+          "type": "minecraft:shifted_noise",
+          "noise": "minecraft:continentalness",
+          "xz_scale": 0.25,
+          "y_scale": 0,
+          "shift_x": "minecraft:shift_x",
+          "shift_y": 0,
+          "shift_z": "minecraft:shift_z"
+        }
+      },
+      "points": [
+        {
+          "location": -1.05,
+          "value": -1.2,
+          "derivative": 0.2
+        },
+        {
+          "location": -0.9,
+          "value": -0.95,
+          "derivative": 0.2
+        },
+        {
+          "location": -0.05,
+          "value": -0.19,
+          "derivative": 1.8
+        },
+        {
+          "location": 1,
+          "value": 1,
+          "derivative": 1.2
+        }
+      ]
+    }
   }
-}

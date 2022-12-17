@@ -64,12 +64,11 @@
       "tectonic:common/disk/sand_ignore_heightmap"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
+      "tectonic:common/glow_lichen_cliffs",
+      "tectonic:common/seagrass_land",
       "tectonic:common/grass/patch_grass_very_sparse",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",

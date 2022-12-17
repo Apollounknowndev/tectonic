@@ -12,7 +12,11 @@
     "argument1": {
       "type": "minecraft:add",
       "argument1": "tectonic:overworld/noise/offset_noise",
-      "argument2": "tectonic:overworld/special/desert_dunes"
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": "tectonic:overworld/special/dunes/offset_sum",
+        "argument2": "tectonic:overworld/special/hoodoos/offset_sum"
+      }
     },
     "argument2": "tectonic:overworld/spline/offset"
   }

@@ -78,8 +78,10 @@
     [
       "minecraft:glow_lichen",
       "tectonic:forest/fallen_logs/birch",
+      "tectonic:forest/stumps/birch",
       "tectonic:forest/trees/trees_old_growth_birch",
       "tectonic:common/flowers_regular",
+      "tectonic:common/seagrass_land",
       "tectonic:common/grass/patch_grass_dense",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",

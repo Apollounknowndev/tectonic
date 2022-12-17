@@ -1,5 +1,5 @@
 {
-    "feature": "tectonic:forest/trees/standard_oak/variant_4_builder",
+    "feature": "tectonic:forest/trees/standard_oak/straight",
     "placement": [
         {
             "type": "minecraft:block_predicate_filter",

@@ -40,7 +40,6 @@
       "tectonic:common/deepslate_in_stone",
       "tectonic:common/disk/magma",
       "tectonic:common/disk/smooth_basalt",
-      "tectonic:desert/ore_sandstone",
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
       "minecraft:ore_granite_upper",
@@ -69,12 +68,11 @@
       "tectonic:common/disk/sand_ignore_heightmap"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:glow_lichen",
+      "tectonic:common/glow_lichen_cliffs",
+      "tectonic:common/seagrass_land",
       "tectonic:common/grass/patch_grass_very_sparse",
       "minecraft:patch_dead_bush_2",
       "minecraft:brown_mushroom_normal",

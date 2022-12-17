@@ -4,10 +4,17 @@
     {
       "type": "minecraft:count",
       "count": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:clamped",
         "value": {
           "min_inclusive": 1,
-          "max_inclusive": 2
+          "max_inclusive": 2,
+          "source": {
+            "type": "minecraft:uniform",
+            "value": {
+              "min_inclusive": 1,
+              "max_inclusive": 3
+            }
+          }
         }
       }
     },

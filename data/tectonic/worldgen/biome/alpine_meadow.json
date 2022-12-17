@@ -77,7 +77,8 @@
         "minecraft:glow_lichen",
         "tectonic:meadow/trees/trees_alpine_meadow",
         "minecraft:flower_meadow",
-        "tectonic:common/grass/patch_grass_regular"
+        "tectonic:common/seagrass_land",
+      "tectonic:common/grass/patch_grass_regular"
       ],
       [
         "minecraft:freeze_top_layer"

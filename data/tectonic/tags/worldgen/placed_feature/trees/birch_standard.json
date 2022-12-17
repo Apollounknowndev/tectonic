@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "tectonic:forest/trees/standard_birch/variant_1_checked",
+        "tectonic:forest/trees/standard_birch/variant_2_checked",
         {
             "id": "arboria:_placer/birch/1",
             "required": false
