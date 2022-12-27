@@ -8,7 +8,7 @@
             "argument": {
                 "type": "minecraft:mul",
                 "argument1": 24,
-                "argument2": "tectonic:overworld/noise/depth"
+                "argument2": "tectonic:overworld/noise/depth_with_hoodoos"
             }
         }
     }

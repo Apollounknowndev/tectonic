@@ -2,10 +2,6 @@
   "feature": "tectonic:common/grass/patch_grass",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 4
-    },
-    {
       "type": "minecraft:in_square"
     },
     {

@@ -28,7 +28,7 @@
                           "state": {
                             "Name": "minecraft:birch_log",
                             "Properties": {
-                              "axis": "x"
+                              "axis": "z"
                             }
                           }
                         }
@@ -39,7 +39,7 @@
                           "type": "minecraft:weighted_state_provider",
                           "entries": [
                             {
-                              "weight": 18,
+                              "weight": 14,
                               "data": {
                                 "Name": "minecraft:air"
                               }
@@ -49,7 +49,7 @@
                               "data": {
                                 "Name": "minecraft:bee_nest",
                                 "Properties": {
-                                  "facing": "north",
+                                  "facing": "east",
                                   "honey_level": "1"
                                 }
                               }
@@ -59,7 +59,7 @@
                               "data": {
                                 "Name": "minecraft:bee_nest",
                                 "Properties": {
-                                  "facing": "south",
+                                  "facing": "west",
                                   "honey_level": "1"
                                 }
                               }
@@ -111,18 +111,18 @@
                             {
                               "type": "minecraft:matching_blocks",
                               "offset": [
-                                -1,
                                 0,
-                                0
+                                0,
+                                -1
                               ],
                               "blocks": "minecraft:birch_log"
                             },
                             {
                               "type": "minecraft:matching_blocks",
                               "offset": [
-                                1,
                                 0,
-                                0
+                                0,
+                                1
                               ],
                               "blocks": "minecraft:birch_log"
                             }

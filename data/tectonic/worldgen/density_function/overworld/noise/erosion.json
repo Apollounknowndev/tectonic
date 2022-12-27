@@ -1,6 +1,6 @@
 {
   "type": "minecraft:range_choice",
-  "input": "tectonic:overworld/special/underground_rivers/parameters_strict",
+  "input": "tectonic:overworld/special/underground_rivers/parameters_3d",
   "min_inclusive": 0.9,
   "max_exclusive": 1.1,
   "when_in_range": -2,

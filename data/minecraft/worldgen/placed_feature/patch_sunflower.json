@@ -1,9 +1,9 @@
 {
-  "feature": "tectonic:common/grass/patch_grass",
+  "feature": "minecraft:patch_sunflower",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 7
+      "count": 4
     },
     {
       "type": "minecraft:rarity_filter",
@@ -14,7 +14,7 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
+      "heightmap": "MOTION_BLOCKING"
     },
     {
       "type": "minecraft:biome"

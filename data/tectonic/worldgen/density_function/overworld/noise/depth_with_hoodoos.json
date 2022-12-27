@@ -9,6 +9,10 @@
             "from_value": 1,
             "to_value": -2
         },
-        "argument2": "tectonic:overworld/spline/offset"
+        "argument2": {
+            "type": "minecraft:add",
+            "argument1": "tectonic:overworld/special/hoodoos/offset_sum",
+            "argument2": "tectonic:overworld/spline/offset"
+        }
     }
 }

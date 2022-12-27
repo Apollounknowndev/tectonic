@@ -1,6 +1,6 @@
 {
     "type": "minecraft:add",
-    "argument1": "tectonic:overworld/noise/depth",
+    "argument1": "tectonic:overworld/noise/depth_with_hoodoos",
     "argument2": {
         "type": "minecraft:mul",
         "argument1": "tectonic:overworld/spline/jaggedness",
