@@ -752,14 +752,14 @@
                     }
                   },
                   {
-                    "location": 0.15,
+                    "location": 0.125,
                     "derivative": 0,
                     "value": {
                       "coordinate": "tectonic:overworld/noise/erosion_folded",
                       "points": [
                         {
                           "location": 0,
-                          "derivative": 0,
+                          "derivative": -4.5,
                           "value": 0.75
                         },
                         {
@@ -948,7 +948,7 @@
                       "points": [
                         {
                           "location": 0,
-                          "derivative": 0,
+                          "derivative": -4.5,
                           "value": 0.95
                         },
                         {
