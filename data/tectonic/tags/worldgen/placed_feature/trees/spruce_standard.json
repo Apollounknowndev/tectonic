@@ -1,7 +1,9 @@
 {
     "replace": false,
     "values": [
-        "minecraft:spruce",
+        "tectonic:taiga/trees/standard_spruce/spruce_checked",
+        "tectonic:taiga/trees/standard_spruce/spruce_tall_checked",
+        "tectonic:taiga/trees/standard_spruce/pine_checked",
         {
             "id": "arboria:_placer/spruce/1",
             "required": false

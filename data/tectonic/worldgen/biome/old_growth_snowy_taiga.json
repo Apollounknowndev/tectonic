@@ -30,7 +30,8 @@
     [],
     [
       "minecraft:amethyst_geode",
-      "minecraft:forest_rock"
+      "tectonic:taiga/rocks/mossy_cobblestone",
+      "tectonic:taiga/rocks/cobblestone"
     ],
     [
       "minecraft:monster_room",
@@ -77,6 +78,7 @@
     ],
     [
       "minecraft:glow_lichen",
+      "tectonic:taiga/fallen_logs/spruce",
       "tectonic:taiga/trees/trees_old_growth_snowy_taiga",
       "tectonic:common/seagrass_land",
       "minecraft:brown_mushroom_normal",

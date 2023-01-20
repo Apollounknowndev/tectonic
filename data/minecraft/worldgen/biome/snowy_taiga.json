@@ -23,7 +23,8 @@
     [],
     [],
     [
-      "minecraft:amethyst_geode"
+      "minecraft:amethyst_geode",
+      "tectonic:taiga/rocks/cobblestone"
     ],
     [
       "minecraft:monster_room",

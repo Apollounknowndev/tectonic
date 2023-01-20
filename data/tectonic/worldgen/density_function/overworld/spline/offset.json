@@ -642,7 +642,7 @@
                     }
                   },
                   {
-                    "location": 0.075,
+                    "location": 0.0625,
                     "derivative": 0,
                     "value": {
                       "coordinate": "tectonic:overworld/noise/erosion_folded",
@@ -752,7 +752,7 @@
                     }
                   },
                   {
-                    "location": 0.125,
+                    "location": 0.1375,
                     "derivative": 0,
                     "value": {
                       "coordinate": "tectonic:overworld/noise/erosion_folded",

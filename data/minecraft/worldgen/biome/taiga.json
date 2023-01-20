@@ -23,7 +23,8 @@
     [],
     [],
     [
-      "minecraft:amethyst_geode"
+      "minecraft:amethyst_geode",
+      "tectonic:taiga/rocks/cobblestone"
     ],
     [
       "minecraft:monster_room",
@@ -70,6 +71,7 @@
     ],
     [
       "minecraft:glow_lichen",
+      "tectonic:taiga/fallen_logs/spruce",
       "tectonic:taiga/trees/trees_taiga",
       "tectonic:common/flowers_cold",
       "tectonic:common/seagrass_land",
