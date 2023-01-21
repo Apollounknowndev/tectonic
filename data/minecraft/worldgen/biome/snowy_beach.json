@@ -81,6 +81,7 @@
     ]
   ],
   "precipitation": "snow",
+    "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
     "ambient": [

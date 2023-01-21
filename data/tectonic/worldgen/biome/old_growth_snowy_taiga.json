@@ -96,6 +96,7 @@
   ],
   "temperature": 0,
   "precipitation": "rain",
+    "has_precipitation": true,
   "spawners": {
     "ambient": [
       {

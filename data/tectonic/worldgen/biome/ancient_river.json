@@ -76,6 +76,7 @@
     ]
   ],
   "precipitation": "rain",
+    "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
     "ambient": [
