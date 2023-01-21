@@ -6,7 +6,7 @@
       "minecraft:canyon"
     ]
   },
-  "downfall": 0.5,
+  "downfall": 0.0,
   "effects": {
     "fog_color": 12638463,
     "mood_sound": {
@@ -80,7 +80,7 @@
       "minecraft:freeze_top_layer"
     ]
   ],
-  "precipitation": "rain",
+  "precipitation": "none",
   "spawn_costs": {},
   "spawners": {
     "ambient": [
@@ -175,5 +175,5 @@
       }
     ]
   },
-  "temperature": 0.5
+  "temperature": 2.0
 }
