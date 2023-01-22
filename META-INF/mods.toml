@@ -1,10 +1,10 @@
 modLoader="lowcodefml"
-loaderVersion="[40,)"
+loaderVersion="[41,)"
 license="All Rights Reserved"
 
 [[mods]]
   modId="tectonic"
-  version="1.1.5"
+  version="1.1.6"
   displayName="Tectonic"
   logoFile="pack.png"
   authors="Apollo404, Catalyst"
@@ -15,13 +15,13 @@ license="All Rights Reserved"
   [[dependencies.tectonic]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
 
   [[dependencies.tectonic]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.20)"
+    versionRange="[1.19.3]"
     ordering="NONE"
     side="BOTH"
