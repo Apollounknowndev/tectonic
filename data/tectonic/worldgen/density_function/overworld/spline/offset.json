@@ -15,104 +15,26 @@
                 "coordinate": "tectonic:overworld/noise/continents",
                 "points": [
                   {
-                    "location": -1.14,
+                    "location": -0.7,
                     "derivative": 0,
                     "value": {
                       "coordinate": "tectonic:overworld/noise/erosion_folded",
                       "points": [
                         {
-                          "location": 0.18,
+                          "location": 0.475,
                           "derivative": 0,
-                          "value": -0.125
+                          "value": -0.45
                         },
                         {
-                          "location": 0.2,
+                          "location": 0.675,
                           "derivative": 0,
-                          "value": 0.004
-                        },
-                        {
-                          "location": 0.22,
-                          "derivative": 0,
-                          "value": 0.004
-                        },
-                        {
-                          "location": 0.27,
-                          "derivative": 0,
-                          "value": -0.4
-                        },
-                        {
-                          "location": 0.375,
-                          "derivative": 0,
-                          "value": -0.4
-                        },
-                        {
-                          "location": 0.425,
-                          "derivative": 0,
-                          "value": 0.05
+                          "value": 0.005
                         }
                       ]
                     }
                   },
                   {
-                    "location": -1.11,
-                    "derivative": 0,
-                    "value": {
-                      "coordinate": "tectonic:overworld/noise/erosion_folded",
-                      "points": [
-                        {
-                          "location": 0.22,
-                          "derivative": 0,
-                          "value": 0.004
-                        },
-                        {
-                          "location": 0.27,
-                          "derivative": 0,
-                          "value": -0.4
-                        },
-                        {
-                          "location": 0.375,
-                          "derivative": 0,
-                          "value": -0.4
-                        },
-                        {
-                          "location": 0.425,
-                          "derivative": 0,
-                          "value": 0.05
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "location": -1.075,
-                    "derivative": 0,
-                    "value": {
-                      "coordinate": "tectonic:overworld/noise/erosion_folded",
-                      "points": [
-                        {
-                          "location": 0.22,
-                          "derivative": 0,
-                          "value": 0.004
-                        },
-                        {
-                          "location": 0.27,
-                          "derivative": 0,
-                          "value": -0.4
-                        },
-                        {
-                          "location": 0.375,
-                          "derivative": 0,
-                          "value": -0.4
-                        },
-                        {
-                          "location": 0.425,
-                          "derivative": 0,
-                          "value": 0.05
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "location": -1,
+                    "location": -0.6,
                     "derivative": 0,
                     "value": -0.45
                   },
@@ -124,7 +46,7 @@
                   {
                     "location": -0.35,
                     "derivative": 0,
-                    "value": -0.25
+                    "value": -0.15
                   },
                   {
                     "location": -0.22,

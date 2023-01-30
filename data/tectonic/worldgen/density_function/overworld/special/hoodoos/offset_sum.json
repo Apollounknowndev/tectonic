@@ -4,83 +4,78 @@
         "coordinate": "tectonic:overworld/noise/continents",
         "points": [
             {
-                "location": 0.3,
+                "location": -0.275,
                 "derivative": 0,
                 "value": 0
             },
             {
-                "location": 0.325,
+                "location": -0.25,
                 "derivative": 0,
                 "value": {
-                    "coordinate": "minecraft:overworld/erosion",
+                    "coordinate": {
+                        "type": "minecraft:abs",
+                        "argument": {
+                            "type": "minecraft:noise",
+                            "noise": "tectonic:hoodoo",
+                            "xz_scale": 0.25,
+                            "y_scale": 0
+                        }
+                    },
                     "points": [
                         {
-                            "location": -0.45,
+                            "location": 0.5,
                             "derivative": 0,
-                            "value": {
-                                "coordinate": "minecraft:overworld/ridges_folded",
-                                "points": [
-                                    {
-                                        "location": 0.125,
-                                        "derivative": 0,
-                                        "value": 0
-                                    },
-                                    {
-                                        "location": 0.2,
-                                        "derivative": 0,
-                                        "value": {
-                                            "coordinate": "minecraft:overworld/temperature",
-                                            "points": [
-                                                {
-                                                    "location": 0.55,
-                                                    "derivative": 0,
-                                                    "value": 0
-                                                },
-                                                {
-                                                    "location": 0.6,
-                                                    "derivative": 0,
-                                                    "value": {
-                                                        "coordinate": {
-                                                            "type": "minecraft:abs",
-                                                            "argument": {
-                                                                "type": "minecraft:noise",
-                                                                "noise": "tectonic:hoodoo",
-                                                                "xz_scale": 0.25,
-                                                                "y_scale": 0
-                                                            }
-                                                        },
-                                                        "points": [
-                                                            {
-                                                                "location": 0.5,
-                                                                "derivative": 0,
-                                                                "value": 0
-                                                            },
-                                                            {
-                                                                "location": 0.7,
-                                                                "derivative": 0,
-                                                                "value": 0.4
-                                                            },
-                                                            {
-                                                                "location": 0.9,
-                                                                "derivative": 0,
-                                                                "value": 0
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
+                            "value": 0
                         },
                         {
-                            "location": -0.4,
+                            "location": 0.7,
+                            "derivative": 0,
+                            "value": 0.4
+                        },
+                        {
+                            "location": 0.9,
                             "derivative": 0,
                             "value": 0
                         }
                     ]
                 }
+            },
+            {
+                "location": -0.225,
+                "derivative": 0,
+                "value": {
+                    "coordinate": {
+                        "type": "minecraft:abs",
+                        "argument": {
+                            "type": "minecraft:noise",
+                            "noise": "tectonic:hoodoo",
+                            "xz_scale": 0.25,
+                            "y_scale": 0
+                        }
+                    },
+                    "points": [
+                        {
+                            "location": 0.5,
+                            "derivative": 0,
+                            "value": 0
+                        },
+                        {
+                            "location": 0.7,
+                            "derivative": 0,
+                            "value": 0.4
+                        },
+                        {
+                            "location": 0.9,
+                            "derivative": 0,
+                            "value": 0
+                        }
+                    ]
+                }
+            },
+            {
+                "location": -0.2,
+                "derivative": 0,
+                "value": 0
             }
         ]
     }

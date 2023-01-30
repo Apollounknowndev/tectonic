@@ -77,8 +77,8 @@
     [],
     [
       "minecraft:glow_lichen",
-      "tectonic:taiga/trees/trees_grove",
       "tectonic:common/seagrass_land",
+      "tectonic:taiga/trees/trees_grove",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin"
     ],

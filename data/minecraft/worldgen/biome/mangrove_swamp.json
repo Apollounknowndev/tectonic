@@ -81,8 +81,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_mangrove",
       "tectonic:common/seagrass_land",
+      "minecraft:trees_mangrove",
       "tectonic:common/grass/patch_grass_sparse",
       "minecraft:patch_dead_bush",
       "minecraft:patch_waterlily",

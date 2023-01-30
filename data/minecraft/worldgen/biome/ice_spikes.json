@@ -74,8 +74,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_snowy",
       "tectonic:common/seagrass_land",
+      "minecraft:trees_snowy",
       "tectonic:common/grass/patch_grass_very_sparse",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",

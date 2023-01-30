@@ -74,11 +74,11 @@
     ],
     [
       "minecraft:glow_lichen",
+      "tectonic:common/seagrass_land",
       "tectonic:forest/fallen_logs/oak",
       "tectonic:forest/stumps/oak",
       "tectonic:forest/trees/trees_autumn",
       "tectonic:common/flowers_regular",
-      "tectonic:common/seagrass_land",
       "tectonic:common/grass/patch_grass_dense",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",

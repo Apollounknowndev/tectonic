@@ -72,11 +72,11 @@
     ],
     [
       "minecraft:glow_lichen",
+      "tectonic:common/seagrass_land",
       "tectonic:desert/trees/trees_red_desert",
       "tectonic:desert/red_desert_patch_dead_bush",
       "tectonic:desert/red_desert_grass",
       "tectonic:desert/tall_cacti",
-      "tectonic:common/seagrass_land",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane_badlands",

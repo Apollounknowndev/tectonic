@@ -71,8 +71,8 @@
     ],
     [
       "minecraft:glow_lichen",
-      "tectonic:plains/trees/trees_snowy_plains",
       "tectonic:common/seagrass_land",
+      "tectonic:plains/trees/trees_snowy_plains",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane"
