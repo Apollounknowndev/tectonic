@@ -181,7 +181,7 @@
                         ],
                         "offset": 0
                     },
-                    "biome": "tectonic:island"
+                    "biome": "minecraft:mushroom_fields"
                 },
                 {
                     "parameters": {
@@ -10921,7 +10921,7 @@
                         ],
                         "offset": 0
                     },
-                    "biome": "tectonic:island"
+                    "biome": "minecraft:mushroom_fields"
                 },
                 {
                     "parameters": {
