@@ -13,61 +13,17 @@
               "chance": 0.25,
               "feature": {
                 "feature": {
-                  "type": "minecraft:block_column",
+                  "type": "minecraft:simple_block",
                   "config": {
-                    "direction": "down",
-                    "allowed_placement": {
-                      "type": "minecraft:true"
-                    },
-                    "prioritize_tip": false,
-                    "layers": [
-                      {
-                        "height": 1,
-                        "provider": {
-                          "type": "minecraft:simple_state_provider",
-                          "state": {
-                            "Name": "minecraft:birch_log",
-                            "Properties": {
-                              "axis": "z"
-                            }
-                          }
-                        }
-                      },
-                      {
-                        "height": 1,
-                        "provider": {
-                          "type": "minecraft:weighted_state_provider",
-                          "entries": [
-                            {
-                              "weight": 14,
-                              "data": {
-                                "Name": "minecraft:air"
-                              }
-                            },
-                            {
-                              "weight": 1,
-                              "data": {
-                                "Name": "minecraft:bee_nest",
-                                "Properties": {
-                                  "facing": "east",
-                                  "honey_level": "1"
-                                }
-                              }
-                            },
-                            {
-                              "weight": 1,
-                              "data": {
-                                "Name": "minecraft:bee_nest",
-                                "Properties": {
-                                  "facing": "west",
-                                  "honey_level": "1"
-                                }
-                              }
-                            }
-                          ]
+                    "to_place": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:birch_log",
+                        "Properties": {
+                          "axis": "z"
                         }
                       }
-                    ]
+                    }
                   }
                 },
                 "placement": [
@@ -247,7 +203,12 @@
                   "offset": 0,
                   "height": 3
                 },
-                "decorators": []
+                "decorators": [
+                  {
+                    "type": "minecraft:beehive",
+                    "probability": 0.005
+                  }
+                ]
               }
             },
             "placement": [

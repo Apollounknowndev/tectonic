@@ -32,6 +32,7 @@
     [],
     [],
     [
+      "tectonic:common/steep/stone",
       "tectonic:common/stone_in_deepslate",
       "tectonic:common/deepslate_in_stone",
       "tectonic:common/disk/magma",
@@ -61,6 +62,7 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
+      "tectonic:common/disk/clay",
       "tectonic:common/disk/diorite",
       "tectonic:common/disk/calcite"
     ],

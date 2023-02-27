@@ -65,6 +65,7 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
+      "tectonic:common/disk/clay",
       "tectonic:common/disk/gravel_ignore_heightmap",
       "tectonic:snowy/replace_dripstone_upper",
       "tectonic:snowy/replace_dripstone_lower"

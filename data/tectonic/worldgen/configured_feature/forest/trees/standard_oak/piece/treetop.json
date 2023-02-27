@@ -64,6 +64,10 @@
     },
     "decorators": [
       {
+        "type": "minecraft:beehive",
+        "probability": 0.005
+      },
+      {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.66,
         "exclusion_radius_xz": 1,

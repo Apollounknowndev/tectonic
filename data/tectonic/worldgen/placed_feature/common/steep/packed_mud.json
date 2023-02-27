@@ -1,0 +1,16 @@
+{
+    "feature": "tectonic:common/steep/packed_mud",
+    "placement": [
+      {
+        "type": "minecraft:count",
+        "count": 128
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+  

@@ -53,6 +53,11 @@
             },
             "crown_height": 10
         },
-        "decorators": []
+        "decorators": [
+            {
+                "type": "minecraft:beehive",
+                "probability": 0.005
+            }
+        ]
     }
 }

@@ -39,6 +39,7 @@
     [],
     [],
     [
+      "tectonic:common/steep/stone",
       "tectonic:common/stone_in_deepslate",
       "tectonic:common/deepslate_in_stone",
       "tectonic:common/disk/magma",

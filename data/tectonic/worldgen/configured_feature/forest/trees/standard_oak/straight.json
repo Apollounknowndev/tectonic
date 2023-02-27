@@ -56,6 +56,10 @@
                             },
                             "decorators": [
                                 {
+                                    "type": "minecraft:beehive",
+                                    "probability": 0.005
+                                },
+                                {
                                     "type": "minecraft:trunk_vine"
                                 }
                             ]
@@ -115,7 +119,12 @@
                         "offset": 0,
                         "height": 3
                     },
-                    "decorators": []
+                    "decorators": [
+                        {
+                            "type": "minecraft:beehive",
+                            "probability": 0.005
+                        }
+                    ]
                 }
             },
             "placement": []

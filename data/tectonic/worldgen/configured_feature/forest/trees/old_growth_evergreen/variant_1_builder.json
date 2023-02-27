@@ -2,8 +2,8 @@
     "config": {
       "decorators": [
         {
-          "probability": 0.002,
-          "type": "minecraft:beehive"
+          "type": "minecraft:beehive",
+          "probability": 0.005
         }
       ],
       "ignore_vines": true,
