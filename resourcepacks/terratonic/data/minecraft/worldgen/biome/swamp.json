@@ -82,7 +82,7 @@
     [
       "minecraft:glow_lichen",
       "tectonic:common/seagrass_land",
-      "tectonic:swamp/trees/trees_swamp",
+      "minecraft:trees_swamp",
       "minecraft:flower_swamp",
       "tectonic:common/grass/patch_grass_sparse",
       "minecraft:patch_dead_bush",

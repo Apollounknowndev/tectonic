@@ -1,12 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "tectonic",
-  "version": "1.1.9b",
+  "version": "1.1.10",
   "name": "Tectonic",
-  "description": "25+ new biomes, new terrain features, and more!",
+  "description": "Enhanced terrain generation with mountain ranges, underground rivers, and more!",
   "authors": [
-    "Apollo404",
-    "Catalyst"
+    "Apollo"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/tectonic"

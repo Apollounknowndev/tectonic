@@ -83,7 +83,7 @@
       "tectonic:forest/fallen_logs/oak",
       "tectonic:forest/stumps/oak",
       "minecraft:flower_forest_flowers",
-      "tectonic:forest/trees/trees_flower_forest",
+      "minecraft:trees_flower_forest",
       "minecraft:flower_flower_forest",
       "tectonic:common/grass/patch_grass_very_sparse",
       "minecraft:brown_mushroom_normal",

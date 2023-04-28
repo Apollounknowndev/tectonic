@@ -73,7 +73,7 @@
       "minecraft:glow_lichen",
       "tectonic:common/seagrass_land",
       "tectonic:taiga/fallen_logs/spruce",
-      "tectonic:taiga/trees/trees_taiga",
+      "minecraft:trees_taiga",
       "tectonic:common/flowers_cold",
       "tectonic:common/grass/patch_grass_dense",
       "minecraft:brown_mushroom_taiga",

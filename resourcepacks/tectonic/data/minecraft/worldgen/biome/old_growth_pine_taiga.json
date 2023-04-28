@@ -83,7 +83,7 @@
       "tectonic:common/seagrass_land",
       "tectonic:taiga/fallen_logs/spruce",
       "minecraft:patch_large_fern",
-      "tectonic:taiga/trees/trees_old_growth_pine_taiga",
+      "minecraft:trees_old_growth_pine_taiga",
       "tectonic:common/flowers_cold",
       "tectonic:common/grass/patch_grass_dense",
       "minecraft:patch_dead_bush",
