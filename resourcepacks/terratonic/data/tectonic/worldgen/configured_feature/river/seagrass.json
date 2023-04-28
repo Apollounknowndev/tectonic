@@ -1,0 +1,50 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+      "tries": 48,
+      "xz_spread": 4,
+      "y_spread": 1,
+      "feature": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:seagrass"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_fluids",
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "fluids": "minecraft:water"
+                },
+                {
+                  "type": "minecraft:has_sturdy_face",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "direction": "up"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+  

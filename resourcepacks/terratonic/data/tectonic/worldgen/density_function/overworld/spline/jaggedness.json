@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": "tectonic:overworld/special/hoodoos/jaggedness_sum",
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "tectonic:overworld/noise/continents",
+          "points": [
+            {
+              "location": -1,
+              "derivative": 0,
+              "value": 0
+            },
+            {
+              "location": 0.0625,
+              "derivative": 0,
+              "value": 0
+            },
+            {
+              "location": 0.1375,
+              "derivative": 0,
+              "value": {
+                "coordinate": "tectonic:overworld/noise/erosion_folded",
+                "points": [
+                  {
+                    "location": 0.06,
+                    "derivative": 0,
+                    "value": 0.4
+                  },
+                  {
+                    "location": 0.08,
+                    "derivative": 0,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            {
+              "location": 1,
+              "derivative": 0,
+              "value": {
+                "coordinate": "tectonic:overworld/noise/erosion_folded",
+                "points": [
+                  {
+                    "location": 0.06,
+                    "derivative": 0,
+                    "value": 0.6
+                  },
+                  {
+                    "location": 0.08,
+                    "derivative": 0,
+                    "value": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.05,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_random_selector",
+            "config": {
+              "features": "#tectonic:trees/birch_fancy_evergreen"
+            }
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_random_selector",
+        "config": {
+          "features": "#tectonic:trees/birch_standard_evergreen"
+        }
+      },
+      "placement": []
+    }
+  }
+}

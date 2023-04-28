@@ -1,0 +1,5 @@
+{
+    "type": "minecraft:add",
+    "argument1": "tectonic:overworld/caves/spaghetti_2d",
+    "argument2": "tectonic:overworld/caves/spaghetti_roughness_function"
+}

@@ -1,0 +1,67 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+      "direction": "up",
+      "allowed_placement": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "blocks": "minecraft:air"
+      },
+      "prioritize_tip": true,
+      "layers": [
+        {
+          "height": {
+            "type": "minecraft:uniform",
+            "value": {
+              "min_inclusive": 8,
+              "max_inclusive": 20
+            }
+          },
+          "provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:bamboo",
+              "Properties": {
+                "age": "0",
+                "leaves": "none",
+                "stage": "0"
+              }
+            }
+          }
+        },
+        {
+          "height": 1,
+          "provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:bamboo",
+              "Properties": {
+                "age": "0",
+                "stage": "0",
+                "leaves": "small"
+              }
+            }
+          }
+        },
+        {
+          "height": 2,
+          "provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:bamboo",
+              "Properties": {
+                "stage": "0",
+                "age": "0",
+                "leaves": "large"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+  

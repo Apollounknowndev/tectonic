@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:add",
+    "argument1": "tectonic:overworld/noise/depth_with_hoodoos",
+    "argument2": {
+        "type": "minecraft:mul",
+        "argument1": "tectonic:overworld/spline/jaggedness",
+        "argument2": {
+            "type": "minecraft:quarter_negative",
+            "argument": {
+                "type": "minecraft:noise",
+                "noise": "minecraft:jagged",
+                "xz_scale": 1500,
+                "y_scale": 0
+            }
+        }
+    }
+}

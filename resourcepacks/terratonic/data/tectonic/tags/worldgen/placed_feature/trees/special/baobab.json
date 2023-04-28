@@ -1,0 +1,19 @@
+{
+    "__COMMENT": "tectonic:nothing is included here to prevent a crash.",
+    "replace": false,
+    "values": [
+        "tectonic:nothing",
+        {
+            "id": "arboria:_placer/baobab/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/baobab/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/baobab/3",
+            "required": false
+        }
+    ]
+}

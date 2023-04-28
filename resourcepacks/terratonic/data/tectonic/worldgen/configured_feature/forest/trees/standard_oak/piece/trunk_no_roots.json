@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": true,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:clamped",
+                    "value": {
+                        "min_inclusive": 2,
+                        "max_inclusive": 4,
+                        "source": {
+                            "type": "minecraft:uniform",
+                            "value": {
+                                "min_inclusive": 1,
+                                "max_inclusive": 4
+                            }
+                        }
+                    }
+                },
+                "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:oak_log",
+                        "Properties": {
+                            "axis": "y"
+                        }
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:oak_wood",
+                        "Properties": {
+                            "axis": "y"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

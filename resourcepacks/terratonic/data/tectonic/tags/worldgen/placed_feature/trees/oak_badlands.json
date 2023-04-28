@@ -1,0 +1,33 @@
+{
+    "replace": false,
+    "values": [
+        "tectonic:forest/trees/standard_oak/branching_adjacent",
+        "tectonic:forest/trees/standard_oak/branching_diagonal",
+        "tectonic:forest/trees/standard_oak/straight",
+        "tectonic:forest/trees/standard_oak/conifer",
+        {
+            "id": "arboria:_placer/oak_pine/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/4",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/5",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/oak_pine/6",
+            "required": false
+        }
+    ]
+}

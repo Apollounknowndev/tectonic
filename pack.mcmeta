@@ -1,6 +1,6 @@
 {
-  "pack": {
-    "pack_format": 10,
-    "description": "v1.1.9 for 1.19.x"
-  }
+    "pack": {
+        "description": "",
+        "pack_format": 10
+    }
 }

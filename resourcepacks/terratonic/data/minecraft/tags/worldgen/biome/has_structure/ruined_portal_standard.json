@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tectonic:grasslands",
+    "tectonic:cold_plains",
+    "tectonic:evergreen_forest",
+    "tectonic:old_growth_evergreen_forest"
+  ]
+}

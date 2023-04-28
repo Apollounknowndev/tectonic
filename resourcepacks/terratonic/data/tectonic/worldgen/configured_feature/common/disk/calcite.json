@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:noise_provider",
+        "seed": 7890,
+        "noise": {
+          "firstOctave": -5,
+          "amplitudes": [
+            1,
+            1,
+            1
+          ]
+        },
+        "scale": 1,
+        "states": [
+          {
+            "Name": "minecraft:calcite"
+          },
+          {
+            "Name": "minecraft:diorite"
+          }
+        ]
+      },
+      "rules": []
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": "minecraft:diorite"
+    },
+    "radius": 4,
+    "half_height": 3
+  }
+}

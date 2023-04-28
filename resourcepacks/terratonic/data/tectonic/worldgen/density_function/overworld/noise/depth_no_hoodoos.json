@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:cache_once",
+    "argument": {
+        "type": "minecraft:add",
+        "argument1": {
+            "type": "minecraft:y_clamped_gradient",
+            "from_y": -64,
+            "to_y": 320,
+            "from_value": 1,
+            "to_value": -2
+        },
+        "argument2": "tectonic:overworld/spline/offset"
+    }
+}

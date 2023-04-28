@@ -1,0 +1,19 @@
+{
+    "__COMMENT": "tectonic:nothing is included here to prevent a crash.",
+    "replace": false,
+    "values": [
+        "tectonic:nothing",
+        {
+            "id": "arboria:_placer/birch_bush/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/birch_bush/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/birch_bush/3",
+            "required": false
+        }
+    ]
+}

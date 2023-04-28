@@ -1,0 +1,42 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:acacia_checked",
+        {
+            "id": "arboria:_placer/acacia/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/4",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/5",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/6",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/7",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/8",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/acacia/9",
+            "required": false
+        }
+    ]
+}

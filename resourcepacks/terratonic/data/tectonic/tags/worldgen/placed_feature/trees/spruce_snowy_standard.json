@@ -1,0 +1,44 @@
+{
+    "replace": false,
+    "values": [
+        "tectonic:taiga/trees/standard_spruce/spruce_checked",
+        "tectonic:taiga/trees/standard_spruce/spruce_tall_checked",
+        "tectonic:taiga/trees/standard_spruce/pine_checked",
+        {
+            "id": "arboria:_placer/snowy_spruce/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/4",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/5",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/6",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/7",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/8",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/snowy_spruce/9",
+            "required": false
+        }
+    ]
+}

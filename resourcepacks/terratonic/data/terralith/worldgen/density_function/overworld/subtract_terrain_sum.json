@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:clamp",
+  "input": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "minecraft:noise",
+        "noise": "tectonic:force_subtract_terrain_sum_to_output_silly_values_to_make_terratonic_work",
+        "xz_scale": 0.25,
+        "y_scale": 0
+      },
+      "argument2": 196
+    },
+    "argument2": 420 //haha, nice
+  },
+  "min": 0,
+  "max": 64
+}

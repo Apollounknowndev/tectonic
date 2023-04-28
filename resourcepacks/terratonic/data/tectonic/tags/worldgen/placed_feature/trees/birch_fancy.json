@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+        "tectonic:forest/trees/old_growth_birch/variant_1_checked",
+        "tectonic:forest/trees/old_growth_birch/variant_2_checked",
+        {
+            "id": "arboria:_placer/big_birch/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/big_birch/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/big_birch/3",
+            "required": false
+        }
+    ]
+}

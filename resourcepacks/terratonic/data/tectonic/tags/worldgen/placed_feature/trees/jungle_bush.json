@@ -1,0 +1,31 @@
+{
+    "__COMMENT": "tectonic:nothing is included here to prevent a crash.",
+    "replace": false,
+    "values": [
+        "minecraft:jungle_bush",
+        {
+            "id": "arboria:_placer/jungle_bush/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_bush/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_bush/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_bush/4",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_bush/5",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/jungle_bush/6",
+            "required": false
+        }
+    ]
+}

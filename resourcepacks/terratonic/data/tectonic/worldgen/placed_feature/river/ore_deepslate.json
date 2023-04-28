@@ -1,0 +1,32 @@
+{
+    "feature": "tectonic:river/ore_deepslate",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 96
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": {
+                    "absolute": 44
+                },
+                "max_inclusive": {
+                    "absolute": 76
+                }
+            }
+        },
+        {
+            "type": "minecraft:surface_relative_threshold_filter",
+            "heightmap": "OCEAN_FLOOR_WG",
+            "max_inclusive": -8
+          },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

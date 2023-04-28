@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "tectonic:overworld/noise/continents",
+      "points": [
+        {
+          "location": 0.075,
+          "derivative": 0,
+          "value": 0
+        },
+        {
+          "location": 0.1,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:overworld/noise/base_erosion",
+            "points": [
+              {
+                "location": 0.4,
+                "derivative": 0,
+                "value": 0
+              },
+              {
+                "location": 0.425,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "minecraft:overworld/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0.125,
+                      "derivative": 0,
+                      "value": 0
+                    },
+                    {
+                      "location": 0.2,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "minecraft:overworld/temperature",
+                        "points": [
+                          {
+                            "location": 0.55,
+                            "derivative": 0,
+                            "value": 0
+                          },
+                          {
+                            "location": 0.575,
+                            "derivative": 0,
+                            "value": 1
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "minecraft:abs",
+        "argument": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:abs",
+            "argument": {
+              "type": "minecraft:noise",
+              "noise": "tectonic:desert_dunes",
+              "xz_scale": 0.5,
+              "y_scale": 0
+            }
+          },
+          "argument2": -0.625
+        }
+      },
+      "argument2": -0.55
+    },
+    "argument2": 0.35
+  }
+}

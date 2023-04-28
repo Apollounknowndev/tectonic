@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+      "#minecraft:base_stone_overworld",
+      "minecraft:deepslate_diamond_ore",
+      "minecraft:deepslate_gold_ore",
+      "minecraft:deepslate_iron_ore",
+      "minecraft:deepslate_lapis_ore",
+      "minecraft:deepslate_redstone_ore",
+      "minecraft:smooth_basalt"
+    ]
+  }
+  

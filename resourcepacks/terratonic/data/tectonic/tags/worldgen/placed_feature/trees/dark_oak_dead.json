@@ -1,0 +1,11 @@
+{
+    "__COMMENT": "tectonic:nothing is included here to prevent a crash.",
+    "replace": false,
+    "values": [
+        "tectonic:nothing",
+        {
+            "id": "arboria:_placer/dark_oak/dead",
+            "required": false
+        }
+    ]
+}

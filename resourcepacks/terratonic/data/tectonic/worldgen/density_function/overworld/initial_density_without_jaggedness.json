@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:squeeze",
+    "argument": {
+        "type": "minecraft:add",
+        "argument1": -0.35,
+        "argument2": {
+            "type": "minecraft:quarter_negative",
+            "argument": {
+                "type": "minecraft:mul",
+                "argument1": 24,
+                "argument2": "tectonic:overworld/noise/depth_with_hoodoos"
+            }
+        }
+    }
+}

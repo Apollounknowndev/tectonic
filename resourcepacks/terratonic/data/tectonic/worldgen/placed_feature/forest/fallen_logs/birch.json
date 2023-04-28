@@ -1,0 +1,20 @@
+{
+    "feature": "tectonic:forest/fallen_logs/birch",
+    "placement": [
+      {
+        "type": "minecraft:rarity_filter",
+        "chance": 12
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:heightmap",
+        "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }
+  

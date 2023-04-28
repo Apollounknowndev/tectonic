@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:add",
+    "argument1": {
+        "type": "minecraft:mul",
+        "argument1": {
+            "type": "minecraft:noise",
+            "noise": "minecraft:surface",
+            "xz_scale": 0.01,
+            "y_scale": 0.0
+        },
+        "argument2": 0.05
+    },
+    "argument2": 0.2
+}

@@ -1,0 +1,93 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "fallback": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:sand"
+          }
+        },
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:not",
+              "predicate": {
+                "type": "minecraft:any_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      1,
+                      0
+                    ],
+                    "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:matching_fluids",
+                    "offset": [
+                      0,
+                      1,
+                      0
+                    ],
+                    "fluids": "minecraft:water"
+                  }
+                ]
+              }
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:stone"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "fluids": "minecraft:water"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:sandstone"
+              }
+            }
+          }
+        ]
+      },
+      "target": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "#tectonic:disk_no_heightmap_replaceable"
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 4,
+          "max_inclusive": 6
+        }
+      },
+      "half_height": 1
+    }
+  }
+  

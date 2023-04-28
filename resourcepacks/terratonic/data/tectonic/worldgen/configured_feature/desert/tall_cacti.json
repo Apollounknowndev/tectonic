@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:random_patch",
+    "config": {
+        "tries": 5,
+        "xz_spread": 7,
+        "y_spread": 3,
+        "feature": {
+            "feature": {
+                "type": "minecraft:block_column",
+                "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                        {
+                            "height": {
+                                "type": "minecraft:biased_to_bottom",
+                                "value": {
+                                    "min_inclusive": 3,
+                                    "max_inclusive": 8
+                                }
+                            },
+                            "provider": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:cactus",
+                                    "Properties": {
+                                        "age": "0"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                            {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:air"
+                            },
+                            {
+                                "type": "minecraft:would_survive",
+                                "state": {
+                                    "Name": "minecraft:cactus",
+                                    "Properties": {
+                                        "age": "0"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

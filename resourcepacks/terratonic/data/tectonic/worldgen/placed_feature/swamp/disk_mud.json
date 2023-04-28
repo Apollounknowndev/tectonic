@@ -1,0 +1,25 @@
+{
+    "feature": "tectonic:swamp/disk_mud",
+    "placement": [
+      {
+        "type": "minecraft:count",
+        "count": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 1,
+            "max_inclusive": 2
+          }
+        }
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:heightmap",
+        "heightmap": "OCEAN_FLOOR_WG"
+      },
+      {
+        "type": "minecraft:biome"
+      }
+    ]
+  }

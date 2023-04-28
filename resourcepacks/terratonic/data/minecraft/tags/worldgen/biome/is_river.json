@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tectonic:cold_river",
+    "tectonic:lukewarm_river",
+    "#tectonic:is_underground_river"
+  ]
+}

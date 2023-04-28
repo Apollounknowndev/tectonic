@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:mega_jungle_tree_checked",
+        {
+            "id": "arboria:_placer/big_jungle_tree/1",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/big_jungle_tree/2",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/big_jungle_tree/3",
+            "required": false
+        },
+        {
+            "id": "arboria:_placer/big_jungle_tree/4",
+            "required": false
+        }
+    ]
+}

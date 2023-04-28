@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [],
+    "default": "tectonic:forest/trees/standard_oak/straight"
+  }
+}
