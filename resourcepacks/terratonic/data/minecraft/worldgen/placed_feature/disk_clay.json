@@ -1,9 +1,0 @@
-{
-  "feature": "minecraft:disk_clay",
-  "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 0
-    }
-  ]
-}
