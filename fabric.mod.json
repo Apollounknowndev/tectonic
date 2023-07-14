@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "tectonic",
-  "version": "1.1.10",
+  "version": "2.0",
   "name": "Tectonic",
   "description": "Enhanced terrain generation with mountain ranges, underground rivers, and more!",
   "authors": [
@@ -10,19 +10,22 @@
   "contact": {
     "homepage": "https://modrinth.com/mod/tectonic"
   },
-  "license": "All Rights Reserved",
+  "license": "MIT",
   "icon": "pack.png",
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "apollo.tectonic.TectonicFabric"
-    ]
-  },
-  "mixins": [],
+  "entrypoints": {},
+  "mixins": [
+  ],
   "depends": {
     "fabricloader": ">=0.12.7",
     "fabric-api-base": "*",
-    "minecraft": ">=1.19"
+    "minecraft": ">=1.20"
+  },
+  "breaks": {
+    "terralith": "*"
+  },
+  "conflicts": {
+    "continents": "*"
   },
   "custom": {
     "modmenu": {

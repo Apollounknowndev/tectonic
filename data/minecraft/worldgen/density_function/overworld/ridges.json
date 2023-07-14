@@ -1,0 +1,263 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": {
+          "type": "minecraft:abs",
+          "argument": "tectonic:erosion"
+        },
+        "points": [
+          {
+            "location": 0.249,
+            "derivative": 0,
+            "value": {
+              "coordinate": "tectonic:underground_river/parameters_3d",
+              "points": [
+                {
+                  "location": 0,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "minecraft:overworld/continents",
+                    "points": [
+                      {
+                        "location": -0.115,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "tectonic:ridges",
+                          "points": [
+                            {
+                              "location": -1,
+                              "derivative": 0,
+                              "value": -0.35
+                            },
+                            {
+                              "location": 0,
+                              "derivative": 0,
+                              "value": -0.35
+                            },
+                            {
+                              "location": 0,
+                              "derivative": 0,
+                              "value": 0.35
+                            },
+                            {
+                              "location": 1,
+                              "derivative": 0,
+                              "value": 0.35
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "location": -0.095,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "tectonic:ridges",
+                          "points": [
+                            {
+                              "location": -1,
+                              "derivative": 0,
+                              "value": -0.5
+                            },
+                            {
+                              "location": 0,
+                              "derivative": 0,
+                              "value": -0.5
+                            },
+                            {
+                              "location": 0,
+                              "derivative": 0,
+                              "value": 0.5
+                            },
+                            {
+                              "location": 1,
+                              "derivative": 0,
+                              "value": 0.5
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "location": 1,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "tectonic:ridges",
+                    "points": [
+                      {
+                        "location": -1,
+                        "derivative": 1,
+                        "value": -1
+                      },
+                      {
+                        "location": -0.1,
+                        "derivative": 1,
+                        "value": -0.1
+                      },
+                      {
+                        "location": 0,
+                        "derivative": 2,
+                        "value": 0
+                      },
+                      {
+                        "location": 0.1,
+                        "derivative": 1,
+                        "value": 0.1
+                      },
+                      {
+                        "location": 1,
+                        "derivative": 1,
+                        "value": 1
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "location": 0.25,
+            "derivative": 0,
+            "value": {
+              "coordinate": "tectonic:ridges",
+              "points": [
+                {
+                  "location": -1,
+                  "derivative": 1,
+                  "value": -1
+                },
+                {
+                  "location": -0.1,
+                  "value": -0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 0,
+                  "value": 0,
+                  "derivative": 2
+                },
+                {
+                  "location": 0.1,
+                  "value": 0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 1,
+                  "derivative": 1,
+                  "value": 1
+                }
+              ]
+            }
+          },
+          {
+            "location": 0.8,
+            "derivative": 0,
+            "value": {
+              "coordinate": "tectonic:ridges",
+              "points": [
+                {
+                  "location": -0.5,
+                  "derivative": 0,
+                  "value": -0.5
+                },
+                {
+                  "location": -0.1,
+                  "value": -0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 0,
+                  "value": 0,
+                  "derivative": 2
+                },
+                {
+                  "location": 0.1,
+                  "value": 0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 0.5,
+                  "derivative": 0,
+                  "value": 0.5
+                }
+              ]
+            }
+          },
+          {
+            "location": 1,
+            "derivative": 0,
+            "value": {
+              "coordinate": "tectonic:ridges",
+              "points": [
+                {
+                  "location": -0.5,
+                  "derivative": 0,
+                  "value": -0.5
+                },
+                {
+                  "location": -0.1,
+                  "value": -0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 0,
+                  "value": 0,
+                  "derivative": 2
+                },
+                {
+                  "location": 0.1,
+                  "value": 0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 0.5,
+                  "derivative": 0,
+                  "value": 0.5
+                }
+              ]
+            }
+          },
+          {
+            "location": 1.05,
+            "derivative": 0,
+            "value": {
+              "coordinate": "tectonic:ridges",
+              "points": [
+                {
+                  "location": -1,
+                  "derivative": 1,
+                  "value": -1
+                },
+                {
+                  "location": -0.1,
+                  "value": -0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 0,
+                  "value": 0,
+                  "derivative": 2
+                },
+                {
+                  "location": 0.1,
+                  "value": 0.1,
+                  "derivative": 1
+                },
+                {
+                  "location": 1,
+                  "derivative": 1,
+                  "value": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
