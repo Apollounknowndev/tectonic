@@ -4,6 +4,8 @@
     "type": "minecraft:cache_2d",
     "argument": {
       "type": "minecraft:spline",
+      "min_value": -64,
+      "max_value": 64,
       "spline": {
         "coordinate": {
           "type": "minecraft:flat_cache",
@@ -24,7 +26,7 @@
             "value": -1.2
           },
           {
-            "location": -0.9,
+            "location": -0.7,
             "derivative": 0.2,
             "value": -0.95
           },

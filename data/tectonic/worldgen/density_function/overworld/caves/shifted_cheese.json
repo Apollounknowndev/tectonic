@@ -1,0 +1,163 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:abs",
+          "argument": {
+            "type": "minecraft:noise",
+            "noise": "minecraft:cave_layer",
+            "xz_scale": 0.5,
+            "y_scale": 0.5
+          }
+        },
+        "argument2": 0.7
+      },
+      "argument2": 0.1
+    },
+    "min": 0.15,
+    "max": 64
+  },
+  "argument2": {
+    "type": "minecraft:shifted_noise",
+    "noise": "minecraft:cave_entrance",
+    "xz_scale": 0.15,
+    "y_scale": 0.1,
+    "shift_x": {
+      "type": "minecraft:mul",
+      "argument1": 40,
+      "argument2": {
+        "type": "minecraft:spline",
+        "min_value": -64,
+        "max_value": 64,
+        "spline": {
+          "coordinate": {
+            "type": "minecraft:noise",
+            "noise": "tectonic:cave_shift/x",
+            "xz_scale": 2.5,
+            "y_scale": 2.5
+          },
+          "points": [
+            {
+              "location": -1,
+              "derivative": 2,
+              "value": 0
+            },
+            {
+              "location": -0.5,
+              "derivative": 0,
+              "value": 1
+            },
+            {
+              "location": 0,
+              "derivative": 0,
+              "value": -2
+            },
+            {
+              "location": 0.5,
+              "derivative": 0,
+              "value": 1
+            },
+            {
+              "location": 1,
+              "derivative": -2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "shift_y": {
+      "type": "minecraft:mul",
+      "argument1": 40,
+      "argument2": {
+        "type": "minecraft:spline",
+        "min_value": -64,
+        "max_value": 64,
+        "spline": {
+          "coordinate": {
+            "type": "minecraft:noise",
+            "noise": "tectonic:cave_shift/y",
+            "xz_scale": 2.5,
+            "y_scale": 2.5
+          },
+          "points": [
+            {
+              "location": -1,
+              "derivative": 2,
+              "value": 0
+            },
+            {
+              "location": -0.5,
+              "derivative": 0,
+              "value": 1
+            },
+            {
+              "location": 0,
+              "derivative": 0,
+              "value": -2
+            },
+            {
+              "location": 0.5,
+              "derivative": 0,
+              "value": 1
+            },
+            {
+              "location": 1,
+              "derivative": -2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "shift_z": {
+      "type": "minecraft:mul",
+      "argument1": 40,
+      "argument2": {
+        "type": "minecraft:spline",
+        "min_value": -64,
+        "max_value": 64,
+        "spline": {
+          "coordinate": {
+            "type": "minecraft:noise",
+            "noise": "tectonic:cave_shift/z",
+            "xz_scale": 2.5,
+            "y_scale": 2.5
+          },
+          "points": [
+            {
+              "location": -1,
+              "derivative": 2,
+              "value": 0
+            },
+            {
+              "location": -0.5,
+              "derivative": 0,
+              "value": 1
+            },
+            {
+              "location": 0,
+              "derivative": 0,
+              "value": -2
+            },
+            {
+              "location": 0.5,
+              "derivative": 0,
+              "value": 1
+            },
+            {
+              "location": 1,
+              "derivative": -2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

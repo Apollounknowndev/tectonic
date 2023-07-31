@@ -28,11 +28,11 @@
                   "argument1": -0.1171875,
                   "argument2": {
                     "type": "minecraft:range_choice",
-                    "input": "minecraft:overworld/depth",
+                    "input": "tectonic:overworld/depth",
                     "min_inclusive": -1000000,
                     "max_exclusive": 0.1,
-                    "when_in_range": "minecraft:overworld/sloped_cheese",
-                    "when_out_of_range": "tectonic:caves/total"
+                    "when_in_range": "tectonic:overworld/sloped_cheese",
+                    "when_out_of_range": "tectonic:overworld/caves/total"
                   }
                 }
               }
@@ -41,7 +41,7 @@
         }
       }
     },
-    "argument2": "tectonic:underground_river/total"
+    "argument2": "tectonic:overworld/underground_river/total"
   },
-  "argument2": "tectonic:legacy/cliffs"
+  "argument2": "tectonic:overworld/legacy/cliffs"
 }

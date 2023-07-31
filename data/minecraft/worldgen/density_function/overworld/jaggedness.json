@@ -15,6 +15,8 @@
           "argument1": 0,
           "argument2": {
             "type": "minecraft:spline",
+            "min_value": -64,
+            "max_value": 64,
             "spline": {
               "coordinate": "minecraft:overworld/continents",
               "points": [
@@ -27,7 +29,7 @@
                   "location": 0.1,
                   "derivative": 0,
                   "value": {
-                    "coordinate": "tectonic:legacy/erosion_folded",
+                    "coordinate": "tectonic:overworld/legacy/erosion_folded",
                     "points": [
                       {
                         "location": 0.0,

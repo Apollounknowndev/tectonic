@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:range_choice",
+    "input": "tectonic:overworld_large_biomes/depth",
+    "min_inclusive": 0.25,
+    "max_exclusive": 100000,
+    "when_in_range": 0,
+    "when_out_of_range": {
+      "type": "minecraft:add",
+      "argument1": 1,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": -4,
+        "argument2": "tectonic:overworld_large_biomes/depth"
+      }
+    }
+  }
+}

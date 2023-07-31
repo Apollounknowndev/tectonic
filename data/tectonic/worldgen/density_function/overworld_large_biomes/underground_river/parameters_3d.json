@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:range_choice",
+    "input": "minecraft:y",
+    "min_inclusive": 48,
+    "max_exclusive": 76,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "tectonic:overworld_large_biomes/depth",
+      "min_inclusive": -0.05,
+      "max_exclusive": 64,
+      "when_in_range": "tectonic:overworld_large_biomes/underground_river/parameters_2d",
+      "when_out_of_range": 0
+    },
+    "when_out_of_range": 0
+  }
+}

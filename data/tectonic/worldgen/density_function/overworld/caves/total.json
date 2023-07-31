@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:max",
+    "argument1": {
+      "type": "minecraft:min",
+      "argument1": "tectonic:overworld/caves/shifted_cheese",
+      "argument2": "tectonic:overworld/caves/oran_total"
+    },
+    "argument2": {
+      "type": "minecraft:range_choice",
+      "input": "minecraft:overworld/caves/pillars",
+      "min_inclusive": -1000000,
+      "max_exclusive": 0.03,
+      "when_in_range": -1000000,
+      "when_out_of_range": "minecraft:overworld/caves/pillars"
+    }
+  },
+  "argument2": 0.05
+}

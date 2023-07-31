@@ -4,8 +4,10 @@
     "type": "minecraft:cache_2d",
     "argument": {
       "type": "minecraft:spline",
+      "min_value": -64,
+      "max_value": 64,
       "spline": {
-        "coordinate": "tectonic:erosion",
+        "coordinate": "tectonic:overworld/erosion",
         "points": [
           {
             "location": -0.5,
@@ -31,7 +33,8 @@
             "location": -0.075,
             "derivative": 0,
             "value": -0.5
-          },{
+          },
+          {
             "location": -0.075,
             "derivative": 0,
             "value": {
