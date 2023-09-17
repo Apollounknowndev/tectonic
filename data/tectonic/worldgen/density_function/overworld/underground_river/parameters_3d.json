@@ -7,7 +7,7 @@
     "max_exclusive": 76,
     "when_in_range": {
       "type": "minecraft:range_choice",
-      "input": "tectonic:overworld/depth",
+      "input": "minecraft:overworld/depth",
       "min_inclusive": -0.05,
       "max_exclusive": 64,
       "when_in_range": "tectonic:overworld/underground_river/parameters_2d",

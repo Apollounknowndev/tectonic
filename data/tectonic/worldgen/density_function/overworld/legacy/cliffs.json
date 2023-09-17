@@ -17,12 +17,12 @@
                         },
                         "points": [
                             {
-                                "location": -0.28,
+                                "location": -0.26,
                                 "derivative": 0,
                                 "value": 0
                             },
                             {
-                                "location": -0.22,
+                                "location": -0.19,
                                 "derivative": 0,
                                 "value": 1
                             },
@@ -90,7 +90,7 @@
                         },
                         "points": [
                             {
-                                "location": 40,
+                                "location": 32,
                                 "derivative": 0,
                                 "value": 0
                             },
