@@ -7,7 +7,7 @@
       "min_value": -64,
       "max_value": 64,
       "spline": {
-        "coordinate": "minecraft:overworld_large_biomes/continents",
+        "coordinate": "minecraft:overworld/continents",
         "points": [
           {
             "location": -1.05,
