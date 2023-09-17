@@ -1,4 +1,4 @@
-![Tectonic logo](https://cdn.modrinth.com/data/lWDHr9jE/images/684a221130a40e5b7927520fcff2b1bd7ee276cf.png)
+![Tectonic logo](https://cdn.modrinth.com/data/lWDHr9jE/images/810083a46d3e071419e4fb7d28a126223838d7f1.png)
 
 ![server, only](https://img.shields.io/badge/environment-server%20only-e61a1a)
 ![datapack and mod](https://img.shields.io/badge/project%20type-datapack%20&%20mod-39951d)
@@ -10,16 +10,30 @@
 
 ### Mountain Ranges
 
-The way mountains generate has been completely overhauled, with them forming huge mountain ranges that can stretch for thousands of blocks. These stretch higher than vanilla mountains do, reaching peaks above y300!
+The way mountains generate has been completely overhauled, with them forming huge mountain ranges that can stretch for thousands of blocks. These can stretch higher than vanilla mountains do, sometimes reaching peaks above y300!
 
 ### Underground Rivers
 
-In mountainous terrain that is too towering to allow regular river generation, terrain gets carved for rivers to continue underground. These link right up to the regular rivers, so there's no interruption in exploring along rivers.
+In mountainous terrain that is too towering to allow regular river generation, terrain gets carved for rivers to continue underground. These link right up to the regular rivers, so there's no interruption in exploring along rivers.  Very deep underground, you can even find a deeper variant with lava instead of water.
+
+### Oceanside Cliffs
+
+On steep cliff faces in the Stony Shore biome, waves and wind carve into the cliff. (Disclaimer: waves and wind not included.)
 
 ### Smoother Surfaces
 
-One of (if not the most) notable changes to generation you'll see with Tectonic is that terrain is much smoother than normal. This means the strange staircasing on some hills - also referred to as "lerp" issues - is gone.
+One of (if not the most) notable changes to generation you'll see with Tectonic is that terrain is much smoother than normal. This means the strange staircasing on some hills - also referred to as "lerp" issues - is gone. In previous Tectonic versions this meant that Windswept biomes were removed from generation, but in v2 and above they will once again generate.
+
+### Dunes
+
+Smooth desert dunes will generate in some Desert biomes, giving Deserts a special look to them.
 
 ### Deeper Oceans
 
 Oceans are much deeper than they are in vanilla, with deep oceans even extending into the deepslate layer!
+
+-----
+
+### Removed Features
+
+Previous versions of Tectonic included things like custom biomes, trees, and more. These were removed for both performance and compatibility reasons. For improved biome vegetation, check out [Not Just Biomes](https://modrinth.com/mod/not-just-biomes).
