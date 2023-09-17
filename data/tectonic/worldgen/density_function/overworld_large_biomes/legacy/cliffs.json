@@ -13,7 +13,7 @@
                     "spline": {
                         "coordinate": {
                             "type": "minecraft:interpolated",
-                            "argument": "minecraft:overworld_large_biomes/continents"
+                            "argument": "tectonic:overworld_large_biomes/continents"
                         },
                         "points": [
                             {

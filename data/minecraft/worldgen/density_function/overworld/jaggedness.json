@@ -18,7 +18,7 @@
             "min_value": -64,
             "max_value": 64,
             "spline": {
-              "coordinate": "minecraft:overworld/continents",
+              "coordinate": "tectonic:overworld/continents",
               "points": [
                 {
                   "location": 0.05,

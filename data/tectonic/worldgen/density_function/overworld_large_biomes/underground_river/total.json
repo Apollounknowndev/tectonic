@@ -89,7 +89,7 @@
                       "type": "minecraft:abs",
                       "argument": {
                         "type": "minecraft:add",
-                        "argument1": "minecraft:overworld_large_biomes/continents",
+                        "argument1": "tectonic:overworld_large_biomes/continents",
                         "argument2": 0.1
                       }
                     },
@@ -99,7 +99,7 @@
                     "type": "minecraft:abs",
                     "argument": {
                       "type": "minecraft:add",
-                      "argument1": "minecraft:overworld_large_biomes/continents",
+                      "argument1": "tectonic:overworld_large_biomes/continents",
                       "argument2": 0.2
                     }
                   }

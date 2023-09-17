@@ -1,9 +1,13 @@
 {
   "pack": {
+    "supported_formats": [
+      9,
+      18
+    ],
     "pack_format": 15,
     "description": [
       {
-        "text": "Tectonic v2.1",
+        "text": "Tectonic v2.1.1",
         "color": "#b0b0b0"
       },
       "\n",

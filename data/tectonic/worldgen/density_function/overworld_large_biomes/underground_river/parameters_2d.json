@@ -19,7 +19,7 @@
                   "max_exclusive": 0.27,
                   "when_in_range": {
                       "type": "minecraft:range_choice",
-                      "input": "minecraft:overworld_large_biomes/continents",
+                      "input": "tectonic:overworld_large_biomes/continents",
                       "min_inclusive": -0.15,
                       "max_exclusive": 2,
                       "when_in_range": 1,

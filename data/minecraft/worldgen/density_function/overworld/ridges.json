@@ -22,7 +22,7 @@
                   "location": 0,
                   "derivative": 0,
                   "value": {
-                    "coordinate": "minecraft:overworld/continents",
+                    "coordinate": "tectonic:overworld/continents",
                     "points": [
                       {
                         "location": -0.115,
