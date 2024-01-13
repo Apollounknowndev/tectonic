@@ -29,22 +29,22 @@
         "argument2": {
           "type": "minecraft:add",
           "argument1": {
-            "type": "minecraft:quarter_negative",
-            "argument": {
-              "type": "minecraft:add",
-              "argument1": {
-                "type": "minecraft:abs",
-                "argument": {
-                  "type": "minecraft:noise",
-                  "noise": "minecraft:jagged",
-                  "xz_scale": 1500,
-                  "y_scale": 0
-                }
-              },
-              "argument2": -0.25
-            }
+            "type": "minecraft:mul",
+            "argument1": -0.1,
+            "argument2": "tectonic:hbridges/weathering"
           },
-          "argument2": 0.2
+          "argument2": {
+            "type": "minecraft:add",
+            "argument1": {
+              "type": "minecraft:flat_cache",
+              "argument": {
+                "type": "minecraft:mul",
+                "argument1": "tectonic:hbridges/ridges",
+                "argument2": -1
+              }
+            },
+            "argument2": 0.6
+          }
         }
       }
     }
