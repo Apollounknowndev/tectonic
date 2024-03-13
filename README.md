@@ -1,9 +1,5 @@
 ![Tectonic logo](https://cdn.modrinth.com/data/lWDHr9jE/images/810083a46d3e071419e4fb7d28a126223838d7f1.png)
 
-![server, only](https://img.shields.io/badge/environment-server%20only-e61a1a)
-![datapack and mod](https://img.shields.io/badge/project%20type-datapack%20&%20mod-39951d)
-![all modloaders](https://img.shields.io/badge/modloader-all-eeeeee)
-
 **Tectonic** is a world generation datapack and mod that aims to transform how terrain is shaped.
 
 ## Features
