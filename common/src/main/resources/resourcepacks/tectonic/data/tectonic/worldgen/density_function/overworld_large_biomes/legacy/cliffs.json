@@ -1,0 +1,116 @@
+{
+    "type": "minecraft:add",
+    "argument1": {
+        "type": "minecraft:mul",
+        "argument1": {
+            "type": "minecraft:mul",
+            "argument1": {
+                "type": "minecraft:mul",
+                "argument1": {
+                    "type": "minecraft:spline",
+                    "min_value": -64,
+                    "max_value": 64,
+                    "spline": {
+                        "coordinate": {
+                            "type": "minecraft:interpolated",
+                            "argument": "tectonic:overworld_large_biomes/continents"
+                        },
+                        "points": [
+                            {
+                                "location": -0.28,
+                                "derivative": 0,
+                                "value": 0
+                            },
+                            {
+                                "location": -0.22,
+                                "derivative": 0,
+                                "value": 1
+                            },
+                            {
+                                "location": -0.12,
+                                "derivative": 0,
+                                "value": 0
+                            }
+                        ]
+                    }
+                },
+                "argument2": {
+                    "type": "minecraft:spline",
+                    "min_value": -64,
+                    "max_value": 64,
+                    "spline": {
+                        "coordinate": {
+                            "type": "minecraft:interpolated",
+                            "argument": "tectonic:overworld/legacy/erosion_folded"
+                        },
+                        "points": [
+                            {
+                                "location": 0.15,
+                                "derivative": 0,
+                                "value": 1
+                            },
+                            {
+                                "location": 0.25,
+                                "derivative": 0,
+                                "value": 0
+                            }
+                        ]
+                    }
+                }
+            },
+            "argument2": {
+                "type": "minecraft:mul",
+                "argument1": {
+                    "type": "minecraft:spline",
+                    "min_value": -64,
+                    "max_value": 64,
+                    "spline": {
+                        "coordinate": {
+                            "type": "minecraft:add",
+                            "argument1": "minecraft:y",
+                            "argument2": {
+                                "type": "minecraft:mul",
+                                "argument1": {
+                                    "type": "minecraft:add",
+                                    "argument1": {
+                                        "type": "minecraft:noise",
+                                        "noise": "tectonic:offset/1",
+                                        "xz_scale": 0.5,
+                                        "y_scale": 0
+                                    },
+                                    "argument2": {
+                                        "type": "minecraft:noise",
+                                        "noise": "tectonic:offset/2",
+                                        "xz_scale": 0.5,
+                                        "y_scale": 0
+                                    }
+                                },
+                                "argument2": 2
+                            }
+                        },
+                        "points": [
+                            {
+                                "location": 40,
+                                "derivative": 0,
+                                "value": 0
+                            },
+                            {
+                                "location": 68,
+                                "derivative": 0,
+                                "value": 1
+                            },
+                            {
+                                "location": 120,
+                                "derivative": 0,
+                                "value": 0
+                            }
+                        ]
+                    }
+                },
+                "argument2": 1
+            }
+        },
+        "argument2": -2
+    },
+    "argument2": 0.175
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+      "type": "minecraft:range_choice",
+      "input": "tectonic:overworld/continents",
+      "min_inclusive": -0.25,
+      "max_exclusive": -0.1,
+      "when_in_range": {
+          "type": "minecraft:range_choice",
+          "input": "tectonic:overworld/erosion",
+          "min_inclusive": -0.25,
+          "max_exclusive": 0.25,
+          "when_in_range": {
+              "type": "minecraft:range_choice",
+              "input": "minecraft:y",
+              "min_inclusive": 36,
+              "max_exclusive": 2048,
+              "when_in_range": {
+                  "type": "minecraft:range_choice",
+                  "input": "minecraft:y",
+                  "min_inclusive": 72,
+                  "max_exclusive": 2048,
+                  "when_in_range": -1,
+                  "when_out_of_range": 1
+              },
+              "when_out_of_range": 0
+          },
+          "when_out_of_range": 0
+      },
+      "when_out_of_range": 0
+  }
+}

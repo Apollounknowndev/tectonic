@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "tectonic:overworld/underground_river/parameters_strict_3d",
+  "min_inclusive": 0.9,
+  "max_exclusive": 1.1,
+  "when_in_range": {
+    "type": "minecraft:range_choice",
+    "input": "tectonic:overworld/legacy/erosion_folded",
+    "min_inclusive": 0,
+    "max_exclusive": 0.2,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "tectonic:overworld/continents",
+      "min_inclusive": -0.05,
+      "max_exclusive": 2,
+      "when_in_range": 0.5,
+      "when_out_of_range": {
+        "type": "minecraft:add",
+        "argument1": "minecraft:overworld/depth",
+        "argument2": -0.075
+      }
+    },
+    "when_out_of_range": {
+      "type": "minecraft:add",
+      "argument1": "minecraft:overworld/depth",
+      "argument2": -0.075
+    }
+  },
+  "when_out_of_range": {
+    "type": "minecraft:add",
+    "argument1": "minecraft:overworld/depth",
+    "argument2": -0.075
+  }
+}

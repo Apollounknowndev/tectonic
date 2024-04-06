@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "supported_formats": [
+      9,
+      26
+    ],
+    "pack_format": 15,
+    "description": "Allows safe upgrading from\nTectonic v1 -> Tectonic v2.1+"
+  }
+}

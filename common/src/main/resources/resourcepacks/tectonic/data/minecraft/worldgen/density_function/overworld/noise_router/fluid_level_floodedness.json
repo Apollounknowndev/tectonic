@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "tectonic:overworld/aquifer_parameters",
+  "min_inclusive": -0.1,
+  "max_exclusive": 0.1,
+  "when_in_range": {
+    "type": "minecraft:noise",
+    "noise": "minecraft:aquifer_fluid_level_floodedness",
+    "xz_scale": 1,
+    "y_scale": 0.67
+  },
+  "when_out_of_range": "tectonic:overworld/aquifer_parameters"
+}

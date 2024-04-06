@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "terralith:overworld/extra_terrain_sum",
+      "required": false
+    },
+    {
+      "id": "terralith:extra_terrain_sum",
+      "required": false
+    }
+  ]
+}

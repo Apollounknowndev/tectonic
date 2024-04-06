@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:mul",
+  "argument1": {
+    "type": "minecraft:range_choice",
+    "input": "minecraft:y",
+    "min_inclusive": 48,
+    "max_exclusive": 2048,
+    "when_in_range": {
+      "type": "minecraft:flat_cache",
+      "argument": {
+        "type": "minecraft:cache_2d",
+        "argument": {
+          "type": "minecraft:range_choice",
+          "input": "tectonic:overworld/ridges",
+          "min_inclusive": -0.07,
+          "max_exclusive": 0.07,
+          "when_in_range": {
+            "type": "minecraft:range_choice",
+            "input": "tectonic:overworld/erosion",
+            "min_inclusive": -0.27,
+            "max_exclusive": 0.27,
+            "when_in_range": {
+              "type": "minecraft:range_choice",
+              "input": "tectonic:overworld/continents",
+              "min_inclusive": -0.15,
+              "max_exclusive": 2,
+              "when_in_range": 1,
+              "when_out_of_range": 0
+            },
+            "when_out_of_range": 0
+          },
+          "when_out_of_range": 0
+        }
+      }
+    },
+    "when_out_of_range": 0
+  },
+  "argument2": "tectonic:constants/underground_river_toggle"
+}

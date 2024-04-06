@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:mul",
+  "argument1": 4,
+  "argument2": {
+    "type": "minecraft:quarter_negative",
+    "argument": {
+      "type": "minecraft:mul",
+      "argument1": "minecraft:overworld/depth",
+      "argument2": 6
+    }
+  }
+}

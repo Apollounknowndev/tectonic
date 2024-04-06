@@ -1,0 +1,6 @@
+{
+  "type": "tectonic:config",
+  "option": "desert_dunes",
+  "true_argument": 1,
+  "false_argument": 0
+}

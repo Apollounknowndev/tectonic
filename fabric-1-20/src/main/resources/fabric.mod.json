@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/project/tectonic",
+        "sources": "https://github.com/Apollounknowndev/tectonic/",
+        "issues": "https://github.com/Apollounknowndev/tectonic/issues"
+    },
+    "license": "${license}",
+    "icon": "pack.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+          "dev.worldgen.tectonic.TectonicFabric"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.15",
+        "fabric-api": "*",
+        "minecraft": ">=1.19.4",
+        "java": ">=17"
+    }
+}
+  

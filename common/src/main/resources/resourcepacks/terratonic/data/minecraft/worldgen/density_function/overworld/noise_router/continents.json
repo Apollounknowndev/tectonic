@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:add",
+  "argument1": "tectonic:overworld/continents",
+  "argument2": {
+    "type": "minecraft:range_choice",
+    "input": "tectonic:overworld/cliff/parameters",
+    "min_inclusive": -0.1,
+    "max_exclusive": 0.1,
+    "when_in_range": 0,
+    "when_out_of_range": {
+      "type": "minecraft:mul",
+      "argument1": "tectonic:overworld/cliff/parameters",
+      "argument2": -0.01
+    }
+  }
+}

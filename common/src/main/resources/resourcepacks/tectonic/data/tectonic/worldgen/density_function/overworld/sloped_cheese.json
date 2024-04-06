@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:max",
+  "argument1": {
+    "type": "minecraft:add",
+    "argument1": -0.2,
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": "tectonic:overworld/wackiness",
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": 0.2,
+        "argument2": "minecraft:overworld/base_3d_noise"
+      }
+    }
+  },
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": "tectonic:overworld/wackiness",
+      "argument2": "minecraft:overworld/base_3d_noise"
+    },
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": "tectonic:overworld/depth",
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": "minecraft:overworld/jaggedness",
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:mul",
+            "argument1": -0.1,
+            "argument2": "tectonic:hbridges/weathering"
+          },
+          "argument2": {
+            "type": "minecraft:add",
+            "argument1": {
+              "type": "minecraft:flat_cache",
+              "argument": {
+                "type": "minecraft:mul",
+                "argument1": "tectonic:hbridges/ridges",
+                "argument2": -1
+              }
+            },
+            "argument2": 0.6
+          }
+        }
+      }
+    }
+  }
+}

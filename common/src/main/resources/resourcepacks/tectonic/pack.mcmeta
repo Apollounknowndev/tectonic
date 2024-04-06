@@ -1,0 +1,24 @@
+{
+  "pack": {
+    "supported_formats": [
+      9,
+      26
+    ],
+    "pack_format": 15,
+    "description": [
+      {
+        "text": "Tectonic v2.3",
+        "color": "#b0b0b0"
+      },
+      "\n",
+      {
+        "text": "Created by ",
+        "color": "#888888"
+      },
+      {
+        "text": "Apollo",
+        "color": "#ca78e4"
+      }
+    ]
+  }
+}

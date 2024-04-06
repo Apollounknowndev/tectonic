@@ -1,0 +1,113 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'maven-publish'
+    id 'fabric-loom'
+    id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
+}
+
+base {
+    archivesName = "${mod_id}-fabric-1.20"
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.20.2"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.91.6+1.20.2"
+    implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
+    compileOnly project(":common")
+    compileOnly project(":dfs-1-19")
+}
+
+loom {
+    if (project(":common").file("src/main/resources/${mod_id}.accesswidener").exists()) {
+        accessWidenerPath.set(project(":common").file("src/main/resources/${mod_id}.accesswidener"))
+    }
+    mixin {
+        defaultRefmapName.set("${mod_id}.refmap.json")
+    }
+    runs {
+        client {
+            client()
+            setConfigName("Fabric Client")
+            ideConfigGenerated(true)
+            runDir("run")
+        }
+        server {
+            server()
+            setConfigName("Fabric Server")
+            ideConfigGenerated(true)
+            runDir("run")
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    source(project(":common").sourceSets.main.allSource, project(":dfs-1-19").sourceSets.main.allSource)
+}
+tasks.withType(Javadoc).configureEach {
+    source(project(":common").sourceSets.main.allJava, project(":dfs-1-19").sourceSets.main.allJava)
+}
+tasks.named("sourcesJar", Jar) {
+    from(project(":common").sourceSets.main.allSource, project(":dfs-1-19").sourceSets.main.allSource)
+}
+
+processResources {
+    from(project(":common").sourceSets.main.resources, project(":dfs-1-19").sourceSets.main.resources)
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId base.archivesName.get()
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "file://" + System.getenv("local_maven")
+        }
+    }
+}
+
+publishMods {
+    file = remapJar.archiveFile
+    changelog = "${update_changelog}"
+    type = STABLE
+    modLoaders.add("fabric")
+    modLoaders.add("quilt")
+    displayName = "v%s ~ Fabric 1.19.4-1.20.2+".formatted(project.version)
+
+    dryRun = false
+
+    modrinth {
+        accessToken = providers.environmentVariable("TOKEN_MR")
+        projectId = "lWDHr9jE"
+
+        minecraftVersionRange {
+            start = "1.19.4"
+            end = "1.20.4"
+        }
+
+        requires {
+            slug = "fabric-api"
+        }
+        optional {
+            slug = "lithostitched"
+        }
+    }
+
+    curseforge {
+        accessToken = providers.environmentVariable("TOKEN_CF")
+        projectId = "686836"
+
+        minecraftVersionRange {
+            start = "1.19.4"
+            end = "1.20.4"
+        }
+
+        requires("fabric-api")
+        optional("lithostitched")
+    }
+}

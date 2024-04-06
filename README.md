@@ -1,35 +1,30 @@
-![Tectonic logo](https://cdn.modrinth.com/data/lWDHr9jE/images/810083a46d3e071419e4fb7d28a126223838d7f1.png)
+**Welcome to my pain and suffering! :)**
 
-**Tectonic** is a world generation datapack and mod that aims to transform how terrain is shaped.
+This project has all maintained Tectonic mod versions, which are split into different modules:
 
-## Features
+- `fabric-1-18` (Fabric/Quilt 1.18.2)
+- `fabric-1-19` (Fabric/Quilt 1.19.2)
+- `fabric-1-20` (Fabric/Quilt 1.19.4+)
 
-### Mountain Ranges
 
-The way mountains generate has been completely overhauled, with them forming huge mountain ranges that can stretch for thousands of blocks. These can stretch higher than vanilla mountains do, sometimes reaching peaks above y300!
+- `forge-1-18` (Forge 1.18.2)
+- `forge-1-19` (Forge 1.19.2)
+- `forge-1-19-3` (Forge 1.19.3-1.20.1)
+- `forge-1-20` (Forge 1.20.2+)
 
-### Underground Rivers
 
-In mountainous terrain that is too towering to allow regular river generation, terrain gets carved for rivers to continue underground. These link right up to the regular rivers, so there's no interruption in exploring along rivers.  Very deep underground, you can even find a deeper variant with lava instead of water.
+- `neoforge-1-20` (Neoforge 1.20.2+)
 
-### Oceanside Cliffs
 
-On steep cliff faces in the Stony Shore biome, waves and wind carve into the cliff. (Disclaimer: waves and wind not included.)
+There's three additional modules for shared mod resources:
 
-### Smoother Surfaces
+- `common`: *All* versions use this code. It contains the config system and some basic constants like the mod id.
+- `dfs-1-18`: The 1.18 versions use this code. It contains the custom density functions, built for 1.18.2.
+- `dfs-1-19`: The 1.19 and 1.20 versions use this code. It contains the custom density functions, built for 1.19+.
 
-One of (if not the most) notable changes to generation you'll see with Tectonic is that terrain is much smoother than normal. This means the strange staircasing on some hills - also referred to as "lerp" issues - is gone. In previous Tectonic versions this meant that Windswept biomes were removed from generation, but in v2 and above they will once again generate.
-
-### Dunes
-
-Smooth desert dunes will generate in some Desert biomes, giving Deserts a special look to them.
-
-### Deeper Oceans
-
-Oceans are much deeper than they are in vanilla, with deep oceans even extending into the deepslate layer!
-
------
-
-### Removed Features
-
-Previous versions of Tectonic included things like custom biomes, trees, and more. These were removed for both performance and compatibility reasons. For improved biome vegetation, check out [Not Just Biomes](https://modrinth.com/mod/not-just-biomes).
+The actual files for the world generation are *not* in resources/data like a normal mod. 
+Due to needing to load different files based on config options and whether Terralith is loaded, the files are split into four separate datapacks. All datapacks are version-agnostic and will load on all versions 1.18.2+.
+- `increased_height` is enabled if increased height is enabled in the config. It raises the max build and generation elevation to y640.
+- `legacy` is enabled if legacy mode is enabled in the config. It contains all the old biome files alongside a dimension file to swap the biome layout to the vanilla one.
+- `tectonic` is enabled if Terralith is not installed. This has all files for regular Tectonic generation.
+- `terratonic` is enabled if Terralith is installed. This has all files for regular Tectonic generation, with small changes to accommodate for Terralith support.

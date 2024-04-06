@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:range_choice",
+    "input": "minecraft:y",
+    "min_inclusive": 48,
+    "max_exclusive": 76,
+    "when_in_range": "tectonic:overworld/underground_river/parameters_2d",
+    "when_out_of_range": 0
+  }
+}
