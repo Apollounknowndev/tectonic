@@ -67,7 +67,7 @@ public record ConfigCodec(boolean modEnabled, Legacy legacyModule, Features feat
 
 
 
-    public record Features(String commentA, String commentB, boolean desertDunes, boolean deeperOceans, boolean lavaRivers, boolean undergroundRivers) {
+    public record Features(String commentA, String commentB, boolean deeperOceans, boolean desertDunes, boolean lavaRivers, boolean undergroundRivers) {
         private static final String COMMENT_A = "Enabling deeper oceans will lower vanilla ocean monuments to compensate for lower depth.";
         private static final String COMMENT_B = "This DOES NOT apply on Forge 1.18-1.20.1. Ocean monuments will remain at their vanilla levels on those versions.";
         public static final Codec<Features> CODEC = RecordCodecBuilder.create(instance -> instance.group(
