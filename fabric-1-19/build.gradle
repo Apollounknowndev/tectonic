@@ -77,7 +77,7 @@ publishMods {
     modLoaders.add("quilt")
     displayName = "v%s ~ Fabric 1.19.2".formatted(project.version)
 
-    dryRun = false
+    dryRun = true
 
     modrinth {
         accessToken = providers.environmentVariable("TOKEN_MR")

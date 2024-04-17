@@ -58,12 +58,6 @@ public class TectonicForge {
         }
     }
 
-    /**
-     * Explanation of the Bullshit Fix™️
-     * Forge loads built-in packs by their ID. tectonic/increased_height must load above tectonic/tectonic or tectonic/terratonic, but it comes alphabetically before them
-     * The "fix" tacks a z on the ID, making the increased height pack's ID tectonic/zincreased_height
-     * I hate Forge.
-     */
     private void registerDatapack(final AddPackFindersEvent event, String packName) {
         boolean enableBullshitFix = packName.equals("increased_height");
         try {

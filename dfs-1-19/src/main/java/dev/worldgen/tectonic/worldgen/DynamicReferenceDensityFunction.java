@@ -1,6 +1,6 @@
 package dev.worldgen.tectonic.worldgen;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import dev.worldgen.tectonic.Tectonic;
 import net.minecraft.core.Holder;
@@ -14,12 +14,12 @@ import org.jetbrains.annotations.NotNull;
  * This is probably the worst.
  */
 public record DynamicReferenceDensityFunction(HolderSet<DensityFunction> arguments, Holder<DensityFunction> fallback) implements DensityFunction {
-    public static Codec<DynamicReferenceDensityFunction> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+    public static MapCodec<DynamicReferenceDensityFunction> DATA_CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
         Tectonic.getHolderSetCodec().fieldOf("arguments").forGetter(DynamicReferenceDensityFunction::arguments),
         DensityFunction.CODEC.fieldOf("fallback").forGetter(DynamicReferenceDensityFunction::fallback)
     ).apply(instance, DynamicReferenceDensityFunction::new));
 
-    public static KeyDispatchDataCodec<DynamicReferenceDensityFunction> CODEC_HOLDER = KeyDispatchDataCodec.of(CODEC);
+    public static KeyDispatchDataCodec<DynamicReferenceDensityFunction> CODEC_HOLDER = KeyDispatchDataCodec.of(DATA_CODEC);
 
     @Override
     public double compute(@NotNull FunctionContext context) {

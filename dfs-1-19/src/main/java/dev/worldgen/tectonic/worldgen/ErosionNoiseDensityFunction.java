@@ -1,22 +1,20 @@
 package dev.worldgen.tectonic.worldgen;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import dev.worldgen.tectonic.config.ConfigHandler;
-import net.minecraft.core.Holder;
 import net.minecraft.util.KeyDispatchDataCodec;
 import net.minecraft.world.level.levelgen.DensityFunction;
-import net.minecraft.world.level.levelgen.DensityFunctions;
 import org.jetbrains.annotations.NotNull;
 
 public record ErosionNoiseDensityFunction(DensityFunction.NoiseHolder noise, DensityFunction shiftX, DensityFunction shiftZ) implements DensityFunction {
-    public static Codec<ErosionNoiseDensityFunction> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+    public static MapCodec<ErosionNoiseDensityFunction> DATA_CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
         NoiseHolder.CODEC.fieldOf("noise").forGetter(ErosionNoiseDensityFunction::noise),
         DensityFunction.HOLDER_HELPER_CODEC.fieldOf("shift_x").forGetter(ErosionNoiseDensityFunction::shiftX),
         DensityFunction.HOLDER_HELPER_CODEC.fieldOf("shift_z").forGetter(ErosionNoiseDensityFunction::shiftZ)
     ).apply(instance, ErosionNoiseDensityFunction::new));
 
-    public static KeyDispatchDataCodec<ErosionNoiseDensityFunction> CODEC_HOLDER = KeyDispatchDataCodec.of(CODEC);
+    public static KeyDispatchDataCodec<ErosionNoiseDensityFunction> CODEC_HOLDER = KeyDispatchDataCodec.of(DATA_CODEC);
 
     @Override
     public double compute(@NotNull FunctionContext context) {

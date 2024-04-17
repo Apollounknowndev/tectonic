@@ -41,9 +41,9 @@ public class TectonicNeoforge {
     }
 
     private void registerDensityFunctionTypes(final RegisterEvent event) {
-        event.register(Registries.DENSITY_FUNCTION_TYPE, helper -> helper.register(Tectonic.idOf("config"), ConfigDensityFunction.CODEC));
-        event.register(Registries.DENSITY_FUNCTION_TYPE, helper -> helper.register(Tectonic.idOf("dynamic_reference"), DynamicReferenceDensityFunction.CODEC));
-        event.register(Registries.DENSITY_FUNCTION_TYPE, helper -> helper.register(Tectonic.idOf("erosion_noise"), ErosionNoiseDensityFunction.CODEC));
+        event.register(Registries.DENSITY_FUNCTION_TYPE, helper -> helper.register(Tectonic.idOf("config"), ConfigDensityFunction.CODEC_HOLDER.codec()));
+        event.register(Registries.DENSITY_FUNCTION_TYPE, helper -> helper.register(Tectonic.idOf("dynamic_reference"), DynamicReferenceDensityFunction.CODEC_HOLDER.codec()));
+        event.register(Registries.DENSITY_FUNCTION_TYPE, helper -> helper.register(Tectonic.idOf("erosion_noise"), ErosionNoiseDensityFunction.CODEC_HOLDER.codec()));
     }
 
     private void registerEnabledPacks(final AddPackFindersEvent event) {

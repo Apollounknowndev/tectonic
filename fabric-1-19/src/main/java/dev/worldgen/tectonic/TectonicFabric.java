@@ -32,9 +32,9 @@ public class TectonicFabric implements ModInitializer {
         ConfigHandler.getConfig().enablePacks(FabricLoader.getInstance().isModLoaded("terralith"), TectonicFabric::registerPack);
         Collections.reverse(packs);
 
-        Registry.register(Registry.DENSITY_FUNCTION_TYPES, idOf("config"), ConfigDensityFunction.CODEC);
-        Registry.register(Registry.DENSITY_FUNCTION_TYPES, idOf("dynamic_reference"), DynamicReferenceDensityFunction.CODEC);
-        Registry.register(Registry.DENSITY_FUNCTION_TYPES, idOf("erosion_noise"), ErosionNoiseDensityFunction.CODEC);
+        Registry.register(Registry.DENSITY_FUNCTION_TYPES, idOf("config"), ConfigDensityFunction.CODEC_HOLDER.codec());
+        Registry.register(Registry.DENSITY_FUNCTION_TYPES, idOf("dynamic_reference"), DynamicReferenceDensityFunction.CODEC_HOLDER.codec());
+        Registry.register(Registry.DENSITY_FUNCTION_TYPES, idOf("erosion_noise"), ErosionNoiseDensityFunction.CODEC_HOLDER.codec());
     }
 
     public static List<ModNioResourcePack> getPacks() {

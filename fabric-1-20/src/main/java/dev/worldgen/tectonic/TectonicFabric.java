@@ -1,6 +1,7 @@
 package dev.worldgen.tectonic;
 
 import dev.worldgen.tectonic.config.ConfigHandler;
+import dev.worldgen.tectonic.mixin.BuiltInPackSourceAccessor;
 import dev.worldgen.tectonic.worldgen.ConfigDensityFunction;
 import dev.worldgen.tectonic.worldgen.DynamicReferenceDensityFunction;
 import dev.worldgen.tectonic.worldgen.ErosionNoiseDensityFunction;
@@ -11,12 +12,10 @@ import net.minecraft.core.RegistryCodecs;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.packs.PackResources;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.PathPackResources;
 import net.minecraft.server.packs.repository.Pack;
 import net.minecraft.server.packs.repository.PackSource;
-import org.jetbrains.annotations.NotNull;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -36,35 +35,19 @@ public class TectonicFabric implements ModInitializer {
 
         ConfigHandler.getConfig().enablePacks(FabricLoader.getInstance().isModLoaded("terralith"), TectonicFabric::registerPack);
 
-        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("config"), ConfigDensityFunction.CODEC);
-        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("dynamic_reference"), DynamicReferenceDensityFunction.CODEC);
-        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("erosion_noise"), ErosionNoiseDensityFunction.CODEC);
+        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("config"), ConfigDensityFunction.CODEC_HOLDER.codec());
+        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("dynamic_reference"), DynamicReferenceDensityFunction.CODEC_HOLDER.codec());
+        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("erosion_noise"), ErosionNoiseDensityFunction.CODEC_HOLDER.codec());
     }
 
     private static void registerPack(String packName) {
         Path resourcePath = FabricLoader.getInstance().getModContainer("tectonic").get().findPath("resourcepacks/"+packName).get();
-        Pack dataPack = Pack.readMetaAndCreate("tectonic/" + packName.toLowerCase(), Component.translatable("pack_name.tectonic."+packName), false, createSupplier(new PathPackResources(resourcePath.getFileName().toString(), resourcePath, false)), PackType.SERVER_DATA, Pack.Position.TOP, PackSource.BUILT_IN);
+        Pack dataPack = Pack.readMetaAndCreate("tectonic/" + packName.toLowerCase(), Component.translatable("pack_name.tectonic."+packName), false, BuiltInPackSourceAccessor.createSupplier(new PathPackResources(resourcePath.getFileName().toString(), resourcePath, false)), PackType.SERVER_DATA, Pack.Position.TOP, PackSource.BUILT_IN);
 
         if (packName.endsWith("tonic")) {
             basePack = dataPack;
         } else {
             bonusPacks.add(dataPack);
         }
-    }
-
-    protected static Pack.ResourcesSupplier createSupplier(final PackResources packResources) {
-        return new Pack.ResourcesSupplier() {
-            public PackResources open(@NotNull String string) {
-                return packResources;
-            }
-
-            public @NotNull PackResources openPrimary(@NotNull String string) {
-                return packResources;
-            }
-
-            public @NotNull PackResources openFull(@NotNull String string, @NotNull Pack.Info info) {
-                return packResources;
-            }
-        };
     }
 }

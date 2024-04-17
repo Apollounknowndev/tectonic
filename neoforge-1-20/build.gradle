@@ -84,7 +84,7 @@ publishMods {
     modLoaders.add("neoforge")
     displayName = "v%s ~ Neoforge 1.20.2".formatted(project.version)
 
-    dryRun = false
+    dryRun = true
 
     modrinth {
         accessToken = providers.environmentVariable("TOKEN_MR")

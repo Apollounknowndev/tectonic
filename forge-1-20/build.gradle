@@ -126,7 +126,7 @@ publishMods {
     modLoaders.add("forge")
     displayName = "v%s ~ Forge 1.20.2".formatted(project.version)
 
-    dryRun = false
+    dryRun = true
 
     modrinth {
         accessToken = providers.environmentVariable("TOKEN_MR")
