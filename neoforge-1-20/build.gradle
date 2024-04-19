@@ -15,6 +15,7 @@ base {
 if (file('src/main/resources/META-INF/accesstransformer.cfg').exists()) {
     minecraft.accessTransformers.file file('src/main/resources/META-INF/accesstransformer.cfg')
 }
+
 runs {
     configureEach {
         modSource project.sourceSets.main
