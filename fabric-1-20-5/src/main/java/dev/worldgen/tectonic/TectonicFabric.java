@@ -12,19 +12,17 @@ import net.minecraft.core.RegistryCodecs;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackLocationInfo;
+import net.minecraft.server.packs.PackSelectionConfig;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.PathPackResources;
 import net.minecraft.server.packs.repository.Pack;
 import net.minecraft.server.packs.repository.PackSource;
-import net.minecraft.tags.EntityTypeTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static dev.worldgen.tectonic.Tectonic.idOf;
 
@@ -47,7 +45,26 @@ public class TectonicFabric implements ModInitializer {
 
     private static void registerPack(String packName) {
         Path resourcePath = FabricLoader.getInstance().getModContainer("tectonic").get().findPath("resourcepacks/"+packName).get();
-        Pack dataPack = Pack.readMetaAndCreate("tectonic/" + packName.toLowerCase(), Component.translatable("pack_name.tectonic."+packName), false, BuiltInPackSourceAccessor.createSupplier(new PathPackResources(resourcePath.getFileName().toString(), resourcePath, false)), PackType.SERVER_DATA, Pack.Position.TOP, PackSource.BUILT_IN);
+
+        PackLocationInfo locationInfo = new PackLocationInfo(
+            resourcePath.getFileName().toString(),
+            Component.translatable("pack_name.tectonic."+packName),
+            PackSource.BUILT_IN,
+            Optional.empty()
+        );
+
+        PackSelectionConfig selectionConfig = new PackSelectionConfig(
+            true,
+            Pack.Position.TOP,
+            false
+        );
+
+        Pack dataPack = Pack.readMetaAndCreate(
+            locationInfo,
+            BuiltInPackSourceAccessor.createSupplier(new PathPackResources(locationInfo, resourcePath)),
+            PackType.SERVER_DATA,
+            selectionConfig
+        );
 
         if (packName.endsWith("tonic")) {
             basePack = dataPack;

@@ -16,6 +16,8 @@
   "height": 704,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
+    "min_inclusive": 0,
+    "max_inclusive": 7,
     "value": {
       "min_inclusive": 0,
       "max_inclusive": 7
