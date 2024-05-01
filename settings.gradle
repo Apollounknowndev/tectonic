@@ -42,4 +42,4 @@ include("forge-1-19")
 include("forge-1-19-3")
 include("forge-1-20")
 
-include("neoforge-1-20")
+include("neoforge-1-20-5")

@@ -11,10 +11,10 @@ base {
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.20.5-rc2"
+    minecraft "com.mojang:minecraft:1.20.5"
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.97.3+1.20.5"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.97.5+1.20.5"
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
     compileOnly project(":common")
     compileOnly project(":dfs-1-19")
@@ -85,10 +85,7 @@ publishMods {
         accessToken = providers.environmentVariable("TOKEN_MR")
         projectId = "lWDHr9jE"
 
-        minecraftVersionRange {
-            start = "1.20.5"
-            end = "1.20.5"
-        }
+        minecraftVersions.add("1.20.5")
 
         requires {
             slug = "fabric-api"
@@ -102,10 +99,7 @@ publishMods {
         accessToken = providers.environmentVariable("TOKEN_CF")
         projectId = "686836"
 
-        minecraftVersionRange {
-            start = "1.20.5"
-            end = "1.20.5"
-        }
+        minecraftVersions.add("1.20.5")
 
         requires("fabric-api")
         optional("lithostitched")

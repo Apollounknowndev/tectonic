@@ -1,5 +1,9 @@
 {
     "pack": {
+        "supported_formats": [
+            9,
+            41
+        ],
         "description": "${mod_name}",
         "pack_format": 9
     }

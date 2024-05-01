@@ -2,7 +2,7 @@
   "pack": {
     "supported_formats": [
       9,
-      26
+      41
     ],
     "pack_format": 15,
     "description": "Raises max build and generation height to y640"

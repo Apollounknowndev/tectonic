@@ -1,12 +1,12 @@
 plugins {
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.81'
+    id 'net.neoforged.gradle.userdev' version '7.0.107'
     id 'java-library'
     id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
 }
 base {
-    archivesName = "${mod_id}-neoforge-1.20"
+    archivesName = "${mod_id}-neoforge-1.20.6"
 }
 
 // Automatically enable neoforge AccessTransformers if the file exists
@@ -40,7 +40,7 @@ runs {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
-    implementation "net.neoforged:neoforge:${neoforge_version}"
+    implementation "net.neoforged:neoforge:20.6.13-beta"
     compileOnly project(":common")
     compileOnly project(":dfs-1-19")
 }
@@ -83,7 +83,7 @@ publishMods {
     changelog = "${update_changelog}"
     type = STABLE
     modLoaders.add("neoforge")
-    displayName = "v%s ~ Neoforge 1.20.2".formatted(project.version)
+    displayName = "v%s ~ Neoforge 1.20.6".formatted(project.version)
 
     dryRun = true
 
@@ -92,8 +92,8 @@ publishMods {
         projectId = "lWDHr9jE"
 
         minecraftVersionRange {
-            start = "1.20.2"
-            end = "1.20.4"
+            start = "1.20.5"
+            end = "1.20.6"
         }
 
         optional {
@@ -106,8 +106,8 @@ publishMods {
         projectId = "686836"
 
         minecraftVersionRange {
-            start = "1.20.2"
-            end = "1.20.4"
+            start = "1.20.5"
+            end = "1.20.6"
         }
 
         optional("lithostitched")
