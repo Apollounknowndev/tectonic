@@ -1,4 +1,4 @@
-![Tectonic logo](https://cdn.modrinth.com/data/lWDHr9jE/images/810083a46d3e071419e4fb7d28a126223838d7f1.png)
+![Tectonic logo](https://github.com/Apollounknowndev/tectonic/blob/169bba953c520e02ccd14eaadf7f434492837eed/logo.png)
 
 **Tectonic** is a world generation datapack and mod that aims to transform how terrain is shaped.
 
