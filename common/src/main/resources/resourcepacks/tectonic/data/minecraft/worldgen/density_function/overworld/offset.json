@@ -125,7 +125,7 @@
                           },
                           {
                             "location": -0.2,
-                            "derivative": 0,
+                            "derivative": 0.2,
                             "value": {
                               "coordinate": "tectonic:overworld/legacy/ridges_folded",
                               "points": [
@@ -149,7 +149,7 @@
                           },
                           {
                             "location": 0.2,
-                            "derivative": 0,
+                            "derivative": -0.2,
                             "value": {
                               "coordinate": "tectonic:overworld/legacy/ridges_folded",
                               "points": [
@@ -270,7 +270,7 @@
                       }
                     },
                     {
-                      "location": 0.05,
+                      "location": 0.025,
                       "derivative": 0,
                       "value": {
                         "coordinate": "tectonic:overworld/erosion",
@@ -504,7 +504,7 @@
                       }
                     },
                     {
-                      "location": 0.125,
+                      "location": 0.25,
                       "derivative": 0,
                       "value": {
                         "coordinate": "tectonic:overworld/erosion",
@@ -795,6 +795,460 @@
                             "location": 0.175,
                             "derivative": 0,
                             "value": 0.55
+                          },
+                          {
+                            "location": 0.275,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 1
+                                },
+                                {
+                                  "location": 0.075,
+                                  "value": 0.222,
+                                  "derivative": 12
+                                },
+                                {
+                                  "location": 0.125,
+                                  "value": 0.4,
+                                  "derivative": 0
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": 0.35,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.1,
+                                  "value": 0.125,
+                                  "derivative": 5
+                                },
+                                {
+                                  "location": 0.1667,
+                                  "value": 0.225,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.3,
+                                  "value": 0.35,
+                                  "derivative": 0
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": 0.5,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.15,
+                                  "value": 0.075,
+                                  "derivative": 0.0
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": 0.825,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.15,
+                                  "value": 0.075,
+                                  "derivative": 0.0
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": 0.875,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 1
+                                },
+                                {
+                                  "location": 0.175,
+                                  "value": 0.075,
+                                  "derivative": 0.3
+                                },
+                                {
+                                  "location": 0.3,
+                                  "derivative": 0,
+                                  "value": 0.25
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": 0.975,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 1
+                                },
+                                {
+                                  "location": 0.175,
+                                  "value": 0.075,
+                                  "derivative": 0.3
+                                },
+                                {
+                                  "location": 0.3,
+                                  "derivative": 0,
+                                  "value": 0.25
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": 1.025,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0.35,
+                                  "derivative": 0.1667,
+                                  "value": 0.03
+                                },
+                                {
+                                  "location": 0.5,
+                                  "derivative": 0,
+                                  "value": 0.075
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "location": 0.8,
+                      "derivative": 0,
+                      "value": {
+                        "coordinate": "tectonic:overworld/erosion",
+                        "points": [
+                          {
+                            "location": -1.6,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/temperature",
+                              "points": [
+                                {
+                                  "location": 0.55,
+                                  "derivative": 0,
+                                  "value": {
+                                    "coordinate": "tectonic:overworld/ridges",
+                                    "points": [
+                                      {
+                                        "location": -0.15,
+                                        "value": 0.075,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0,
+                                        "value": -0.05,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.15,
+                                        "value": 0.075,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.275,
+                                        "value": 0.3,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.4,
+                                        "value": 0.6,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.525,
+                                        "value": 0.9,
+                                        "derivative": 0.25
+                                      },
+                                      {
+                                        "location": 0.75,
+                                        "value": 0.95,
+                                        "derivative": 0
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "location": 0.6,
+                                  "derivative": 0,
+                                  "value": {
+                                    "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                                    "points": [
+                                      {
+                                        "location": 0,
+                                        "value": -0.05,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.15,
+                                        "value": 0.075,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.3,
+                                        "derivative": 0,
+                                        "value": {
+                                          "coordinate": "tectonic:overworld/dunes/total",
+                                          "points": [
+                                            {
+                                              "location": 0,
+                                              "derivative": 1,
+                                              "value": 0.075
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": -0.6,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "minecraft:overworld/temperature",
+                              "points": [
+                                {
+                                  "location": 0.55,
+                                  "derivative": 0,
+                                  "value": {
+                                    "coordinate": "tectonic:overworld/ridges",
+                                    "points": [
+                                      {
+                                        "location": -0.15,
+                                        "value": 0.075,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0,
+                                        "value": -0.05,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.15,
+                                        "value": 0.075,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.275,
+                                        "value": 0.2,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.4,
+                                        "value": 0.4,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.525,
+                                        "value": 0.6,
+                                        "derivative": 0.25
+                                      },
+                                      {
+                                        "location": 0.75,
+                                        "value": 0.75,
+                                        "derivative": 0
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "location": 0.6,
+                                  "derivative": 0,
+                                  "value": {
+                                    "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                                    "points": [
+                                      {
+                                        "location": 0,
+                                        "value": -0.05,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.15,
+                                        "value": 0.075,
+                                        "derivative": 0
+                                      },
+                                      {
+                                        "location": 0.3,
+                                        "derivative": 0,
+                                        "value": {
+                                          "coordinate": "tectonic:overworld/dunes/total",
+                                          "points": [
+                                            {
+                                              "location": 0,
+                                              "derivative": 1,
+                                              "value": 0.075
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": -0.5,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.15,
+                                  "value": 0.075,
+                                  "derivative": 0.0
+                                },
+                                {
+                                  "location": 0.3,
+                                  "value": {
+                                    "coordinate": "minecraft:overworld/temperature",
+                                    "points": [
+                                      {
+                                        "location": 0.55,
+                                        "derivative": 0,
+                                        "value": 0.075
+                                      },
+                                      {
+                                        "location": 0.6,
+                                        "derivative": 0,
+                                        "value": {
+                                          "coordinate": "tectonic:overworld/dunes/total",
+                                          "points": [
+                                            {
+                                              "location": 0,
+                                              "derivative": 1,
+                                              "value": 0.075
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "derivative": 0.0
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": -0.35,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.1,
+                                  "value": 0.125,
+                                  "derivative": 5
+                                },
+                                {
+                                  "location": 0.1667,
+                                  "value": 0.225,
+                                  "derivative": 0
+                                },
+                                {
+                                  "location": 0.3,
+                                  "value": 0.35,
+                                  "derivative": 0
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": -0.275,
+                            "derivative": 0,
+                            "value": {
+                              "coordinate": "tectonic:overworld/legacy/ridges_folded",
+                              "points": [
+                                {
+                                  "location": 0,
+                                  "value": -0.05,
+                                  "derivative": 1
+                                },
+                                {
+                                  "location": 0.075,
+                                  "value": 0.222,
+                                  "derivative": 12
+                                },
+                                {
+                                  "location": 0.125,
+                                  "value": 0.4,
+                                  "derivative": 0
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "location": -0.175,
+                            "derivative": 0,
+                            "value": 0.65
+                          },
+                          {
+                            "location": 0,
+                            "derivative": 0,
+                            "value": 1.1
+                          },
+                          {
+                            "location": 0.175,
+                            "derivative": 0,
+                            "value": 0.65
                           },
                           {
                             "location": 0.275,

@@ -21,12 +21,12 @@
               "coordinate": "tectonic:overworld/continents",
               "points": [
                 {
-                  "location": 0.05,
+                  "location": 0.03,
                   "derivative": 0,
                   "value": 0
                 },
                 {
-                  "location": 0.1,
+                  "location": 0.225,
                   "derivative": 0,
                   "value": {
                     "coordinate": "tectonic:overworld/legacy/erosion_folded",
