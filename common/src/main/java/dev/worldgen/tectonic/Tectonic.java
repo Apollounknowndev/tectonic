@@ -16,7 +16,7 @@ public class Tectonic {
     }
 
     public static ResourceLocation idOf(String name) {
-        return new ResourceLocation("tectonic", name);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
     }
 
     public static Codec<HolderSet<DensityFunction>> getHolderSetCodec() {

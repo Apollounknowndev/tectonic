@@ -8,7 +8,7 @@ base {
     archivesName = "${mod_id}-common"
 }
 minecraft {
-    version("1.20.6")
+    version("1.21")
     if(file("src/main/resources/${mod_id}.accesswidener").exists()){
         accessWideners(file("src/main/resources/${mod_id}.accesswidener"))
     }

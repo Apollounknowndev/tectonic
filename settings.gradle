@@ -28,18 +28,6 @@ plugins {
 rootProject.name = 'tectonic'
 
 include("common")
-
-include("dfs-1-18")
 include("dfs-1-19")
-
-include("fabric-1-18")
-include("fabric-1-19")
-include("fabric-1-20")
-include("fabric-1-20-5")
-
-include("forge-1-18")
-include("forge-1-19")
-include("forge-1-19-3")
-include("forge-1-20")
-
-include("neoforge-1-20-5")
+include("fabric-1-21")
+include("neoforge-1-21")
