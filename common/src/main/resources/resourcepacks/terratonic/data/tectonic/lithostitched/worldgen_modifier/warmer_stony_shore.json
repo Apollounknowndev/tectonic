@@ -1,9 +1,0 @@
-{
-    "type": "lithostitched:replace_climate",
-    "biomes": "minecraft:stony_shore",
-    "climate": {
-        "temperature": 0.5,
-        "downfall": 0.3,
-        "has_precipitation": true
-    }
-}

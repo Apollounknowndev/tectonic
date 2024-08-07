@@ -1,10 +1,10 @@
 {
   "pack": {
     "supported_formats": [
-      9,
+      48,
       48
     ],
-    "pack_format": 15,
+    "pack_format": 48,
     "description": [
       {
         "text": "Tectonic v2.4",
@@ -18,6 +18,92 @@
       {
         "text": "Apollo",
         "color": "#ca78e4"
+      }
+    ]
+  },
+  "neoforge:overlays": {
+    "entries": [
+      {
+        "directory": "overlay.legacy",
+        "condition": {
+          "type": "tectonic:config",
+          "key": "legacy"
+        }
+      },
+      {
+        "directory": "overlay.increased_height",
+        "condition": {
+          "type": "tectonic:config",
+          "key": "increased_height"
+        }
+      },
+      {
+        "directory": "overlay.terratonic",
+        "condition": {
+          "type": "neoforge:mod_loaded",
+          "modid": "terralith"
+        }
+      },
+      {
+        "directory": "overlay.terratonic_increased_height",
+        "condition": {
+          "type": "neoforge:and",
+          "values": [
+            {
+              "type": "neoforge:mod_loaded",
+              "modid": "terralith"
+            },
+            {
+              "type": "tectonic:config",
+              "key": "increased_height"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "fabric:overlays": {
+    "entries": [
+      {
+        "directory": "overlay.legacy",
+        "condition": {
+          "condition": "tectonic:config",
+          "key": "legacy"
+        }
+      },
+      {
+        "directory": "overlay.increased_height",
+        "condition": {
+          "condition": "tectonic:config",
+          "key": "increased_height"
+        }
+      },
+      {
+        "directory": "overlay.terratonic",
+        "condition": {
+          "condition": "fabric:all_mods_loaded",
+          "values": [
+            "terralith"
+          ]
+        }
+      },
+      {
+        "directory": "overlay.terratonic_increased_height",
+        "condition": {
+          "condition": "fabric:and",
+          "values": [
+            {
+              "condition": "fabric:all_mods_loaded",
+              "values": [
+                "terralith"
+              ]
+            },
+            {
+              "condition": "tectonic:config",
+              "key": "increased_height"
+            }
+          ]
+        }
       }
     ]
   }

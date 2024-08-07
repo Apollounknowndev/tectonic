@@ -1,0 +1,72 @@
+plugins {
+    id 'tectonic-loader'
+    id 'net.neoforged.moddev'
+    id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
+}
+
+neoForge {
+    version = neoforge_version
+
+    def at = project(':common').file('src/main/resources/META-INF/accesstransformer.cfg')
+    if (at.exists()) {
+        accessTransformers.add(at.absolutePath)
+    }
+
+    parchment {
+        minecraftVersion = parchment_minecraft
+        mappingsVersion = parchment_version
+    }
+
+    runs {
+        configureEach {
+            systemProperty('neoforge.enabledGameTestNamespaces', mod_id)
+            ideName = "NeoForge ${it.name.capitalize()} (${project.path})"
+        }
+        client {
+            client()
+        }
+        data {
+            data()
+        }
+        server {
+            server()
+        }
+    }
+    mods {
+        "${mod_id}" {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+publishMods {
+    file = jar.archiveFile
+    changelog = "${update_changelog}"
+    type = STABLE
+    modLoaders.add("neoforge")
+    displayName = "v%s ~ Neoforge 1.21".formatted(project.version)
+
+    dryRun = false
+
+    modrinth {
+        accessToken = providers.environmentVariable("TOKEN_MR")
+        projectId = "lWDHr9jE"
+
+        minecraftVersions.add("1.21")
+
+        optional {
+            slug = "lithostitched"
+        }
+    }
+
+    curseforge {
+        accessToken = providers.environmentVariable("TOKEN_CF")
+        projectId = "686836"
+
+        minecraftVersions.add("1.21")
+
+        optional("lithostitched")
+    }
+}

@@ -1,5 +1,0 @@
-{
-  "type": "tectonic:dynamic_reference",
-  "arguments": "#tectonic:terralith_extra_terrain_sum",
-  "fallback": -64
-}

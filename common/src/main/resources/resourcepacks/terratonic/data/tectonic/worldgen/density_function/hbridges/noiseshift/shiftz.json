@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:shifted_noise",
-  "noise": "tectonic:hbridges/base",
-  "xz_scale": 1.7,
-  "y_scale": 1,
-  "shift_x": 0,
-  "shift_y": 0,
-  "shift_z": 10
-}

@@ -1,7 +1,8 @@
 plugins {
-    // Required for NeoGradle
-    id "org.jetbrains.gradle.plugin.idea-ext" version "1.1.7"
-    id 'fabric-loom' version '1.6-SNAPSHOT' apply false
+    // see https://fabricmc.net/develop/ for new versions
+    id 'fabric-loom' version '1.7-SNAPSHOT' apply false
+    // see https://projects.neoforged.net/neoforged/moddevgradle for new versions
+    id 'net.neoforged.moddev' version '1.0.17' apply false
 }
 
 subprojects {
@@ -12,7 +13,7 @@ subprojects {
     java.withJavadocJar()
         
     jar {
-        from(rootProject.file("LICENSE")) {
+        from(rootProject.file("license.txt")) {
             rename { "${it}_${mod_name}" }
         }
         manifest {
@@ -32,7 +33,7 @@ subprojects {
     }
 
     sourcesJar {
-        from(rootProject.file("LICENSE")) {
+        from(rootProject.file("license.txt")) {
             rename { "${it}_${mod_name}" }
         }
     }

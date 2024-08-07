@@ -8,8 +8,6 @@
       "type": "minecraft:clamp",
       "input": {
         "type": "minecraft:spline",
-        "min_value":-64,
-        "max_value":64,
         "spline": {
           "coordinate": {
             "type": "minecraft:abs",

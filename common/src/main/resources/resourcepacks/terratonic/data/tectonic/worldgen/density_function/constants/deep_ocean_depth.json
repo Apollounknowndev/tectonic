@@ -1,6 +1,0 @@
-{
-  "type": "tectonic:config",
-  "option": "deeper_oceans",
-  "true_argument": -0.45,
-  "false_argument": -0.22
-}

@@ -5,7 +5,7 @@
     "argument1": -0.2,
     "argument2": {
       "type": "minecraft:mul",
-      "argument1": "tectonic:overworld/wackiness",
+      "argument1": "tectonic:overworld/spline/windswept",
       "argument2": {
         "type": "minecraft:add",
         "argument1": 0.2,
@@ -17,7 +17,7 @@
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:mul",
-      "argument1": "tectonic:overworld/wackiness",
+      "argument1": "tectonic:overworld/spline/windswept",
       "argument2": "minecraft:overworld/base_3d_noise"
     },
     "argument2": {
@@ -25,7 +25,7 @@
       "argument1": "tectonic:overworld/depth",
       "argument2": {
         "type": "minecraft:mul",
-        "argument1": "minecraft:overworld/jaggedness",
+        "argument1": "tectonic:overworld/spline/jaggedness",
         "argument2": {
           "type": "minecraft:add",
           "argument1": {

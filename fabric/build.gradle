@@ -1,0 +1,76 @@
+plugins {
+    id 'tectonic-loader'
+    id 'fabric-loom'
+    id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.layered {
+        officialMojangMappings()
+        parchment("org.parchmentmc.data:parchment-${parchment_minecraft}:${parchment_version}@zip")
+    }
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fapi_version}"
+}
+
+loom {
+    def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
+    if (aw.exists()) {
+        accessWidenerPath.set(aw)
+    }
+
+    mixin {
+        defaultRefmapName.set("${mod_id}.refmap.json")
+    }
+
+    runs {
+        client {
+            client()
+            setConfigName('Fabric Client')
+            ideConfigGenerated(true)
+            runDir('runs/client')
+        }
+        server {
+            server()
+            setConfigName('Fabric Server')
+            ideConfigGenerated(true)
+            runDir('runs/server')
+        }
+    }
+}
+
+publishMods {
+    file = remapJar.archiveFile
+    changelog = "${update_changelog}"
+    type = STABLE
+    modLoaders.add("fabric")
+    modLoaders.add("quilt")
+    displayName = "v%s ~ Fabric 1.21".formatted(project.version)
+
+    dryRun = false
+
+    modrinth {
+        accessToken = providers.environmentVariable("TOKEN_MR")
+        projectId = "lWDHr9jE"
+
+        minecraftVersions.add("1.21")
+
+        requires {
+            slug = "fabric-api"
+        }
+        optional {
+            slug = "lithostitched"
+        }
+    }
+
+    curseforge {
+        accessToken = providers.environmentVariable("TOKEN_CF")
+        projectId = "686836"
+
+        minecraftVersions.add("1.21")
+
+        requires("fabric-api")
+        optional("lithostitched")
+    }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "minecraft:overworld/noise_router/continents",
+        "points": [
+          {
+            "derivative": 10,
+            "location": 0.03,
+            "value": -12
+          },
+          {
+            "derivative": 0,
+            "location": 0.16,
+            "value": {
+              "coordinate": "minecraft:overworld/noise_router/erosion",
+              "points": [
+                {
+                  "derivative": 0,
+                  "location": -0.08,
+                  "value": {
+                    "coordinate": "minecraft:overworld/noise_router/temperature",
+                    "points": [
+                      {
+                        "derivative": 10,
+                        "location": 0.55,
+                        "value": -12
+                      },
+                      {
+                        "derivative": 0,
+                        "location": 0.65,
+                        "value": 0.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "derivative": -10,
+                  "location": 0.05,
+                  "value": -12
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

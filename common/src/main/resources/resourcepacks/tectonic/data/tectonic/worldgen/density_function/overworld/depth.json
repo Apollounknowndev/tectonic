@@ -7,5 +7,5 @@
     "from_value": 1.5,
     "to_value": -4
   },
-  "argument2": "minecraft:overworld/offset"
+  "argument2": "tectonic:overworld/spline/offset"
 }

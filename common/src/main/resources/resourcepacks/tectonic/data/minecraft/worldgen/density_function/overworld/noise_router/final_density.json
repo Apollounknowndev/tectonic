@@ -32,7 +32,7 @@
                       "type": "minecraft:range_choice",
                       "input": "tectonic:overworld/depth",
                       "min_inclusive": -1000000,
-                      "max_exclusive": 0.1,
+                      "max_exclusive": 0.15,
                       "when_in_range": "tectonic:overworld/sloped_cheese",
                       "when_out_of_range": "tectonic:overworld/caves"
                     }
