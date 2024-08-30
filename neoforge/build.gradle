@@ -55,6 +55,7 @@ publishMods {
         projectId = "lWDHr9jE"
 
         minecraftVersions.add("1.21")
+        minecraftVersions.add("1.21.1")
 
         optional {
             slug = "lithostitched"
@@ -66,6 +67,7 @@ publishMods {
         projectId = "686836"
 
         minecraftVersions.add("1.21")
+        minecraftVersions.add("1.21.1")
 
         optional("lithostitched")
     }

@@ -1,9 +1,5 @@
 {
   "pack": {
-    "supported_formats": [
-      48,
-      48
-    ],
     "pack_format": 48,
     "description": [
       {
@@ -25,40 +21,59 @@
     "entries": [
       {
         "directory": "overlay.legacy",
-        "condition": {
-          "type": "tectonic:config",
-          "key": "legacy"
-        }
+        "formats": [
+          1,
+          99
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "tectonic:config",
+            "key": "legacy"
+          }
+        ]
       },
       {
         "directory": "overlay.increased_height",
-        "condition": {
-          "type": "tectonic:config",
-          "key": "increased_height"
-        }
+        "formats": [
+          1,
+          99
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "tectonic:config",
+            "key": "increased_height"
+          }
+        ]
       },
       {
         "directory": "overlay.terratonic",
-        "condition": {
-          "type": "neoforge:mod_loaded",
-          "modid": "terralith"
-        }
+        "formats": [
+          1,
+          99
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "terralith"
+          }
+        ]
       },
       {
         "directory": "overlay.terratonic_increased_height",
-        "condition": {
-          "type": "neoforge:and",
-          "values": [
-            {
-              "type": "neoforge:mod_loaded",
-              "modid": "terralith"
-            },
-            {
-              "type": "tectonic:config",
-              "key": "increased_height"
-            }
-          ]
-        }
+        "formats": [
+          1,
+          99
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "terralith"
+          },
+          {
+            "type": "tectonic:config",
+            "key": "increased_height"
+          }
+        ]
       }
     ]
   },
