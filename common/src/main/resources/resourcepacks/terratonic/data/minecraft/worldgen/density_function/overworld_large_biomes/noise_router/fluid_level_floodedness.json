@@ -1,6 +1,6 @@
 {
   "type": "minecraft:range_choice",
-  "input": "tectonic:overworld/aquifer_parameters",
+  "input": "tectonic:overworld_large_biomes/aquifer_parameters",
   "min_inclusive": 0.9,
   "max_exclusive": 64,
   "when_in_range": 1,

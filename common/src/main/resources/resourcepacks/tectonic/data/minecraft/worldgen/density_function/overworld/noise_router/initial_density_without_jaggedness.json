@@ -1,12 +1,21 @@
 {
-  "type": "minecraft:mul",
-  "argument1": 4,
-  "argument2": {
-    "type": "minecraft:quarter_negative",
-    "argument": {
+  "type": "minecraft:clamp",
+  "input": {
+    "type": "minecraft:add",
+    "argument1": -0.7,
+    "argument2": {
       "type": "minecraft:mul",
-      "argument1": "tectonic:overworld/depth",
-      "argument2": 6
+      "argument1": 4,
+      "argument2": {
+        "type": "minecraft:quarter_negative",
+        "argument": {
+          "type": "minecraft:mul",
+          "argument1": "tectonic:overworld/depth",
+          "argument2": 6
+        }
+      }
     }
-  }
+  },
+  "min": -64,
+  "max": 64
 }

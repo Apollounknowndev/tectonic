@@ -15,28 +15,7 @@
     "min_y": -64,
     "height": 704,
     "size_horizontal": 1,
-    "size_vertical": 2,
-    "sampling": {
-      "xz_scale": 1,
-      "y_scale": 1,
-      "xz_factor": 80,
-      "y_factor": 160
-    },
-    "bottom_slide": {
-      "target": 0.1171875,
-      "size": 3,
-      "offset": 0
-    },
-    "top_slide": {
-      "target": -0.078125,
-      "size": 2,
-      "offset": 8
-    },
-    "terrain_shaper": {
-      "offset": 0,
-      "factor": 0,
-      "jaggedness": 0
-    }
+    "size_vertical": 2
   },
   "noise_router": {
     "barrier": "minecraft:overworld/noise_router/barrier", 

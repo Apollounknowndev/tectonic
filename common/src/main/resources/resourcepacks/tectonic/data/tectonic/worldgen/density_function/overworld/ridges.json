@@ -2,7 +2,7 @@
   "type": "minecraft:flat_cache",
   "argument": {
     "type": "minecraft:shifted_noise",
-    "noise": "minecraft:ridge",
+    "noise": "tectonic:parameter/ridge",
     "xz_scale": 0.25,
     "y_scale": 0,
     "shift_x": "minecraft:shift_x",

@@ -25,7 +25,7 @@ public record ConfigCodec(boolean modEnabled, Legacy legacyModule, Features feat
                 enabledPacks.add("legacy");
             }
             if (this.experimentalModule().increasedHeight()) {
-                enabledPacks.add("increased_height");
+                enabledPacks.add(terralithEnabled ? "increased_height_terratonic": "increased_height");
             }
             enabledPacks.add(terralithEnabled ? "terratonic": "tectonic");
         }
@@ -67,18 +67,19 @@ public record ConfigCodec(boolean modEnabled, Legacy legacyModule, Features feat
 
 
 
-    public record Features(String commentA, String commentB, boolean deeperOceans, boolean desertDunes, boolean lavaRivers, boolean undergroundRivers) {
+    public record Features(String commentA, String commentB, boolean deeperOceans, boolean desertDunes, boolean lavaRivers, int snowStartOffset, boolean undergroundRivers) {
         private static final String COMMENT_A = "Enabling deeper oceans will lower vanilla ocean monuments to compensate for lower depth.";
-        private static final String COMMENT_B = "This DOES NOT apply on Forge 1.18-1.20.1. Ocean monuments will remain at their vanilla levels on those versions.";
+        private static final String COMMENT_B = "Snow start offset moves where snow starts, preventing biomes like Taigas looking weird next to mountain ranges.";
         public static final Codec<Features> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.STRING.fieldOf("__A").orElse(COMMENT_A).forGetter(Features::commentA),
-            Codec.STRING.fieldOf("__B").orElse(COMMENT_B).forGetter(Features::commentB),
-            Codec.BOOL.fieldOf("deeper_oceans").orElse(true).forGetter(Features::deeperOceans),
-            Codec.BOOL.fieldOf("desert_dunes").orElse(true).forGetter(Features::desertDunes),
-            Codec.BOOL.fieldOf("lava_rivers").orElse(true).forGetter(Features::lavaRivers),
-            Codec.BOOL.fieldOf("underground_rivers").orElse(true).forGetter(Features::undergroundRivers)
+                Codec.STRING.fieldOf("__A").orElse(COMMENT_A).forGetter(Features::commentA),
+                Codec.STRING.fieldOf("__B").orElse(COMMENT_B).forGetter(Features::commentB),
+                Codec.BOOL.fieldOf("deeper_oceans").orElse(true).forGetter(Features::deeperOceans),
+                Codec.BOOL.fieldOf("desert_dunes").orElse(true).forGetter(Features::desertDunes),
+                Codec.BOOL.fieldOf("lava_rivers").orElse(true).forGetter(Features::lavaRivers),
+                Codec.INT.fieldOf("snow_start_offset").orElse(128).forGetter(Features::snowStartOffset),
+                Codec.BOOL.fieldOf("underground_rivers").orElse(true).forGetter(Features::undergroundRivers)
         ).apply(instance, Features::new));
-        public static final Features DEFAULT = new Features(COMMENT_A, COMMENT_B, true, true, true, true);
+        public static final Features DEFAULT = new Features(COMMENT_A, COMMENT_B, true, true, true, 128, true);
     }
 
 

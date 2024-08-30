@@ -7,6 +7,7 @@ import com.google.gson.JsonPrimitive;
 import com.google.gson.stream.JsonWriter;
 import com.mojang.serialization.JsonOps;
 import dev.worldgen.tectonic.Tectonic;
+import net.minecraft.util.GsonHelper;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.BufferedReader;
@@ -15,11 +16,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class ConfigHandler {
     private static ConfigCodec LOADED_CONFIG = new ConfigCodec(
@@ -61,7 +58,7 @@ public class ConfigHandler {
             StringWriter stringWriter = new StringWriter();
             JsonWriter jsonWriter = new JsonWriter(stringWriter);
             jsonWriter.setIndent("  ");
-            writeSortedKeys(jsonWriter, element);
+            GsonHelper.writeValue(jsonWriter, element, Comparator.naturalOrder());
             writer.write(commentHack(stringWriter.toString()));
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -69,64 +66,8 @@ public class ConfigHandler {
     }
 
     /**
-     * Copied and modified from GsonHelper.writeValue()
-     * Method must be copied because it doesn't exist in 1.18.2
-     * This multi-version stuff sucks
-     */
-    public static void writeSortedKeys(JsonWriter writer, @Nullable JsonElement json) throws IOException {
-        if (json != null && !json.isJsonNull()) {
-            if (json instanceof JsonPrimitive jsonPrimitive) {
-                if (jsonPrimitive.isNumber()) {
-                    writer.value(jsonPrimitive.getAsNumber());
-                } else if (jsonPrimitive.isBoolean()) {
-                    writer.value(jsonPrimitive.getAsBoolean());
-                } else {
-                    writer.value(jsonPrimitive.getAsString());
-                }
-            } else {
-                if (json.isJsonArray()) {
-                    writer.beginArray();
-
-                    for (JsonElement element : json.getAsJsonArray()) {
-                        writeSortedKeys(writer, element);
-                    }
-
-                    writer.endArray();
-                } else {
-                    if (!json.isJsonObject()) {
-                        throw new IllegalArgumentException("Couldn't write " + json.getClass());
-                    }
-
-                    writer.beginObject();
-                    for (Map.Entry<String, JsonElement> elementEntry : sort(json.getAsJsonObject().entrySet())) {
-                        writer.name(elementEntry.getKey());
-                        writeSortedKeys(writer, elementEntry.getValue());
-                    }
-
-                    writer.endObject();
-                }
-            }
-        } else {
-            writer.nullValue();
-        }
-
-    }
-
-
-    /**
-     * Copied and modified from GsonHelper.sortByKeyIfNeeded()
-     * Method must be copied because it doesn't exist in 1.18.2
-     * This multi-version stuff sucks
-     */
-    private static Collection<Map.Entry<String, JsonElement>> sort(Collection<Map.Entry<String, JsonElement>> entries) {
-        List<Map.Entry<String, JsonElement>> list = new ArrayList<>(entries);
-        list.sort(Map.Entry.comparingByKey(String::compareTo));
-        return list;
-    }
-
-    /**
      * Yeah, we don't talk about this
-     * The alternative is to try and JiJ Jankson across all mod versions to have real comments
+     * The alternative is to try and JiJ Jankson
      * That sounds like too much work
      */
     private static String commentHack(String json) {
