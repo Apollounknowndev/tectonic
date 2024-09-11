@@ -37,7 +37,7 @@ public class TectonicFabric implements ModInitializer {
         Path resourcePath = FabricLoader.getInstance().getModContainer("tectonic").get().findPath("resourcepacks/"+packName).get();
         Pack dataPack = Pack.readMetaAndCreate("tectonic/" + packName.toLowerCase(), Component.translatable("pack_name.tectonic."+packName), false, string -> new PathPackResources(resourcePath.getFileName().toString(), resourcePath, false), PackType.SERVER_DATA, Pack.Position.TOP, PackSource.BUILT_IN);
 
-        if (packName.endsWith("tonic")) {
+        if (packName.equals("terratonic") || packName.equals("tectonic")) {
             basePack = dataPack;
         } else {
             bonusPacks.add(dataPack);
