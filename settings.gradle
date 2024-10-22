@@ -25,4 +25,3 @@ plugins {
 rootProject.name = 'tectonic'
 include("common")
 include("fabric")
-include("neoforge")
