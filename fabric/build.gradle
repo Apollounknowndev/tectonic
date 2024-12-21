@@ -46,7 +46,7 @@ publishMods {
     type = STABLE
     modLoaders.add("fabric")
     modLoaders.add("quilt")
-    displayName = "v%s ~ Fabric 1.21.2".formatted(project.version)
+    displayName = "v%s ~ Fabric 1.21.4".formatted(project.version)
 
     dryRun = false
 
@@ -55,6 +55,8 @@ publishMods {
         projectId = "lWDHr9jE"
 
         minecraftVersions.add("1.21.2")
+        minecraftVersions.add("1.21.3")
+        minecraftVersions.add("1.21.4")
 
         requires {
             slug = "fabric-api"
@@ -69,6 +71,8 @@ publishMods {
         projectId = "686836"
 
         minecraftVersions.add("1.21.2")
+        minecraftVersions.add("1.21.3")
+        minecraftVersions.add("1.21.4")
 
         requires("fabric-api")
         optional("lithostitched")

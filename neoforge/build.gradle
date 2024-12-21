@@ -25,9 +25,6 @@ neoForge {
         client {
             client()
         }
-        data {
-            data()
-        }
         server {
             server()
         }
@@ -56,6 +53,9 @@ publishMods {
 
         minecraftVersions.add("1.21")
         minecraftVersions.add("1.21.1")
+        minecraftVersions.add("1.21.2")
+        minecraftVersions.add("1.21.3")
+        minecraftVersions.add("1.21.4")
 
         optional {
             slug = "lithostitched"
@@ -68,6 +68,9 @@ publishMods {
 
         minecraftVersions.add("1.21")
         minecraftVersions.add("1.21.1")
+        minecraftVersions.add("1.21.2")
+        minecraftVersions.add("1.21.3")
+        minecraftVersions.add("1.21.4")
 
         optional("lithostitched")
     }
