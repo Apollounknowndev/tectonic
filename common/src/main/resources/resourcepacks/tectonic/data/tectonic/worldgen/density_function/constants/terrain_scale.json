@@ -1,4 +1,4 @@
 {
   "type": "tectonic:config",
-  "option": "terrain_scale"
+  "option": "final_multiplier"
 }

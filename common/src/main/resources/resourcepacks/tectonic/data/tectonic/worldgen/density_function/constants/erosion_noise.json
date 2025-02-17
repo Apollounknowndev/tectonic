@@ -1,5 +1,6 @@
 {
-  "type": "tectonic:erosion_noise",
+  "type": "tectonic:config_noise",
+  "option": "erosion_scale",
   "noise": "tectonic:parameter/erosion",
   "shift_x": "minecraft:shift_x",
   "shift_z": "minecraft:shift_z"

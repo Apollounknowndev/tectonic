@@ -28,6 +28,7 @@
         "fabricloader": ">=0.15",
         "fabric-api": ">=0.101.0",
         "minecraft": ">=1.21",
+        "lithostitched": "*",
         "java": ">=21"
     }
 }

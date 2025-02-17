@@ -4,6 +4,12 @@ plugins {
     id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
 }
 
+repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings loom.layered {
@@ -12,6 +18,9 @@ dependencies {
     }
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fapi_version}"
+
+    modImplementation "maven.modrinth:lithostitched:${lithostitched_version}-fabric-1.21.4"
+    //modImplementation "maven.modrinth:continents:RAipMfbS"
 }
 
 loom {
@@ -54,14 +63,12 @@ publishMods {
         accessToken = providers.environmentVariable("TOKEN_MR")
         projectId = "lWDHr9jE"
 
-        minecraftVersions.add("1.21.2")
-        minecraftVersions.add("1.21.3")
         minecraftVersions.add("1.21.4")
 
         requires {
             slug = "fabric-api"
         }
-        optional {
+        requires {
             slug = "lithostitched"
         }
     }
@@ -70,11 +77,9 @@ publishMods {
         accessToken = providers.environmentVariable("TOKEN_CF")
         projectId = "686836"
 
-        minecraftVersions.add("1.21.2")
-        minecraftVersions.add("1.21.3")
         minecraftVersions.add("1.21.4")
 
         requires("fabric-api")
-        optional("lithostitched")
+        requires("lithostitched")
     }
 }

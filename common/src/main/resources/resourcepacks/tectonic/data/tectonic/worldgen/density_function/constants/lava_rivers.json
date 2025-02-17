@@ -1,6 +1,4 @@
 {
   "type": "tectonic:config",
-  "option": "lava_rivers",
-  "true_argument": 1,
-  "false_argument": 0
+  "option": "lava_rivers"
 }

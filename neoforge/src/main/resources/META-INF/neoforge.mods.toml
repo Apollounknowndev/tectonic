@@ -1,11 +1,11 @@
 modLoader = "javafml"
 loaderVersion = "[1,)"
 license = "${license}"
-[[mods]] #mandatory
+
+[[mods]]
 modId = "${mod_id}"
 version = "${version}"
 displayName = "${mod_name}"
-
 logoFile="${mod_id}.png"
 credits="${credits}"
 authors = "${mod_author}"
@@ -17,21 +17,23 @@ config = "${mod_id}.mixins.json"
 [[mixins]]
 config = "${mod_id}.neoforge.mixins.json"
 
-[[dependencies.${mod_id}]] #optional
-modId = "neoforge" #mandatory
-type="required" #mandatory (Can be one of "required", "optional", "incompatible" or "discouraged")
-versionRange = "[21.1.12,)" #mandatory
-ordering = "NONE" # The order that this dependency should load in relation to your mod, required to be either 'BEFORE' or 'AFTER' if the dependency is not mandatory
-side = "BOTH" # Side this dependency is applied on - 'BOTH', 'CLIENT' or 'SERVER'
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+type="required"
+versionRange = "[21.1.12,)"
+ordering = "NONE"
+side = "BOTH"
+
 [[dependencies.${mod_id}]]
 modId = "minecraft"
-type="required" #mandatory (Can be one of "required", "optional", "incompatible" or "discouraged")
+type="required"
 versionRange = "[1.21,1.22)"
 ordering = "NONE"
 side = "BOTH"
 
-# Features are specific properties of the game environment, that you may want to declare you require. This example declares
-# that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
-# stop your mod loading on the server for example.
-#[features.${mod_id}]
-#openGLVersion="[3.2,)"
+[[dependencies.${mod_id}]]
+modId = "lithostitched"
+type="required"
+versionRange = "[1.4,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,19 @@
+{
+  "type": "lithostitched:set_structure_spawn_condition",
+  "structures": "#tectonic:blocked_by_deeper_oceans",
+  "spawn_condition": {
+    "type": "lithostitched:grid",
+    "condition": {
+      "type": "lithostitched:height_filter",
+      "range_type": "absolute",
+      "heightmap": "OCEAN_FLOOR_WG",
+      "permitted_range": [
+        -2032,
+        16
+      ]
+    },
+    "radius": 80,
+    "distance_between_points": 40,
+    "allowed_count": 0
+  }
+}

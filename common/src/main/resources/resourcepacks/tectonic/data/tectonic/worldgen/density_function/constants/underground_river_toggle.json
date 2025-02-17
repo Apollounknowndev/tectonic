@@ -1,6 +1,4 @@
 {
   "type": "tectonic:config",
-  "option": "underground_rivers",
-  "true_argument": 1,
-  "false_argument": 0
+  "option": "underground_rivers"
 }

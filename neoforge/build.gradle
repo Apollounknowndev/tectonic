@@ -4,6 +4,16 @@ plugins {
     id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
 }
 
+repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
+dependencies {
+    implementation "maven.modrinth:lithostitched:${lithostitched_version}-neoforge-1.21.4"
+}
+
 neoForge {
     version = neoforge_version
 
@@ -43,7 +53,7 @@ publishMods {
     changelog = "${update_changelog}"
     type = STABLE
     modLoaders.add("neoforge")
-    displayName = "v%s ~ Neoforge 1.21".formatted(project.version)
+    displayName = "v%s ~ Neoforge 1.21.4".formatted(project.version)
 
     dryRun = false
 
@@ -51,13 +61,9 @@ publishMods {
         accessToken = providers.environmentVariable("TOKEN_MR")
         projectId = "lWDHr9jE"
 
-        minecraftVersions.add("1.21")
-        minecraftVersions.add("1.21.1")
-        minecraftVersions.add("1.21.2")
-        minecraftVersions.add("1.21.3")
         minecraftVersions.add("1.21.4")
 
-        optional {
+        requires {
             slug = "lithostitched"
         }
     }
@@ -66,12 +72,8 @@ publishMods {
         accessToken = providers.environmentVariable("TOKEN_CF")
         projectId = "686836"
 
-        minecraftVersions.add("1.21")
-        minecraftVersions.add("1.21.1")
-        minecraftVersions.add("1.21.2")
-        minecraftVersions.add("1.21.3")
         minecraftVersions.add("1.21.4")
 
-        optional("lithostitched")
+        requires("lithostitched")
     }
 }

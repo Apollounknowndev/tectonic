@@ -1,8 +1,8 @@
 package dev.worldgen.tectonic;
 
 import dev.worldgen.tectonic.config.ConfigHandler;
-import dev.worldgen.tectonic.worldgen.ConfigDensityFunction;
-import dev.worldgen.tectonic.worldgen.ErosionNoiseDensityFunction;
+import dev.worldgen.tectonic.worldgen.ConfigConstant;
+import dev.worldgen.tectonic.worldgen.ConfigNoise;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
@@ -21,10 +21,10 @@ public class TectonicFabric implements ModInitializer {
         Tectonic.init(FabricLoader.getInstance().getConfigDir().resolve("tectonic.json"));
         ResourceConditions.register(ConfigResourceCondition.TYPE);
 
-        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, id("config"), ConfigDensityFunction.CODEC_HOLDER.codec());
-        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, id("erosion_noise"), ErosionNoiseDensityFunction.CODEC_HOLDER.codec());
+        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, id("config"), ConfigConstant.CODEC_HOLDER.codec());
+        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, id("config_noise"), ConfigNoise.CODEC_HOLDER.codec());
 
-        if (ConfigHandler.getConfig().modEnabled()) {
+        if (ConfigHandler.getConfig().enabled()) {
             ResourceManagerHelper.registerBuiltinResourcePack(
                 id("tectonic"),
                 FabricLoader.getInstance().getModContainer("tectonic").get(),

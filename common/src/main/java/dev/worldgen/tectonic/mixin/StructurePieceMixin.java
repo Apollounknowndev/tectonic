@@ -18,7 +18,7 @@ public class StructurePieceMixin {
         argsOnly = true
     )
     private static BoundingBox tectonic$lowerOceanMonuments(BoundingBox boundingBox, StructurePieceType type) {
-        if (type == StructurePieceType.OCEAN_MONUMENT_BUILDING && ConfigHandler.getConfig().modEnabled() && ConfigHandler.getConfig().featuresModule().deeperOceans()) {
+        if (type == StructurePieceType.OCEAN_MONUMENT_BUILDING && ConfigHandler.getConfig().enabled() && ConfigHandler.getConfig().toggles().monumentOffset()) {
             return boundingBox.moved(0, -30, 0);
         }
         return boundingBox;
