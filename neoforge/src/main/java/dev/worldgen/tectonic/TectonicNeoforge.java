@@ -2,8 +2,8 @@ package dev.worldgen.tectonic;
 
 import com.mojang.serialization.MapCodec;
 import dev.worldgen.tectonic.config.ConfigHandler;
-import dev.worldgen.tectonic.worldgen.ConfigDensityFunction;
-import dev.worldgen.tectonic.worldgen.ErosionNoiseDensityFunction;
+import dev.worldgen.tectonic.worldgen.ConfigConstant;
+import dev.worldgen.tectonic.worldgen.ConfigNoise;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.packs.PackLocationInfo;
@@ -44,13 +44,13 @@ public class TectonicNeoforge {
 
     private void registerDensityFunctionTypes(final RegisterEvent event) {
         event.register(Registries.DENSITY_FUNCTION_TYPE, helper -> {
-            helper.register(id("config"), ConfigDensityFunction.CODEC_HOLDER.codec());
-            helper.register(id("erosion_noise"), ErosionNoiseDensityFunction.CODEC_HOLDER.codec());
+            helper.register(id("config"), ConfigConstant.CODEC_HOLDER.codec());
+            helper.register(id("config_noise"), ConfigNoise.CODEC_HOLDER.codec());
         });
     }
 
     private void registerEnabledPacks(final AddPackFindersEvent event) {
-        if (event.getPackType() == PackType.SERVER_DATA && ConfigHandler.getConfig().modEnabled()) {
+        if (event.getPackType() == PackType.SERVER_DATA && ConfigHandler.getConfig().enabled()) {
             Path resourcePath = ModList.get().getModFileById("tectonic").getFile().findResource("resourcepacks/tectonic");
 
             Pack dataPack = Pack.readMetaAndCreate(

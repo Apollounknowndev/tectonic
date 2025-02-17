@@ -16,6 +16,6 @@ public abstract class TemperatureModifierMixin {
         argsOnly = true
     )
     public BlockPos tectonic$adjustSnowStart(BlockPos pos) {
-        return pos.above(ConfigHandler.getConfig().featuresModule().snowStartOffset());
+        return pos.above(ConfigHandler.getConfig().snowOffset());
     }
 }

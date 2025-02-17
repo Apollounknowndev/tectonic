@@ -4,6 +4,16 @@ plugins {
     id 'me.modmuss50.mod-publish-plugin' version '0.5.1'
 }
 
+repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
+dependencies {
+    implementation "maven.modrinth:lithostitched:${lithostitched_version}-neoforge-1.21"
+}
+
 neoForge {
     version = neoforge_version
 
@@ -57,7 +67,7 @@ publishMods {
         minecraftVersions.add("1.21")
         minecraftVersions.add("1.21.1")
 
-        optional {
+        requires {
             slug = "lithostitched"
         }
     }
@@ -69,6 +79,6 @@ publishMods {
         minecraftVersions.add("1.21")
         minecraftVersions.add("1.21.1")
 
-        optional("lithostitched")
+        requires("lithostitched")
     }
 }

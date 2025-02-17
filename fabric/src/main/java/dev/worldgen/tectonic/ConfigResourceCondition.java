@@ -7,6 +7,7 @@ import dev.worldgen.tectonic.config.ConfigHandler;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceCondition;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditionType;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.resources.RegistryOps;
 import org.jetbrains.annotations.Nullable;
 
 import static dev.worldgen.tectonic.Tectonic.id;
@@ -24,10 +25,9 @@ public record ConfigResourceCondition(String key) implements ResourceCondition {
 
     @Override
     public boolean test(@Nullable HolderLookup.Provider registryLookup) {
-        return switch (this.key) {
-            case "increased_height" -> ConfigHandler.getConfig().experimentalModule().increasedHeight();
-            case "legacy" -> ConfigHandler.getConfig().legacyModule().enabled();
-            default -> false;
-        };
+        if (this.key.equals("increased_height")) {
+            return ConfigHandler.getConfig().toggles().increasedHeight();
+        }
+        return false;
     }
 }
