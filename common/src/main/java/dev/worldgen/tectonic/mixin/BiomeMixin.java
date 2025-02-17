@@ -16,6 +16,6 @@ public abstract class BiomeMixin {
         argsOnly = true
     )
     private BlockPos tectonic$adjustSnowStart(BlockPos pos) {
-        return pos.below(ConfigHandler.getConfig().featuresModule().snowStartOffset());
+        return pos.below(ConfigHandler.getConfig().snowOffset());
     }
 }

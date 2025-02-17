@@ -1,6 +1,8 @@
 {
-  "type": "tectonic:config",
-  "option": "underground_rivers",
-  "true_argument": -2,
-  "false_argument": 0
+  "type": "minecraft:mul",
+  "argument1": -2,
+  "argument2": {
+    "type": "tectonic:config",
+    "option": "underground_rivers"
+  }
 }

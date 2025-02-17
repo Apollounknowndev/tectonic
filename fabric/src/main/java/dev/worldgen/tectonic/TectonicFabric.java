@@ -1,8 +1,8 @@
 package dev.worldgen.tectonic;
 
 import dev.worldgen.tectonic.config.ConfigHandler;
-import dev.worldgen.tectonic.worldgen.ConfigDensityFunction;
-import dev.worldgen.tectonic.worldgen.ErosionNoiseDensityFunction;
+import dev.worldgen.tectonic.worldgen.ConfigConstant;
+import dev.worldgen.tectonic.worldgen.ConfigNoise;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
@@ -17,7 +17,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-import static dev.worldgen.tectonic.Tectonic.idOf;
+import static dev.worldgen.tectonic.Tectonic.id;
 
 public class TectonicFabric implements ModInitializer {
     public static final List<Pack> bonusPacks = new ArrayList<>();
@@ -29,8 +29,8 @@ public class TectonicFabric implements ModInitializer {
 
         ConfigHandler.getConfig().enablePacks(FabricLoader.getInstance().isModLoaded("terralith"), TectonicFabric::registerPack);
 
-        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("config"), ConfigDensityFunction.CODEC_HOLDER.codec());
-        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, idOf("erosion_noise"), ErosionNoiseDensityFunction.CODEC_HOLDER.codec());
+        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, id("config"), ConfigConstant.CODEC_HOLDER.codec());
+        Registry.register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, id("config_noise"), ConfigNoise.CODEC_HOLDER.codec());
     }
 
     private static void registerPack(String packName) {

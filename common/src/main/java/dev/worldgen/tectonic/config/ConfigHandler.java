@@ -3,27 +3,26 @@ package dev.worldgen.tectonic.config;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
-import com.google.gson.JsonPrimitive;
 import com.google.gson.stream.JsonWriter;
 import com.mojang.serialization.JsonOps;
 import dev.worldgen.tectonic.Tectonic;
+import dev.worldgen.tectonic.config.codec.ConfigCodec;
 import net.minecraft.util.GsonHelper;
-import org.jetbrains.annotations.Nullable;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.IOException;
 import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.*;
+import java.util.Comparator;
+import java.util.Optional;
 
 public class ConfigHandler {
     private static ConfigCodec LOADED_CONFIG = new ConfigCodec(
         true,
-        ConfigCodec.Legacy.DEFAULT,
-        ConfigCodec.Features.DEFAULT,
-        ConfigCodec.Experimental.DEFAULT
+        ConfigCodec.Toggles.DEFAULT,
+        ConfigCodec.Scales.DEFAULT,
+        128
     );
 
     public static ConfigCodec getConfig() {
@@ -67,10 +66,10 @@ public class ConfigHandler {
 
     /**
      * Yeah, we don't talk about this
-     * The alternative is to try and JiJ Jankson
+     * The alternative is to try and JiJ Jankson across all mod versions to have real comments
      * That sounds like too much work
      */
     private static String commentHack(String json) {
-        return json.replaceAll("\"__.\": \"", "// ").replaceAll("\"...__\": \"", "// ").replace("\",", "");
+        return json.replaceAll("\".._\": \"", "// ").replace("\",", "");
     }
 }

@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "continents"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "continents"
+    }
+  ],
+  "type": "lithostitched:wrap_density_function",
+  "target_function": "tectonic:overworld/continents",
+  "wrapper_function": {
+    "type": "minecraft:flat_cache",
+    "argument": {
+      "type": "minecraft:cache_2d",
+      "argument": {
+        "type": "minecraft:max",
+        "argument1": "continents:adjusted_continents",
+        "argument2": "continents:islands"
+      }
+    }
+  }
+}

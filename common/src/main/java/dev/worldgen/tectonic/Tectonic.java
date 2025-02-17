@@ -14,7 +14,7 @@ public class Tectonic {
         ConfigHandler.load(path);
     }
 
-    public static ResourceLocation idOf(String name) {
+    public static ResourceLocation id(String name) {
         return new ResourceLocation("tectonic", name);
     }
 }

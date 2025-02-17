@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:trial_chambers",
+      "required": false
+    },
+    {
+      "id": "#bettermineshafts:better_mineshafts",
+      "required": false
+    }
+  ]
+}

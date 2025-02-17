@@ -10,6 +10,12 @@ base {
     archivesName = "${mod_id}-fabric-1.20.1"
 }
 
+repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:1.20.1"
     mappings loom.officialMojangMappings()
@@ -17,6 +23,9 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.92.2+1.20.1"
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
     compileOnly project(":common")
+
+    modImplementation "maven.modrinth:lithostitched:${lithostitched_version}-fabric-1.20"
+    //modImplementation "maven.modrinth:continents:RAipMfbS"
 }
 
 loom {
@@ -92,7 +101,7 @@ publishMods {
         requires {
             slug = "fabric-api"
         }
-        optional {
+        requires {
             slug = "lithostitched"
         }
     }
@@ -107,6 +116,6 @@ publishMods {
         }
 
         requires("fabric-api")
-        optional("lithostitched")
+        requires("lithostitched")
     }
 }
