@@ -17,4 +17,10 @@ public class Tectonic {
     public static ResourceLocation id(String name) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
     }
+
+    /// If the chunk's blending version doesn't match this, then chunk blending will be enabled.
+    /// @return 0 when disabled.
+    public static int blendingVersion() {
+        return ConfigHandler.getConfig().enabled() ? 1000 /* Change this number when making breaking changes to world generation */ : 0;
+    }
 }

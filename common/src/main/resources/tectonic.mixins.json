@@ -6,7 +6,9 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BiomeMixin",
+    "IOWorkerMixin",
     "NoisesMixin",
+    "SerializableChunkDataMixin",
     "StructurePieceMixin",
     "TemperatureModifierMixin"
   ],
