@@ -25,6 +25,15 @@ public class Tectonic {
      */
     public static int BLENDING_VERSION = 1;
     public static String BLENDING_KEY = "tectonic:blending_version";
+    private static final ThreadLocal<Integer> MONUMENT_LOAD_OFFSET = new ThreadLocal<>();
+
+    public static void setMonumentLoadOffset(Integer offset) {
+        MONUMENT_LOAD_OFFSET.set(offset);
+    }
+
+    public static Integer getMonumentLoadOffset() {
+        return MONUMENT_LOAD_OFFSET.get();
+    }
 
     public static void init(Path folder) {
         ConfigHandler.load(folder.resolve("tectonic.json"));
@@ -38,6 +47,12 @@ public class Tectonic {
 
     @Expect
     public static int getBlendingVersion(CompoundTag tag);
+
+    @Expect
+    public static boolean isMonumentTag(CompoundTag tag);
+
+    @Expect
+    public static int computeMonumentOffset(CompoundTag tag);
 
     @Expect
     public static boolean canRunCommand(CommandSourceStack stack);
