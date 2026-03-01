@@ -1,7 +1,6 @@
 package dev.worldgen.tectonic.mixin;
 
 import dev.worldgen.tectonic.Tectonic;
-import net.minecraft.core.RegistryAccess;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.IntTag;
 import net.minecraft.nbt.ListTag;
