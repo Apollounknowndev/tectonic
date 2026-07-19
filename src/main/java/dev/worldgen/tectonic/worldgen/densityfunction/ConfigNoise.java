@@ -13,8 +13,8 @@ public record ConfigNoise(NoiseHolder noise, DensityFunction shiftX, DensityFunc
     public static MapCodec<ConfigNoise> DATA_CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
         Codec.STRING.fieldOf("key").forGetter(df -> ""),
         NoiseHolder.CODEC.fieldOf("noise").forGetter(ConfigNoise::noise),
-        DensityFunction.HOLDER_HELPER_CODEC.fieldOf("shift_x").forGetter(ConfigNoise::shiftX),
-        DensityFunction.HOLDER_HELPER_CODEC.fieldOf("shift_z").forGetter(ConfigNoise::shiftZ)
+        DensityFunction.CODEC.fieldOf("shift_x").forGetter(ConfigNoise::shiftX),
+        DensityFunction.CODEC.fieldOf("shift_z").forGetter(ConfigNoise::shiftZ)
     ).apply(instance, ConfigNoise::create));
 
     public static KeyDispatchDataCodec<ConfigNoise> CODEC_HOLDER = KeyDispatchDataCodec.of(DATA_CODEC);
@@ -44,7 +44,7 @@ public record ConfigNoise(NoiseHolder noise, DensityFunction shiftX, DensityFunc
     }
     
     //? if >=26.2 {
-    /*@Override
+    @Override
     public DensityFunction mapChildren(Visitor visitor) {
         if (this.smootherScaling) {
             return new ConfigNoise(visitor.visitNoise(noise), visitor.apply(shiftX), visitor.apply(shiftZ), scale, multiplier, offset, true);
@@ -57,9 +57,9 @@ public record ConfigNoise(NoiseHolder noise, DensityFunction shiftX, DensityFunc
             DensityFunctions.constant(this.offset)
         ).mapChildren(visitor);
     }
-    *///? } else {
+    //? } else {
     
-    @Override
+    /*@Override
     public DensityFunction mapAll(Visitor visitor) {
         if (this.smootherScaling) {
             return new ConfigNoise(visitor.visitNoise(noise), shiftX.mapAll(visitor), shiftZ.mapAll(visitor), scale, multiplier, offset, smootherScaling);
@@ -72,7 +72,7 @@ public record ConfigNoise(NoiseHolder noise, DensityFunction shiftX, DensityFunc
             DensityFunctions.constant(this.offset)
         ).mapAll(visitor);
     }
-    //? }
+    *///? }
 
     @Override
     public double minValue() {

@@ -1,7 +1,7 @@
 package dev.worldgen.tectonic.platform.neoforge;
 
 //? if neoforge {
-import com.mojang.serialization.Codec;
+/*import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import dev.worldgen.tectonic.Tectonic;
@@ -23,4 +23,4 @@ public record ConfigResourceCondition(String key) implements ICondition {
 		return CODEC;
 	}
 }
-//? }
+*///? }

@@ -5,7 +5,7 @@ import dev.worldgen.apollib.config.ApollibConfigHolder;
 import dev.worldgen.apollib.registry.ApollibRegistrar;
 import dev.worldgen.tectonic.config.ConfigState;
 import dev.worldgen.tectonic.registry.TectonicRegistrations;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,7 +35,7 @@ public class Tectonic {
         TectonicRegistrations.init();
     }
 
-    public static ResourceLocation id(String name) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
+    public static Identifier id(String name) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, name);
     }
 }

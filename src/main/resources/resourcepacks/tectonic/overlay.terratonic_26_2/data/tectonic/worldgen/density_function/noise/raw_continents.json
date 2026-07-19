@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:add",
+      "argument1": "tectonic:__constants/ocean_offset",
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": {
+            "type": "minecraft:abs",
+            "argument": "tectonic:__constants/noise/continents"
+          },
+          "points": [
+            {
+              "location": 0,
+              "value": 0,
+              "derivative": 0
+            },
+            {
+              "location": 0.4,
+              "value": 0.575,
+              "derivative": 1
+            },
+            {
+              "location": 0.48,
+              "value": 0.68,
+              "derivative": 1
+            }
+          ]
+        }
+      }
+    },
+    "min": -64,
+    "max": 0.4
+  }
+}

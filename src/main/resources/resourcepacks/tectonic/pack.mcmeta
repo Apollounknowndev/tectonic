@@ -85,7 +85,7 @@
         ]
       },
       {
-        "directory": "overlay.terratonic",
+        "directory": "overlay.terratonic_26_2",
         "formats": [1, 999],
         "min_format": 1,
         "max_format": 999,
@@ -134,7 +134,7 @@
         }
       },
       {
-        "directory": "overlay.terratonic",
+        "directory": "overlay.terratonic_26_2",
         "condition": {
           "condition": "fabric:all_mods_loaded",
           "values": [

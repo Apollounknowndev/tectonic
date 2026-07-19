@@ -133,26 +133,26 @@ public class TectonicCommand {
     
     private static boolean canRunCommand(CommandSourceStack stack) {
         //? if >=26.1 {
-        /*return Commands.hasPermission(Commands.LEVEL_GAMEMASTERS).test(stack);
-        *///? } else {
-        return stack.hasPermission(2);
-         //? }
+        return Commands.hasPermission(Commands.LEVEL_GAMEMASTERS).test(stack);
+        //? } else {
+        /*return stack.hasPermission(2);
+         *///? }
     }
 
     private static ClickEvent getClickEvent(BlockPos pos) {
         //? if >=26.1 {
-        /*return new ClickEvent.SuggestCommand("/tp @s " + pos.getX() + " ~ " + pos.getZ());
-        *///? } else {
-        return new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/tp @s " + pos.getX() + " ~ " + pos.getZ());
-         //? }
+        return new ClickEvent.SuggestCommand("/tp @s " + pos.getX() + " ~ " + pos.getZ());
+        //? } else {
+        /*return new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/tp @s " + pos.getX() + " ~ " + pos.getZ());
+         *///? }
     }
     
     private static HoverEvent getHoverEvent() {
         //? if >=26.1 {
-        /*return new HoverEvent.ShowText(Component.translatable("chat.coordinates.tooltip"));
-        *///? } else {
-        return new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("chat.coordinates.tooltip"));
-         //? }
+        return new HoverEvent.ShowText(Component.translatable("chat.coordinates.tooltip"));
+        //? } else {
+        /*return new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("chat.coordinates.tooltip"));
+         *///? }
     }
 
     private static DensityFunctionWrapper getDensityFunctionWrapper(CommandSourceStack source) {

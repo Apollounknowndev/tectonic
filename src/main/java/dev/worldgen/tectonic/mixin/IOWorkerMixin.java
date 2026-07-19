@@ -17,10 +17,10 @@ public class IOWorkerMixin {
     )
     private void tectonic$needsBlending(CompoundTag nbt, CallbackInfoReturnable<Boolean> cir) {
         //? if >=26.1 {
-        /*int version = nbt.getIntOr(Tectonic.BLENDING_KEY, 0);
-        *///? } else {
-        int version = nbt.getInt(Tectonic.BLENDING_KEY);
-         //? }
+        int version = nbt.getIntOr(Tectonic.BLENDING_KEY, 0);
+        //? } else {
+        /*int version = nbt.getInt(Tectonic.BLENDING_KEY);
+         *///? }
         
         if (version != Tectonic.BLENDING_VERSION) {
             cir.setReturnValue(true);

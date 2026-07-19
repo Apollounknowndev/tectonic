@@ -1,0 +1,158 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:mul",
+      "argument1": "tectonic:island_selector",
+      "argument2": "tectonic:noise/island/ridges"
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": "tectonic:continent_selector",
+      "argument2": {
+        "type": "minecraft:spline",
+        "spline": {
+          "coordinate": "tectonic:noise/continent/erosion_folded",
+          "points": [
+            {
+              "location": 0.349,
+              "derivative": 0,
+              "value": {
+                "coordinate": "tectonic:noise/raw_continents",
+                "points": [
+                  {
+                    "location": -0.12,
+                    "derivative": 0,
+                    "value": {
+                      "coordinate": "tectonic:noise/continent/ridges",
+                      "points": [
+                        {
+                          "location": -1,
+                          "derivative": 0,
+                          "value": -1
+                        },
+                        {
+                          "location": 0,
+                          "derivative": 0,
+                          "value": -1
+                        },
+                        {
+                          "location": 0,
+                          "derivative": 0,
+                          "value": 1
+                        },
+                        {
+                          "location": 1,
+                          "derivative": 0,
+                          "value": 1
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "location": -0.12,
+                    "derivative": 0,
+                    "value": {
+                      "coordinate": "tectonic:noise/continent/ridges",
+                      "points": [
+                        {
+                          "location": -1,
+                          "derivative": 0,
+                          "value": -0.5
+                        },
+                        {
+                          "location": 0,
+                          "derivative": 0,
+                          "value": -0.5
+                        },
+                        {
+                          "location": 0,
+                          "derivative": 0,
+                          "value": 0.5
+                        },
+                        {
+                          "location": 1,
+                          "derivative": 0,
+                          "value": 0.5
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "location": 0.35,
+              "derivative": 0,
+              "value": {
+                "coordinate": "tectonic:noise/continent/ridges",
+                "points": [
+                  {
+                    "location": -1,
+                    "derivative": 1,
+                    "value": -1
+                  },
+                  {
+                    "location": -0.1,
+                    "value": -0.1,
+                    "derivative": 1
+                  },
+                  {
+                    "location": 0,
+                    "value": 0,
+                    "derivative": 2
+                  },
+                  {
+                    "location": 0.1,
+                    "value": 0.1,
+                    "derivative": 1
+                  },
+                  {
+                    "location": 1,
+                    "derivative": 1,
+                    "value": 1
+                  }
+                ]
+              }
+            },
+            {
+              "location": 0.8,
+              "derivative": 0,
+              "value": {
+                "coordinate": "tectonic:noise/continent/ridges",
+                "points": [
+                  {
+                    "location": -0.5,
+                    "derivative": 0,
+                    "value": -0.5
+                  },
+                  {
+                    "location": -0.1,
+                    "value": -0.1,
+                    "derivative": 1
+                  },
+                  {
+                    "location": 0,
+                    "value": 0,
+                    "derivative": 2
+                  },
+                  {
+                    "location": 0.1,
+                    "value": 0.1,
+                    "derivative": 1
+                  },
+                  {
+                    "location": 0.5,
+                    "derivative": 0,
+                    "value": 0.5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

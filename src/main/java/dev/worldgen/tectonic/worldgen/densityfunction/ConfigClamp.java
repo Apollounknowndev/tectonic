@@ -2,15 +2,15 @@ package dev.worldgen.tectonic.worldgen.densityfunction;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.util.KeyDispatchDataCodec;
 import net.minecraft.world.level.levelgen.DensityFunction;
 
 public record ConfigClamp(DensityFunction input, DensityFunction min, DensityFunction max) implements DensityFunction {
     public static final MapCodec<ConfigClamp> DATA_CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-        DensityFunction.HOLDER_HELPER_CODEC.fieldOf("input").forGetter(ConfigClamp::input),
-        DensityFunction.HOLDER_HELPER_CODEC.fieldOf("min").forGetter(ConfigClamp::min),
-        DensityFunction.HOLDER_HELPER_CODEC.fieldOf("max").forGetter(ConfigClamp::max)
+        DensityFunction.CODEC.fieldOf("input").forGetter(ConfigClamp::input),
+        DensityFunction.CODEC.fieldOf("min").forGetter(ConfigClamp::min),
+        DensityFunction.CODEC.fieldOf("max").forGetter(ConfigClamp::max)
     ).apply(instance, ConfigClamp::new));
     public static KeyDispatchDataCodec<ConfigClamp> CODEC_HOLDER = KeyDispatchDataCodec.of(DATA_CODEC);
 
@@ -25,17 +25,17 @@ public record ConfigClamp(DensityFunction input, DensityFunction min, DensityFun
     }
     
     //? if >=26.2 {
-    /*@Override
+    @Override
     public DensityFunction mapChildren(Visitor visitor) {
         return visitor.apply(input.clamp(min.maxValue(), max.minValue()));
     }
-    *///? } else {
+    //? } else {
     
-    @Override
+    /*@Override
     public DensityFunction mapAll(Visitor visitor) {
         return input.clamp(min.maxValue(), max.minValue()).mapAll(visitor);
     }
-    //? }
+    *///? }
 
     @Override
     public double minValue() {

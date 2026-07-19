@@ -3,8 +3,8 @@ plugins {
     id("neoforge-mutex")
 }
 
-version = "${property("mod.version")}-neoforge-${sc.current.version}"
-base.archivesName = "${property("mod.id") as String}-neoforge"
+version = "${property("mod.version")}-neoforge-${sc.current.project.substringBefore("-")}"
+base.archivesName = property("mod.id") as String
 
 val requiredJava = when {
     sc.current.parsed >= "26.1" -> JavaVersion.VERSION_25
@@ -40,7 +40,7 @@ neoForge {
     version = property("deps.neo_loader") as String
 
     mods {
-        register("tectonic") {
+        register(property("mod.id") as String) {
             sourceSet(sourceSets.main.get())
         }
     }

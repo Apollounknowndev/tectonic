@@ -5,7 +5,7 @@ mod.group = "dev.worldgen"
 mod.url = "https://modrinth.com/project/tectonic"
 mod.sources = "https://github.com/Apollounknowndev/tectonic"
 mod.description = "Terrain shaping brought to new heights, grander and more varied than ever before!"
-mod.version = "3.0.25"
+mod.version = "3.0.27"
 
 deps.fabric_loader = "0.19.3"
 loomx.loom_version = "1.17-SNAPSHOT"
@@ -18,14 +18,14 @@ mod.mc_compat = ">=1.21 <=1.21.1"
 deps.fabric_api = "0.116.12+1.21.1"
 deps.mod_menu = "11.0.3"
 deps.apollib = "1.1.4-fabric-21.1"
-deps.lithostitched = "1.7.10+beta4-fabric-21.1"
+deps.lithostitched = "1.7.12-fabric-21.1"
 
 
 [neoforge."21.1"]
 mod.mc_compat = "[1.21, 1.21.1]"
 deps.neo_loader = "21.1.234"
 deps.apollib = "1.1.5-neoforge-21.1"
-deps.lithostitched = "1.7.10+beta4-neoforge-21.1"
+deps.lithostitched = "1.7.12-neoforge-21.1"
 
 
 
@@ -38,14 +38,15 @@ mod.mc_compat = "~26.1"
 deps.fabric_api = "0.152.1+26.1.2"
 deps.mod_menu = "18.0.0-alpha.8"
 deps.apollib = "1.1.4-fabric-26.1"
-deps.lithostitched = "1.7.10+beta4-fabric-26.1"
+deps.lithostitched = "1.7.12-fabric-26.1"
+deps.world_preview_prime = "2.0.0-fabric-26.1"
 
 
 [neoforge."26.1"]
 mod.mc_compat = "[26.1, 26.2)"
 deps.neo_loader = "26.1.2.76"
 deps.apollib = "1.1.5-neoforge-26.1"
-deps.lithostitched = "1.7.10+beta4-neoforge-26.1"
+deps.lithostitched = "1.7.12-neoforge-26.1"
 
 
 
@@ -58,11 +59,11 @@ mod.mc_compat = "~26.2"
 deps.fabric_api = "0.152.2+26.2"
 deps.mod_menu = "20.0.0-beta.2"
 deps.apollib = "1.1.4-fabric-26.2"
-deps.lithostitched = "1.7.10-fabric-26.2"
+deps.lithostitched = "1.7.12-fabric-26.2"
 
 
 [neoforge."26.2"]
 mod.mc_compat = "[26.2, 26.3)"
 deps.neo_loader = "26.2.0.6-beta"
 deps.apollib = "1.1.4-neoforge-26.2"
-deps.lithostitched = "1.7.10-neoforge-26.2"
+deps.lithostitched = "1.7.12-neoforge-26.2"

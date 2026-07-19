@@ -4,8 +4,8 @@ plugins {
 }
 
 // DO NOT set group = ...!
-version = "${property("mod.version")}-fabric-${sc.current.version}"
-base.archivesName = "${property("mod.id") as String}-fabric"
+version = "${property("mod.version")}-fabric-${sc.current.project.substringBefore("-")}"
+base.archivesName = property("mod.id") as String
 
 val requiredJava: JavaVersion = when {
     sc.current.parsed >= "26.1" -> JavaVersion.VERSION_25
@@ -51,6 +51,10 @@ dependencies {
     modImplementation("maven.modrinth:lithostitched:${property("deps.lithostitched")}")
 
     modImplementation("com.terraformersmc:modmenu:${property("deps.mod_menu")}")
+
+    if (sc.current.project.substringBefore("-").equals("26.1")) {
+        modImplementation("maven.modrinth:world-preview-prime:${property("deps.world_preview_prime")}")
+    }
 }
 
 loom {

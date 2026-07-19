@@ -46,4 +46,4 @@ stonecutter {
     }
 }
 
-rootProject.name = "stonecutter"
+rootProject.name = "tectonic"

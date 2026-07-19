@@ -2,7 +2,7 @@ plugins {
     id("dev.kikugie.stonecutter")
 }
 
-stonecutter active "21.1-neoforge"
+stonecutter active "26.2-fabric"
 
 // See https://stonecutter.kikugie.dev/wiki/config/params
 stonecutter parameters {
@@ -41,6 +41,11 @@ stonecutter parameters {
         string(current.parsed >= "26.2") {
             replace("DensityFunction.HOLDER_HELPER_CODEC", "DensityFunction.CODEC")
             replace("minecraft.setScreen", "minecraft.gui.setScreen")
+            replace("overlay.terratonic", "overlay.terratonic_26_2")
         }
     }
+}
+
+stonecutter handlers {
+    inherit("java", "mcmeta")
 }

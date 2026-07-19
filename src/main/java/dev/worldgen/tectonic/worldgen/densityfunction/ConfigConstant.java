@@ -32,17 +32,17 @@ public record ConfigConstant(double value) implements DensityFunction {
     }
     
     //? if >=26.2 {
-    /*@Override
+    @Override
     public DensityFunction mapChildren(Visitor visitor) {
         return DensityFunctions.constant(value);
     }
-    *///? } else {
+    //? } else {
     
-    @Override
+    /*@Override
     public DensityFunction mapAll(Visitor visitor) {
         return DensityFunctions.constant(value);
     }
-    //? }
+    *///? }
     
     @Override
     public double minValue() {

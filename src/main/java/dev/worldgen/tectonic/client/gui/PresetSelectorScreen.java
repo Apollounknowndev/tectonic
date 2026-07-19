@@ -6,7 +6,7 @@ import dev.worldgen.tectonic.Tectonic;
 import dev.worldgen.tectonic.config.ConfigPresets;
 import dev.worldgen.tectonic.config.ConfigState;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.ContainerObjectSelectionList;
 import net.minecraft.client.gui.components.events.GuiEventListener;
@@ -105,18 +105,18 @@ public class PresetSelectorScreen extends Screen {
             }
             
             //? if >=26.1 {
-            /*@Override
-            public void extractContent(GuiGraphics guiGraphics, int mouseX, int mouseY, boolean hovering, float partialTick) {
+            @Override
+            public void extractContent(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, boolean hovering, float partialTick) {
                 this.widget.setY(this.getY());
                 this.widget.extractRenderState(guiGraphics, mouseX, mouseY, partialTick);
             }
-            *///? } else {
-            @Override
-            public void render(GuiGraphics guiGraphics, int index, int top, int left, int width, int height, int mouseX, int mouseY, boolean hovering, float partialTick) {
+            //? } else {
+            /*@Override
+            public void render(GuiGraphicsExtractor guiGraphics, int index, int top, int left, int width, int height, int mouseX, int mouseY, boolean hovering, float partialTick) {
                 this.widget.setY(top);
                 this.widget.render(guiGraphics, mouseX, mouseY, partialTick);
             }
-            //? }
+            *///? }
 
             public List<? extends GuiEventListener> children() {
                 return List.of(this.widget);

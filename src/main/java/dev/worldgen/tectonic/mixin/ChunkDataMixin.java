@@ -17,19 +17,19 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Set;
 
 //? if >=26.1 {
-/*import net.minecraft.world.level.LevelHeightAccessor;
+import net.minecraft.world.level.LevelHeightAccessor;
 import net.minecraft.world.level.chunk.PalettedContainerFactory;
 
 @Mixin(SerializableChunkData.class)
-*///? } else {
-import net.minecraft.server.level.ServerLevel;
+//? } else {
+/*import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.ai.village.poi.PoiManager;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.chunk.ProtoChunk;
 
 @Mixin(ChunkSerializer.class)
- //? }
+ *///? }
 public class ChunkDataMixin {
 	@Unique
 	// Taken from the BlendingDataFix, don't blend this or the terrain will drop all the way to bedrock level
@@ -38,7 +38,7 @@ public class ChunkDataMixin {
 	);
 	
 	//? if >=26.1 {
-	/*@Inject(method = "parse", at = @At("HEAD"))
+	@Inject(method = "parse", at = @At("HEAD"))
 	private static void tectonic$parse(LevelHeightAccessor heightAccessor, PalettedContainerFactory factory, CompoundTag nbt, CallbackInfoReturnable<SerializableChunkData> cir) {
 		// Safe cast unless some mod does weird bs
 		if (!((Level)heightAccessor).dimension().equals(Level.OVERWORLD)) return;
@@ -70,8 +70,8 @@ public class ChunkDataMixin {
 		data.putInt(Tectonic.BLENDING_KEY, Tectonic.BLENDING_VERSION);
 		cir.setReturnValue(data);
 	}
-	*///? } else {
-	@Inject(method = "read", at = @At("HEAD"))
+	//? } else {
+	/*@Inject(method = "read", at = @At("HEAD"))
     private static void tectonic$read(ServerLevel level, PoiManager poiManager, RegionStorageInfo regionStorageInfo, ChunkPos chunkPos, CompoundTag nbt, CallbackInfoReturnable<ProtoChunk> cir) {
         // Safe cast unless some mod does weird bs
         if (!level.dimension().equals(Level.OVERWORLD)) return;
@@ -102,5 +102,5 @@ public class ChunkDataMixin {
         CompoundTag data = cir.getReturnValue();
         data.putInt(Tectonic.BLENDING_KEY, Tectonic.BLENDING_VERSION);
         cir.setReturnValue(data);
-    }//? }
+    }*///? }
 }

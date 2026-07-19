@@ -34,7 +34,7 @@ public class ConfigScreenBuilder {
 		return new ApollibConfigScreen<>(Tectonic.MOD_ID, parent, Tectonic.CONFIG, helper -> {
 			helper.addBig(Button.builder(
 				helper.text("view_presets"),
-				button -> minecraft.setScreen(new PresetSelectorScreen(helper.screen()))
+				button -> minecraft.gui.setScreen(new PresetSelectorScreen(helper.screen()))
 			).width(310).build());
 			helper.spacer();
 			ConfigScreenBuilder.addButtons(helper);
@@ -138,7 +138,7 @@ public class ConfigScreenBuilder {
 	
 	private static Builder<StringWidget> alignLeft(Builder<StringWidget> builder) {
 		//? if < 26.1
-		builder.modifyWidget(StringWidget::alignLeft);
+		//builder.modifyWidget(StringWidget::alignLeft);
 		return builder;
 	}
 }

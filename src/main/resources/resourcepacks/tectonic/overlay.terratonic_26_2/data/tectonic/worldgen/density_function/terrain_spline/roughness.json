@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:mul",
+  "argument1": "minecraft:overworld/base_3d_noise",
+  "argument2": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "tectonic:noise/full_continents",
+      "points": [
+        {
+          "location": -1.1,
+          "derivative": 0,
+          "value": 1
+        },
+        {
+          "location": -1.025,
+          "derivative": 0,
+          "value": 0.4
+        },
+        {
+          "location": -0.25,
+          "derivative": 0,
+          "value": 0.4
+        },
+        {
+          "location": -0.2,
+          "derivative": 0,
+          "value": 0
+        },
+        {
+          "location": -0.15,
+          "derivative": 0,
+          "value": 0
+        },
+        {
+          "location": -0.1,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:noise/continent/erosion_folded",
+            "points": [
+              {
+                "location": 0.85,
+                "derivative": 0,
+                "value": 0.4
+              },
+              {
+                "location": 0.925,
+                "derivative": 0,
+                "value": 0.8
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -30,7 +30,7 @@ public class NoiseBasedChunkGeneratorMixin {
         at = @At("RETURN")
     )
     private void tectonic$fixLavaLevel(BiomeSource source, Holder<NoiseGeneratorSettings> settings, CallbackInfo ci) {
-        if (Tectonic.CONFIG.getState().enabled() && settings.unwrapKey().map(key -> key.location().getPath().equals("overworld")).orElse(false)) {
+        if (Tectonic.CONFIG.getState().enabled() && settings.unwrapKey().map(key -> key.identifier().getPath().equals("overworld")).orElse(false)) {
             this.globalFluidPicker = Suppliers.memoize(() -> {
                 int lavaLevel = Tectonic.CONFIG.getState().globalTerrain.heightLimits.minY + 10;
                 Aquifer.FluidStatus lavaStatus = new Aquifer.FluidStatus(lavaLevel, Blocks.LAVA.defaultBlockState());

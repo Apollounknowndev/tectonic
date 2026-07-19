@@ -6,7 +6,7 @@ import net.minecraft.world.level.levelgen.DensityFunction;
 import net.minecraft.world.level.levelgen.DensityFunctions;
 
 public record Invert(DensityFunction input, double min, double max) implements DensityFunction {
-    public static final MapCodec<Invert> DATA_CODEC = DensityFunction.HOLDER_HELPER_CODEC.fieldOf("argument").xmap(Invert::create, Invert::input);
+    public static final MapCodec<Invert> DATA_CODEC = DensityFunction.CODEC.fieldOf("argument").xmap(Invert::create, Invert::input);
     public static KeyDispatchDataCodec<Invert> CODEC_HOLDER = KeyDispatchDataCodec.of(DATA_CODEC);
 
     public static Invert create(DensityFunction input) {
@@ -37,17 +37,17 @@ public record Invert(DensityFunction input, double min, double max) implements D
     }
     
     //? if >=26.2 {
-    /*@Override
+    @Override
     public DensityFunction mapChildren(Visitor visitor) {
         return visitor.apply(this.input.invert());
     }
-    *///? } else {
+    //? } else {
     
-    @Override
+    /*@Override
     public DensityFunction mapAll(Visitor visitor) {
         return create(this.input.mapAll(visitor));
     }
-    //? }
+    *///? }
 
     @Override
     public double minValue() {
