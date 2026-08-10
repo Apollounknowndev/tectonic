@@ -60,8 +60,8 @@ public class V2ConfigState {
                 false
             ),
             new ConfigState.Biomes(
-                NoiseState.DEFAULT,
-                NoiseState.DEFAULT
+                NoiseState.create(),
+                NoiseState.create()
             ),
             ConfigState.Caves.DEFAULT,
             ConfigState.Experimental.DEFAULT

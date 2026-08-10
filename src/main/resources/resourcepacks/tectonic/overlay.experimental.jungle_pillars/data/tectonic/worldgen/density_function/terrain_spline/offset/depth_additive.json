@@ -1,0 +1,340 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "tectonic:noise/raw_continents",
+        "points": [
+          {
+            "location": 0.03,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": 0.05,
+            "derivative": 0,
+            "value": {
+              "coordinate": "tectonic:noise/continent/erosion",
+              "points": [
+                {
+                  "location": -0.85,
+                  "derivative": 0,
+                  "value": 0
+                },
+                {
+                  "location": -0.825,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "tectonic:noise/region_selector",
+                    "points": [
+                      {
+                        "location": 0,
+                        "derivative": 0,
+                        "value": 0
+                      },
+                      {
+                        "location": 0.1,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "tectonic:noise/temperature_index",
+                          "points": [
+                            {
+                              "location": 3,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 4,
+                              "derivative": 0,
+                              "value": {
+                                "coordinate": "tectonic:noise/vegetation_index",
+                                "points": [
+                                  {
+                                    "location": 3,
+                                    "derivative": 0,
+                                    "value": 0
+                                  },
+                                  {
+                                    "location": 4,
+                                    "derivative": 0,
+                                    "value": {
+                                      "coordinate": "tectonic:noise/continent/ridges",
+                                      "points": [
+                                        {
+                                          "location": -0.175,
+                                          "derivative": 0,
+                                          "value": {
+                                            "coordinate": "tectonic:region/heart/jungle_pillar",
+                                            "points": [
+                                              {
+                                                "location": 0.05,
+                                                "derivative": 0,
+                                                "value": 0
+                                              },
+                                              {
+                                                "location": 0.4,
+                                                "derivative": 0,
+                                                "value": {
+                                                  "coordinate": {
+                                                    "type": "lithostitched:fast_noise",
+                                                    "config": "tectonic:jungle_pillars_value",
+                                                    "xz_scale": 1,
+                                                    "y_scale": 0
+                                                  },
+                                                  "points": [
+                                                    {
+                                                      "location": -1,
+                                                      "derivative": 0,
+                                                      "value": 0.45
+                                                    },
+                                                    {
+                                                      "location": 1,
+                                                      "derivative": 0,
+                                                      "value": 0.75
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "location": -0.125,
+                                          "value": 0,
+                                          "derivative": 0
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "location": 5,
+                                    "derivative": 0,
+                                    "value": {
+                                      "coordinate": "tectonic:noise/continent/ridges_folded",
+                                      "points": [
+                                        {
+                                          "location": 0.125,
+                                          "value": 0,
+                                          "derivative": 0
+                                        },
+                                        {
+                                          "location": 0.175,
+                                          "derivative": 0,
+                                          "value": {
+                                            "coordinate": "tectonic:region/heart/jungle_pillar",
+                                            "points": [
+                                              {
+                                                "location": 0.05,
+                                                "derivative": 0,
+                                                "value": 0
+                                              },
+                                              {
+                                                "location": 0.4,
+                                                "derivative": 0,
+                                                "value": {
+                                                  "coordinate": {
+                                                    "type": "lithostitched:fast_noise",
+                                                    "config": "tectonic:jungle_pillars_value",
+                                                    "xz_scale": 1,
+                                                    "y_scale": 0
+                                                  },
+                                                  "points": [
+                                                    {
+                                                      "location": -1,
+                                                      "derivative": 0,
+                                                      "value": 0.45
+                                                    },
+                                                    {
+                                                      "location": 1,
+                                                      "derivative": 0,
+                                                      "value": 0.75
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "location": 5,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "location": -0.425,
+                  "derivative": 0,
+                  "value":  {
+                    "coordinate": "tectonic:noise/region_selector",
+                    "points": [
+                      {
+                        "location": 0,
+                        "derivative": 0,
+                        "value": 0
+                      },
+                      {
+                        "location": 0.1,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "tectonic:noise/temperature_index",
+                          "points": [
+                            {
+                              "location": 3,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 4,
+                              "derivative": 0,
+                              "value": {
+                                "coordinate": "tectonic:noise/vegetation_index",
+                                "points": [
+                                  {
+                                    "location": 3,
+                                    "derivative": 0,
+                                    "value": 0
+                                  },
+                                  {
+                                    "location": 4,
+                                    "derivative": 0,
+                                    "value": {
+                                      "coordinate": "tectonic:noise/continent/ridges",
+                                      "points": [
+                                        {
+                                          "location": -0.175,
+                                          "derivative": 0,
+                                          "value": {
+                                            "coordinate": "tectonic:region/heart/jungle_pillar",
+                                            "points": [
+                                              {
+                                                "location": 0.05,
+                                                "derivative": 0,
+                                                "value": 0
+                                              },
+                                              {
+                                                "location": 0.4,
+                                                "derivative": 0,
+                                                "value": {
+                                                  "coordinate": {
+                                                    "type": "lithostitched:fast_noise",
+                                                    "config": "tectonic:jungle_pillars_value",
+                                                    "xz_scale": 1,
+                                                    "y_scale": 0
+                                                  },
+                                                  "points": [
+                                                    {
+                                                      "location": -1,
+                                                      "derivative": 0,
+                                                      "value": 0.45
+                                                    },
+                                                    {
+                                                      "location": 1,
+                                                      "derivative": 0,
+                                                      "value": 0.75
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "location": -0.125,
+                                          "value": 0,
+                                          "derivative": 0
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "location": 5,
+                                    "derivative": 0,
+                                    "value": {
+                                      "coordinate": "tectonic:noise/continent/ridges_folded",
+                                      "points": [
+                                        {
+                                          "location": 0.125,
+                                          "value": 0,
+                                          "derivative": 0
+                                        },
+                                        {
+                                          "location": 0.175,
+                                          "derivative": 0,
+                                          "value": {
+                                            "coordinate": "tectonic:region/heart/jungle_pillar",
+                                            "points": [
+                                              {
+                                                "location": 0.05,
+                                                "derivative": 0,
+                                                "value": 0
+                                              },
+                                              {
+                                                "location": 0.4,
+                                                "derivative": 0,
+                                                "value": {
+                                                  "coordinate": {
+                                                    "type": "lithostitched:fast_noise",
+                                                    "config": "tectonic:jungle_pillars_value",
+                                                    "xz_scale": 1,
+                                                    "y_scale": 0
+                                                  },
+                                                  "points": [
+                                                    {
+                                                      "location": -1,
+                                                      "derivative": 0,
+                                                      "value": 0.45
+                                                    },
+                                                    {
+                                                      "location": 1,
+                                                      "derivative": 0,
+                                                      "value": 0.75
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "location": 5,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "location": -0.4,
+                  "derivative": 0,
+                  "value": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

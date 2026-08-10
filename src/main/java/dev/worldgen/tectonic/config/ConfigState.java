@@ -118,6 +118,7 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
             case "river_ice" -> this.continents.riverIce;
             case "ore_fix" -> this.caves.oreFix;
             case "no_carvers" -> !this.caves.carversEnabled;
+            case "improved_jungle_pillars" -> this.experimental.improvedJunglePillars;
             default -> false;
         };
     }
@@ -176,7 +177,8 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
             ),
             new Experimental(
                 this.experimental.alternateErosionScaling,
-                this.experimental.alternateContinentsScaling
+                this.experimental.alternateContinentsScaling,
+                this.experimental.improvedJunglePillars
             )
         );
     }
@@ -298,7 +300,7 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
 
         public Islands(boolean enabled, NoiseState noise) {
             this.enabled = enabled;
-            this.noise = noise;
+            this.noise = noise.copy();
         }
     }
 
@@ -330,18 +332,18 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
     }
 
     public static class Biomes {
-        public static final Biomes DEFAULT = new Biomes(NoiseState.DEFAULT, NoiseState.DEFAULT);
+        public static final Biomes DEFAULT = new Biomes(NoiseState.create(), NoiseState.create());
         public static final Codec<Biomes> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            NoiseState.legacyCodec("temperature").orElse(NoiseState.DEFAULT).forGetter(biomes -> biomes.temperature),
-            NoiseState.legacyCodec("vegetation").orElse(NoiseState.DEFAULT).forGetter(biomes -> biomes.vegetation)
+            NoiseState.legacyCodec("temperature").orElse(NoiseState.create()).forGetter(biomes -> biomes.temperature),
+            NoiseState.legacyCodec("vegetation").orElse(NoiseState.create()).forGetter(biomes -> biomes.vegetation)
         ).apply(instance, Biomes::new));
 
         public NoiseState temperature;
         public NoiseState vegetation;
 
         public Biomes(NoiseState temperature, NoiseState vegetation) {
-            this.temperature = temperature;
-            this.vegetation = vegetation;
+            this.temperature = temperature.copy();
+            this.vegetation = vegetation.copy();
         }
     }
 
@@ -395,19 +397,23 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
     public static class Experimental {
         public static final boolean ALTERNATE_EROSION_SCALING = false;
         public static final boolean ALTERNATE_CONTINENTS_SCALING = false;
+        public static final boolean IMPROVED_JUNGLE_PILLARS = false;
         
-        public static final Experimental DEFAULT = new Experimental(ALTERNATE_EROSION_SCALING, ALTERNATE_CONTINENTS_SCALING);
+        public static final Experimental DEFAULT = new Experimental(ALTERNATE_EROSION_SCALING, ALTERNATE_CONTINENTS_SCALING, IMPROVED_JUNGLE_PILLARS);
         public static final Codec<Experimental> CODEC = RecordCodecBuilder.create(i -> i.group(
             Codec.BOOL.fieldOf("alternate_erosion_scaling").orElse(ALTERNATE_EROSION_SCALING).forGetter(e -> e.alternateErosionScaling),
-            Codec.BOOL.fieldOf("alternate_continents_scaling").orElse(ALTERNATE_CONTINENTS_SCALING).forGetter(e -> e.alternateContinentsScaling)
+            Codec.BOOL.fieldOf("alternate_continents_scaling").orElse(ALTERNATE_CONTINENTS_SCALING).forGetter(e -> e.alternateContinentsScaling),
+            Codec.BOOL.fieldOf("improved_jungle_pillars").orElse(IMPROVED_JUNGLE_PILLARS).forGetter(e -> e.improvedJunglePillars)
         ).apply(i, Experimental::new));
         
         public boolean alternateErosionScaling;
         public boolean alternateContinentsScaling;
+        public boolean improvedJunglePillars;
         
-        public Experimental(boolean alternateErosionScaling, boolean alternateContinentsScaling) {
+        public Experimental(boolean alternateErosionScaling, boolean alternateContinentsScaling, boolean improvedJunglePillars) {
             this.alternateErosionScaling = alternateErosionScaling;
             this.alternateContinentsScaling = alternateContinentsScaling;
+            this.improvedJunglePillars = improvedJunglePillars;
         }
     }
 }

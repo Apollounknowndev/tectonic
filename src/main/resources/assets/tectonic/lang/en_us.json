@@ -110,6 +110,9 @@
   "config.tectonic.alternate_noise_scaling.tooltip": "These options improve terrain near mountains and oceans on larger terrain scales.\n\n§cNot compatible with C2ME's hardware acceleration!",
   "config.tectonic.option.alternate_erosion_scaling": "Erosion",
   "config.tectonic.option.alternate_continents_scaling": "Continents",
+  "config.tectonic.terrain_changes": "Terrain Changes",
+  "config.tectonic.option.improved_jungle_pillars": "Improved Jungle Pillars",
+  "config.tectonic.option.improved_jungle_pillars.tooltip": "Jungle pillars become twice as common, larger, and more consistently have flatter tops.",
 
   "preset.tectonic.title": "Presets",
 

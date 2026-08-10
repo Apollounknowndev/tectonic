@@ -123,6 +123,7 @@ def upload_curseforge(loader: str, version: str, file_path: str, dependencies):
     # Metadata
     metadata = {
         "displayName": f"v{MOD_VERSION} ~ {loader.title()} {version}",
+        "gameVersionNames": ["Server", "Client"],
         "gameVersions": game_version_ids + [modloader_id],
         "releaseType": RELEASE_TYPE,
         "changelog": CHANGELOG,

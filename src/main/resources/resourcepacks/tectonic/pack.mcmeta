@@ -49,6 +49,18 @@
   "neoforge:overlays": {
     "entries": [
       {
+        "directory": "overlay.experimental.jungle_pillars",
+        "formats": [1, 999],
+        "min_format": 1,
+        "max_format": 999,
+        "neoforge:conditions": [
+          {
+            "type": "tectonic:config",
+            "key": "improved_jungle_pillars"
+          }
+        ]
+      },
+      {
         "directory": "overlay.no_carvers",
         "formats": [1, 999],
         "min_format": 1,
@@ -112,6 +124,13 @@
   },
   "fabric:overlays": {
     "entries": [
+      {
+        "directory": "overlay.experimental.jungle_pillars",
+        "condition": {
+          "condition": "tectonic:config",
+          "key": "improved_jungle_pillars"
+        }
+      },
       {
         "directory": "overlay.no_carvers",
         "condition": {

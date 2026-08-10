@@ -24,6 +24,15 @@
       }
     },
     {
+      "type": "lithostitched:condition",
+      "condition": {
+        "type": "lithostitched:sample_density",
+        "density_function": "minecraft:overworld/temperature",
+        "min_inclusive": -64,
+        "max_inclusive": -0.45
+      }
+    },
+    {
       "type": "minecraft:count",
       "count": 144
     },

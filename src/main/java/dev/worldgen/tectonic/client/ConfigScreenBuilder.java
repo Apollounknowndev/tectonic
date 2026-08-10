@@ -92,9 +92,9 @@ public class ConfigScreenBuilder {
 		helper.spacer();
 		alignLeft(helper.singleLineText("biome_noises")).format(ChatFormatting.BOLD).addBig();
 		alignLeft(helper.singleLineText("temperature")).format(ChatFormatting.GRAY).addBig();
-		addNoise(helper, "temperature", biomes.temperature, NoiseState.DEFAULT);
+		addNoise(helper, "temperature", biomes.temperature, NoiseState.create());
 		alignLeft(helper.singleLineText("vegetation")).format(ChatFormatting.GRAY).addBig();
-		addNoise(helper, "vegetation", biomes.vegetation, NoiseState.DEFAULT);
+		addNoise(helper, "vegetation", biomes.vegetation, NoiseState.create());
 		
 		helper.spacer();
 		alignLeft(helper.singleLineText("caves")).format(ChatFormatting.BOLD).addBig();
@@ -114,6 +114,8 @@ public class ConfigScreenBuilder {
 		alignLeft(helper.singleLineText("alternate_noise_scaling")).format(ChatFormatting.GRAY).withTooltip(false).addBig();
 		helper.booleanButton("alternate_erosion_scaling", bool -> experimental.alternateErosionScaling = bool, experimental.alternateErosionScaling).addSmall();
 		helper.booleanButton("alternate_continents_scaling", bool -> experimental.alternateContinentsScaling = bool, experimental.alternateContinentsScaling).addSmall();
+		alignLeft(helper.singleLineText("terrain_changes")).format(ChatFormatting.GRAY).addBig();
+		helper.booleanButton("improved_jungle_pillars", bool -> experimental.improvedJunglePillars = bool, experimental.improvedJunglePillars).withTooltip(false).addSmall();
 	}
 	
 	public static void addNoise(ApollibRowHelper helper, String name, NoiseState state, NoiseState defaultState) {

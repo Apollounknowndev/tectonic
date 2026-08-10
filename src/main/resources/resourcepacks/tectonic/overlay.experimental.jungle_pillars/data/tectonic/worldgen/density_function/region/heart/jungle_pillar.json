@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
+      "type": "lithostitched:fast_noise",
+      "config": "tectonic:jungle_pillars_distance",
+      "xz_scale": 1,
+      "y_scale": 0
+    },
+    "points": [
+      {
+        "location": -0.75,
+        "derivative": 0,
+        "value": 1.5
+      },
+      {
+        "location": -0.5,
+        "derivative": 0,
+        "value": 0
+      }
+    ]
+  }
+}

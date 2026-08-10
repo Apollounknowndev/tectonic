@@ -41,7 +41,7 @@ public interface ConfigPresets {
         ConfigState.Oceans.DEFAULT,
         new ConfigState.Biomes(
             new NoiseState(0, 0, 1),
-            NoiseState.DEFAULT
+            NoiseState.create()
         ),
         ConfigState.Caves.DEFAULT,
         ConfigState.Experimental.DEFAULT
@@ -111,7 +111,7 @@ public interface ConfigPresets {
             new NoiseState(0.1, 1.1, -0.2)
         ),
         ConfigState.Caves.DEFAULT,
-        new ConfigState.Experimental(true, true)
+        new ConfigState.Experimental(true, true, false)
     );
 
     static void acceptPresets(TriConsumer<String, ConfigState, Integer> consumer) {

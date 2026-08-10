@@ -4,319 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6fc932f-5978-4149-85c7-92e2286193c4" name="Changes" comment="Merge branch 'stonecutter' of https://github.com/Apollounknowndev/tectonic into stonecutter&#10;&#10;# Conflicts:&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;build.fabric.gradle.kts&#10;#&#9;build.neoforge.gradle.kts&#10;#&#9;src/main/java/dev/worldgen/tectonic/platform/fabric/ConfigResourceCondition.java&#10;#&#9;src/main/java/dev/worldgen/tectonic/platform/fabric/TectonicFabric.java&#10;#&#9;src/main/java/dev/worldgen/tectonic/platform/neoforge/TectonicNeoforge.java&#10;#&#9;src/main/java/dev/worldgen/tectonic/registry/TectonicRegistrations.java&#10;#&#9;src/main/resources/resourcepacks/tectonic/pack.mcmeta&#10;#&#9;stonecutter.properties.toml">
-      <change afterPath="$PROJECT_DIR$/2025-05-27_18.12.19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pack_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/minecraft/worldgen/noise_settings/overworld.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/base_terrain.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/biome_parameter/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/cave/cheese.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/noise/raw_continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/factor/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/factor/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/offset/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/offset/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/roughness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/tectonic/worldgen/noise/island_temperature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/terralith/worldgen/density_function/overworld/extra_terrain_base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/data/terralith/worldgen/density_function/overworld/spike/size_spline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.terratonic_26_2/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/barrier.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/depth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/final_density.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/fluid_level_floodedness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/fluid_level_spread.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/initial_density_without_jaggedness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/lava.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/temperature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/vegetation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/vein_gap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/vein_ridged.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/noise_router/vein_toggle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/temperature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/density_function/overworld/vegetation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/noise/badlands_pillar_roof.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/noise/badlands_surface.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/minecraft/worldgen/noise_settings/overworld.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/tags/block/terralith_surface.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/configured_feature/underground_river/ice.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/base_terrain.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/biome_parameter/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/biome_parameter/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/blend_alpha.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/cave/cheese.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/cave/noodle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/caves.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/continent_selector.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/depth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/island_selector.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/lava_tunnel/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/lava_tunnel/total.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/noiseshift/base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/noiseshift/shiftx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/noiseshift/shiftz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/noiseshift/slopex.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/noiseshift/slopez.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/shifteddetail.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/mountain_ridges/weathering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/continent/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/continent/erosion_folded.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/continent/erosion_raw.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/continent/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/continent/ridges_folded.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/full_continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/island/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/island/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/island/ridges_folded.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/raw_continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/raw_islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/region_selector.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/temperature_index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/noise/vegetation_index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/club.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/club/badlands_ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/club/double_valley_spline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/club/plateau_spline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/club/single_valley_spline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/club_weak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/diamond.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/diamond/dune/final.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/diamond/dune/noise.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/diamond/dune/offset_x.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/diamond/dune/offset_z.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/diamond/dune/spline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/heart.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/heart/jungle_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/heart/rolling_hills.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/spade.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/spade/lower_tier.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/spade/upper_tier.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/region/spade_weak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/sloped_cheese.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/factor/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/factor/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/jaggedness/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/jaggedness/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/ocean.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/offset/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/offset/depth_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/offset/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/offset/regions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/offset/regions_weak.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/terrain_spline/roughness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/noise/density_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/noise/height.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/noise/height_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/noise/roof_sharpness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/noise/y_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/parameters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/pillars.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/spline/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/spline/elevation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/spline/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/spline/ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/density_function/underground_river/total.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/blend_alpha.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/island/continents_a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/island/continents_b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/island/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/island/ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/lava_tunnel/offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/lava_tunnel/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/lava_tunnel/shift_x.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/lava_tunnel/shift_z.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/mountain_ridges/base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/mountain_ridges/detailed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/mountain_ridges/weathering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/ocean1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/ocean2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/parameter/continentalness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/parameter/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/parameter/ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/club/badlands_ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/diamond/dune_base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/diamond/dune_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/diamond/wetland.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/heart/jungle_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/heart/rolling_hills.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/height_multiplier.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/selector.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/spade/lower_tier.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/region/spade/upper_tier.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/river_lanterns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/underground_river/density_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/underground_river/height.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/underground_river/roof_sharpness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/noise/underground_river/y_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/placed_feature/underground_river/ice.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.1_21_9/data/minecraft/worldgen/density_function/overworld/noise_router/preliminary_surface_level.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.1_21_9/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.1_21_9_mod/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.1_21_9_mod/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.26_2/data/minecraft/worldgen/noise_settings/overworld.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.clifftree/data/minecraft/worldgen/noise_settings/overworld.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/minecraft/worldgen/noise/continentalness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/minecraft/worldgen/noise/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/minecraft/worldgen/noise/ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/above_bottom_y.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/cheese_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/cheese_enabled.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/noodle_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/noodle_enabled.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/spaghetti_enabled.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/deep_ocean_depth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/flat_terrain_skew.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/jungle_pillars.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/lava_tunnels.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/max_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/min_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/island_a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/island_b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/temperature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/vegetation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/ocean_depth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/ocean_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/rolling_hills.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/slope_lower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/slope_upper.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/underground_rivers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/vertical_scale.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/density_function/terrain_spline/offset/final.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/ice.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/remove_frozen_ocean_ice.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/remove_islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/set_height_limits.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/underground_river/ice.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/underground_river/lanterns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/underground_river/lichen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/tags/worldgen/world_preset/incompatible.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/above_bottom_y.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/cheese_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/cheese_enabled.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/noodle_additive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/noodle_enabled.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/spaghetti_enabled.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/deep_ocean_depth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/flat_terrain_skew.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/jungle_pillars.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/lava_tunnels.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/max_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/min_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/erosion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/island_a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/island_b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/ridge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/temperature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/vegetation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/ocean_depth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/ocean_offset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/rolling_hills.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/slope_lower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/slope_upper.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/underground_rivers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/vertical_scale.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/data/tectonic/worldgen/density_function/terrain_spline/offset/final.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.mod/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.no_carvers/data/clifftree/worldgen/configured_carver/inferno_cave.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.no_carvers/data/clifftree/worldgen/configured_carver/ocean_canyon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.no_carvers/data/minecraft/worldgen/configured_carver/canyon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.no_carvers/data/minecraft/worldgen/configured_carver/cave.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.no_carvers/data/minecraft/worldgen/configured_carver/cave_extra_underground.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.no_carvers/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_diamond.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_diamond_buried.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_diamond_large.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_diamond_medium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_gold.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_gold_extra.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_gravel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_lapis.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_lapis_buried.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_redstone.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_redstone_lower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ore_fix/data/minecraft/worldgen/placed_feature/ore_tuff.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/minecraft/worldgen/noise_settings/overworld.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/base_terrain.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/biome_parameter/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/cave/cheese.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/noise/raw_continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/terrain_spline/factor/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/terrain_spline/factor/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/terrain_spline/offset/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/terrain_spline/offset/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/density_function/terrain_spline/roughness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/tectonic/worldgen/noise/island_temperature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/terralith/worldgen/density_function/overworld/extra_terrain_base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/data/terralith/worldgen/density_function/overworld/spike/size_spline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/minecraft/worldgen/noise_settings/overworld.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/base_terrain.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/biome_parameter/ridges.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/cave/cheese.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/noise/raw_continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/factor/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/factor/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/offset/continents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/offset/islands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/density_function/terrain_spline/roughness.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/tectonic/worldgen/noise/island_temperature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/terralith/worldgen/density_function/overworld/extra_terrain_base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/data/terralith/worldgen/density_function/overworld/spike/size_spline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.terratonic_26_2/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ultrasmooth/data/tectonic/worldgen/density_function/sloped_cheese.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/overlay.ultrasmooth/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/terratonic/pack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/worldgen.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thumbnail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e6fc932f-5978-4149-85c7-92e2286193c4" name="Changes" comment="Active project fabric 26.2">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/lithostitched/fast_noise_config/jungle_pillars_distance.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/lithostitched/fast_noise_config/jungle_pillars_value.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/worldgen/density_function/region/heart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/worldgen/density_function/region/heart/jungle_pillar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/worldgen/density_function/terrain_spline/offset/depth_additive.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.fabric.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.fabric.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.neoforge.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.neoforge.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/Tectonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/Tectonic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/ConfigScreenBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/ConfigScreenBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/gui/PresetSelectorScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/gui/PresetSelectorScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/command/TectonicCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/command/TectonicCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/compat/TectonicModMenuCompat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/compat/TectonicModMenuCompat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/ChunkDataMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/ChunkDataMixin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/IOWorkerMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/IOWorkerMixin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/NoiseBasedChunkGeneratorMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/NoiseBasedChunkGeneratorMixin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/NoisesMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/mixin/NoisesMixin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/fabric/ConfigResourceCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/fabric/ConfigResourceCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/fabric/TectonicFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/fabric/TectonicFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/neoforge/ConfigResourceCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/neoforge/ConfigResourceCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/neoforge/TectonicNeoforge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/neoforge/TectonicNeoforge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/neoforge/TectonicNeoforgeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/platform/neoforge/TectonicNeoforgeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/ConfigClamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/ConfigClamp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/ConfigConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/ConfigConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/ConfigNoise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/ConfigNoise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/Invert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/worldgen/densityfunction/Invert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/terrain_spline/jaggedness/continents.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/terrain_spline/jaggedness/continents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigPresets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigPresets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/NewConfigState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/NewConfigState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/V2ConfigState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/V2ConfigState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/object/NoiseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/object/NoiseState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/tectonic/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/tectonic/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/configured_feature/underground_river/ice.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/configured_feature/underground_river/ice.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/full_continents.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/full_continents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/raw_continents.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/raw_continents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/ice.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/ice.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9_mod/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/ice.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/pack.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tectonic.ct" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tectonic.ct" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stonecutter.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/stonecutter.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stonecutter.properties.toml" beforeDir="false" afterPath="$PROJECT_DIR$/stonecutter.properties.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/uploader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,72 +114,75 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.Minecraft Client (:21.1-fabric).executor": "Run",
-    "Gradle.Minecraft Client (:26.1-fabric).executor": "Run",
-    "Gradle.Minecraft Client (:26.2-fabric).executor": "Run",
-    "Gradle.Minecraft Server (:26.2-fabric).executor": "Run",
-    "Gradle.stonecutter [:21.1-neoforge:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.stonecutter [:26.1-neoforge:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.stonecutter [:26.1-neoforge:runClient].executor": "Run",
-    "Gradle.stonecutter [:26.2-neoforge:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.stonecutter [build].executor": "Run",
-    "Gradle.stonecutter [stonecutterSwitchTo21.1-fabric].executor": "Run",
-    "Gradle.stonecutter [stonecutterSwitchTo21.1-neoforge].executor": "Run",
-    "Gradle.stonecutter [stonecutterSwitchTo26.1-fabric].executor": "Run",
-    "Gradle.stonecutter [stonecutterSwitchTo26.1-neoforge].executor": "Run",
-    "Gradle.stonecutter [stonecutterSwitchTo26.2-fabric].executor": "Run",
-    "Gradle.stonecutter [stonecutterSwitchTo26.2-neoforge].executor": "Run",
-    "Gradle.tectonic [\"Set active project to 26.2-fabric\"].executor": "Run",
-    "Gradle.tectonic [:21.1-neoforge:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.tectonic [:26.1-neoforge:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.tectonic [:26.2-neoforge:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.tectonic [clean].executor": "Run",
-    "Gradle.tectonic [stonecutterSwitchTo21.1-fabric].executor": "Run",
-    "Gradle.tectonic [stonecutterSwitchTo26.1-fabric].executor": "Run",
-    "Gradle.tectonic [stonecutterSwitchTo26.1-neoforge].executor": "Run",
-    "Gradle.tectonic [stonecutterSwitchTo26.2-fabric].executor": "Run",
-    "Gradle.tectonic [stonecutterSwitchTo26.2-neoforge].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "stonecutter",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ldglo/Documents/Github/tectonic",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Minecraft Client (:21.1-fabric).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Minecraft Client (:26.1-fabric).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Minecraft Client (:26.2-fabric).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Minecraft Server (:26.2-fabric).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [:21.1-neoforge:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [:26.1-neoforge:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [:26.1-neoforge:runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [:26.2-neoforge:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [stonecutterSwitchTo21.1-fabric].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [stonecutterSwitchTo21.1-neoforge].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [stonecutterSwitchTo26.1-fabric].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [stonecutterSwitchTo26.1-neoforge].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [stonecutterSwitchTo26.2-fabric].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.stonecutter [stonecutterSwitchTo26.2-neoforge].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [\&quot;Set active project to 26.2-fabric\&quot;].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [:21.1-neoforge:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [:26.1-neoforge:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [:26.2-neoforge:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [stonecutterSwitchTo21.1-fabric].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [stonecutterSwitchTo26.1-fabric].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [stonecutterSwitchTo26.1-neoforge].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [stonecutterSwitchTo26.2-fabric].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.tectonic [stonecutterSwitchTo26.2-neoforge].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;stonecutter&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldglo/Documents/Github/tectonic/src/main/resources/resourcepacks/tectonic/overlay.improved_jungle_pillars/data/tectonic/worldgen/density_function/region&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "dev.kikugie.stonecutter.projects": [
-      "{\"id\":\"tectonic\",\"path\":\":\",\"identityPath\":\":\",\"name\":\"tectonic\",\"qName\":\"tectonic\",\"group\":\"\",\"version\":\"unspecified\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\stonecutter.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{\"21.1-fabric\":{\"id\":\":21.1-fabric\",\"path\":\":21.1-fabric\",\"identityPath\":\":21.1-fabric\",\"name\":\"21.1-fabric\",\"qName\":\":21.1-fabric\",\"group\":\"tectonic\",\"version\":\"3.0.27-fabric-21.1\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-fabric\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-fabric\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.fabric.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}},\"21.1-neoforge\":{\"id\":\":21.1-neoforge\",\"path\":\":21.1-neoforge\",\"identityPath\":\":21.1-neoforge\",\"name\":\"21.1-neoforge\",\"qName\":\":21.1-neoforge\",\"group\":\"tectonic\",\"version\":\"3.0.27-neoforge-21.1\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-neoforge\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-neoforge\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.neoforge.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}},\"26.1-fabric\":{\"id\":\":26.1-fabric\",\"path\":\":26.1-fabric\",\"identityPath\":\":26.1-fabric\",\"name\":\"26.1-fabric\",\"qName\":\":26.1-fabric\",\"group\":\"tectonic\",\"version\":\"3.0.27-fabric-26.1\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-fabric\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-fabric\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.fabric.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}},\"26.1-neoforge\":{\"id\":\":26.1-neoforge\",\"path\":\":26.1-neoforge\",\"identityPath\":\":26.1-neoforge\",\"name\":\"26.1-neoforge\",\"qName\":\":26.1-neoforge\",\"group\":\"tectonic\",\"version\":\"3.0.27-neoforge-26.1\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-neoforge\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-neoforge\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.neoforge.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}},\"26.2-fabric\":{\"id\":\":26.2-fabric\",\"path\":\":26.2-fabric\",\"identityPath\":\":26.2-fabric\",\"name\":\"26.2-fabric\",\"qName\":\":26.2-fabric\",\"group\":\"tectonic\",\"version\":\"3.0.27-fabric-26.2\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-fabric\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-fabric\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.fabric.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}},\"26.2-neoforge\":{\"id\":\":26.2-neoforge\",\"path\":\":26.2-neoforge\",\"identityPath\":\":26.2-neoforge\",\"name\":\"26.2-neoforge\",\"qName\":\":26.2-neoforge\",\"group\":\"tectonic\",\"version\":\"3.0.27-neoforge-26.2\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-neoforge\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-neoforge\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.neoforge.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}},\"buildSrc\":{\"id\":\":buildSrc\",\"path\":\":\",\"identityPath\":\":buildSrc\",\"name\":\"buildSrc\",\"qName\":\"buildSrc\",\"group\":\"\",\"version\":\"unspecified\",\"projectDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\buildSrc\"},\"buildDir\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\buildSrc\\\\build\"},\"buildFile\":{\"path\":\"C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\buildSrc\\\\build.gradle.kts\"},\"externalSystemId\":\"GRADLE\",\"childProjects\":{},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}}},\"sourceSetModel\":{\"taskArtifacts\":[],\"configurationArtifacts\":{},\"sourceSets\":{},\"additionalArtifacts\":[]},\"taskModel\":{\"tasks\":{}}}"
+  &quot;keyToStringList&quot;: {
+    &quot;dev.kikugie.stonecutter.projects&quot;: [
+      &quot;{\&quot;id\&quot;:\&quot;tectonic\&quot;,\&quot;path\&quot;:\&quot;:\&quot;,\&quot;identityPath\&quot;:\&quot;:\&quot;,\&quot;name\&quot;:\&quot;tectonic\&quot;,\&quot;qName\&quot;:\&quot;tectonic\&quot;,\&quot;group\&quot;:\&quot;\&quot;,\&quot;version\&quot;:\&quot;unspecified\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\stonecutter.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{\&quot;21.1-fabric\&quot;:{\&quot;id\&quot;:\&quot;:21.1-fabric\&quot;,\&quot;path\&quot;:\&quot;:21.1-fabric\&quot;,\&quot;identityPath\&quot;:\&quot;:21.1-fabric\&quot;,\&quot;name\&quot;:\&quot;21.1-fabric\&quot;,\&quot;qName\&quot;:\&quot;:21.1-fabric\&quot;,\&quot;group\&quot;:\&quot;tectonic\&quot;,\&quot;version\&quot;:\&quot;3.0.27-fabric-21.1\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-fabric\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-fabric\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.fabric.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}},\&quot;21.1-neoforge\&quot;:{\&quot;id\&quot;:\&quot;:21.1-neoforge\&quot;,\&quot;path\&quot;:\&quot;:21.1-neoforge\&quot;,\&quot;identityPath\&quot;:\&quot;:21.1-neoforge\&quot;,\&quot;name\&quot;:\&quot;21.1-neoforge\&quot;,\&quot;qName\&quot;:\&quot;:21.1-neoforge\&quot;,\&quot;group\&quot;:\&quot;tectonic\&quot;,\&quot;version\&quot;:\&quot;3.0.27-neoforge-21.1\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-neoforge\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\21.1-neoforge\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.neoforge.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}},\&quot;26.1-fabric\&quot;:{\&quot;id\&quot;:\&quot;:26.1-fabric\&quot;,\&quot;path\&quot;:\&quot;:26.1-fabric\&quot;,\&quot;identityPath\&quot;:\&quot;:26.1-fabric\&quot;,\&quot;name\&quot;:\&quot;26.1-fabric\&quot;,\&quot;qName\&quot;:\&quot;:26.1-fabric\&quot;,\&quot;group\&quot;:\&quot;tectonic\&quot;,\&quot;version\&quot;:\&quot;3.0.27-fabric-26.1\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-fabric\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-fabric\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.fabric.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}},\&quot;26.1-neoforge\&quot;:{\&quot;id\&quot;:\&quot;:26.1-neoforge\&quot;,\&quot;path\&quot;:\&quot;:26.1-neoforge\&quot;,\&quot;identityPath\&quot;:\&quot;:26.1-neoforge\&quot;,\&quot;name\&quot;:\&quot;26.1-neoforge\&quot;,\&quot;qName\&quot;:\&quot;:26.1-neoforge\&quot;,\&quot;group\&quot;:\&quot;tectonic\&quot;,\&quot;version\&quot;:\&quot;3.0.27-neoforge-26.1\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-neoforge\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.1-neoforge\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.neoforge.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}},\&quot;26.2-fabric\&quot;:{\&quot;id\&quot;:\&quot;:26.2-fabric\&quot;,\&quot;path\&quot;:\&quot;:26.2-fabric\&quot;,\&quot;identityPath\&quot;:\&quot;:26.2-fabric\&quot;,\&quot;name\&quot;:\&quot;26.2-fabric\&quot;,\&quot;qName\&quot;:\&quot;:26.2-fabric\&quot;,\&quot;group\&quot;:\&quot;tectonic\&quot;,\&quot;version\&quot;:\&quot;3.0.27-fabric-26.2\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-fabric\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-fabric\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.fabric.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}},\&quot;26.2-neoforge\&quot;:{\&quot;id\&quot;:\&quot;:26.2-neoforge\&quot;,\&quot;path\&quot;:\&quot;:26.2-neoforge\&quot;,\&quot;identityPath\&quot;:\&quot;:26.2-neoforge\&quot;,\&quot;name\&quot;:\&quot;26.2-neoforge\&quot;,\&quot;qName\&quot;:\&quot;:26.2-neoforge\&quot;,\&quot;group\&quot;:\&quot;tectonic\&quot;,\&quot;version\&quot;:\&quot;3.0.27-neoforge-26.2\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-neoforge\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\versions\\\\26.2-neoforge\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\build.neoforge.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}},\&quot;buildSrc\&quot;:{\&quot;id\&quot;:\&quot;:buildSrc\&quot;,\&quot;path\&quot;:\&quot;:\&quot;,\&quot;identityPath\&quot;:\&quot;:buildSrc\&quot;,\&quot;name\&quot;:\&quot;buildSrc\&quot;,\&quot;qName\&quot;:\&quot;buildSrc\&quot;,\&quot;group\&quot;:\&quot;\&quot;,\&quot;version\&quot;:\&quot;unspecified\&quot;,\&quot;projectDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\buildSrc\&quot;},\&quot;buildDir\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\buildSrc\\\\build\&quot;},\&quot;buildFile\&quot;:{\&quot;path\&quot;:\&quot;C:\\\\Users\\\\ldglo\\\\Documents\\\\Github\\\\tectonic\\\\buildSrc\\\\build.gradle.kts\&quot;},\&quot;externalSystemId\&quot;:\&quot;GRADLE\&quot;,\&quot;childProjects\&quot;:{},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}}},\&quot;sourceSetModel\&quot;:{\&quot;taskArtifacts\&quot;:[],\&quot;configurationArtifacts\&quot;:{},\&quot;sourceSets\&quot;:{},\&quot;additionalArtifacts\&quot;:[]},\&quot;taskModel\&quot;:{\&quot;tasks\&quot;:{}}}&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ldglo\Documents\Github\tectonic\src\main\resources\resourcepacks\tectonic\overlay.improved_jungle_pillars\data\tectonic\worldgen\density_function\region" />
+      <recent name="C:\Users\ldglo\Documents\Github\tectonic\src\main\resources\resourcepacks\tectonic\overlay.improved_jungle_pillars\data\tectonic\lithostitched\fast_noise_config" />
       <recent name="C:\Users\ldglo\Documents\Github\tectonic" />
       <recent name="C:\Users\ldglo\Documents\Github\tectonic\src\main\resources\resourcepacks\tectonic" />
       <recent name="C:\Users\ldglo\Documents\Github\tectonic\stonecutter\run" />
-      <recent name="C:\Users\ldglo\Documents\Github\tectonic\stonecutter\src\main\java\dev\worldgen\tectonic\platform\neoforge" />
-      <recent name="C:\Users\ldglo\Documents\Github\tectonic\stonecutter\src\main\java\dev\worldgen\tectonic\worldgen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ldglo\Documents\Github\tectonic\src\main\resources\resourcepacks\tectonic\overlay.1_21_9_mod\data\tectonic\worldgen" />
+      <recent name="C:\Users\ldglo\Documents\Github\tectonic\src\main\resources\resourcepacks\tectonic\overlay.mod\data\tectonic\worldgen" />
       <recent name="C:\Users\ldglo\Documents\Github\tectonic\stonecutter\src\main\java\com\example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dev.worldgen.tectonic.platform.fabric" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.tectonic [&quot;Set active project to 26.2-fabric&quot;]">
+  <component name="RunManager" selected="Gradle.Minecraft Client (:26.1-fabric)">
     <configuration name="21.1-neoforge - Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="tectonic.21.1-neoforge.main" />
@@ -606,16 +327,6 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="lua.app" factoryName="Lua Application">
-      <option name="program" value="lua.exe" />
-      <option name="file" value="" />
-      <option name="workingDir" value="$PROJECT_DIR$/versions/21.1-fabric/build/generated/stonecutter/main/java" />
-      <option name="debuggerType" value="1" />
-      <option name="params" value="" />
-      <option name="charset" value="UTF-8" />
-      <option name="showConsole" value="true" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.21.1-neoforge - Client" />
       <item itemvalue="Application.21.1-neoforge - Server" />
@@ -635,8 +346,8 @@
       <item itemvalue="Gradle.Minecraft Server (:21.1-fabric)" />
       <item itemvalue="Gradle.Minecraft Server (:26.1-fabric)" />
       <item itemvalue="Gradle.Minecraft Server (:26.2-fabric)" />
-      <item itemvalue="Gradle.tectonic [&quot;Set active project to 26.2-fabric&quot;]" />
       <item itemvalue="Gradle.stonecutter [build]" />
+      <item itemvalue="Gradle.tectonic [&quot;Set active project to 26.2-fabric&quot;]" />
       <item itemvalue="Gradle.tectonic [clean]" />
     </list>
     <recent_temporary>
@@ -671,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782075935986</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Active project fabric 26.2">
+      <option name="closed" value="true" />
+      <created>1784497167215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784497167215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,6 +398,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Migrate to Stonecutter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrate to Stonecutter" />
+    <MESSAGE value="Active project fabric 26.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Active project fabric 26.2" />
   </component>
 </project>

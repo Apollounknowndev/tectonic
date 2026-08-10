@@ -5,7 +5,6 @@ import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
 public class NoiseState {
-    public static final NoiseState DEFAULT = new NoiseState(0.25, 1, 0);
     public double scale;
     public double multiplier;
     public double offset;
@@ -47,9 +46,9 @@ public class NoiseState {
     
     public static MapCodec<NoiseState> codec(String name, NoiseState initialState) {
         return RecordCodecBuilder.<NoiseState>create(instance -> instance.group(
-            Codec.DOUBLE.fieldOf("scale").forGetter(state -> state.scale),
-            Codec.DOUBLE.fieldOf("multiplier").forGetter(state -> state.multiplier),
-            Codec.DOUBLE.fieldOf("offset").forGetter(state -> state.offset)
+            Codec.DOUBLE.fieldOf("scale").orElse(initialState.scale).forGetter(state -> state.scale),
+            Codec.DOUBLE.fieldOf("multiplier").orElse(initialState.multiplier).forGetter(state -> state.multiplier),
+            Codec.DOUBLE.fieldOf("offset").orElse(initialState.offset).forGetter(state -> state.offset)
         ).apply(instance, NoiseState::new)).fieldOf(name).orElse(initialState);
     }
 }
