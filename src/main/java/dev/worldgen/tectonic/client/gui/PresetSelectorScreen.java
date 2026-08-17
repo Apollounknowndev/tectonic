@@ -1,7 +1,7 @@
 package dev.worldgen.tectonic.client.gui;
 
+import dev.worldgen.apollib.Apollib;
 import dev.worldgen.apollib.client.gui.ApollibConfigScreen;
-import dev.worldgen.lithostitched.impl.LithostitchedPlatform;
 import dev.worldgen.tectonic.Tectonic;
 import dev.worldgen.tectonic.config.ConfigPresets;
 import dev.worldgen.tectonic.config.ConfigState;
@@ -60,9 +60,9 @@ public class PresetSelectorScreen extends Screen {
     
     public static Component text(String name) {
         if (Objects.equals(name, "overkill")) {
-            if (LithostitchedPlatform.isModLoaded("distant_horizons")) {
+            if (Apollib.isModLoaded("distant_horizons")) {
                 name = "overkill.dh";
-            } else if (LithostitchedPlatform.isModLoaded("voxy")) {
+            } else if (Apollib.isModLoaded("voxy")) {
                 name = "overkill.voxy";
             }
         }

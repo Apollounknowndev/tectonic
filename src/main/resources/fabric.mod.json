@@ -29,6 +29,7 @@
   "depends": {
     "fabricloader": ">=0.17",
     "minecraft": "${minecraft}",
+    "apollib": ">=1.1.6",
     "lithostitched": "*"
   }
 }

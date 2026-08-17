@@ -21,19 +21,13 @@
   "overlays": {
     "entries": [
       {
-        "directory": "overlay.mod",
+        "directory": "intentionally_empty",
         "formats": [1, 999],
         "min_format": 1,
         "max_format": 999
       },
       {
-        "directory": "overlay.1_21_9_mod",
-        "formats": [82, 999],
-        "min_format": 82,
-        "max_format": 999
-      },
-      {
-        "directory": "overlay.1_21_9",
+        "directory": "overlay.26_1",
         "formats": [82, 999],
         "min_format": 82,
         "max_format": 999

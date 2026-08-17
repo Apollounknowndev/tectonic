@@ -4,36 +4,130 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6fc932f-5978-4149-85c7-92e2286193c4" name="Changes" comment="Active project fabric 26.2">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/lithostitched/fast_noise_config/jungle_pillars_distance.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/lithostitched/fast_noise_config/jungle_pillars_value.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/worldgen/density_function/region/heart.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/worldgen/density_function/region/heart/jungle_pillar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.experimental.jungle_pillars/data/tectonic/worldgen/density_function/terrain_spline/offset/depth_additive.json" afterDir="false" />
+    <list default="true" id="e6fc932f-5978-4149-85c7-92e2286193c4" name="Changes" comment="Experimental jungle pillars">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/lithostitched/worldgen_modifier/remove_frozen_ocean_ice.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/lithostitched/worldgen_modifier/remove_islands.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/lithostitched/worldgen_modifier/set_height_limits.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/lithostitched/worldgen_modifier/underground_river/ice.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/lithostitched/worldgen_modifier/underground_river/lanterns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/lithostitched/worldgen_modifier/underground_river/lichen.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/tags/worldgen/world_preset/incompatible.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/configured_feature/underground_river/ice.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/above_bottom_y.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/cave/cheese_additive.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/cave/cheese_enabled.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/cave/noodle_additive.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/cave/noodle_enabled.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/cave/spaghetti_enabled.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/deep_ocean_depth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/flat_terrain_skew.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/jungle_pillars.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/lava_tunnels.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/max_offset.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/min_offset.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/noise/continents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/noise/erosion.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/noise/island_a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/noise/island_b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/noise/ridge.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/noise/temperature.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/noise/vegetation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/ocean_depth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/ocean_offset.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/rolling_hills.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/slope_lower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/slope_upper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/underground_rivers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/__constants/vertical_scale.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/terrain_spline/offset/final.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/ice.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/ConfigScreenBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/ConfigScreenBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigPresets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigPresets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/ConfigState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/NewConfigState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/NewConfigState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/V2ConfigState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/V2ConfigState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/object/NoiseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/config/object/NoiseState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/tectonic/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/tectonic/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/configured_feature/underground_river/ice.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/configured_feature/underground_river/ice.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/full_continents.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/full_continents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/raw_continents.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/density_function/noise/raw_continents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/ice.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/ice.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9_mod/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/ice.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/gui/PresetSelectorScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/worldgen/tectonic/client/gui/PresetSelectorScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9/data/minecraft/worldgen/density_function/overworld/noise_router/preliminary_surface_level.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.26_1/data/minecraft/worldgen/density_function/overworld/noise_router/preliminary_surface_level.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9_mod/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.26_1/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9_mod/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.26_1/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.1_21_9_mod/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/minecraft/worldgen/noise/continentalness.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/minecraft/worldgen/noise/erosion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/minecraft/worldgen/noise/ridge.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/above_bottom_y.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/cheese_additive.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/cheese_enabled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/noodle_additive.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/noodle_enabled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/cave/spaghetti_enabled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/deep_ocean_depth.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/flat_terrain_skew.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/jungle_pillars.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/lava_tunnels.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/max_offset.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/min_offset.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/continents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/erosion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/island_a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/island_b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/ridge.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/temperature.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/noise/vegetation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/ocean_depth.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/ocean_offset.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/rolling_hills.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/slope_lower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/slope_upper.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/underground_rivers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/__constants/vertical_scale.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.datapack/data/tectonic/worldgen/density_function/terrain_spline/offset/final.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/remove_frozen_ocean_ice.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/remove_islands.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/set_height_limits.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/underground_river/ice.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/underground_river/lanterns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/lithostitched/worldgen_modifier/underground_river/lichen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/tags/worldgen/world_preset/incompatible.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/configured_feature/underground_river/ice.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/configured_feature/underground_river/lanterns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/above_bottom_y.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/cheese_additive.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/cheese_enabled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/depth_cutoff.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/noodle_additive.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/noodle_enabled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/cave/spaghetti_enabled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/deep_ocean_depth.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/flat_terrain_skew.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/jungle_pillars.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/lava_tunnels.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/max_offset.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/min_offset.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/continents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/erosion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/island_a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/island_b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/ridge.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/temperature.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/noise/vegetation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/ocean_depth.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/ocean_offset.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/rolling_hills.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/slope_lower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/slope_upper.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/underground_rivers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/__constants/vertical_scale.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/density_function/terrain_spline/offset/final.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/ice.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/lanterns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/data/tectonic/worldgen/placed_feature/underground_river/lichen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/overlay.mod/pack.mcmeta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resourcepacks/tectonic/pack.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stonecutter.properties.toml" beforeDir="false" afterPath="$PROJECT_DIR$/stonecutter.properties.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/uploader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +276,7 @@
       <recent name="dev.worldgen.tectonic.platform.fabric" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Minecraft Client (:26.1-fabric)">
+  <component name="RunManager" selected="Application.26.2-neoforge - Client">
     <configuration name="21.1-neoforge - Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="tectonic.21.1-neoforge.main" />
@@ -390,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784497167215</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Experimental jungle pillars">
+      <option name="closed" value="true" />
+      <created>1786336016922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786336016922</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +501,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Migrate to Stonecutter" />
     <MESSAGE value="Active project fabric 26.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Active project fabric 26.2" />
+    <MESSAGE value="Experimental jungle pillars" />
+    <option name="LAST_COMMIT_MESSAGE" value="Experimental jungle pillars" />
   </component>
 </project>

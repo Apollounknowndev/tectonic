@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:noise",
-  "noise": "tectonic:island/continents_a",
-  "xz_scale": 0.11,
-  "y_scale": 0
-}

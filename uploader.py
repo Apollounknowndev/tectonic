@@ -159,7 +159,7 @@ for modloader, game_version in UPLOAD_VERSIONS:
     mod_path = os.path.join(
         BASE_FOLDER,
         'versions',
-        f'{game_version}-{modloader}\\'
+        f'{game_version}-{modloader}',
         'build',
         'libs',
         f'{MOD_ID}-{MOD_VERSION}-{modloader}-{game_version}.jar'
