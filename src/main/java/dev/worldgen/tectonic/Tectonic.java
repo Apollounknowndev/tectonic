@@ -15,8 +15,9 @@ public class Tectonic {
     /**
      * Value saved in chunks used for blending between Tectonic versions.
      * <ol>
-     *     <li>3.0.0 - 3.0.8, 3.0.10+</li>
+     *     <li>3.0.0 - 3.0.8, 3.0.10-3.0.27</li>
      *     <li>3.0.9</li>
+     *     <li>3.1.0+</li>
      * </ol>
      */
     public static int BLENDING_VERSION = 1;
@@ -33,8 +34,10 @@ public class Tectonic {
     public static void init() {
         CONFIG.load();
         TectonicRegistrations.init();
+        
+        Apollib.CONDITIONS_BY_ID.put(id("experimental/volcanoes"), () -> true);
     }
-
+    
     public static Identifier id(String name) {
         return Identifier.fromNamespaceAndPath(MOD_ID, name);
     }

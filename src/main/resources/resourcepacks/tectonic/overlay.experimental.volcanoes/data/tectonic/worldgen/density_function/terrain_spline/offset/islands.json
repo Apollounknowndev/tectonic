@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "tectonic:noise/raw_continents",
+    "points": [
+      {
+        "location": -0.6,
+        "value": {
+          "coordinate": {
+            "type": "lithostitched:select",
+            "input": "tectonic:noise/island/selector",
+            "fallback": "tectonic:__constants/deep_ocean_depth",
+            "selections": [
+              {
+                "range": [0, 0.5],
+                "function": "tectonic:terrain_spline/offset/island/volcano_standalone"
+              },
+              {
+                "range": [0.5, 1],
+                "function": "tectonic:terrain_spline/offset/island/caldera"
+              },
+              {
+                "range": [1, 1.5],
+                "function": "tectonic:terrain_spline/offset/island/volcano_jungle"
+              },
+              {
+                "range": [1.5, 2],
+                "function": "tectonic:terrain_spline/offset/island/atoll"
+              }
+            ]
+          },
+          "points": [
+            {
+              "location": 0,
+              "value": 0,
+              "derivative": 1
+            }
+          ]
+        },
+        "derivative": 0
+      },
+      {
+        "location": -0.5,
+        "value": {
+          "coordinate": "tectonic:__constants/deep_ocean_depth",
+          "points": [
+            {
+              "location": 0,
+              "derivative": 1,
+              "value": 0
+            }
+          ]
+        },
+        "derivative": 0
+      }
+    ]
+  }
+}

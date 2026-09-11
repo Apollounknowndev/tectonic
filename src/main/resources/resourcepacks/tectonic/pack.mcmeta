@@ -43,6 +43,18 @@
   "neoforge:overlays": {
     "entries": [
       {
+        "directory": "overlay.experimental.volcanoes",
+        "formats": [1, 999],
+        "min_format": 1,
+        "max_format": 999,
+        "neoforge:conditions": [
+          {
+            "type": "apollib:config",
+            "key": "tectonic:experimental/volcanoes"
+          }
+        ]
+      },
+      {
         "directory": "overlay.experimental.jungle_pillars",
         "formats": [1, 999],
         "min_format": 1,
@@ -118,6 +130,13 @@
   },
   "fabric:overlays": {
     "entries": [
+      {
+        "directory": "overlay.experimental.volcanoes",
+        "condition": {
+          "condition": "apollib:config",
+          "key": "tectonic:experimental/volcanoes"
+        }
+      },
       {
         "directory": "overlay.experimental.jungle_pillars",
         "condition": {

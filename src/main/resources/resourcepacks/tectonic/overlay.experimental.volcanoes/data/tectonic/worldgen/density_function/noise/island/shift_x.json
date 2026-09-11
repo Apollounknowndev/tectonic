@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:mul",
+  "argument1": 48,
+  "argument2": {
+    "type": "minecraft:noise",
+    "noise": "tectonic:island/shift_x",
+    "xz_scale": 0.33,
+    "y_scale": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "type": "lithostitched:add_surface_rule",
+  "levels": [
+    "minecraft:overworld"
+  ],
+  "surface_rule": {
+    "type": "minecraft:condition",
+    "if_true": {
+      "type": "minecraft:above_preliminary_surface"
+    },
+    "then_run": {
+      "type": "minecraft:sequence",
+      "sequence": [
+        {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "lithostitched:biome",
+            "biomes": "tectonic:volcanic_crater"
+          },
+          "then_run": {
+            "type": "lithostitched:reference",
+            "rules": "tectonic:volcanic_crater"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "lithostitched:biome",
+            "biomes": "tectonic:volcanic_island"
+          },
+          "then_run": {
+            "type": "lithostitched:reference",
+            "rules": "tectonic:volcanic_island"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "lithostitched:biome",
+            "biomes": "tectonic:island"
+          },
+          "then_run": {
+            "type": "lithostitched:reference",
+            "rules": "tectonic:island"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "lithostitched:biome",
+            "biomes": "tectonic:lagoon"
+          },
+          "then_run": {
+            "type": "lithostitched:reference",
+            "rules": "tectonic:lagoon"
+          }
+        }
+      ]
+    }
+  }
+}

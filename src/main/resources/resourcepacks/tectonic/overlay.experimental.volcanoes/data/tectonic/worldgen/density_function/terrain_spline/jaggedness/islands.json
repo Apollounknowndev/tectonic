@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "tectonic:noise/raw_continents",
+    "points": [
+      {
+        "location": -0.6,
+        "value": {
+          "coordinate": {
+            "type": "lithostitched:select",
+            "input": "tectonic:noise/island/selector",
+            "fallback": 0,
+            "selections": [
+              {
+                "range": 3,
+                "function": "tectonic:terrain_spline/jaggedness/island/caldera"
+              }
+            ]
+          },
+          "points": [
+            {
+              "location": 0,
+              "value": 0,
+              "derivative": 1
+            }
+          ]
+        },
+        "derivative": 0
+      },
+      {
+        "location": -0.5,
+        "value": 0,
+        "derivative": 0
+      }
+    ]
+  }
+}

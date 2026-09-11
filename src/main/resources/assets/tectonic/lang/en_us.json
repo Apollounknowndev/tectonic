@@ -113,6 +113,8 @@
   "config.tectonic.terrain_changes": "Terrain Changes",
   "config.tectonic.option.improved_jungle_pillars": "Improved Jungle Pillars",
   "config.tectonic.option.improved_jungle_pillars.tooltip": "Jungle pillars become twice as common, larger, and more consistently have flatter tops.",
+  "config.tectonic.option.volcanoes": "Volcanoes",
+  "config.tectonic.option.volcanoes.tooltip": "WIP volcano generation, replacing normal island generation.",
 
   "preset.tectonic.title": "Presets",
 

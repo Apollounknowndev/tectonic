@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "tectonic:noise/island/volcano/ridged_center_distance",
+    "points": [
+      {
+        "location": 0,
+        "value": 0.4,
+        "derivative": 0
+      },
+      {
+        "location": 32,
+        "value": 0.6,
+        "derivative": 0.005
+      },
+      {
+        "location": 32,
+        "value": 0.6,
+        "derivative": -0.02
+      },
+      {
+        "location": 144,
+        "value": -0.035,
+        "derivative": -0.007
+      },
+      {
+        "location": 320,
+        "value": {
+          "coordinate": "tectonic:__constants/deep_ocean_depth",
+          "points": [
+            {
+              "location": 0,
+              "derivative": 1,
+              "value": 0
+            }
+          ]
+        },
+        "derivative": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "lithostitched:force_placement",
+  "dimension": "minecraft:overworld",
+  "biome": "minecraft:ocean",
+  "parameters": {
+    "tectonic:noise/raw_continents": {
+      "min_inclusive": -64,
+      "max_inclusive": -0.5
+    },
+    "tectonic:noise/island/selector": [0.5, 1],
+    "tectonic:noise/island/center_distance": {
+      "min_inclusive": 0,
+      "max_inclusive": 112
+    }
+  }
+}

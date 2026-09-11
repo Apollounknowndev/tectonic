@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "tectonic:noise/island/center_distance",
+    "points": [
+      {
+        "location": 160,
+        "value": 0,
+        "derivative": 0
+      },
+      {
+        "location": 184,
+        "value": 0.2,
+        "derivative": 0
+      },
+      {
+        "location": 208,
+        "value": 0,
+        "derivative": 0
+      }
+    ]
+  }
+}

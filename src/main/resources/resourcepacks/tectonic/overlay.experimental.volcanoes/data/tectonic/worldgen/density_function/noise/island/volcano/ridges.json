@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "lithostitched:fast_noise",
+    "config": "tectonic:volcano_ridges",
+    "xz_scale": 1,
+    "y_scale": 0
+  }
+}

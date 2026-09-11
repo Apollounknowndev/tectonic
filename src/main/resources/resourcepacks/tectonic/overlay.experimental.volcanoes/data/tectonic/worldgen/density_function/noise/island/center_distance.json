@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "lithostitched:shift",
+      "input": {
+        "type": "lithostitched:cellular",
+        "condition": {
+          "function": "tectonic:noise/island/condition",
+          "range": [1, 1],
+          "fallback_value": 16384
+        },
+        "grid_size": 1024,
+        "jitter": 0.375,
+        "return_type": "distance_1",
+        "salt": 699
+      },
+      "shift_x": "tectonic:noise/island/shift_x",
+      "shift_y": 0,
+      "shift_z": "tectonic:noise/island/shift_z"
+    }
+  }
+}
