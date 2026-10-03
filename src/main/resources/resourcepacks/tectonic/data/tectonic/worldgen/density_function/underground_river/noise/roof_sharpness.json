@@ -1,21 +1,22 @@
 {
   "type": "minecraft:add",
-  "argument1": -11,
-  "argument2": {
+  "left": -11,
+  "right": {
     "type": "minecraft:mul",
-    "argument1": {
-      "type": "minecraft:y_clamped_gradient",
-      "from_y": 64,
-      "to_y": 80,
+    "left": {
+      "type": "minecraft:gradient",
+      "axis": "y",
+      "from_coordinate": 64,
+      "to_coordinate": 80,
       "from_value": 0,
       "to_value": -10
     },
-    "argument2": {
+    "right": {
       "type": "minecraft:clamp",
       "input": {
         "type": "minecraft:add",
-        "argument1": 0.3,
-        "argument2": {
+        "left": 0.3,
+        "right": {
           "type": "minecraft:noise",
           "noise": "tectonic:underground_river/roof_sharpness",
           "xz_scale": 0.6,

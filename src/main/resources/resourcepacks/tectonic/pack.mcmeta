@@ -18,42 +18,8 @@
       "\n"
     ]
   },
-  "overlays": {
-    "entries": [
-      {
-        "directory": "intentionally_empty",
-        "formats": [1, 999],
-        "min_format": 1,
-        "max_format": 999
-      },
-      {
-        "directory": "overlay.26_1",
-        "formats": [82, 999],
-        "min_format": 82,
-        "max_format": 999
-      },
-      {
-        "directory": "overlay.26_2",
-        "formats": [107, 999],
-        "min_format": 107,
-        "max_format": 999
-      }
-    ]
-  },
   "neoforge:overlays": {
     "entries": [
-      {
-        "directory": "overlay.experimental.jungle_pillars",
-        "formats": [1, 999],
-        "min_format": 1,
-        "max_format": 999,
-        "neoforge:conditions": [
-          {
-            "type": "tectonic:config",
-            "key": "improved_jungle_pillars"
-          }
-        ]
-      },
       {
         "directory": "overlay.no_carvers",
         "formats": [1, 999],
@@ -89,42 +55,11 @@
             "key": "ultrasmooth"
           }
         ]
-      },
-      {
-        "directory": "overlay.terratonic_26_2",
-        "formats": [1, 999],
-        "min_format": 1,
-        "max_format": 999,
-        "neoforge:conditions": [
-          {
-            "type": "neoforge:mod_loaded",
-            "modid": "terralith"
-          }
-        ]
-      },
-      {
-        "directory": "overlay.clifftree",
-        "formats": [1, 999],
-        "min_format": 1,
-        "max_format": 999,
-        "neoforge:conditions": [
-          {
-            "type": "neoforge:mod_loaded",
-            "modid": "mr_clifftree"
-          }
-        ]
       }
     ]
   },
   "fabric:overlays": {
     "entries": [
-      {
-        "directory": "overlay.experimental.jungle_pillars",
-        "condition": {
-          "condition": "tectonic:config",
-          "key": "improved_jungle_pillars"
-        }
-      },
       {
         "directory": "overlay.no_carvers",
         "condition": {
@@ -144,25 +79,6 @@
         "condition": {
           "condition": "tectonic:config",
           "key": "ultrasmooth"
-        }
-      },
-      {
-        "directory": "overlay.terratonic_26_2",
-        "condition": {
-          "condition": "fabric:all_mods_loaded",
-          "values": [
-            "terralith"
-          ]
-        }
-      },
-      {
-        "directory": "overlay.clifftree",
-        "condition": {
-          "condition": "fabric:any_mods_loaded",
-          "values": [
-            "mr_clifftree",
-            "clifftree"
-          ]
         }
       }
     ]

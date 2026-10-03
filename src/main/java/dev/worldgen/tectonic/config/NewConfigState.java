@@ -47,10 +47,10 @@ public class NewConfigState {
 	public static class Noises {
 		public static final NoiseState TEMPERATURE = NoiseState.create();
 		public static final NoiseState VEGETATION = NoiseState.create();
-		public static final NoiseState CONTINENTS = NoiseState.create(0.13);
+		public static final NoiseState CONTINENTS = NoiseState.create(0.13f);
 		public static final NoiseState EROSION = NoiseState.create();
 		public static final NoiseState RIDGES = NoiseState.create();
-		public static final NoiseState ISLANDS = NoiseState.create(0.11);
+		public static final NoiseState ISLANDS = NoiseState.create(0.11f);
 		
 		public static final Codec<Noises> CODEC = RecordCodecBuilder.create(i -> i.group(
 			NoiseState.codec("temperature", TEMPERATURE).forGetter(n -> n.temperature),

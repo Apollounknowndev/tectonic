@@ -1,88 +1,85 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "tectonic:noise/continent/erosion",
-        "points": [
-          {
-            "location": -0.02,
-            "derivative": 0,
-            "value": {
-              "coordinate": "tectonic:noise/region_selector",
-              "points": [
-                {
-                  "location": -0.04,
-                  "derivative": 0,
-                  "value": {
-                    "coordinate": "tectonic:region/club",
-                    "points": [
-                      {
-                        "location": 0,
-                        "derivative": 1,
-                        "value": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "location": 0.04,
-                  "derivative": 0,
-                  "value": {
-                    "coordinate": "tectonic:region/heart",
-                    "points": [
-                      {
-                        "location": 0,
-                        "derivative": 1,
-                        "value": 0
-                      }
-                    ]
-                  }
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "tectonic:noise/continent/erosion",
+      "points": [
+        {
+          "location": -0.02,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:noise/region_selector",
+            "points": [
+              {
+                "location": -0.04,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:region/club",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 1,
+                      "value": 0
+                    }
+                  ]
                 }
-              ]
-            }
-          },
-          {
-            "location": 0.04,
-            "derivative": 0,
-            "value": {
-              "coordinate": "tectonic:noise/region_selector",
-              "points": [
-                {
-                  "location": -0.02,
-                  "derivative": 0,
-                  "value": {
-                    "coordinate": "tectonic:region/spade",
-                    "points": [
-                      {
-                        "location": 0,
-                        "derivative": 1,
-                        "value": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "location": 0.04,
-                  "derivative": 0,
-                  "value": {
-                    "coordinate": "tectonic:region/diamond",
-                    "points": [
-                      {
-                        "location": 0,
-                        "derivative": 1,
-                        "value": 0
-                      }
-                    ]
-                  }
+              },
+              {
+                "location": 0.04,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:region/heart",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 1,
+                      "value": 0
+                    }
+                  ]
                 }
-              ]
-            }
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "location": 0.04,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:noise/region_selector",
+            "points": [
+              {
+                "location": -0.02,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:region/spade",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 1,
+                      "value": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 0.04,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:region/diamond",
+                  "points": [
+                    {
+                      "location": 0,
+                      "derivative": 1,
+                      "value": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

@@ -1,8 +1,10 @@
 {
   "type": "minecraft:interpolated",
-  "argument": {
+  "cell_size_xz": 4,
+  "cell_size_y": 4,
+  "input": {
     "type": "minecraft:max",
-    "argument1": {
+    "left": {
       "type": "minecraft:range_choice",
       "input": "tectonic:underground_river/pillars",
       "max_exclusive": 0.03,
@@ -10,23 +12,23 @@
       "when_in_range": -64,
       "when_out_of_range": "tectonic:underground_river/pillars"
     },
-    "argument2": {
+    "right": {
       "type": "minecraft:add",
-      "argument1": "tectonic:underground_river/noise/density_additive",
-      "argument2": {
+      "left": "tectonic:underground_river/noise/density_additive",
+      "right": {
         "type": "minecraft:mul",
-        "argument1": "tectonic:__constants/underground_rivers",
-        "argument2": {
+        "left": "tectonic:__constants/underground_rivers",
+        "right": {
           "type": "minecraft:mul",
-          "argument1": {
+          "left": {
             "type": "minecraft:mul",
-            "argument1": "tectonic:underground_river/spline/continents",
-            "argument2": "tectonic:underground_river/spline/erosion"
+            "left": "tectonic:underground_river/spline/continents",
+            "right": "tectonic:underground_river/spline/erosion"
           },
-          "argument2": {
+          "right": {
             "type": "minecraft:mul",
-            "argument1": "tectonic:underground_river/spline/elevation",
-            "argument2": "tectonic:underground_river/spline/ridge"
+            "left": "tectonic:underground_river/spline/elevation",
+            "right": "tectonic:underground_river/spline/ridge"
           }
         }
       }

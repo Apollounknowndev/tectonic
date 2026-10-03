@@ -1,27 +1,27 @@
 {
-  "type": "minecraft:cache_once",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:add",
-    "argument1": {
+    "left": {
       "type": "minecraft:mul",
-      "argument1": 4,
-      "argument2": {
+      "left": 4,
+      "right": {
         "type": "minecraft:mul",
-        "argument1": {
+        "left": {
           "type": "minecraft:add",
-          "argument1": {
+          "left": {
             "type": "minecraft:add",
-            "argument1": "tectonic:depth",
-            "argument2": "tectonic:terrain_spline/offset/depth_additive"
+            "left": "tectonic:depth",
+            "right": "tectonic:terrain_spline/offset/depth_additive"
           },
-          "argument2": {
+          "right": {
             "type": "minecraft:add",
-            "argument1": {
+            "left": {
               "type": "minecraft:mul",
-              "argument1": "tectonic:terrain_spline/jaggedness/islands",
-              "argument2": {
+              "left": "tectonic:terrain_spline/jaggedness/islands",
+              "right": {
                 "type": "minecraft:half_negative",
-                "argument": {
+                "input": {
                   "type": "minecraft:noise",
                   "noise": "minecraft:jagged",
                   "xz_scale": 1500,
@@ -29,33 +29,33 @@
                 }
               }
             },
-            "argument2": {
+            "right": {
               "type": "minecraft:mul",
-              "argument1": "tectonic:terrain_spline/jaggedness/continents",
-              "argument2": {
+              "left": "tectonic:terrain_spline/jaggedness/continents",
+              "right": {
                 "type": "minecraft:add",
-                "argument1": {
+                "left": {
                   "type": "minecraft:mul",
-                  "argument1": -0.1,
-                  "argument2": "tectonic:mountain_ridges/weathering"
+                  "left": -0.1,
+                  "right": "tectonic:mountain_ridges/weathering"
                 },
-                "argument2": {
+                "right": {
                   "type": "minecraft:add",
-                  "argument1": {
-                    "type": "minecraft:flat_cache",
-                    "argument": {
+                  "left": {
+                    "type": "minecraft:cache",
+                    "input": {
                       "type": "minecraft:mul",
-                      "argument1": "tectonic:mountain_ridges/ridges",
-                      "argument2": -1
+                      "left": "tectonic:mountain_ridges/ridges",
+                      "right": -1
                     }
                   },
-                  "argument2": 0.6
+                  "right": 0.6
                 }
               }
             }
           }
         },
-        "argument2": {
+        "right": {
           "type": "minecraft:range_choice",
           "input": "tectonic:continent_selector",
           "min_inclusive": 0.9,
@@ -65,22 +65,22 @@
         }
       }
     },
-    "argument2": {
+    "right": {
       "type": "minecraft:add",
-      "argument1": {
+      "left": {
         "type": "minecraft:max",
-        "argument1": 0,
-        "argument2": {
+        "left": 0,
+        "right": {
           "type": "minecraft:mul",
-          "argument1": "tectonic:region/diamond/dune/spline",
-          "argument2": "tectonic:region/diamond/dune/final"
+          "left": "tectonic:region/diamond/dune/spline",
+          "right": "tectonic:region/diamond/dune/final"
         }
       },
-      "argument2": {
+      "right": {
         "type": "minecraft:add",
-        "argument1": {
+        "left": {
           "type": "minecraft:mul",
-          "argument1": {
+          "left": {
             "type": "minecraft:spline",
             "spline": {
               "coordinate": "tectonic:noise/full_continents",
@@ -108,11 +108,11 @@
               ]
             }
           },
-          "argument2": "tectonic:terrain_spline/roughness"
+          "right": "tectonic:terrain_spline/roughness"
         },
-        "argument2": {
+        "right": {
           "type": "minecraft:mul",
-          "argument1": {
+          "left": {
             "type": "minecraft:spline",
             "spline": {
               "coordinate": "tectonic:noise/full_continents",
@@ -140,7 +140,7 @@
               ]
             }
           },
-          "argument2": "tectonic:terrain_spline/ocean"
+          "right": "tectonic:terrain_spline/ocean"
         }
       }
     }

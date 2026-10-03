@@ -2,11 +2,11 @@
   "type": "minecraft:clamp",
   "input": {
     "type": "minecraft:mul",
-    "argument1": 20,
-    "argument2": {
+    "left": 20,
+    "right": {
       "type": "minecraft:add",
-      "argument1": 0.2,
-      "argument2": "tectonic:noise/raw_continents"
+      "left": 0.2,
+      "right": "tectonic:noise/raw_continents"
     }
   },
   "min": 0,

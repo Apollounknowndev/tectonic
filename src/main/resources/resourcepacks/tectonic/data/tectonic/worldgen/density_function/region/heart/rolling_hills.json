@@ -1,9 +1,9 @@
 {
   "type": "minecraft:mul",
-  "argument1": "tectonic:__constants/rolling_hills",
-  "argument2": {
+  "left": "tectonic:__constants/rolling_hills",
+  "right": {
     "type": "minecraft:abs",
-    "argument": {
+    "input": {
       "type": "minecraft:noise",
       "noise": "tectonic:region/heart/rolling_hills",
       "xz_scale": 0.2,

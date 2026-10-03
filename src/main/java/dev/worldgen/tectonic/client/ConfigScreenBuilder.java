@@ -114,8 +114,6 @@ public class ConfigScreenBuilder {
 		alignLeft(helper.singleLineText("alternate_noise_scaling")).format(ChatFormatting.GRAY).withTooltip(false).addBig();
 		helper.booleanButton("alternate_erosion_scaling", bool -> experimental.alternateErosionScaling = bool, experimental.alternateErosionScaling).addSmall();
 		helper.booleanButton("alternate_continents_scaling", bool -> experimental.alternateContinentsScaling = bool, experimental.alternateContinentsScaling).addSmall();
-		alignLeft(helper.singleLineText("terrain_changes")).format(ChatFormatting.GRAY).addBig();
-		helper.booleanButton("improved_jungle_pillars", bool -> experimental.improvedJunglePillars = bool, experimental.improvedJunglePillars).withTooltip(false).addSmall();
 	}
 	
 	public static void addNoise(ApollibRowHelper helper, String name, NoiseState state, NoiseState defaultState) {

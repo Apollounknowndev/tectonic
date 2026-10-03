@@ -21,12 +21,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/buildSrc" />
-            <option value="$PROJECT_DIR$/versions/21.1-fabric" />
-            <option value="$PROJECT_DIR$/versions/21.1-neoforge" />
-            <option value="$PROJECT_DIR$/versions/26.1-fabric" />
-            <option value="$PROJECT_DIR$/versions/26.1-neoforge" />
-            <option value="$PROJECT_DIR$/versions/26.2-fabric" />
-            <option value="$PROJECT_DIR$/versions/26.2-neoforge" />
+            <option value="$PROJECT_DIR$/versions/26.3-fabric" />
+            <option value="$PROJECT_DIR$/versions/26.3-neoforge" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="true" />

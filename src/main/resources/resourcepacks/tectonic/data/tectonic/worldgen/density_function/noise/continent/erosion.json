@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:spline",
     "spline": {
       "coordinate": "tectonic:noise/continent/erosion_raw",

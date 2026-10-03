@@ -1,7 +1,7 @@
 {
   "type": "minecraft:mul",
-  "argument1": "minecraft:overworld/base_3d_noise",
-  "argument2": {
+  "left": "minecraft:overworld/base_3d_noise",
+  "right": {
     "type": "minecraft:spline",
     "spline": {
       "coordinate": "tectonic:noise/full_continents",

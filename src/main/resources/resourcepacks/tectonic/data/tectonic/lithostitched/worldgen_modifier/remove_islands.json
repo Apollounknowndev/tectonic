@@ -7,9 +7,9 @@
   "target_function": "tectonic:noise/raw_continents",
   "wrapper_function": {
     "type": "minecraft:max",
-    "argument1": {
+    "left": {
       "type": "lithostitched:wrapped_marker"
     },
-    "argument2": -0.49
+    "right": -0.49
   }
 }

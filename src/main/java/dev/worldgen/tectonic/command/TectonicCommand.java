@@ -3,9 +3,7 @@ package dev.worldgen.tectonic.command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
-import dev.worldgen.lithostitched.api.worldgen.densityfunction.SimpleContext;
 import dev.worldgen.lithostitched.api.worldgen.util.DensityFunctionWrapper;
-import dev.worldgen.lithostitched.mixin.common.RandomStateAccessor;
 import dev.worldgen.tectonic.Tectonic;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
@@ -20,10 +18,11 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.InclusiveRange;
 import net.minecraft.util.Mth;
-import net.minecraft.world.level.levelgen.DensityFunction;
+import net.minecraft.world.level.levelgen.densityfunction.DensityFunction;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
 import net.minecraft.world.level.levelgen.RandomState;
+import net.minecraft.world.level.levelgen.densityfunction.SamplerContext;
 
 import java.util.Map;
 import java.util.function.Supplier;
@@ -43,7 +42,7 @@ public class TectonicCommand {
         addTarget(locate, "cherry_valley", LocateTargets.CHERRY_VALLEY, () -> true);
 
         dispatcher.register(
-            literal("tectonic").requires(TectonicCommand::canRunCommand)
+            literal("tectonic").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
             .then(literal("debug").executes(TectonicCommand::debugOutput))
             .then(locate)
         );
@@ -59,20 +58,21 @@ public class TectonicCommand {
         BlockPos origin = BlockPos.containing(source.getPosition());
         var dfRegistry = level.registryAccess().lookupOrThrow(Registries.DENSITY_FUNCTION);
         
-        DensityFunctionWrapper helper = getDensityFunctionWrapper(source);
-        if (helper == null) return 0;
+        RandomState randomState = getRandomState(source);
+        if (randomState == null) return 0;
+        SamplerContext samplerContext = SamplerContext.builder().enableCaches().build();
 
         message(source, Component.literal("Tectonic debug info:"));
 
         message(source, getRegion(
-            get(dfRegistry.getOrThrow(key("noise/continent/erosion")), helper, origin),
-            get(dfRegistry.getOrThrow(key("noise/region_selector")), helper, origin)
+            get(dfRegistry.getOrThrow(key("noise/continent/erosion")), randomState, samplerContext, origin),
+            get(dfRegistry.getOrThrow(key("noise/region_selector")), randomState, samplerContext, origin)
         ));
 
         message(source, Component.translatableWithFallback(
             "command.tectonic.depth_cutoff",
             "Depth cutoff: %s",
-            get(dfRegistry.getOrThrow(key("__constants/cave/depth_cutoff")), helper, origin)
+            get(dfRegistry.getOrThrow(key("__constants/cave/depth_cutoff")), randomState, samplerContext, origin)
         ));
 
         return 1;
@@ -88,8 +88,10 @@ public class TectonicCommand {
             failure(source, "Tectonic terrain feature " + name + " is not enabled.");
             return 0;
         }
-        DensityFunctionWrapper wrapper = getDensityFunctionWrapper(source);
-        if (wrapper == null) return 0;
+        
+        RandomState randomState = getRandomState(source);
+        if (randomState == null) return 0;
+        SamplerContext samplerContext = SamplerContext.builder().enableCaches().build();
 
         for (BlockPos.MutableBlockPos offset : BlockPos.spiralAround(BlockPos.ZERO, 400, Direction.EAST, Direction.SOUTH)) {
             int x = origin.getX() + offset.getX() * 64;
@@ -98,14 +100,16 @@ public class TectonicCommand {
 
             boolean allMatch = true;
             for (var target : targets.entrySet()) {
-                if (!target.getValue().isValueInRange(get(registry.getOrThrow(key(target.getKey())), wrapper, pos))) {
+                if (!target.getValue().isValueInRange(get(registry.getOrThrow(key(target.getKey())), randomState, samplerContext, pos))) {
                     allMatch = false;
                 }
             }
             if (allMatch) {
-                MutableComponent component = ComponentUtils.wrapInSquareBrackets(
-                    Component.translatable("chat.coordinates", pos.getX(), "~", pos.getZ())
-                ).withStyle(style -> style.withColor(ChatFormatting.GREEN).withClickEvent(getClickEvent(pos)).withHoverEvent(getHoverEvent()));
+                MutableComponent component = ComponentUtils.wrapInSquareBrackets(Component.translatable("chat.coordinates", pos.getX(), "~", pos.getZ()))
+                    .withStyle(style -> style.withColor(ChatFormatting.GREEN)
+                    .withClickEvent(new ClickEvent.SuggestCommand("/tp @s " + pos.getX() + " ~ " + pos.getZ()))
+                    .withHoverEvent(new HoverEvent.ShowText(Component.translatable("chat.coordinates.tooltip"))));
+                
                 int dist = Mth.floor(dist(origin.getX(), origin.getZ(), pos.getX(), pos.getZ()));
 
                 message(source, Component.translatableWithFallback(
@@ -130,32 +134,8 @@ public class TectonicCommand {
         int j = z2 - z1;
         return Mth.sqrt(i * i + j * j);
     }
-    
-    private static boolean canRunCommand(CommandSourceStack stack) {
-        //? if >=26.1 {
-        return Commands.hasPermission(Commands.LEVEL_GAMEMASTERS).test(stack);
-        //? } else {
-        /*return stack.hasPermission(2);
-         *///? }
-    }
 
-    private static ClickEvent getClickEvent(BlockPos pos) {
-        //? if >=26.1 {
-        return new ClickEvent.SuggestCommand("/tp @s " + pos.getX() + " ~ " + pos.getZ());
-        //? } else {
-        /*return new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/tp @s " + pos.getX() + " ~ " + pos.getZ());
-         *///? }
-    }
-    
-    private static HoverEvent getHoverEvent() {
-        //? if >=26.1 {
-        return new HoverEvent.ShowText(Component.translatable("chat.coordinates.tooltip"));
-        //? } else {
-        /*return new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("chat.coordinates.tooltip"));
-         *///? }
-    }
-
-    private static DensityFunctionWrapper getDensityFunctionWrapper(CommandSourceStack source) {
+    private static RandomState getRandomState(CommandSourceStack source) {
         ServerLevel level = source.getLevel();
 
         if (!Tectonic.CONFIG.getState().general.modEnabled) {
@@ -167,13 +147,7 @@ public class TectonicCommand {
             return null;
         }
         NoiseGeneratorSettings settings = generator.generatorSettings().value();
-        RandomState randomState = RandomState.create(settings, level.registryAccess().lookupOrThrow(Registries.NOISE), level.getSeed());
-        return new DensityFunctionWrapper(
-            level.getSeed(),
-            settings.useLegacyRandomSource(),
-            randomState,
-            ((RandomStateAccessor)(Object)randomState).getRandom()
-        );
+	    return RandomState.create(level.registryAccess().lookupOrThrow(Registries.NOISE), level.getSeed(), settings);
     }
 
     private static void message(CommandSourceStack source, Component message) {
@@ -184,8 +158,8 @@ public class TectonicCommand {
         source.sendFailure(Component.literal(message).withStyle(ChatFormatting.RED));
     }
 
-    private static double get(Holder<DensityFunction> holder, DensityFunctionWrapper wrapper, BlockPos pos) {
-        double d = holder.value().mapAll(wrapper).compute(SimpleContext.of(pos));
+    private static double get(Holder<DensityFunction> holder, RandomState randomState, SamplerContext context, BlockPos pos) {
+        double d = randomState.getSampler(holder.value()).sampleValue(context, pos.getX(), pos.getY(), pos.getZ());
         return (double) Math.round(d * 1000) / 1000;
     }
 

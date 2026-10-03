@@ -1,14 +1,14 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:clamp",
     "input": {
       "type": "minecraft:add",
-      "argument1": -65,
-      "argument2": {
+      "left": -65,
+      "right": {
         "type": "minecraft:mul",
-        "argument1": 4.5,
-        "argument2": {
+        "left": 4.5,
+        "right": {
           "type": "minecraft:noise",
           "noise": "tectonic:underground_river/y_offset",
           "xz_scale": 0.6,

@@ -49,12 +49,9 @@ dependencies {
     modImplementation("maven.modrinth:apollib:${property("deps.apollib")}")
 
     modImplementation("maven.modrinth:lithostitched:${property("deps.lithostitched")}")
+    //modImplementation("maven.modrinth:terralith:aGE3hYAA")
 
     modImplementation("com.terraformersmc:modmenu:${property("deps.mod_menu")}")
-
-    if (sc.current.project.substringBefore("-").equals("26.1")) {
-        modImplementation("maven.modrinth:world-preview-prime:${property("deps.world_preview_prime")}")
-    }
 }
 
 loom {

@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:add",
-    "argument1": {
+    "left": {
       "type": "minecraft:mul",
-      "argument1": "tectonic:island_selector",
-      "argument2": "tectonic:noise/island/erosion"
+      "left": "tectonic:island_selector",
+      "right": "tectonic:noise/island/erosion"
     },
-    "argument2": {
+    "right": {
       "type": "minecraft:mul",
-      "argument1": "tectonic:continent_selector",
-      "argument2": {
+      "left": "tectonic:continent_selector",
+      "right": {
         "type": "minecraft:spline",
         "spline": {
           "coordinate": "tectonic:noise/continent/erosion_folded",

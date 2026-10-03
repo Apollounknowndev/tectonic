@@ -6,7 +6,6 @@ import dev.worldgen.tectonic.lithostitched.SetHeightLimitsModifier;
 import dev.worldgen.tectonic.worldgen.densityfunction.ConfigClamp;
 import dev.worldgen.tectonic.worldgen.densityfunction.ConfigConstant;
 import dev.worldgen.tectonic.worldgen.densityfunction.ConfigNoise;
-import dev.worldgen.tectonic.worldgen.densityfunction.Invert;
 import dev.worldgen.tectonic.worldgen.placementmodifier.HeightStabilizedCount;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -15,12 +14,11 @@ import static dev.worldgen.tectonic.Tectonic.REGISTRAR;
 
 public class TectonicRegistrations {
 	public static void init() {
-		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "config_clamp", ConfigClamp.DATA_CODEC);
-		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "config_constant", ConfigConstant.DATA_CODEC);
-		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "config_noise", ConfigNoise.DATA_CODEC);
-		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "invert", Invert.DATA_CODEC);
+		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "config_clamp", ConfigClamp.CODEC);
+		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "config_constant", ConfigConstant.CODEC);
+		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "config_noise", ConfigNoise.CODEC);
 		
-		register(BuiltInRegistries.PLACEMENT_MODIFIER_TYPE, "height_stabilized_count", HeightStabilizedCount.TYPE);
+		register(BuiltInRegistries.PLACEMENT_MODIFIER_TYPE, "height_stabilized_count", HeightStabilizedCount.CODEC);
 		
 		register(LithostitchedBuiltInRegistries.MODIFIER_TYPE, "set_height_limits", SetHeightLimitsModifier.CODEC);
 		

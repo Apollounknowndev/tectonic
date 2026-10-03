@@ -1,18 +1,16 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
+  "type": "minecraft:cache",
+  "input": {
       "type": "minecraft:mul",
-      "argument1": {
+      "left": {
         "type": "minecraft:clamp",
         "input": {
           "type": "minecraft:add",
-          "argument1": 1.2,
-          "argument2": {
+          "left": 1.2,
+          "right": {
             "type": "minecraft:mul",
-            "argument1": 0.4,
-            "argument2": {
+            "left": 0.4,
+            "right": {
               "type": "minecraft:noise",
               "noise": "tectonic:region/height_multiplier",
               "xz_scale": 0.25,
@@ -23,7 +21,7 @@
         "min": 0.8,
         "max": 1.6
       },
-      "argument2": {
+      "right": {
         "type": "minecraft:spline",
         "spline": {
           "coordinate": "tectonic:noise/continent/erosion",
@@ -134,5 +132,4 @@
         }
       }
     }
-  }
 }

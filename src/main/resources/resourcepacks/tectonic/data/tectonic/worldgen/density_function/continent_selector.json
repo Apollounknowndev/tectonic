@@ -1,15 +1,11 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
-      "type": "minecraft:add",
-      "argument1": 1,
-      "argument2": {
-        "type": "minecraft:mul",
-        "argument1": -1,
-        "argument2": "tectonic:island_selector"
-      }
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:add",
+    "left": 1,
+    "right": {
+      "type": "minecraft:negate",
+      "input": "tectonic:island_selector"
     }
   }
 }

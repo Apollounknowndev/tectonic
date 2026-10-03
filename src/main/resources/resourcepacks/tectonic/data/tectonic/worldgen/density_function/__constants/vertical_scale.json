@@ -1,17 +1,17 @@
 {
   "type": "minecraft:add",
-  "argument1": {
+  "left": {
     "type": "minecraft:mul",
-    "argument1": {
+    "left": {
       "type": "tectonic:config_constant",
       "key": "elevation_boost"
     },
-    "argument2": {
+    "right": {
       "type": "minecraft:square",
-      "argument": "tectonic:terrain_spline/offset/continents"
+      "input": "tectonic:terrain_spline/offset/continents"
     }
   },
-  "argument2": {
+  "right": {
     "type": "tectonic:config_constant",
     "key": "vertical_scale"
   }

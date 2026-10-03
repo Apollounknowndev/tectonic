@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "left": "tectonic:biome_parameter/erosion",
+  "right": 0
+}

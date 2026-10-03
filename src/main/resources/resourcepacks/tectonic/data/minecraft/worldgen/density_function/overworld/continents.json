@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "left": "tectonic:noise/full_continents",
+  "right": 0
+}

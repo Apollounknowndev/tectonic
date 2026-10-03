@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "left": "tectonic:biome_parameter/ridges",
+  "right": 0
+}

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:abs",
-  "argument": {
+  "input": {
     "type": "minecraft:noise",
     "noise": "tectonic:region/spade/lower_tier",
     "xz_scale": 0.35,

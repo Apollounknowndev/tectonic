@@ -41,14 +41,14 @@ public class V2ConfigState {
                 false
             ),
             new ConfigState.Continents(
-                -0.8,
-                0.13,
+                -0.8f,
+                0.13f,
                 this.scales.erosionScale,
-                0.25,
+                0.25f,
                 this.toggles.undergroundRivers,
                 true,
                 false,
-                0.1,
+                0.1f,
                 true,
                 true
             ),
@@ -96,19 +96,19 @@ public class V2ConfigState {
 
     public static class Scales {
         public static final Codec<Scales> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.DOUBLE.fieldOf("vertical_multiplier").orElse(1.125).forGetter(scales -> scales.finalMultiplier),
-            Codec.DOUBLE.fieldOf("erosion_scale").orElse(0.25).forGetter(scales -> scales.erosionScale),
-            Codec.DOUBLE.fieldOf("ocean_depth").orElse(-0.15).forGetter(scales -> scales.ocean),
-            Codec.DOUBLE.fieldOf("deep_ocean_depth").orElse(-0.45).forGetter(scales -> scales.deepOcean)
+            Codec.FLOAT.fieldOf("vertical_multiplier").orElse(1.125f).forGetter(scales -> scales.finalMultiplier),
+            Codec.FLOAT.fieldOf("erosion_scale").orElse(0.25f).forGetter(scales -> scales.erosionScale),
+            Codec.FLOAT.fieldOf("ocean_depth").orElse(-0.15f).forGetter(scales -> scales.ocean),
+            Codec.FLOAT.fieldOf("deep_ocean_depth").orElse(-0.45f).forGetter(scales -> scales.deepOcean)
         ).apply(instance, Scales::new));
-        public static final Scales DEFAULT = new Scales(1.125, 0.25, -0.15, -0.45);
+        public static final Scales DEFAULT = new Scales(1.125f, 0.25f, -0.15f, -0.45f);
 
-        public double finalMultiplier;
-        public double erosionScale;
-        public double ocean;
-        public double deepOcean;
+        public float finalMultiplier;
+        public float erosionScale;
+        public float ocean;
+        public float deepOcean;
 
-        public Scales(double finalMultiplier, double erosionScale, double ocean, double deepOcean) {
+        public Scales(float finalMultiplier, float erosionScale, float ocean, float deepOcean) {
             this.finalMultiplier = finalMultiplier;
             this.erosionScale = erosionScale;
             this.ocean = ocean;

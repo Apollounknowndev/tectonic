@@ -3,7 +3,7 @@
     "type": "tectonic:config",
     "key": "remove_frozen_ocean_ice"
   },
-  "type": "lithostitched:replace_climate",
+  "type": "lithostitched:set_biome_climate",
   "biomes": "minecraft:frozen_ocean",
   "climate": {
     "temperature": 0.5,

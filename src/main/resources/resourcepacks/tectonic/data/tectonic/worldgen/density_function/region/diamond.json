@@ -1,99 +1,18 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
-      "type": "minecraft:flat_cache",
-      "argument": {
-        "type": "minecraft:cache_2d",
-        "argument": {
-          "type": "minecraft:spline",
-          "spline": {
-            "coordinate": "tectonic:noise/temperature_index",
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "tectonic:noise/temperature_index",
+      "points": [
+        {
+          "location": 4,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:noise/vegetation_index",
             "points": [
               {
-                "location": 4,
-                "derivative": 0,
-                "value": {
-                  "coordinate": "tectonic:noise/vegetation_index",
-                  "points": [
-                    {
-                      "location": 2,
-                      "derivative": 0,
-                      "value": {
-                        "coordinate": "tectonic:noise/continent/ridges_folded",
-                        "points": [
-                          {
-                            "location": 0.03,
-                            "value": -0.06,
-                            "derivative": 0.5
-                          },
-                          {
-                            "location": 0.1,
-                            "value": 0.01,
-                            "derivative": 0.1
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "location": 3,
-                      "derivative": 0,
-                      "value": {
-                        "coordinate": "tectonic:noise/continent/ridges_folded",
-                        "points": [
-                          {
-                            "location": 0.03,
-                            "value": -0.06,
-                            "derivative": 0.5
-                          },
-                          {
-                            "location": 0.1,
-                            "value": 0.01,
-                            "derivative": 0
-                          },
-                          {
-                            "location": 0.15,
-                            "value": {
-                              "coordinate": {
-                                "type": "minecraft:noise",
-                                "noise": "tectonic:region/diamond/wetland",
-                                "xz_scale": 0.8,
-                                "y_scale": 0
-                              },
-                              "points": [
-                                {
-                                  "location": -0.45,
-                                  "value": -0.03,
-                                  "derivative": 0.03
-                                },
-                                {
-                                  "location": -0.3,
-                                  "value": 0.005,
-                                  "derivative": 0
-                                },
-                                {
-                                  "location": 0.3,
-                                  "value": 0.005,
-                                  "derivative": 0
-                                },
-                                {
-                                  "location": 0.45,
-                                  "value": -0.03,
-                                  "derivative": -0.03
-                                }
-                              ]
-                            },
-                            "derivative": 0
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "location": 5,
+                "location": 2,
                 "derivative": 0,
                 "value": {
                   "coordinate": "tectonic:noise/continent/ridges_folded",
@@ -106,15 +25,87 @@
                     {
                       "location": 0.1,
                       "value": 0.01,
-                      "derivative": 0.15
+                      "derivative": 0.1
+                    }
+                  ]
+                }
+              },
+              {
+                "location": 3,
+                "derivative": 0,
+                "value": {
+                  "coordinate": "tectonic:noise/continent/ridges_folded",
+                  "points": [
+                    {
+                      "location": 0.03,
+                      "value": -0.06,
+                      "derivative": 0.5
+                    },
+                    {
+                      "location": 0.1,
+                      "value": 0.01,
+                      "derivative": 0
+                    },
+                    {
+                      "location": 0.15,
+                      "value": {
+                        "coordinate": {
+                          "type": "minecraft:noise",
+                          "noise": "tectonic:region/diamond/wetland",
+                          "xz_scale": 0.8,
+                          "y_scale": 0
+                        },
+                        "points": [
+                          {
+                            "location": -0.45,
+                            "value": -0.03,
+                            "derivative": 0.03
+                          },
+                          {
+                            "location": -0.3,
+                            "value": 0.005,
+                            "derivative": 0
+                          },
+                          {
+                            "location": 0.3,
+                            "value": 0.005,
+                            "derivative": 0
+                          },
+                          {
+                            "location": 0.45,
+                            "value": -0.03,
+                            "derivative": -0.03
+                          }
+                        ]
+                      },
+                      "derivative": 0
                     }
                   ]
                 }
               }
             ]
           }
+        },
+        {
+          "location": 5,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:noise/continent/ridges_folded",
+            "points": [
+              {
+                "location": 0.03,
+                "value": -0.06,
+                "derivative": 0.5
+              },
+              {
+                "location": 0.1,
+                "value": 0.01,
+                "derivative": 0.15
+              }
+            ]
+          }
         }
-      }
+      ]
     }
   }
 }

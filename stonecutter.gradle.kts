@@ -2,7 +2,7 @@ plugins {
     id("dev.kikugie.stonecutter")
 }
 
-stonecutter active "26.2-fabric"
+stonecutter active "26.3-fabric"
 
 // See https://stonecutter.kikugie.dev/wiki/config/params
 stonecutter parameters {

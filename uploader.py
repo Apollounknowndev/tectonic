@@ -6,17 +6,14 @@ import json
 
 
 MOD_ID = "tectonic"
-MOD_VERSION = "3.0.28"
+MOD_VERSION = "3.0.31"
 CHANGELOG = """
-- Fixed crashing when opening the config presets screen.
+- Fixed the settings related to the Temperature and Vegetation noises not applying.
+- Reintroduced compatibility with Terralith now that it has ported to 26.3.
 """
 UPLOAD_VERSIONS = [
-    ("fabric", "21.1"),
-    ("neoforge", "21.1"),
-    ("fabric", "26.1"),
-    ("neoforge", "26.1"),
-    ("fabric", "26.2"),
-    ("neoforge", "26.2"),
+    ("fabric", "26.3"),
+    ("neoforge", "26.3"),
 ]
 
 DEPENDENCIES = [
@@ -46,6 +43,7 @@ MODRINTH_GAME_VERSIONS = {
     "21.1": ["1.21.1"],
     "26.1": ["26.1", "26.1.1", "26.1.2"],
     "26.2": ["26.2"],
+    "26.3": ["26.3"],
 }
 
 CURSEFORGE_TOKEN = os.getenv('TOKEN_CF')
@@ -56,6 +54,7 @@ CURSEFORGE_GAME_VERSIONS = {
     "21.1": [11779],
     "26.1": [15933, 16021, 16082],
     "26.2": [16498],
+    "26.3": [17045],
 }
 CURSEFORGE_LOADERS = {
     "fabric": 7499,

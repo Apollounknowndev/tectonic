@@ -1,95 +1,92 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "tectonic:noise/raw_islands",
-        "points": [
-          {
-            "derivative": 0,
-            "location": -0.11,
-            "value": 0
-          },
-          {
-            "derivative": 0,
-            "location": 0.03,
-            "value": {
-              "coordinate": "tectonic:noise/island/ridges_folded",
-              "points": [
-                {
-                  "derivative": 0,
-                  "location": 0.2,
-                  "value": 0
-                },
-                {
-                  "derivative": 0,
-                  "location": 0.45,
-                  "value": 0
-                },
-                {
-                  "derivative": 0,
-                  "location": 1,
-                  "value": {
-                    "coordinate": "tectonic:noise/island/ridges",
-                    "points": [
-                      {
-                        "derivative": 0,
-                        "location": -0.01,
-                        "value": 0.315
-                      },
-                      {
-                        "derivative": 0,
-                        "location": 0.01,
-                        "value": 0.15
-                      }
-                    ]
-                  }
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "tectonic:noise/raw_islands",
+      "points": [
+        {
+          "derivative": 0,
+          "location": -0.11,
+          "value": 0
+        },
+        {
+          "derivative": 0,
+          "location": 0.03,
+          "value": {
+            "coordinate": "tectonic:noise/island/ridges_folded",
+            "points": [
+              {
+                "derivative": 0,
+                "location": 0.2,
+                "value": 0
+              },
+              {
+                "derivative": 0,
+                "location": 0.45,
+                "value": 0
+              },
+              {
+                "derivative": 0,
+                "location": 1,
+                "value": {
+                  "coordinate": "tectonic:noise/island/ridges",
+                  "points": [
+                    {
+                      "derivative": 0,
+                      "location": -0.01,
+                      "value": 0.315
+                    },
+                    {
+                      "derivative": 0,
+                      "location": 0.01,
+                      "value": 0.15
+                    }
+                  ]
                 }
-              ]
-            }
-          },
-          {
-            "derivative": 0,
-            "location": 0.65,
-            "value": {
-              "coordinate": "tectonic:noise/island/ridges_folded",
-              "points": [
-                {
-                  "derivative": 0,
-                  "location": 0.2,
-                  "value": 0
-                },
-                {
-                  "derivative": 0,
-                  "location": 0.45,
-                  "value": 0
-                },
-                {
-                  "derivative": 0,
-                  "location": 1,
-                  "value": {
-                    "coordinate": "tectonic:noise/island/ridges",
-                    "points": [
-                      {
-                        "derivative": 0,
-                        "location": -0.01,
-                        "value": 0.63
-                      },
-                      {
-                        "derivative": 0,
-                        "location": 0.01,
-                        "value": 0.3
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "derivative": 0,
+          "location": 0.65,
+          "value": {
+            "coordinate": "tectonic:noise/island/ridges_folded",
+            "points": [
+              {
+                "derivative": 0,
+                "location": 0.2,
+                "value": 0
+              },
+              {
+                "derivative": 0,
+                "location": 0.45,
+                "value": 0
+              },
+              {
+                "derivative": 0,
+                "location": 1,
+                "value": {
+                  "coordinate": "tectonic:noise/island/ridges",
+                  "points": [
+                    {
+                      "derivative": 0,
+                      "location": -0.01,
+                      "value": 0.63
+                    },
+                    {
+                      "derivative": 0,
+                      "location": 0.01,
+                      "value": 0.3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
   }
 }

@@ -1,4 +1,4 @@
 {
-  "type": "minecraft:cache_once",
-  "argument": "terralith:overworld/spikes/tendrils"
+  "type": "minecraft:cache",
+  "input": "terralith:overworld/spikes/tendrils"
 }

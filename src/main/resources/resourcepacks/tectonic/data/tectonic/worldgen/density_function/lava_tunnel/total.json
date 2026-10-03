@@ -1,10 +1,10 @@
 {
 	"type": "minecraft:mul",
-	"argument1": "tectonic:__constants/lava_tunnels",
-	"argument2": {
+	"left": "tectonic:__constants/lava_tunnels",
+	"right": {
 		"type": "minecraft:min",
-		"argument1": 0,
-		"argument2": {
+		"left": 0,
+		"right": {
 			"type": "minecraft:spline",
 			"spline": {
 				"coordinate": "tectonic:__constants/above_bottom_y",

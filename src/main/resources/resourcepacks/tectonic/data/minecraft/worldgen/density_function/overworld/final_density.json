@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:add",
+    "left": {
+      "type": "minecraft:min",
+      "left": {
+        "type": "minecraft:squeeze",
+        "input": {
+          "type": "minecraft:interpolated",
+          "cell_size_xz": 4,
+          "cell_size_y": 8,
+          "input": {
+            "type": "minecraft:mul",
+            "left": 0.64,
+            "right": {
+              "type": "minecraft:blend_density",
+              "input": {
+                "type": "minecraft:lerp",
+                "alpha": "tectonic:__constants/slope_lower",
+                "first": 0.1,
+                "second": {
+                  "type": "minecraft:lerp",
+                  "alpha": "tectonic:__constants/slope_upper",
+                  "first": -0.1,
+                  "second": {
+                    "type": "minecraft:min",
+                    "left": "tectonic:sloped_cheese",
+                    "right": "tectonic:caves"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": "tectonic:cave/noodle"
+    },
+    "right": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:min",
+        "left": 0.0002,
+        "right": "tectonic:underground_river/total"
+      },
+      "right": "tectonic:lava_tunnel/total"
+    }
+  },
+  "right": {
+    "type": "minecraft:beardifier"
+  }
+}

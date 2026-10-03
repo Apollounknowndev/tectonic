@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "tectonic:config_noise",
     "noise": "minecraft:temperature",
     "key": "temperature",

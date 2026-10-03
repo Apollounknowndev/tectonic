@@ -2,8 +2,8 @@
   "type": "minecraft:clamp",
   "input": {
     "type": "minecraft:add",
-    "argument1": "tectonic:__constants/cave/cheese_additive",
-    "argument2": {
+    "left": "tectonic:__constants/cave/cheese_additive",
+    "right": {
       "type": "minecraft:noise",
       "noise": "minecraft:cave_cheese",
       "xz_scale": 1,

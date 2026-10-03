@@ -1,10 +1,9 @@
 {
   "type": "minecraft:add",
-  "argument1": "minecraft:y",
-  "argument2": {
-    "type": "minecraft:mul",
-    "argument1": -1,
-    "argument2": {
+  "left": "minecraft:y",
+  "right": {
+    "type": "minecraft:negate",
+    "input": {
       "type": "tectonic:config_constant",
       "key": "min_y"
     }

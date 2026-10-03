@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BiFunction;
+import java.util.stream.Stream;
 
 @Mod(Tectonic.MOD_ID)
 public class TectonicNeoforge {
@@ -40,27 +41,6 @@ public class TectonicNeoforge {
 
     private void registerEnabledPacks(final AddPackFindersEvent event) {
         if (event.getPackType() == PackType.SERVER_DATA && Tectonic.CONFIG.getState().enabled()) {
-            //? if < 26.1 {
-            /^Path resourcePath = ModList.get().getModFileById("tectonic").getFile().findResource("resourcepacks/tectonic");
-            
-            Pack dataPack = Pack.readMetaAndCreate(
-                new PackLocationInfo(
-                    resourcePath.getFileName().toString(),
-                    Component.literal("Tectonic"),
-                    PackSource.BUILT_IN,
-                    Optional.empty()
-                ),
-                new PathPackResources.PathResourcesSupplier(resourcePath),
-                PackType.SERVER_DATA,
-                new PackSelectionConfig(
-                    true,
-                    Pack.Position.TOP,
-                    false
-                )
-            );
-            
-            event.addRepositorySource((packConsumer) -> packConsumer.accept(dataPack));
-	        ^///? } else {
             IModInfo modInfo = ModList.get().getModContainerById(Tectonic.MOD_ID).orElseThrow().getModInfo();
             BiFunction<PackLocationInfo, String, PackResources> resourceGetter = (info, prefix) -> {
                 JarContents contents = modInfo.getOwningFile().getFile().getContents();
@@ -72,16 +52,16 @@ public class TectonicNeoforge {
                 new PackLocationInfo("mod/tectonic:tectonic", Component.literal("Tectonic"), PackSource.BUILT_IN, Optional.empty()),
                 new Pack.ResourcesSupplier() {
                     @Override
-                    public PackResources openPrimary(PackLocationInfo info) {
+                    public PackResources openMetadata(PackLocationInfo info) {
                         return resourceGetter.apply(info, path);
                     }
                     
                     @Override
-                    public PackResources openFull(PackLocationInfo info, Pack.Metadata metadata) {
+                    public Stream<PackResources> openResources(PackLocationInfo info, Pack.Metadata metadata) {
                         PackResources baseResources = resourceGetter.apply(info, path);
                         List<String> overlays = metadata.overlays();
                         if (overlays.isEmpty()) {
-                            return baseResources;
+                            return Stream.of(baseResources);
                         } else {
                             List<PackResources> effectiveOverlays = new ArrayList<>(overlays.size());
                             
@@ -89,7 +69,10 @@ public class TectonicNeoforge {
                                 effectiveOverlays.add(resourceGetter.apply(info, path + "/" + s));
                             }
                             
-                            return new CompositePackResources(baseResources, effectiveOverlays);
+                            return Stream.concat(
+                                Stream.of(baseResources),
+                                effectiveOverlays.stream()
+                            );
                         }
                     }
                 },
@@ -97,7 +80,6 @@ public class TectonicNeoforge {
                 new PackSelectionConfig(true, Pack.Position.TOP, false)
             );
             event.addRepositorySource(consumer -> consumer.accept(pack));
-            //? }
         }
     }
 

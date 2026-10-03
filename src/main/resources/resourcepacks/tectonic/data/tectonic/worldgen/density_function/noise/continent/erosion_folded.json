@@ -1,4 +1,4 @@
 {
   "type": "minecraft:abs",
-  "argument": "tectonic:noise/continent/erosion"
+  "input": "tectonic:noise/continent/erosion"
 }

@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:find_top_surface",
+  "upper_bound": {
+    "type": "minecraft:add",
+    "left": 128,
+    "right": {
+      "type": "minecraft:mul",
+      "left": 128,
+      "right": "tectonic:__constants/max_offset"
+    }
+  },
+  "lower_bound": -64,
+  "cell_height": 8,
+  "density": {
+    "type": "minecraft:add",
+    "left": -0.390625,
+    "right": {
+      "type": "minecraft:clamp",
+      "input": {
+        "type": "minecraft:add",
+        "left": -0.7,
+        "right": {
+          "type": "minecraft:mul",
+          "left": 4,
+          "right": {
+            "type": "minecraft:quarter_negative",
+            "input": {
+              "type": "minecraft:mul",
+              "left": {
+                "type": "minecraft:add",
+                "left": {
+                  "type": "minecraft:spline",
+                  "spline": {
+                    "coordinate": "tectonic:noise/full_continents",
+                    "points": [
+                      {
+                        "location": -1,
+                        "derivative": 0,
+                        "value": 0
+                      },
+                      {
+                        "location": -0.9,
+                        "derivative": 0,
+                        "value": -0.2
+                      },
+                      {
+                        "location": -0.4,
+                        "derivative": 0,
+                        "value": -0.2
+                      },
+                      {
+                        "location": -0.3,
+                        "derivative": 0,
+                        "value": 0
+                      }
+                    ]
+                  }
+                },
+                "right": "tectonic:depth"
+              },
+              "right": {
+                "type": "minecraft:range_choice",
+                "input": "tectonic:continent_selector",
+                "min_inclusive": 0.9,
+                "max_exclusive": 1.1,
+                "when_in_range": "tectonic:terrain_spline/factor/continents",
+                "when_out_of_range": "tectonic:terrain_spline/factor/islands"
+              }
+            }
+          }
+        }
+      },
+      "min": -64,
+      "max": 64
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:min",
+  "left": "tectonic:depth",
+  "right": {
+    "type": "minecraft:range_choice",
+    "input": "minecraft:y",
+    "min_inclusive": 32,
+    "max_exclusive": 2048,
+    "when_in_range": 0.8,
+    "when_out_of_range": 1.3
+  }
+}

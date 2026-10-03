@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:min",
+  "left": {
+    "type": "minecraft:sub",
+    "left": -0.225,
+    "right": "minecraft:overworld/erosion"
+  },
+  "right": {
+    "type": "minecraft:max",
+    "left": {
+      "type": "minecraft:sub",
+      "left": "minecraft:overworld/depth",
+      "right": 0.9
+    },
+    "right": 0.0
+  }
+}

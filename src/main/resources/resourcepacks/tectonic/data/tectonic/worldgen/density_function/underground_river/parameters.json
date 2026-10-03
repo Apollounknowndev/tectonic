@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:cache_once",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:range_choice",
     "input": "minecraft:y",
     "min_inclusive": 32,

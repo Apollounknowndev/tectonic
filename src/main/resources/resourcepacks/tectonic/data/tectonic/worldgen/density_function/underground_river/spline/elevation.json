@@ -2,16 +2,16 @@
   "type": "minecraft:clamp",
   "input": {
     "type": "minecraft:add",
-    "argument1": 1,
-    "argument2": {
+    "left": 1,
+    "right": {
       "type": "minecraft:mul",
-      "argument1": "tectonic:underground_river/noise/height",
-      "argument2": {
+      "left": "tectonic:underground_river/noise/height",
+      "right": {
         "type": "minecraft:abs",
-        "argument": {
+        "input": {
           "type": "minecraft:add",
-          "argument1": "tectonic:underground_river/noise/y_offset",
-          "argument2": {
+          "left": "tectonic:underground_river/noise/y_offset",
+          "right": {
             "type": "minecraft:spline",
             "spline": {
               "coordinate": "minecraft:y",

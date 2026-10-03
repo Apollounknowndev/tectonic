@@ -1,12 +1,12 @@
 {
     "type": "minecraft:add",
-    "argument1": {
+    "left": {
       "type": "minecraft:add",
-      "argument1": -0.3,
-      "argument2": {
+      "left": -0.3,
+      "right": {
         "type": "minecraft:mul",
-        "argument1": 0.5,
-        "argument2": {
+        "left": 0.5,
+        "right": {
           "type": "minecraft:noise",
           "noise": "tectonic:lava_tunnel/offset",
           "xz_scale": 1,
@@ -14,11 +14,11 @@
         }
       }
     },
-    "argument2": {
+    "right": {
       "type": "minecraft:add",
-      "argument1": {
+      "left": {
         "type": "minecraft:mul",
-        "argument1": {
+        "left": {
           "type": "minecraft:spline",
           "spline": {
             "coordinate": "tectonic:__constants/above_bottom_y",
@@ -46,10 +46,10 @@
             ]
           }
         },
-        "argument2": {
+        "right": {
           "type": "minecraft:add",
-          "argument1": 0.8,
-          "argument2": {
+          "left": 0.8,
+          "right": {
             "type": "minecraft:noise",
             "noise": "tectonic:lava_tunnel/offset",
             "xz_scale": 4,
@@ -57,38 +57,34 @@
           }
         }
       },
-      "argument2": {
+      "right": {
         "type": "minecraft:mul",
-        "argument1": 8,
-        "argument2": {
+        "left": 8,
+        "right": {
           "type": "minecraft:abs",
-          "argument": {
-            "type": "minecraft:cache_2d",
-            "argument": {
-              "type": "minecraft:shifted_noise",
-              "noise": "tectonic:lava_tunnel/ridges",
-              "xz_scale": 1,
-              "y_scale": 0,
-              "shift_x": {
-                "type": "minecraft:mul",
-                "argument1": 24,
-                "argument2": {
-                  "type": "minecraft:noise",
-                  "noise": "tectonic:lava_tunnel/shift_x",
-                  "xz_scale": 1,
-                  "y_scale": 0
-                }
-              },
-              "shift_y": 0,
-              "shift_z": {
-                "type": "minecraft:mul",
-                "argument1": 24,
-                "argument2": {
-                  "type": "minecraft:noise",
-                  "noise": "tectonic:lava_tunnel/shift_z",
-                  "xz_scale": 1,
-                  "y_scale": 0
-                }
+          "input": {
+            "type": "minecraft:noise",
+            "noise": "tectonic:lava_tunnel/ridges",
+            "xz_scale": 1,
+            "y_scale": 0,
+            "shift_x": {
+              "type": "minecraft:mul",
+              "left": 24,
+              "right": {
+                "type": "minecraft:noise",
+                "noise": "tectonic:lava_tunnel/shift_x",
+                "xz_scale": 1,
+                "y_scale": 0
+              }
+            },
+            "shift_z": {
+              "type": "minecraft:mul",
+              "left": 24,
+              "right": {
+                "type": "minecraft:noise",
+                "noise": "tectonic:lava_tunnel/shift_z",
+                "xz_scale": 1,
+                "y_scale": 0
               }
             }
           }

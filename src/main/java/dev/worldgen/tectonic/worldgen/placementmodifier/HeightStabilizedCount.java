@@ -9,44 +9,20 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.PlacementContext;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
-import net.minecraft.world.level.levelgen.placement.PlacementModifierType;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.function.Consumer;
 
-public class HeightStabilizedCount extends PlacementModifier {
+public record HeightStabilizedCount(VerticalAnchor maxY, float countPerSection, boolean biasedToBottom) implements PlacementModifier {
 	public static final MapCodec<HeightStabilizedCount> CODEC = RecordCodecBuilder.mapCodec(i -> i.group(
 		VerticalAnchor.CODEC.fieldOf("max_y").forGetter(HeightStabilizedCount::maxY),
 		ExtraCodecs.POSITIVE_FLOAT.fieldOf("count_per_section").forGetter(HeightStabilizedCount::countPerSection),
-		Codec.BOOL.fieldOf("biased_to_bottom").forGetter(HeightStabilizedCount::favorBottom)
+		Codec.BOOL.fieldOf("biased_to_bottom").forGetter(HeightStabilizedCount::biasedToBottom)
 	).apply(i, HeightStabilizedCount::new));
-	public static final PlacementModifierType<HeightStabilizedCount> TYPE = () -> CODEC;
-	
-	private final VerticalAnchor maxY;
-	private final float countPerSection;
-	private final boolean biasedToBottom;
-	
-	public HeightStabilizedCount(VerticalAnchor maxY, float countPerSection, boolean biasedToBottom) {
-		this.maxY = maxY;
-		this.countPerSection = countPerSection;
-		this.biasedToBottom = biasedToBottom;
-	}
-	
-	public VerticalAnchor maxY() {
-		return maxY;
-	}
-	
-	public float countPerSection() {
-		return countPerSection;
-	}
-	
-	public boolean favorBottom() {
-		return biasedToBottom;
-	}
 	
 	@Override
-	public Stream<BlockPos> getPositions(PlacementContext context, RandomSource random, BlockPos pos) {
+	public void modify(PlacementContext context, RandomSource random, BlockPos origin, Consumer<BlockPos> output) {
 		int maxY = this.maxY.resolveY(context);
 		int minY = context.getMinGenY();
 		int spanY = maxY - minY;
@@ -54,13 +30,14 @@ public class HeightStabilizedCount extends PlacementModifier {
 		List<BlockPos> positions = new ArrayList<>();
 		for (int i = 0; i < count; i++) {
 			int y = this.biasedToBottom ? minY + random.nextInt(random.nextIntBetweenInclusive(spanY / 2, spanY)) : random.nextIntBetweenInclusive(minY, maxY);
-			positions.add(pos.atY(y));
+			positions.add(origin.atY(y));
 		}
-		return positions.stream();
+		
+		positions.forEach(output);
 	}
 	
 	@Override
-	public PlacementModifierType<?> type() {
-		return TYPE;
+	public MapCodec<? extends PlacementModifier> codec() {
+		return CODEC;
 	}
 }

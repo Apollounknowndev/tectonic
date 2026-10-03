@@ -1,19 +1,19 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:add",
-    "argument1": {
+    "left": {
       "type": "minecraft:mul",
-      "argument1": {
+      "left": {
         "type": "minecraft:add",
-        "argument1": {
+        "left": {
           "type": "minecraft:max",
-          "argument1": "tectonic:__constants/noise/island_a",
-          "argument2": "tectonic:__constants/noise/island_b"
+          "left": "tectonic:__constants/noise/island_a",
+          "right": "tectonic:__constants/noise/island_b"
         },
-        "argument2": 0.05
+        "right": 0.05
       },
-      "argument2": {
+      "right": {
         "type": "minecraft:spline",
         "spline": {
           "coordinate": "tectonic:noise/raw_continents",
@@ -42,6 +42,6 @@
         }
       }
     },
-    "argument2": -0.7
+    "right": -0.7
   }
 }

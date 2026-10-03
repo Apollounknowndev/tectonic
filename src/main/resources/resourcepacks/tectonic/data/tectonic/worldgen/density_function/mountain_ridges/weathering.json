@@ -1,17 +1,16 @@
 {
   "type": "minecraft:add",
-  "argument1": 1,
-  "argument2": {
-    "type": "minecraft:mul",
-    "argument1": -1,
-    "argument2": {
+  "left": 1,
+  "right": {
+    "type": "minecraft:negate",
+    "input": {
       "type": "minecraft:clamp",
       "input": {
         "type": "minecraft:spline",
         "spline": {
           "coordinate": {
             "type": "minecraft:abs",
-            "argument": {
+            "input": {
               "type": "minecraft:noise",
               "noise": "tectonic:mountain_ridges/weathering",
               "xz_scale": 2.5,

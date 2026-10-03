@@ -1,38 +1,35 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "tectonic:noise/raw_continents",
-        "points": [
-          {
-            "location": 0,
-            "derivative": 0,
-            "value": 0
-          },
-          {
-            "location": 0.175,
-            "derivative": 0,
-            "value": {
-              "coordinate": "tectonic:noise/continent/erosion_folded",
-              "points": [
-                {
-                  "location": 0.0,
-                  "derivative": 0,
-                  "value": 0.65
-                },
-                {
-                  "location": 0.125,
-                  "derivative": 0,
-                  "value": 0
-                }
-              ]
-            }
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "tectonic:noise/raw_continents",
+      "points": [
+        {
+          "location": 0,
+          "derivative": 0,
+          "value": 0
+        },
+        {
+          "location": 0.175,
+          "derivative": 0,
+          "value": {
+            "coordinate": "tectonic:noise/continent/erosion_folded",
+            "points": [
+              {
+                "location": 0.0,
+                "derivative": 0,
+                "value": 0.65
+              },
+              {
+                "location": 0.125,
+                "derivative": 0,
+                "value": 0
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     }
   }
 }

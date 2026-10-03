@@ -5,65 +5,24 @@ mod.group = "dev.worldgen"
 mod.url = "https://modrinth.com/project/tectonic"
 mod.sources = "https://github.com/Apollounknowndev/tectonic"
 mod.description = "Terrain shaping brought to new heights, grander and more varied than ever before!"
-mod.version = "3.0.28"
+mod.version = "3.0.31"
 
-deps.fabric_loader = "0.19.3"
+deps.fabric_loader = "0.19.5"
 loomx.loom_version = "1.17-SNAPSHOT"
 
-["21.1"]
-mod.mc_releases = ["1.21", "1.21.1"]
+["26.3"]
+mod.mc_releases = ["26.3"]
 
-[fabric."21.1"]
-mod.mc_compat = ">=1.21 <=1.21.1"
-deps.fabric_api = "0.116.12+1.21.1"
-deps.mod_menu = "11.0.3"
-deps.apollib = "1.1.6-fabric-21.1"
-deps.lithostitched = "1.7.12-fabric-21.1"
-
-
-[neoforge."21.1"]
-mod.mc_compat = "[1.21, 1.21.1]"
-deps.neo_loader = "21.1.234"
-deps.apollib = "1.1.6-neoforge-21.1"
-deps.lithostitched = "1.7.12-neoforge-21.1"
+[fabric."26.3"]
+mod.mc_compat = "~26.3"
+deps.fabric_api = "0.161.0+26.3"
+deps.mod_menu = "21.0.0-alpha.1"
+deps.apollib = "1.2.4-fabric-26.3"
+deps.lithostitched = "2.0.3-fabric-26.3"
 
 
-
-["26.1"]
-mod.mc_releases = ["26.1", "26.1.1", "26.1.2"]
-
-
-[fabric."26.1"]
-mod.mc_compat = "~26.1"
-deps.fabric_api = "0.152.1+26.1.2"
-deps.mod_menu = "18.0.0-alpha.8"
-deps.apollib = "1.1.6-fabric-26.1"
-deps.lithostitched = "1.7.12-fabric-26.1"
-deps.world_preview_prime = "2.0.0-fabric-26.1"
-
-
-[neoforge."26.1"]
-mod.mc_compat = "[26.1, 26.2)"
-deps.neo_loader = "26.1.2.76"
-deps.apollib = "1.1.6-neoforge-26.1"
-deps.lithostitched = "1.7.12-neoforge-26.1"
-
-
-
-["26.2"]
-mod.mc_releases = ["26.2"]
-
-
-[fabric."26.2"]
-mod.mc_compat = "~26.2"
-deps.fabric_api = "0.152.2+26.2"
-deps.mod_menu = "20.0.0-beta.2"
-deps.apollib = "1.1.6-fabric-26.2"
-deps.lithostitched = "1.8.0+beta2-fabric-26.2"
-
-
-[neoforge."26.2"]
-mod.mc_compat = "[26.2, 26.3)"
-deps.neo_loader = "26.2.0.6-beta"
-deps.apollib = "1.1.6-neoforge-26.2"
-deps.lithostitched = "1.8.0+beta2-neoforge-26.2"
+[neoforge."26.3"]
+mod.mc_compat = "[26.3, 26.4)"
+deps.neo_loader = "26.3.0.22-beta"
+deps.apollib = "1.2.5-neoforge-26.3"
+deps.lithostitched = "2.0.3-neoforge-26.3"

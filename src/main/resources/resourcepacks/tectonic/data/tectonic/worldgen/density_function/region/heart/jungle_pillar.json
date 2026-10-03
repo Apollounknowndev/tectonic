@@ -1,13 +1,13 @@
 {
   "type": "minecraft:mul",
-  "argument1": "tectonic:__constants/jungle_pillars",
-  "argument2": {
+  "left": "tectonic:__constants/jungle_pillars",
+  "right": {
     "type": "minecraft:mul",
-    "argument1": 1.7,
-    "argument2": {
+    "left": 1.7,
+    "right": {
       "type": "minecraft:add",
-      "argument1": -0.35,
-      "argument2": {
+      "left": -0.35,
+      "right": {
         "type": "minecraft:noise",
         "noise": "tectonic:region/heart/jungle_pillar",
         "xz_scale": 8,

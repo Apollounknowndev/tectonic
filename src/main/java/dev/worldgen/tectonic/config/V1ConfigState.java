@@ -23,8 +23,8 @@ public record V1ConfigState(boolean modEnabled, Features features, Experimental 
             new V2ConfigState.Scales(
                 experimental.terrainScale,
                 experimental.horizontalMountainScale,
-                features.deeperOceans ? -0.15 : -0.12,
-                features.deeperOceans ? -0.45 : -0.22
+                features.deeperOceans ? -0.15f : -0.12f,
+                features.deeperOceans ? -0.45f : -0.22f
             ),
             features.snowStartOffset
         );
@@ -44,13 +44,13 @@ public record V1ConfigState(boolean modEnabled, Features features, Experimental 
 
 
 
-    private record Experimental(double horizontalMountainScale, boolean increasedHeight, double terrainScale) {
+    private record Experimental(float horizontalMountainScale, boolean increasedHeight, float terrainScale) {
         public static final Codec<Experimental> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Codec.DOUBLE.fieldOf("horizontal_mountain_scale").orElse(0.25).forGetter(Experimental::horizontalMountainScale),
+            Codec.FLOAT.fieldOf("horizontal_mountain_scale").orElse(0.25f).forGetter(Experimental::horizontalMountainScale),
             Codec.BOOL.fieldOf("increased_height").orElse(false).forGetter(Experimental::increasedHeight),
-            Codec.DOUBLE.fieldOf("terrain_scale").orElse(1.125).forGetter(Experimental::terrainScale)
+            Codec.FLOAT.fieldOf("terrain_scale").orElse(1.125f).forGetter(Experimental::terrainScale)
         ).apply(instance, Experimental::new));
 
-        public static final Experimental DEFAULT = new Experimental(0.25, false, 1.125);
+        public static final Experimental DEFAULT = new Experimental(0.25f, false, 1.125f);
     }
 }

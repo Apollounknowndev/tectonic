@@ -1,11 +1,10 @@
 {
-  "type": "minecraft:cache_2d",
-  "argument": {
-    "type": "minecraft:mul",
-    "argument1": -1,
-    "argument2": {
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:negate",
+    "input": {
       "type": "minecraft:abs",
-      "argument": {
+      "input": {
         "type": "minecraft:noise",
         "noise": "tectonic:region/diamond/dune_base",
         "xz_scale": 0.76,

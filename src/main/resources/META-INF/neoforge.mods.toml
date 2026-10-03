@@ -9,7 +9,7 @@ version = "${version}"
 authors = "Apollo"
 description = "Terrain shaping brought to new heights, grander and more varied than ever before!"
 
-logoFile = "pack.png"
+iconFile = "pack.png"
 #displayURL = "..."
 #issueTrackerUrl = "..."
 

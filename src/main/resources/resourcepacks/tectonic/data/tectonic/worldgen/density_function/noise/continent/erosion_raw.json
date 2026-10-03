@@ -1,4 +1,4 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": "tectonic:__constants/noise/erosion"
+  "type": "minecraft:cache",
+  "input": "tectonic:__constants/noise/erosion"
 }

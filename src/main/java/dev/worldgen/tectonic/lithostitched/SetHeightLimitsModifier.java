@@ -2,7 +2,7 @@ package dev.worldgen.tectonic.lithostitched;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import dev.worldgen.lithostitched.Lithostitched;
+import dev.worldgen.apollib.Apollib;
 import dev.worldgen.lithostitched.api.predicate.LoadPredicate;
 import dev.worldgen.lithostitched.api.worldgen.modifier.WorldgenModifier;
 import dev.worldgen.tectonic.Tectonic;
@@ -45,7 +45,7 @@ public record SetHeightLimitsModifier(Optional<LoadPredicate> predicate, int pri
         settingsAccessor.setHeight(limits.getHeight());
 
         // Ensure dimension type is synced
-        WorldgenModifier.resetRegistrationInfo(Lithostitched.registry(registries, Registries.DIMENSION_TYPE), this.dimensionType);
+        WorldgenModifier.resetRegistrationInfo(Apollib.registry(registries, Registries.DIMENSION_TYPE), this.dimensionType);
     }
 
     @Override

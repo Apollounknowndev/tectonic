@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:cache_2d",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:spline",
     "spline": {
       "coordinate": {

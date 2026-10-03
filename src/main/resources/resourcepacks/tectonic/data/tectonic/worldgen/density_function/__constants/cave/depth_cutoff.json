@@ -2,9 +2,9 @@
   "type": "minecraft:clamp",
   "input": {
     "type": "minecraft:mul",
-    "argument1": {
-      "type": "tectonic:invert",
-      "argument": {
+    "left": {
+      "type": "minecraft:reciprocal",
+      "input": {
         "type": "minecraft:clamp",
         "input": {
           "type": "tectonic:config_constant",
@@ -14,13 +14,12 @@
         "max": 64
       }
     },
-    "argument2": {
+    "right": {
       "type": "minecraft:add",
-      "argument1": "tectonic:depth",
-      "argument2": {
-        "type": "minecraft:mul",
-        "argument1": -1,
-        "argument2": {
+      "left": "tectonic:depth",
+      "right": {
+        "type": "minecraft:negate",
+        "input": {
           "type": "tectonic:config_constant",
           "key": "depth_cutoff_start"
         }

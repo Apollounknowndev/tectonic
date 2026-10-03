@@ -25,8 +25,8 @@ public interface ConfigPresets {
         ConfigState.Islands.DEFAULT,
         ConfigState.Oceans.DEFAULT,
         new ConfigState.Biomes(
-            new NoiseState(0.06, 1.1, 0),
-            new NoiseState(0.06, 1.1, 0)
+            new NoiseState(0.06f, 1.1f, 0),
+            new NoiseState(0.06f, 1.1f, 0)
         ),
         ConfigState.Caves.DEFAULT,
         ConfigState.Experimental.DEFAULT
@@ -51,29 +51,29 @@ public interface ConfigPresets {
         ConfigState.MINOR_VERSION,
         ConfigState.General.DEFAULT,
         new ConfigState.GlobalTerrain(
-            1.2,
-            0.5,
+            1.2f,
+            0.5f,
             new HeightLimits(-64, 448),
             true,
             false
         ),
         new ConfigState.Continents(
-            -0.8,
-            0.13,
-            0.25,
-            0.25,
+            -0.8f,
+            0.13f,
+            0.25f,
+            0.25f,
             true,
             true,
             true,
-            0.0,
+            0.0f,
             true,
             false
         ),
         ConfigState.Islands.DEFAULT,
         ConfigState.Oceans.DEFAULT,
         new ConfigState.Biomes(
-            new NoiseState(0, 0, -0.69),
-            new NoiseState(0.15, 0.1, -0.1)
+            new NoiseState(0, 0, -0.69f),
+            new NoiseState(0.15f, 0.1f, -0.1f)
         ),
         ConfigState.Caves.DEFAULT,
         ConfigState.Experimental.DEFAULT
@@ -86,32 +86,32 @@ public interface ConfigPresets {
             512
         ),
         new ConfigState.GlobalTerrain(
-            2.5,
-            1.6,
+            2.5f,
+            1.6f,
             new HeightLimits(-64, 768),
             false,
             true
         ),
         new ConfigState.Continents(
-            -0.5,
-            0.1,
-            0.08,
-            0.2,
+            -0.5f,
+            0.1f,
+            0.08f,
+            0.2f,
             false,
             false,
             false,
-            0.5,
+            0.5f,
             false,
             false
         ),
         ConfigState.Islands.DEFAULT,
         ConfigState.Oceans.DEFAULT,
         new ConfigState.Biomes(
-            new NoiseState(0.1, 1.1, 0),
-            new NoiseState(0.1, 1.1, -0.2)
+            new NoiseState(0.1f, 1.1f, 0),
+            new NoiseState(0.1f, 1.1f, -0.2f)
         ),
         ConfigState.Caves.DEFAULT,
-        new ConfigState.Experimental(true, true, false)
+        new ConfigState.Experimental(true, true)
     );
 
     static void acceptPresets(TriConsumer<String, ConfigState, Integer> consumer) {

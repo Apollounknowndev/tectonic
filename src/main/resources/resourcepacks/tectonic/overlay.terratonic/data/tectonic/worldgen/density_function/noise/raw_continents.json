@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:clamp",
     "input": {
       "type": "minecraft:add",
-      "argument1": "tectonic:__constants/ocean_offset",
-      "argument2": {
+      "left": "tectonic:__constants/ocean_offset",
+      "right": {
         "type": "minecraft:spline",
         "spline": {
           "coordinate": {
             "type": "minecraft:abs",
-            "argument": "tectonic:__constants/noise/continents"
+            "input": "tectonic:__constants/noise/continents"
           },
           "points": [
             {

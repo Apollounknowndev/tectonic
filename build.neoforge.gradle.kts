@@ -1,5 +1,5 @@
 plugins {
-    id("net.neoforged.moddev") version "2.0.140"
+    id("net.neoforged.moddev") version "2.0.147"
     id("neoforge-mutex")
 }
 

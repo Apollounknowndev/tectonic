@@ -1,60 +1,44 @@
 {
-  "type": "minecraft:flat_cache",
-  "argument": {
-    "type": "minecraft:cache_2d",
-    "argument": {
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:lerp",
+    "alpha": {
+      "type": "minecraft:blend_alpha"
+    },
+    "first": {
+      "type": "minecraft:blend_offset"
+    },
+    "second": {
       "type": "minecraft:add",
-      "argument1": {
-        "type": "minecraft:mul",
-        "argument1": {
-          "type": "minecraft:blend_offset"
-        },
-        "argument2": {
+      "left": -0.50375,
+      "right": {
+        "type": "tectonic:config_clamp",
+        "input": {
           "type": "minecraft:add",
-          "argument1": 1,
-          "argument2": {
+          "left": {
             "type": "minecraft:mul",
-            "argument1": -1,
-            "argument2": "tectonic:blend_alpha"
-          }
-        }
-      },
-      "argument2": {
-        "type": "minecraft:mul",
-        "argument1": {
-          "type": "minecraft:add",
-          "argument1": -0.5037500262260437,
-          "argument2": {
-            "type": "tectonic:config_clamp",
-            "input": {
-              "type": "minecraft:add",
-              "argument1": {
-                "type": "minecraft:mul",
-                "argument1": "tectonic:island_selector",
-                "argument2": "tectonic:terrain_spline/offset/islands"
+            "left": "tectonic:island_selector",
+            "right": "tectonic:terrain_spline/offset/islands"
+          },
+          "right": {
+            "type": "minecraft:mul",
+            "left": "tectonic:continent_selector",
+            "right": {
+              "type": "minecraft:mul",
+              "left": {
+                "type": "minecraft:range_choice",
+                "input": "tectonic:terrain_spline/offset/continents",
+                "min_inclusive": 0,
+                "max_exclusive": 64,
+                "when_in_range": "tectonic:__constants/vertical_scale",
+                "when_out_of_range": 1
               },
-              "argument2": {
-                "type": "minecraft:mul",
-                "argument1": "tectonic:continent_selector",
-                "argument2": {
-                  "type": "minecraft:mul",
-                  "argument1": {
-                    "type": "minecraft:range_choice",
-                    "input": "tectonic:terrain_spline/offset/continents",
-                    "min_inclusive": 0,
-                    "max_exclusive": 64,
-                    "when_in_range": "tectonic:__constants/vertical_scale",
-                    "when_out_of_range": 1
-                  },
-                  "argument2": "tectonic:terrain_spline/offset/continents"
-                }
-              }
-            },
-            "min": "tectonic:__constants/min_offset",
-            "max": "tectonic:__constants/max_offset"
+              "right": "tectonic:terrain_spline/offset/continents"
+            }
           }
         },
-        "argument2": "tectonic:blend_alpha"
+        "min": "tectonic:__constants/min_offset",
+        "max": "tectonic:__constants/max_offset"
       }
     }
   }

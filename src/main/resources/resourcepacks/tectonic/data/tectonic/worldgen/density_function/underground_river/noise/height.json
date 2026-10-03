@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:cache_once",
-  "argument": {
+  "type": "minecraft:cache",
+  "input": {
     "type": "minecraft:add",
-    "argument1": "tectonic:underground_river/noise/height_additive",
-    "argument2": {
+    "left": -0.05,
+    "right": {
       "type": "minecraft:mul",
-      "argument1": 0.03,
-      "argument2": {
+      "left": 0.03,
+      "right": {
         "type": "minecraft:noise",
         "noise": "tectonic:underground_river/height",
         "xz_scale": 0.5,
