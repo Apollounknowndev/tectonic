@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:range_choice",
+    "input": "tectonic:noise/raw_continents",
+    "min_inclusive": 0,
+    "max_exclusive": 64,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "tectonic:noise/continent/erosion_folded",
+      "min_inclusive": 0.4,
+      "max_exclusive": 0.85,
+      "when_in_range": {
+        "type": "minecraft:range_choice",
+        "input": "tectonic:noise/region_selector",
+        "min_inclusive": 0.1,
+        "max_exclusive": 64,
+        "when_in_range": {
+          "type": "minecraft:range_choice",
+          "input": "tectonic:noise/temperature_index",
+          "min_inclusive": 3.5,
+          "max_exclusive": 4.5,
+          "when_in_range": {
+            "type": "minecraft:range_choice",
+            "input": "tectonic:noise/vegetation_index",
+            "min_inclusive": 3.5,
+            "max_exclusive": 5.5,
+            "when_in_range": {
+              "type": "minecraft:range_choice",
+              "input": "tectonic:noise/continent/ridges_folded",
+              "min_inclusive": 0.05,
+              "max_exclusive": 64,
+              "when_in_range": "tectonic:region/heart/jungle_pillar",
+              "when_out_of_range": 0
+            },
+            "when_out_of_range": 0
+          },
+          "when_out_of_range": 0
+        },
+        "when_out_of_range": 0
+      },
+      "when_out_of_range": 0
+    },
+    "when_out_of_range": 0
+  }
+}

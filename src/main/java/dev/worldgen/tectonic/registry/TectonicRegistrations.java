@@ -6,7 +6,9 @@ import dev.worldgen.tectonic.lithostitched.SetHeightLimitsModifier;
 import dev.worldgen.tectonic.worldgen.densityfunction.ConfigClamp;
 import dev.worldgen.tectonic.worldgen.densityfunction.ConfigConstant;
 import dev.worldgen.tectonic.worldgen.densityfunction.ConfigNoise;
+import dev.worldgen.tectonic.worldgen.feature.LavaFeature;
 import dev.worldgen.tectonic.worldgen.placementmodifier.HeightStabilizedCount;
+import dev.worldgen.tectonic.worldgen.placementmodifier.TileAcrossChunk;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 
@@ -19,6 +21,9 @@ public class TectonicRegistrations {
 		register(BuiltInRegistries.DENSITY_FUNCTION_TYPE, "config_noise", ConfigNoise.CODEC);
 		
 		register(BuiltInRegistries.PLACEMENT_MODIFIER_TYPE, "height_stabilized_count", HeightStabilizedCount.CODEC);
+		register(BuiltInRegistries.PLACEMENT_MODIFIER_TYPE, "tile_across_chunk", TileAcrossChunk.CODEC);
+		
+		register(BuiltInRegistries.FEATURE_TYPE, "lava", LavaFeature.CODEC);
 		
 		register(LithostitchedBuiltInRegistries.MODIFIER_TYPE, "set_height_limits", SetHeightLimitsModifier.CODEC);
 		

@@ -49,7 +49,7 @@
 
   "config.tectonic.islands": "Islands",
   "config.tectonic.option.islands_enabled": "Enabled",
-  "config.tectonic.option.islands_enabled.tooltip": "Islands with vanilla mountainous terrain dot the oceans.\n§6With Terralith installed, these spawn volcanoes!",
+  "config.tectonic.option.islands_enabled.tooltip": "This option is unavailable in the beta version. Come back later!",
   "config.tectonic.option.noise_scale": "Noise Scale",
   "config.tectonic.option.noise_scale.tooltip": "Horizontally scales islands. Lower values = larger islands and oceans between them.",
   "config.tectonic.option.noise_multiplier": "Noise Multiplier",

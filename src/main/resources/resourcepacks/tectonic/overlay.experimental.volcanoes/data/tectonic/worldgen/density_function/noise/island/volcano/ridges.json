@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "lithostitched:cellular",
+    "grid_dimensions": {
+      "horizontal": 40
+    },
+    "jitter": 0.8,
+    "return_type": "distance_2_div",
+    "salt": 552579100
+  }
+}

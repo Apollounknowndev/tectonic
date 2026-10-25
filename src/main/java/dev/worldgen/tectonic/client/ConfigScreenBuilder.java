@@ -79,8 +79,7 @@ public class ConfigScreenBuilder {
 		
 		helper.spacer();
 		alignLeft(helper.singleLineText("islands")).format(ChatFormatting.BOLD).addBig();
-		helper.booleanButton("islands_enabled", bool -> islands.enabled = bool, islands.enabled).withTooltip(ENABLED).addBig();
-		addNoise(helper, "noise", state.islands.noise, NOISE);
+		helper.booleanButton("islands_enabled", _ -> {}, true).withTooltip(ENABLED).format(ChatFormatting.GRAY).modifyWidget(b -> b.active = false).addBig();
 		
 		helper.spacer();
 		alignLeft(helper.singleLineText("oceans")).format(ChatFormatting.BOLD).addBig();

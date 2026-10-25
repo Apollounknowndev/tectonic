@@ -1,0 +1,12 @@
+{
+  "type": "lithostitched:replace_partially",
+  "dimension": "minecraft:overworld",
+  "targets": "minecraft:sparse_jungle",
+  "replacement": "minecraft:jungle",
+  "parameters": {
+    "tectonic:region/heart/jungle_pillar_condition": {
+      "min_inclusive": 0.9,
+      "max_inclusive": 1.1
+    }
+  }
+}

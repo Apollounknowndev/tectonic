@@ -6,10 +6,20 @@ import json
 
 
 MOD_ID = "tectonic"
-MOD_VERSION = "3.0.31"
+MOD_VERSION = "3.1.0+beta1"
 CHANGELOG = """
-- Fixed the settings related to the Temperature and Vegetation noises not applying.
-- Reintroduced compatibility with Terralith now that it has ported to 26.3.
+## Warnings
+- Blending is **not** enabled.
+- Terralith compatibility is temporarily disabled.
+
+Please proceed with caution!
+
+## Changes
+- Introduced three new island types, replacing the old island generation:
+  1. Volcanoes: Basalt, blackstone and magma make up these towering islands. In warmer areas, they'll spawn surrounded by jungles.
+  2. Calderas: Oceans surrounded by steep plains and stony peaks.
+  3. Atolls: Chill lagoons surrounded by a thin jungle island.
+- Significantly improved the shaping of jungle pillar terrain.
 """
 UPLOAD_VERSIONS = [
     ("fabric", "26.3"),
@@ -29,7 +39,7 @@ DEPENDENCIES = [
 MODRINTH_ID = "lWDHr9jE"
 CURSEFORGE_ID = "686836"
 
-RELEASE_TYPE = "release"
+RELEASE_TYPE = "beta"
 
 # Global: Should usually not be touched!
 

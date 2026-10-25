@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:sequence",
+  "sequence": [
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "minecraft:biome",
+        "biome_is": "tectonic:volcanic_crater"
+      },
+      "then_run": "tectonic:biome_surface/volcanic_crater"
+    },
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "minecraft:biome",
+        "biome_is": "tectonic:volcanic_island"
+      },
+      "then_run": "tectonic:biome_surface/volcanic_island"
+    },
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "minecraft:biome",
+        "biome_is": "tectonic:island"
+      },
+      "then_run": "tectonic:biome_surface/island"
+    },
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "minecraft:biome",
+        "biome_is": "tectonic:lagoon"
+      },
+      "then_run": "tectonic:biome_surface/lagoon"
+    }
+  ]
+}

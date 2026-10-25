@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:add",
+    "left": "tectonic:noise/island/center_distance",
+    "right": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "tectonic:noise/island/center_distance",
+        "points": [
+          {
+            "location": 32,
+            "value": 0,
+            "derivative": 0
+          },
+          {
+            "location": 48,
+            "value": {
+              "coordinate": "tectonic:noise/island/volcano/ridges",
+              "points": [
+                {
+                  "location": 0.3,
+                  "value": 0,
+                  "derivative": 0
+                },
+                {
+                  "location": 0.3,
+                  "value": 0,
+                  "derivative": 30
+                },
+                {
+                  "location": 1,
+                  "value": 10,
+                  "derivative": 0
+                }
+              ]
+            },
+            "derivative": 0
+          },
+          {
+            "location": 96,
+            "value": {
+              "coordinate": "tectonic:noise/island/volcano/ridges",
+              "points": [
+                {
+                  "location": 0.3,
+                  "value": 0,
+                  "derivative": 0
+                },
+                {
+                  "location": 0.3,
+                  "value": 0,
+                  "derivative": 30
+                },
+                {
+                  "location": 1,
+                  "value": 10,
+                  "derivative": 0
+                }
+              ]
+            },
+            "derivative": 0
+          },
+          {
+            "location": 144,
+            "value": 0,
+            "derivative": 0
+          }
+        ]
+      }
+    }
+  }
+}

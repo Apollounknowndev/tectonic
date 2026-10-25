@@ -1,0 +1,6 @@
+{
+  "type": "lithostitched:set_material_rule",
+  "target_rules": "minecraft:overworld/surface",
+  "material_rule": "tectonic:surface",
+  "injection_type": "prepend"
+}

@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:lerp",
+  "alpha": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": {
+          "type": "minecraft:add",
+          "left": {
+            "type": "lithostitched:cellular",
+            "condition": {
+              "function": "tectonic:region/heart/jungle_pillar_condition",
+              "range": [0.9, 1.1],
+              "fallback_value": 256
+            },
+            "grid_dimensions": {
+              "horizontal": 72
+            },
+            "jitter": 0.75,
+            "return_type": "distance_1",
+            "salt": 312538809
+          },
+          "right": {
+            "type": "minecraft:mul",
+            "left": -30,
+            "right": {
+              "type": "minecraft:add",
+              "left": -0.35,
+              "right": "tectonic:region/heart/jungle_pillar_value"
+            }
+          }
+        },
+        "points": [
+          {
+            "location": 4,
+            "value": 0,
+            "derivative": 0.07
+          },
+          {
+            "location": 16,
+            "value": 1,
+            "derivative": 0.07
+          }
+        ]
+      }
+    },
+    "min": 0,
+    "max": 1
+  },
+  "first": "tectonic:region/heart/jungle_pillar_value",
+  "second": 0
+}

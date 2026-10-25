@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:add",
+  "left": 0.35,
+  "right": {
+    "type": "minecraft:mul",
+    "left": 0.4,
+    "right": {
+      "type": "lithostitched:cellular",
+      "grid_dimensions": {
+        "horizontal": 72
+      },
+      "jitter": 0.75,
+      "return_type": "cell_value",
+      "salt": 312538809
+    }
+  }
+}

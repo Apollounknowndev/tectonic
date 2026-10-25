@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "lithostitched:cellular",
+    "condition": {
+      "function": "tectonic:noise/island/condition",
+      "range": [1, 1],
+      "fallback_value": 16384
+    },
+    "grid_dimensions": {
+      "horizontal": 1024
+    },
+    "jitter": 0.375,
+    "return_type": "distance_1",
+    "salt": 699
+  }
+}

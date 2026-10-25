@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:condition",
+  "if_true": "minecraft:under_floor",
+  "then_run": "minecraft:overworld/sand_or_sandstone_if_ceiling"
+}

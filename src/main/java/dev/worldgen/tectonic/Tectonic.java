@@ -33,6 +33,10 @@ public class Tectonic {
     public static void init() {
         CONFIG.load();
         TectonicRegistrations.init();
+        
+        if (Apollib.isModLoaded("terralith")) {
+            throw new IllegalStateException("This Tectonic beta doesn't have compat with Terralith, come back later.");
+        }
     }
 
     public static Identifier id(String name) {

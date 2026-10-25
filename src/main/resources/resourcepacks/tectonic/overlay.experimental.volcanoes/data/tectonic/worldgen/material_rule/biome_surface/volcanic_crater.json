@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:sequence",
+  "sequence": [
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "lithostitched:all_of",
+        "conditions": [
+          {
+            "type": "minecraft:not",
+            "invert": {
+              "type": "minecraft:y_above",
+              "add_stone_depth": false,
+              "anchor": {
+                "absolute": 128
+              },
+              "surface_depth_multiplier": 0
+            }
+          },
+          {
+            "type": "minecraft:y_above",
+            "add_stone_depth": false,
+            "anchor": {
+              "absolute": 110
+            },
+            "surface_depth_multiplier": 0
+          }
+        ]
+      },
+      "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:magma_block"
+      }
+    },
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "lithostitched:all_of",
+        "conditions": [
+          "minecraft:on_floor",
+          "minecraft:not_underwater",
+          {
+            "type": "lithostitched:sample_density",
+            "function": "tectonic:noise/island/volcano/ridges",
+            "range": [0.9, 1],
+            "prefill": false
+          }
+        ]
+      },
+      "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "lithostitched:all_of",
+        "conditions": [
+          "minecraft:not_underwater",
+          {
+            "type": "minecraft:stone_depth",
+            "add_surface_depth": false,
+            "offset": 12,
+            "secondary_depth_range": 0,
+            "surface_type": "floor"
+          },
+          {
+            "type": "lithostitched:sample_density",
+            "function": "tectonic:noise/island/volcano/ridges",
+            "range": [0.85, 1],
+            "prefill": false
+          }
+        ]
+      },
+      "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:magma_block"
+      }
+    },
+    {
+      "type": "minecraft:block",
+      "result_state": "minecraft:blackstone"
+    }
+  ]
+}

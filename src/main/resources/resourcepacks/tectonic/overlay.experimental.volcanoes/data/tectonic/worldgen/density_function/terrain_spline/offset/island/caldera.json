@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "tectonic:noise/island/center_distance",
+    "points": [
+      {
+        "location": 96,
+        "value": -0.15,
+        "derivative": 0
+      },
+      {
+        "location": 184,
+        "value": 0.5,
+        "derivative": 0.01
+      },
+      {
+        "location": 184,
+        "value": 0.5,
+        "derivative": -0.01
+      },
+      {
+        "location": 320,
+        "value": {
+          "coordinate": "tectonic:__constants/deep_ocean_depth",
+          "points": [
+            {
+              "location": 0,
+              "derivative": 1,
+              "value": 0
+            }
+          ]
+        },
+        "derivative": 0
+      }
+    ]
+  }
+}

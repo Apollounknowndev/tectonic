@@ -1,0 +1,26 @@
+{
+  "feature": "tectonic:volcano/lava",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 125
+      }
+    },
+    {
+      "type": "tectonic:tile_across_chunk"
+    },
+    {
+      "type": "lithostitched:condition",
+      "condition": {
+        "type": "lithostitched:sample_density",
+        "density_function": "tectonic:noise/island/center_distance",
+        "min_inclusive": 0,
+        "max_inclusive": 24
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

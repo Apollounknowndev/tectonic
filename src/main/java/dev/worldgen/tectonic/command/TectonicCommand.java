@@ -40,6 +40,10 @@ public class TectonicCommand {
         addTarget(locate, "badlands_plateaus", LocateTargets.BADLANDS_PLATEAUS, () -> true);
         addTarget(locate, "desert_dunes", LocateTargets.DESERT_DUNES, () -> true);
         addTarget(locate, "cherry_valley", LocateTargets.CHERRY_VALLEY, () -> true);
+        addTarget(locate, "volcano_standalone", LocateTargets.VOLCANO_STANDALONE, () -> true);
+        addTarget(locate, "volcano_jungle", LocateTargets.VOLCANO_JUNGLE, () -> true);
+        addTarget(locate, "caldera", LocateTargets.CALDERA, () -> true);
+        addTarget(locate, "atoll", LocateTargets.ATOLL, () -> true);
 
         dispatcher.register(
             literal("tectonic").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
@@ -93,9 +97,9 @@ public class TectonicCommand {
         if (randomState == null) return 0;
         SamplerContext samplerContext = SamplerContext.builder().enableCaches().build();
 
-        for (BlockPos.MutableBlockPos offset : BlockPos.spiralAround(BlockPos.ZERO, 400, Direction.EAST, Direction.SOUTH)) {
-            int x = origin.getX() + offset.getX() * 64;
-            int z = origin.getZ() + offset.getZ() * 64;
+        for (BlockPos.MutableBlockPos offset : BlockPos.spiralAround(BlockPos.ZERO, 800, Direction.EAST, Direction.SOUTH)) {
+            int x = origin.getX() + offset.getX() * 32;
+            int z = origin.getZ() + offset.getZ() * 32;
             BlockPos pos = new BlockPos(x, 0, z);
 
             boolean allMatch = true;
@@ -249,6 +253,26 @@ public class TectonicCommand {
             "noise/region_selector", range(-64, 0),
             "noise/continent/erosion", range(-0.8, -0.45),
             "noise/raw_continents", range(0.35, 64)
+        );
+        Map<String, InclusiveRange<Double>> VOLCANO_STANDALONE = Map.of(
+            "noise/raw_continents", range(-64, -0.5),
+            "noise/island/center_distance", range(0, 64),
+            "noise/island/selector", range(0, 0.5)
+        );
+        Map<String, InclusiveRange<Double>> CALDERA = Map.of(
+            "noise/raw_continents", range(-64, -0.5),
+            "noise/island/center_distance", range(0, 64),
+            "noise/island/selector", range(0.5, 1)
+        );
+        Map<String, InclusiveRange<Double>> VOLCANO_JUNGLE = Map.of(
+            "noise/raw_continents", range(-64, -0.5),
+            "noise/island/center_distance", range(0, 64),
+            "noise/island/selector", range(1, 1.5)
+        );
+        Map<String, InclusiveRange<Double>> ATOLL = Map.of(
+            "noise/raw_continents", range(-64, -0.5),
+            "noise/island/center_distance", range(0, 64),
+            "noise/island/selector", range(1.5, 2)
         );
 
         private static InclusiveRange<Double> range(double min, double max) {

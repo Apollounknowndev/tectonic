@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:mul",
+  "left": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:mul",
+      "left": 0.5,
+      "right": "tectonic:noise/island/raw_center_distance"
+    },
+    "min": 0,
+    "max": 48
+  },
+  "right": {
+    "type": "minecraft:noise",
+    "noise": "tectonic:island/shift_x",
+    "xz_scale": 0.33,
+    "y_scale": 0
+  }
+}

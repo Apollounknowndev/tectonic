@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "lithostitched:shift",
+    "input": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "lithostitched:cellular",
+        "condition": {
+          "function": "tectonic:noise/island/condition",
+          "range": [1, 1],
+          "fallback_value": -64
+        },
+        "grid_dimensions": {
+          "horizontal": 1024
+        },
+        "jitter": 0.375,
+        "return_type": "cell_value",
+        "salt": 699
+      },
+      "right": {
+        "type": "minecraft:range_choice",
+        "input": "tectonic:__constants/noise/temperature",
+        "min_inclusive": 0,
+        "max_exclusive": 64,
+        "when_in_range": 1,
+        "when_out_of_range": 0
+      }
+    },
+    "shift_x": "tectonic:noise/island/shift_x",
+    "shift_y": 0,
+    "shift_z": "tectonic:noise/island/shift_z"
+  }
+}

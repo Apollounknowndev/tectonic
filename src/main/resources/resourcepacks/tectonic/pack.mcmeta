@@ -18,6 +18,20 @@
       "\n"
     ]
   },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "overlay.experimental.jungle_pillars",
+        "min_format": 121,
+        "max_format": 121
+      },
+      {
+        "directory": "overlay.experimental.volcanoes",
+        "min_format": 121,
+        "max_format": 121
+      }
+    ]
+  },
   "neoforge:overlays": {
     "entries": [
       {

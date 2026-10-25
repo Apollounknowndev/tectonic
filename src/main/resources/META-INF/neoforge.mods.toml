@@ -24,6 +24,13 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${id}]]
+modId = "lithostitched"
+type = "required"
+versionRange = "[2.0.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
 modId = "apollib"
 type = "required"
 versionRange = "[1.1.6,)"
