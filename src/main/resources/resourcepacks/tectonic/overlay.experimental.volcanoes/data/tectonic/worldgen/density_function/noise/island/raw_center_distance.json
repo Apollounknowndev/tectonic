@@ -8,10 +8,10 @@
       "fallback_value": 16384
     },
     "grid_dimensions": {
-      "horizontal": 1024
+      "horizontal": 1536
     },
-    "jitter": 0.375,
+    "jitter": 0.583,
     "return_type": "distance_1",
-    "salt": 699
+    "salt": 896234
   }
 }

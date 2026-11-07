@@ -99,7 +99,7 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
     public NoiseState getNoiseState(String option) {
         return switch (option) {
             case "continents" -> new NoiseState(continents.continentsScale, 1, 0, this.experimental.alternateErosionScaling);
-            case "island" -> this.islands.noise;
+            case "island" -> NoiseState.create();
             case "erosion" -> new NoiseState(continents.erosionScale, 1, 0, this.experimental.alternateErosionScaling);
             case "ridge" -> new NoiseState(continents.ridgeScale, 1, 0);
             case "temperature" -> this.biomes.temperature;
@@ -151,7 +151,7 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
             ),
             new Islands(
                 this.islands.enabled,
-                this.islands.noise.copy()
+                this.islands.averageDistance
             ),
             new Oceans(
                 this.oceans.oceanDepth,
@@ -285,20 +285,20 @@ public class ConfigState implements ApollibCopyable<ConfigState> {
 
     public static class Islands {
         public static final boolean ENABLED = true;
-        public static final NoiseState NOISE = new NoiseState(0.11f, 1, 0);
+        public static final int AVERAGE_DISTANCE = 1536;
 
-        public static final Islands DEFAULT = new Islands(ENABLED, NOISE);
+        public static final Islands DEFAULT = new Islands(ENABLED, AVERAGE_DISTANCE);
         public static final Codec<Islands> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.BOOL.fieldOf("enabled").orElse(ENABLED).forGetter(islands -> islands.enabled),
-            NoiseState.legacyCodec("noise").orElse(new NoiseState(0.11f, 1, 0)).forGetter(islands -> islands.noise)
+            commented(Codec.intRange(640, Integer.MAX_VALUE), "average_distance", "The average distance between two islands, measured in blocks. The minimum distance is always 640 blocks.").orElse(AVERAGE_DISTANCE).forGetter(islands -> islands.averageDistance)
         ).apply(instance, Islands::new));
 
         public boolean enabled;
-        public NoiseState noise;
+        public int averageDistance;
 
-        public Islands(boolean enabled, NoiseState noise) {
+        public Islands(boolean enabled, int averageDistance) {
             this.enabled = enabled;
-            this.noise = noise.copy();
+            this.averageDistance = averageDistance;
         }
     }
 

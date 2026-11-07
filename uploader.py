@@ -6,20 +6,10 @@ import json
 
 
 MOD_ID = "tectonic"
-MOD_VERSION = "3.1.0+beta1"
+MOD_VERSION = "3.1.0+beta2"
 CHANGELOG = """
-## Warnings
-- Blending is **not** enabled.
-- Terralith compatibility is temporarily disabled.
-
-Please proceed with caution!
-
-## Changes
-- Introduced three new island types, replacing the old island generation:
-  1. Volcanoes: Basalt, blackstone and magma make up these towering islands. In warmer areas, they'll spawn surrounded by jungles.
-  2. Calderas: Oceans surrounded by steep plains and stony peaks.
-  3. Atolls: Chill lagoons surrounded by a thin jungle island.
-- Significantly improved the shaping of jungle pillar terrain.
+- Added a config option for the average distance between islands (in blocks). Default is 1536 (up from the previous hardcoded value of 1024).
+- Ores now spawn in Volcano biomes.
 """
 UPLOAD_VERSIONS = [
     ("fabric", "26.3"),
