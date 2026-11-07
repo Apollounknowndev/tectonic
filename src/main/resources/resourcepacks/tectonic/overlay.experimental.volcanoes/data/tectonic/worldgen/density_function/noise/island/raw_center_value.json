@@ -1,0 +1,14 @@
+{
+  "type": "lithostitched:cellular",
+  "condition": {
+    "function": "tectonic:noise/island/condition",
+    "range": [1, 1],
+    "fallback_value": -64
+  },
+  "grid_dimensions": {
+    "horizontal": 1536
+  },
+  "jitter": 0.583,
+  "return_type": "cell_value",
+  "salt": 896234
+}

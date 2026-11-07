@@ -4,20 +4,7 @@
     "type": "lithostitched:shift",
     "input": {
       "type": "minecraft:add",
-      "left": {
-        "type": "lithostitched:cellular",
-        "condition": {
-          "function": "tectonic:noise/island/condition",
-          "range": [1, 1],
-          "fallback_value": -64
-        },
-        "grid_dimensions": {
-          "horizontal": 1024
-        },
-        "jitter": 0.375,
-        "return_type": "cell_value",
-        "salt": 699
-      },
+      "left": "tectonic:noise/island/raw_center_value",
       "right": {
         "type": "minecraft:range_choice",
         "input": "tectonic:__constants/noise/temperature",

@@ -80,6 +80,7 @@ public class ConfigScreenBuilder {
 		helper.spacer();
 		alignLeft(helper.singleLineText("islands")).format(ChatFormatting.BOLD).addBig();
 		helper.booleanButton("islands_enabled", _ -> {}, true).withTooltip(ENABLED).format(ChatFormatting.GRAY).modifyWidget(b -> b.active = false).addBig();
+		helper.intSlider("average_distance", 640, 4096, 128, value -> islands.averageDistance = value.intValue(), islands.averageDistance).withTooltip(AVERAGE_DISTANCE).addBig();
 		
 		helper.spacer();
 		alignLeft(helper.singleLineText("oceans")).format(ChatFormatting.BOLD).addBig();

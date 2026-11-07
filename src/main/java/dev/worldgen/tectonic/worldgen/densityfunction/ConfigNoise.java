@@ -111,7 +111,7 @@ public record ConfigNoise(Holder<NormalNoise> noise, DensityFunction shiftX, Den
                         for(int y = 0; y < volume.sizeY(); ++y) {
                             double noiseX = (baseNoiseX + (double)outputBuffer.get(index)) * this.scale;
                             double noiseZ = (baseNoiseZ + (double)shiftZBuffer.get(index)) * this.scale;
-                            outputBuffer.set(index, this.noise.get(noiseX, 0, noiseZ) * this.multiplier);
+                            outputBuffer.set(index, this.noise.get(noiseX, 0, noiseZ) * this.multiplier + this.offset);
                             ++index;
                         }
                     }
