@@ -88,6 +88,14 @@ tasks {
         filesMatching("*.mixins.json") { expand("java" to mixinJava) }
 
         exclude("fabric.mod.json", "*.ct", "*.classtweaker")
+
+        val packMeta = destinationDir.resolve("resourcepacks/tectonic/pack.mcmeta")
+        doLast {
+            if (packMeta.isFile) {
+                val json = groovy.json.JsonSlurper().parse(packMeta) as MutableMap<String, Any?>
+                if (json.remove("fabric:overlays") != null) packMeta.writeText(groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(json)))
+            }
+        }
     }
 
     named("createMinecraftArtifacts") {
